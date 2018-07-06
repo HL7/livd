@@ -3,10 +3,10 @@
   "name": "IG-Test3",
   "package-id": "healthedatainc.igtemplate",
   "ig-ver": "0.0.0",
-  "date": "Tue, 19 Jun, 2018 15:20:35 -0700",
-  "errs": 46,
+  "date": "Fri, 06 Jul, 2018 11:42:57 -0500",
+  "errs": 24,
   "warnings": 0,
   "hints": 0,
   "version": "3.4.0",
-  "tool": "3.4.0-13844"
+  "tool": "3.4.0-13883"
 }

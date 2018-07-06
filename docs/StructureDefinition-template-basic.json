@@ -214,8 +214,7 @@
             }
           ],
           "strength": "extensible",
-          "description": "A human language.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+          "description": "A human language."
         }
       },
       {

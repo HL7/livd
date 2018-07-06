@@ -220,11 +220,7 @@
            fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "A human language." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/languages";
-           fhir:link <http://hl7.org/fhir/ValueSet/languages>
-         ]
+         fhir:ElementDefinition.binding.description [ fhir:value "A human language." ]
        ]
      ], [
        fhir:index 5;

@@ -1,8 +1,8 @@
 #!/bin/bash
 name="IG-Template2"
-path1=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
-path2=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher-test.jar
-path3=/Users/ehaas/Documents/FHIR/IG-tools/
+path1=/Users/rhausam/SVN/fhir/trunk/build/publish/org.hl7.fhir.igpublisher.jar
+path2=/Users/rhausam/Downloads/org.hl7.fhir.igpublisher-test.jar
+path3=/Users/rhausam/Documents/FHIR/IG-tools/
 while getopts ds:to option
 do
  case "${option}"

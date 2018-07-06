@@ -1,55 +1,42 @@
 ﻿IG-Test3 : Validation Results
 =========================================
 
-err = 46, warn = 0, info = 0
-Generated Tue Jun 19 15:20:50 PDT 2018. FHIR version 3.4.0 for 3.4.0
+err = 24, warn = 0, info = 0
+Generated Fri Jul 06 11:43:32 CDT 2018. FHIR version 3.4.0 for 3.4.0
 
- Build Errors : 9 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs : 5 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-blah : 2 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-complex : 2 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-template-basic : 6 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client : 4 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 4 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig : 0 / 0
+ Build Errors : 7 / 0
+ /Users/rhausam/git-repo/livd/source/examples/obs : 4 / 0
+ /Users/rhausam/git-repo/livd/source/resources/StructureDefinition-extension-blah : 0 / 0
+ /Users/rhausam/git-repo/livd/source/resources/StructureDefinition-extension-complex : 0 / 0
+ /Users/rhausam/git-repo/livd/source/resources/StructureDefinition-template-basic : 4 / 0
+ /Users/rhausam/git-repo/livd/source/resources/capabilitystatement-client : 2 / 0
+ /Users/rhausam/git-repo/livd/source/resources/capabilitystatement-server : 2 / 0
+ /Users/rhausam/git-repo/livd/source/resources/ig : 0 / 0
 </table>
 == n/a ==
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 703: The link 'Patient-example.html' for "Patient/example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 776: The link 'Encounter/example' for "Encounter/example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 887: The link 'Practitioner-practitioner-1.html' for "Practitioner/practitioner-1" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'registry.fhir.org.zip' for "Registry Source file" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 456, column 398: The link 'http://hl7.org/fhir/STU3/null.html' for "Language of the resource content" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 462, column 12: The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for "valueCode" cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, tabs-summ, tbl-summ, stripe, segment-footer, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, tbl-diff-inner, segment-navbar, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, json, tabs-snap, introduction, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, all-tbl-diff-inner, project-status, all-json])
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 585, column 398: The link 'http://hl7.org/fhir/STU3/null.html' for "Language of the resource content" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 591, column 12: The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for "valueCode" cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, tabs-summ, tbl-summ, stripe, segment-footer, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, tbl-diff-inner, segment-navbar, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, json, tabs-snap, introduction, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, all-tbl-diff-inner, project-status, all-json])
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs.xml ==
+ERROR: /Users/rhausam/git-repo/livd/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 247, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
+ERROR: /Users/rhausam/git-repo/livd/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 255, column 8: The link 'registry.fhir.org.zip' for "Registry Source file" cannot be resolved
+ERROR: /Users/rhausam/git-repo/livd/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 724: The link 'Patient-example.html' for "Patient/example" cannot be resolved
+ERROR: /Users/rhausam/git-repo/livd/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 797: The link 'Encounter/example' for "Encounter/example" cannot be resolved
+ERROR: /Users/rhausam/git-repo/livd/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 908: The link 'Practitioner-practitioner-1.html' for "Practitioner/practitioner-1" cannot be resolved
+ERROR: /Users/rhausam/git-repo/livd/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 462, column 12: The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for "valueCode" cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, tabs-summ, tbl-summ, stripe, segment-footer, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, tbl-diff-inner, segment-navbar, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, json, tabs-snap, introduction, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, all-tbl-diff-inner, project-status, all-json])
+ERROR: /Users/rhausam/git-repo/livd/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 591, column 12: The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for "valueCode" cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, tabs-summ, tbl-summ, stripe, segment-footer, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, tbl-diff-inner, segment-navbar, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, json, tabs-snap, introduction, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, all-tbl-diff-inner, project-status, all-json])
+== /Users/rhausam/git-repo/livd/source/examples/obs.xml ==
 ERROR: Observation/example: Observation: Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0
-ERROR: Observation/example: Observation.code.coding[3]: Terminology service not available
 ERROR: Observation/example: Observation.subject: Unable to resolve resource 'Patient/example'
 ERROR: Observation/example: Observation.context: Unable to resolve resource 'Encounter/example'
 ERROR: Observation/example: Observation.performer: Unable to resolve resource 'Practitioner/practitioner-1'
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-blah.xml ==
-ERROR: /f:StructureDefinition/f:differential/f:element/f:binding: Undefined element 'valueSetUri'
-ERROR: StructureDefinition/extension-blah: StructureDefinition.differential.element[3].binding: ValueSet SHALL start with http:// or https:// or urn: [valueSet.startsWith('http:') or valueSet.startsWith('https') or valueSet.startsWith('urn:')]
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-complex.xml ==
-ERROR: /f:StructureDefinition/f:differential/f:element/f:binding: Undefined element 'valueSetUri'
-ERROR: StructureDefinition/extension-complex: StructureDefinition.differential.element[5].binding: ValueSet SHALL start with http:// or https:// or urn: [valueSet.startsWith('http:') or valueSet.startsWith('https') or valueSet.startsWith('urn:')]
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-template-basic.xml ==
-ERROR: /f:StructureDefinition/f:differential/f:element/f:binding: Undefined element 'valueSetUri'
-ERROR: StructureDefinition/template-basic: StructureDefinition.differential.element[6].binding: ValueSet SHALL start with http:// or https:// or urn: [valueSet.startsWith('http:') or valueSet.startsWith('https') or valueSet.startsWith('urn:')]
+== /Users/rhausam/git-repo/livd/source/resources/StructureDefinition-extension-blah.xml ==
+== /Users/rhausam/git-repo/livd/source/resources/StructureDefinition-extension-complex.xml ==
+== /Users/rhausam/git-repo/livd/source/resources/StructureDefinition-template-basic.xml ==
 ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic differential Basic.extension (Simple_Extension)
 ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic differential Basic.extension (Complex_Extension)
 ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic snapshot Basic.extension (Simple_Extension)
 ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic snapshot Basic.extension (Complex_Extension)
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client.xml ==
+== /Users/rhausam/git-repo/livd/source/resources/capabilitystatement-client.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
 ERROR: /f:CapabilityStatement: Undefined element 'profile'
-ERROR: CapabilityStatement/client: CapabilityStatement.format[1]: The value provided ('xml') is not in the value set http://hl7.org/fhir/ValueSet/mimetypes (http://hl7.org/fhir/ValueSet/mimetypes, and a code is required from this value set) (error message = Error expanding ValueSet: running without terminology services)
-ERROR: CapabilityStatement/client: CapabilityStatement.format[2]: The value provided ('json') is not in the value set http://hl7.org/fhir/ValueSet/mimetypes (http://hl7.org/fhir/ValueSet/mimetypes, and a code is required from this value set) (error message = Error expanding ValueSet: running without terminology services)
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server.xml ==
+== /Users/rhausam/git-repo/livd/source/resources/capabilitystatement-server.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
 ERROR: /f:CapabilityStatement: Undefined element 'profile'
-ERROR: CapabilityStatement/server: CapabilityStatement.format[1]: The value provided ('xml') is not in the value set http://hl7.org/fhir/ValueSet/mimetypes (http://hl7.org/fhir/ValueSet/mimetypes, and a code is required from this value set) (error message = Error expanding ValueSet: running without terminology services)
-ERROR: CapabilityStatement/server: CapabilityStatement.format[2]: The value provided ('json') is not in the value set http://hl7.org/fhir/ValueSet/mimetypes (http://hl7.org/fhir/ValueSet/mimetypes, and a code is required from this value set) (error message = Error expanding ValueSet: running without terminology services)
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig.xml ==
+== /Users/rhausam/git-repo/livd/source/resources/ig.xml ==

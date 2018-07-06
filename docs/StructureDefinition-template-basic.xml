@@ -190,7 +190,6 @@
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
     </element>
     <element id="Basic.text">
