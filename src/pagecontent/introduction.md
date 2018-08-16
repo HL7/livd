@@ -1,20 +1,3 @@
----
-title: LIVD IG Home Page
-layout: default
-active: home
----
-
-{% include publish-box.html %}
-
-
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
-
-<!-- end TOC -->
-
 ### Background
 Background
 The objective of this implementation guide is to define an In Vitro Diagnostic (IVD) industry format to facilitate the publication and exchange of suggested LOINC codes for vendor IVD test assays, based on either vendor IVD test transmission codes or manual test identification, for use by laboratory personnel or laboratory applications. It is not intended to cover information for other related activities, such as purchasing tests from a vendor. Expected systems using the format include Laboratory Information Systems (LIS), clinical middleware applications, databases, and terminology servers.
@@ -56,5 +39,3 @@ Feedback is welcome and may be submitted through the <a href="http://gforge.hl7.
 </blockquote>
 
 The complete content of this implementation guide can be downloaded [here](full-ig.zip).
-
-{% include link-list.md %}

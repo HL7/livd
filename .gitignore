@@ -45,9 +45,12 @@ Thumbs.db
 
 output
 /temp
+temp
 *.dropbox
 /src/resources/desktop.ini
 src/.DS_Store
+src/resources/.DS_Store
+src/pagecontent/.DS_Store
 .DS_Store
 
 # Altova files #

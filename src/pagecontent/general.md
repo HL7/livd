@@ -1,17 +1,3 @@
----
-title: General Principles and Design
-layout: default
-active: guidance
-f: http://build.fhir.org/
----
-
-{:.no_toc}
-
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
 ### Structure and Supported Mappings
 
 The basic structure that the LIVD Publication must support can be represented as follows, using the HL7® V2 message syntax of brackets ([…]) to identify optional items and braces ({…}) to identify repeatable items. The italic items are used to provide grouping and cardinality, while the bold items are actual data elements of the definition.
