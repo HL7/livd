@@ -3,95 +3,68 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>LIVD IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/livd/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
+  "url": "http://hl7.org/fhir/uv/livd/ImplementationGuide/ig",
   "version": "0.0.0",
-  "name": "IG-Test3",
+  "name": "LIVD IG",
   "status": "draft",
-  "publisher": "Health eData Inc",
-  "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
-  "packageId": "healthedatainc.igtemplate",
+  "publisher": "Health Level Seven International",
+  "copyright": "Used by permission of Health Level Seven International.",
+  "packageId": "hl7.fhir.uv.livd",
   "license": "CC0-1.0",
   "fhirVersion": "3.4.0",
   "definition": {
+    "package": [
+      {
+        "id": "LIVDConceptMapProfile-spreadsheet.xml",
+        "name": "LIVD ConceptMap"
+      }
+    ],
     "resource": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-example.html"
+            "valueUri": "ValueSet-conceptmap-livd-desc-prop.html"
           }
         ],
         "reference": {
-          "reference": "Observation/example"
+          "reference": "ValueSet/conceptmap-livd-desc-prop"
         },
-        "exampleBoolean": true
+        "name": "ConceptMapLIVDDescriptionProperty",
+        "package": "LIVDConceptMapProfile-spreadsheet.xml"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-basic.html"
+            "valueUri": "CodeSystem-conceptmap-livd-desc-prop.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/template-basic"
+          "reference": "CodeSystem/conceptmap-livd-desc-prop"
         },
-        "exampleBoolean": false
+        "name": "ConceptMapLIVDDescriptionProperty",
+        "package": "LIVDConceptMapProfile-spreadsheet.xml"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-complex.html"
+            "valueUri": "StructureDefinition-conceptmap-uv-livd.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/extension-complex"
+          "reference": "StructureDefinition/conceptmap-uv-livd"
         },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-server.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/server"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-client.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/client"
-        },
-        "exampleBoolean": false
+        "name": "A map from one set of concepts to one or more other concepts",
+        "package": "LIVDConceptMapProfile-spreadsheet.xml"
       }
     ],
     "page": {
       "nameUrl": "index.md",
-      "title": "IG-Test3 Homepage",
+      "title": "LIVD Home",
       "generation": "markdown"
     }
   }

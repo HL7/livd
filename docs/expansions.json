@@ -1,8 +1,60 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4abf1eb4-3897-4440-98a3-6275483c1276",
+  "id" : "23e36996-0c1f-434d-a02f-2571d9781583",
   "meta" : {
-    "lastUpdated" : "2018-07-06T11:42:57.707-05:00"
+    "lastUpdated" : "2018-08-16T10:07:39.035-05:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/uv/livd/ValueSet/conceptmap-livd-desc-prop",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "conceptmap-livd-desc-prop",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://hl7.org/fhir/uv/livd/CodeSystem/conceptmap-livd-desc-prop version 0.0.0</p><p>All codes from system <a href=\"CodeSystem/conceptmap-livd-desc-prop.html\"><code>http://hl7.org/fhir/uv/livd/CodeSystem/conceptmap-livd-desc-prop</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-livd-CodeSystem-conceptmap-livd-desc-prop-specimen\"> </a><a href=\"CodeSystem/conceptmap-livd-desc-prop.html#conceptmap-livd-desc-prop-specimen\">specimen</a></td><td>Specimen Description</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-livd-CodeSystem-conceptmap-livd-desc-prop-result\"> </a><a href=\"CodeSystem/conceptmap-livd-desc-prop.html#conceptmap-livd-desc-prop-result\">result</a></td><td>Result Description</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/livd/ValueSet/conceptmap-livd-desc-prop",
+      "version" : "0.0.0",
+      "name" : "ConceptMapLIVDDescriptionProperty",
+      "status" : "draft",
+      "date" : "2018-08-16T10:07:39-05:00",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url"
+        },
+        {
+          "system" : "email"
+        }]
+      }],
+      "description" : "Defines the properties that are further described to aid in the selection of a LOINC code",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:ebccd868-3b7d-45d4-b0b1-50d5c8a50f9f",
+        "timestamp" : "2018-08-16T10:07:40-05:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/uv/livd/CodeSystem/conceptmap-livd-desc-prop|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/conceptmap-livd-desc-prop",
+          "code" : "specimen",
+          "display" : "Specimen Description"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/conceptmap-livd-desc-prop",
+          "code" : "result",
+          "display" : "Result Description"
+        }]
+      }
+    }
+  }]
 }

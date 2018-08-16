@@ -1,12 +1,12 @@
 ﻿{
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "name": "IG-Test3",
-  "package-id": "healthedatainc.igtemplate",
+  "url": "http://hl7.org/fhir/uv/livd/ImplementationGuide/ig",
+  "name": "LIVD IG",
+  "package-id": "hl7.fhir.uv.livd",
   "ig-ver": "0.0.0",
-  "date": "Fri, 06 Jul, 2018 11:42:57 -0500",
-  "errs": 24,
-  "warnings": 0,
-  "hints": 0,
+  "date": "Thu, 16 Aug, 2018 10:07:39 -0500",
+  "errs": 12,
+  "warnings": 14,
+  "hints": 2,
   "version": "3.4.0",
-  "tool": "3.4.0-13883"
+  "tool": "3.4.0-14789"
 }

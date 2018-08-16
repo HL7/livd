@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG-Test3</title>
+  <title>LIVD IG</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG-Test3 Implemenation Guide" />
-<meta name="author" content="Health eData Inc"/>
+<meta name="description" content="LIVD IG Implemenation Guide" />
+<meta name="author" content="Health Level Seven International"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -65,10 +65,11 @@ can only resize using html  or css ;-(
 
 -->
 
-
+<!-->
 <a no-external="true" href="http://www.openmhealth.org/">
 <img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
 </a>
+-->
 
   <!-- end org logo -->
 
@@ -76,7 +77,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>IG-Test3 Implementation Guide CI Build</strong>
+      <strong>LIVD IG Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -106,19 +107,19 @@ can only resize using html  or css ;-(
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://http://build.fhir.org//index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a></li>
-  <li><a href="structuremaps.html">Mappings</a>
+  <li><a href="profiles.html">Profiles and Logical Models</a>
+<!-- - [Mappings](structuremaps.html) -->
 <!-- - [Extensions](extensions.html) --></li>
   <li><a href="terminology.html">Terminology</a>
-<!-- - [Search Parameters](searchparams.html) --></li>
-  <li><a href="capstatements.html">Capability Statements</a>
+<!-- - [Search Parameters](searchparams.html) -->
+<!-- - [Capability Statements](capstatements.html) -->
 <!-- - [Security](security.html) -->
 <!-- - [Examples](examples.html) --></li>
   <li><a href="downloads.html">Downloads</a></li>
@@ -266,87 +267,62 @@ can only resize using html  or css ;-(
 
 <pre class="xml">
 
-&lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide">ImplementationGuide</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;ig&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;IG-Test3&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test3/ImplementationGuide/ig&lt;/pre&gt;&lt;/div&gt;
+&lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide">ImplementationGuide</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.id">id</a> <a href="http://http://build.fhir.org/datatypes.html#id">value</a>=&quot;ig&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.text">text</a>&gt;
+    &lt;<a href="http://http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;LIVD IG&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://hl7.org/fhir/uv/livd/ImplementationGuide/ig&lt;/pre&gt;&lt;/div&gt;
   &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.url">url</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://www.fhir.org/guides/test3/ImplementationGuide/ig&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.version">version</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;IG-Test3&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.publisher">publisher</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Health eData Inc&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.copyright">copyright</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Used by permission of Health eData Inc, all rights reserved Creative Commons License&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.packageId">packageId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;healthedatainc.igtemplate&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.license">license</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;CC0-1.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;3.4.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition">definition</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Observation-example.html&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.url">url</a> <a href="http://http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/livd/ImplementationGuide/ig&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.version">version</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;LIVD IG&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a> <a href="http://http://build.fhir.org/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;Health Level Seven International&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.copyright">copyright</a> <a href="http://http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Used by permission of Health Level Seven International.&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.packageId">packageId</a> <a href="http://http://build.fhir.org/datatypes.html#id">value</a>=&quot;hl7.fhir.uv.livd&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.license">license</a> <a href="http://http://build.fhir.org/datatypes.html#code">value</a>=&quot;CC0-1.0&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhirVersion</a> <a href="http://http://build.fhir.org/datatypes.html#id">value</a>=&quot;3.4.0&quot;/&gt;
+  &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">definition</a>&gt;
+    &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package">package</a> <a href="http://http://build.fhir.org/datatypes.html#string">id</a>=&quot;LIVDConceptMapProfile-spreadsheet.xml&quot;&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">name</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;LIVD ConceptMap&quot;/&gt;
+    &lt;/package&gt;
+    &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ValueSet-conceptmap-livd-desc-prop.html&quot;/&gt;
       &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation/example&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet/conceptmap-livd-desc-prop&quot;/&gt;
       &lt;/reference&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;ConceptMapLIVDDescriptionProperty&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">package</a> <a href="http://http://build.fhir.org/datatypes.html#id">value</a>=&quot;LIVDConceptMapProfile-spreadsheet.xml&quot;/&gt;
     &lt;/resource&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-basic.html&quot;/&gt;
+    &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://http://build.fhir.org/datatypes.html#uri">value</a>=&quot;CodeSystem-conceptmap-livd-desc-prop.html&quot;/&gt;
       &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/template-basic&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;CodeSystem/conceptmap-livd-desc-prop&quot;/&gt;
       &lt;/reference&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;ConceptMapLIVDDescriptionProperty&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">package</a> <a href="http://http://build.fhir.org/datatypes.html#id">value</a>=&quot;LIVDConceptMapProfile-spreadsheet.xml&quot;/&gt;
     &lt;/resource&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-complex.html&quot;/&gt;
+    &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-conceptmap-uv-livd.html&quot;/&gt;
       &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-complex&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/conceptmap-uv-livd&quot;/&gt;
       &lt;/reference&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;A map from one set of concepts to one or more other concepts&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">package</a> <a href="http://http://build.fhir.org/datatypes.html#id">value</a>=&quot;LIVDConceptMapProfile-spreadsheet.xml&quot;/&gt;
     &lt;/resource&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-blah.html&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-blah&quot;/&gt;
-      &lt;/reference&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-    &lt;/resource&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;CapabilityStatement-server.html&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;CapabilityStatement/server&quot;/&gt;
-      &lt;/reference&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-    &lt;/resource&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;CapabilityStatement-client.html&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;CapabilityStatement/client&quot;/&gt;
-      &lt;/reference&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-    &lt;/resource&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.page">page</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#url">value</a>=&quot;index.md&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.page.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;IG-Test3 Homepage&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;markdown&quot;/&gt;
+    &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page">page</a>&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://http://build.fhir.org/datatypes.html#url">value</a>=&quot;index.md&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a> <a href="http://http://build.fhir.org/datatypes.html#string">value</a>=&quot;LIVD Home&quot;/&gt;
+      &lt;<a href="http://http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a> <a href="http://http://build.fhir.org/datatypes.html#code">value</a>=&quot;markdown&quot;/&gt;
     &lt;/page&gt;
   &lt;/definition&gt;
 &lt;/ImplementationGuide&gt;</pre>
@@ -399,7 +375,7 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.4.0</a> (IG Publisher v3.4.0-13807) generated on Fri, Jul 6, 2018 11:42-0500. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+            LIVD IG Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://http://build.fhir.org/">FHIR Version: 3.4.0</a> (IG Publisher v3.4.0-14821) generated on Thu, Aug 16, 2018 10:07-0500. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->

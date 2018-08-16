@@ -3,75 +3,54 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>LIVD IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/livd/ImplementationGuide/ig</pre></div>
   </text>
-  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <url value="http://hl7.org/fhir/uv/livd/ImplementationGuide/ig"/>
   <version value="0.0.0"/>
-  <name value="IG-Test3"/>
+  <name value="LIVD IG"/>
   <status value="draft"/>
-  <publisher value="Health eData Inc"/>
-  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
-  <packageId value="healthedatainc.igtemplate"/>
+  <publisher value="Health Level Seven International"/>
+  <copyright value="Used by permission of Health Level Seven International."/>
+  <packageId value="hl7.fhir.uv.livd"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="3.4.0"/>
   <definition>
+    <package id="LIVDConceptMapProfile-spreadsheet.xml">
+      <name value="LIVD ConceptMap"/>
+    </package>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-example.html"/>
+        <valueUri value="ValueSet-conceptmap-livd-desc-prop.html"/>
       </extension>
       <reference>
-        <reference value="Observation/example"/>
+        <reference value="ValueSet/conceptmap-livd-desc-prop"/>
       </reference>
-      <exampleBoolean value="true"/>
+      <name value="ConceptMapLIVDDescriptionProperty"/>
+      <package value="LIVDConceptMapProfile-spreadsheet.xml"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-template-basic.html"/>
+        <valueUri value="CodeSystem-conceptmap-livd-desc-prop.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/template-basic"/>
+        <reference value="CodeSystem/conceptmap-livd-desc-prop"/>
       </reference>
-      <exampleBoolean value="false"/>
+      <name value="ConceptMapLIVDDescriptionProperty"/>
+      <package value="LIVDConceptMapProfile-spreadsheet.xml"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-complex.html"/>
+        <valueUri value="StructureDefinition-conceptmap-uv-livd.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/extension-complex"/>
+        <reference value="StructureDefinition/conceptmap-uv-livd"/>
       </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-blah.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/extension-blah"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CapabilityStatement-server.html"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/server"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CapabilityStatement-client.html"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <name value="A map from one set of concepts to one or more other concepts"/>
+      <package value="LIVDConceptMapProfile-spreadsheet.xml"/>
     </resource>
     <page>
       <nameUrl value="index.md"/>
-      <title value="IG-Test3 Homepage"/>
+      <title value="LIVD Home"/>
       <generation value="markdown"/>
     </page>
   </definition>

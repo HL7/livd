@@ -562,7 +562,7 @@ div.itoc
   float: right;
   z-index: 10;
   width: 150px;
-  background-color: #ffeb7e;
+  background-color: #fffbe6;
   border: 1px solid navy;
 }
 
@@ -705,6 +705,12 @@ div.warning {
   padding: 5px;
 }
 
+span.warning {
+  background-color: #FFE6E6;
+  border: 1px silver solid;
+  padding: 1px;
+}
+
 
 
 tr.diff-title td {
@@ -816,6 +822,25 @@ input.gsc-input,
 	margin-top  : 0px;
 }
 
+div.informative-content {
+  border: 1px grey solid; 
+  background-color: #ffffe6; 
+  padding: 10px; 
+}  
+
+div.draft-content {
+  border: 1px grey solid; 
+  background-color: #fff5e6; 
+  padding: 10px; 
+}  
+
+td.draft-content {
+  background-color: #fff5e6; 
+}  
+
+tr.draft-content {
+  background-color: #fff5e6; 
+}  
 
 a.normative-flag {
   border: 1px grey solid; 
@@ -853,4 +878,17 @@ table.lmap td {
   font-weight: normal;
   padding: 3px;
   vertical-align: top;
+}
+
+ol.fmmlist {
+  counter-reset: number 0;
+}
+ol.fmmlist li {
+  list-style: none;
+  counter-increment: number;
+}
+ol.fmmlist li::before {
+  content: "FMM " counter(number);
+  position: relative;
+  left:-25px
 }

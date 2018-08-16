@@ -1,1 +1,96 @@
-{"igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/", "title": "IG-Test3", "no-inactive-codes": "false", "gen-examples": "false", "allviews": "true", "structuremaps": ["Foo"], "fixed-business-version": "0.0.0", "logging": ["progress"], "mappings": "true", "license": "CC0-1.0", "broken-links": "warning", "sct-edition": "http://snomed.info/sct/731000124108", "resources": {"Observation/example": {"source": "obs.xml", "base": "Observation-example.html"}, "StructureDefinition/extension-blah": {"defns": "StructureDefinition-extension-blah-definitions.html", "source": "StructureDefinition-extension-blah.xml", "base": "StructureDefinition-extension-blah.html"}, "CapabilityStatement/client": {"source": "capabilitystatement-client.xml", "base": "CapabilityStatement-client.html"}, "StructureDefinition/template-basic": {"defns": "StructureDefinition-template-basic-definitions.html", "source": "StructureDefinition-template-basic.xml", "base": "StructureDefinition-template-basic.html"}, "StructureMap/Foo": {"base": "StructureMap-Foo.html"}, "StructureDefinition/extension-complex": {"defns": "StructureDefinition-extension-complex-definitions.html", "source": "StructureDefinition-extension-complex.xml", "base": "StructureDefinition-extension-complex.html"}, "CapabilityStatement/server": {"source": "capabilitystatement-server.xml", "base": "CapabilityStatement-server.html"}}, "paths": {"qa": "generated_output/qa", "specification": "http://hl7.org/fhir/STU3", "resources": ["source/resources", "source/examples"], "txCache": "generated_output/txCache", "temp": "generated_output/temp", "output": "docs", "pages": ["framework", "source/pages"]}, "do-transforms": "false", "working-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/", "npm-name": "healthedatainc.igtemplate", "source": "ig.xml", "extraTemplates": ["mappings"], "publisher": "Health eData Inc", "pub_url": "ehaas@healthedatainc.com", "topofpage": "true", "canonicalBase": "http://www.fhir.org/guides/test3", "html-template": "html-template.html", "status": "draft", "dependencyList": [{"name": "uscore", "source": "dependencies/uscore-vp", "version": "1.0.1", "location": "http://hl7.org/fhir/us/core"}], "defaults": {"CodeSystem": {"template-base": "base.html"}, "OperationDefinition": {"template-base": "base.html"}, "StructureMap": {"template-base": "ex.html", "script": false, "profiles": false, "content": false}, "Any": {"template-base": "base.html", "template-format": "format.html"}, "Observation": {"template-base": "ex.html"}, "ConceptMap": {"template-base": "base.html"}, "SearchParameter": {"template-base": "base.html"}, "StructureDefinition": {"template-base": "sd.html", "template-mappings": "sd-mappings.html", "template-defns": "sd-definitions.html"}, "CapabilityStatement": {"template-base": "base.html"}, "ValueSet": {"template-base": "base.html"}}, "version": "3.4.0", "tool": "jekyll", "swagger": [{"capabilities": "server", "mode": "single"}]}
+{
+    "igtemplate-dir": "/Users/rhausam/git-repo/livd/",
+    "title": "LIVD IG",
+    "no-inactive-codes": "false",
+    "gen-examples": "false",
+    "allviews": "true",
+    "structuremaps": [
+    ],
+    "fixed-business-version": "0.0.0",
+    "logging": [
+      "init","progress","context","html","tx"
+    ],
+    "mappings": "true",
+    "license": "CC0-1.0",
+    "broken-links": "warning",
+    "sct-edition": "http://snomed.info/sct/731000124108",
+    "spreadsheets" : [
+        "LIVDConceptMapProfile-spreadsheet.xml"
+    ], 
+   "resources": {
+    },
+    "paths": {
+      "qa": "generated_output/qa",
+      "specification": "http://http://build.fhir.org/",
+      "resources": [
+        "source/resources",
+        "source/examples"
+      ],
+      "txCache": "generated_output/txCache",
+      "temp": "generated_output/temp",
+      "output": "docs",
+      "pages": [
+        "framework",
+        "source/pages"
+      ]
+    },
+    "do-transforms": "false",
+    "working-dir": "/Users/rhausam/git-repo/livd/",
+    "npm-name": "hl7.fhir.uv.livd",
+    "source": "ig.xml",
+    "extraTemplates": [
+      "mappings"
+    ],
+    "publisher": "Health Level Seven International",
+    "pub_url": "http://www.hl7.org",
+    "topofpage": "true",
+    "canonicalBase": "http://hl7.org/fhir/uv/livd",
+    "html-template": "html-template.html",
+    "status": "draft",
+    "defaults": {
+      "CodeSystem": {
+        "template-base": "base.html"
+      },
+      "OperationDefinition": {
+        "template-base": "base.html"
+      },
+      "StructureMap": {
+        "template-base": "ex.html",
+        "script": false,
+        "profiles": false,
+        "content": false
+      },
+      "Any": {
+        "template-base": "base.html",
+        "template-format": "format.html"
+      },
+      "Observation": {
+        "template-base": "ex.html"
+      },
+      "ConceptMap": {
+        "template-base": "base.html"
+      },
+      "SearchParameter": {
+        "template-base": "base.html"
+      },
+      "StructureDefinition": {
+        "template-base": "sd.html",
+        "template-mappings": "sd-mappings.html",
+        "template-defns": "sd-definitions.html"
+      },
+      "CapabilityStatement": {
+        "template-base": "base.html"
+      },
+      "ValueSet": {
+        "template-base": "base.html"
+      }
+    },
+    "version": "3.4.0",
+    "tool": "jekyll",
+    "swagger": [
+      {
+        "capabilities": "server",
+        "mode": "single"
+      }
+    ]
+  }
