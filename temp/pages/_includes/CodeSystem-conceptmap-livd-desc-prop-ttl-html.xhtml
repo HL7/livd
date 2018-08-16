@@ -1,0 +1,53 @@
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;conceptmap-livd-desc-prop&quot;];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;ConceptMapLIVDDescriptionProperty&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Defines the properties that are further described to aid in the selection of a LOINC code&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This code system http://hl7.org/fhir/us/livd/CodeSystem/conceptmap-livd-desc-prop defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;specimen&lt;a name=\&quot;conceptmap-livd-desc-prop-specimen\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Specimen Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;result&lt;a name=\&quot;conceptmap-livd-desc-prop-result\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Result Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/livd/CodeSystem/conceptmap-livd-desc-prop&quot;];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;current&quot;];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ConceptMapLIVDDescriptionProperty&quot;];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.experimental">fhir:CodeSystem.experimental</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2018-08-16T08:20:48-05:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.contact">fhir:CodeSystem.contact</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;url&quot; ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;email&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Defines the properties that are further described to aid in the selection of a LOINC code&quot;];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.caseSensitive">fhir:CodeSystem.caseSensitive</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.valueSet">fhir:CodeSystem.valueSet</a> [
+     <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/livd/ValueSet/conceptmap-livd-desc-prop&quot;;
+     <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/livd/ValueSet/conceptmap-livd-desc-prop&gt;
+  ];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.content">fhir:CodeSystem.content</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;complete&quot;];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept">fhir:CodeSystem.concept</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;specimen&quot; ];
+     <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Specimen Description&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;result&quot; ];
+     <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Result Description&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+

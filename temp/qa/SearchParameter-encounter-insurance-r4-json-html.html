@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+  <title>SearchParameter-encounter-insurance-r4-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter">resourceType</a>" : "SearchParameter",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.id">id</a>" : "encounter-insurance-r4",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;b&gt;http://hl7.org/fhir/us/davinci-crd/SearchParameter/encounter-insurance-r4&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: CRDEncounterInsurance&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: DRAFT&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Aug 14, 2018&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: Da Vinci Project&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Returns encounters that are covered by the specified insurance.&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: insurance&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: Encounter&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: REFERENCE&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: Encounter.extension.where(url = 'http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance').extension.value.reference&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpath&lt;/b&gt;: f:Encounter/f:extension[@url='http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance']/f:extension/f:valueReference/f:reference/@value&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpathUsage&lt;/b&gt;: NORMAL&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.url">url</a>" : "http://hl7.org/fhir/us/davinci-crd/SearchParameter/encounter-insurance-r4",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.name">name</a>" : "CRDEncounterInsurance",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.date">date</a>" : "2018-08-14",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.publisher">publisher</a>" : "Da Vinci Project",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.contact">contact</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "other",
+          "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.healthit.gov/"
+        }
+      ]
+    }
+  ],
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.description">description</a>" : "Returns encounters that are covered by the specified insurance.",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.code">code</a>" : "insurance",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.base">base</a>" : [
+    "Encounter"
+  ],
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.type">type</a>" : "reference",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.expression">expression</a>" : "Encounter.extension.where(url = 'http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance').extension.value.reference",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.xpath">xpath</a>" : "f:Encounter/f:extension[@url='http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance']/f:extension/f:valueReference/f:reference/@value",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.xpathUsage">xpathUsage</a>" : "normal"
+}</pre>
+</body>
+</html>

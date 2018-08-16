@@ -1,0 +1,176 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-profile-nutritionorder-r4-maps</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<a name="workflow"> </a><h3>Mappings for Workflow Pattern (http://hl7.org/fhir/workflow)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD NutritionOrder</b></td></tr>
+ <tr><td>NutritionOrder</td><td>Request</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Request.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Request.instantiatesCanonical</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>Request.instantiatesUri</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>Request.instantiates</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Request.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>Request.intent</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>Request.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>Request.context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dateTime</td><td>Request.authoredOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderer</td><td>Request.requester</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;oralDiet</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>Request.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nutrient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;texture</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foodType</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fluidConsistencyType</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supplement</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>Request.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;enteralFormula</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baseFormulaType</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additiveType</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;administration</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>Request.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;administrationInstruction</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Request.note</td> </tr>
+</table>
+<a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (http://hl7.org/v2)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD NutritionOrder</b></td></tr>
+ <tr><td>NutritionOrder</td><td>ORC / ODS</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ORC-2/ORC-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Varies by domain</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>Varies by domain</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>Varies by domain</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>ORC-1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>PID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>PV1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dateTime</td><td>ORC-9</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderer</td><td>ORC-12</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;foodPreferenceModifier</td><td>ODS-1 Value = &quot;P&quot;,ODS-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;oralDiet</td><td>ODS-1 Value = &quot;D&quot;</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>ODS-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>ODS-2, TQ1-7/8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nutrient</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amount</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;texture</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foodType</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fluidConsistencyType</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supplement</td><td>ODS-1 Value = &quot;P&quot;</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>ODS-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;productName</td><td>ODS-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>ODS-2,TQ1-7/8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>TQ1-2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;enteralFormula</td><td>ODS-1 Value coded for enteral</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baseFormulaType</td><td>ODS-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baseFormulaProductName</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additiveType</td><td>ODS-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additiveProductName</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;caloricDensity</td><td>TQ1-2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;routeofAdministration</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;administration</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>ODS-2,TQ1-7/8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>TQ1-2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rate[x]</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxVolumeToDeliver</td><td>ODS-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;administrationInstruction</td><td>ODS-4</td> </tr>
+</table>
+<a name="rim"> </a><h3>Mappings for RIM Mapping (http://hl7.org/v3)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD NutritionOrder</b></td></tr>
+ <tr><td>NutritionOrder</td><td>Entity. Role, or Act</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>.outboundRelationship[typeCode=DEFN].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>.outboundRelationship[typeCode=DEFN].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiates</td><td>.outboundRelationship[typeCode=DEFN].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>.moodCode (nuances beyond PRP/PLAN/RQO would need to be elsewhere)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>.participation[typeCode=SBJ].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dateTime</td><td>author.time</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderer</td><td>.participation[typeCode=AUT].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;allergyIntolerance</td><td>.outboundRelationship[typeCode=RSON].target[classCode=OBS, moodCode=EVN]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;foodPreferenceModifier</td><td>.outboundRelationship [typeCode =COMP], target [classCode=PROC, moodCode=EVN, code=NutritionModificationType]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;excludeFoodModifier</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;oralDiet</td><td>oralDiet .outboundRelationship [typeCode =COMP], target [classCode=SPLY, moodCode=RQO, code=OralDietSupplyType]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>.expectedUseTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nutrient</td><td>.participation[typeCode=PRD].role[classCode=MANU], manufacturedFoodKind</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amount</td><td>.quantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;texture</td><td>.inboundRelationship [typeCode =COMP], target [classCode=PROC, moodCode=EVN, code=DietTextureModificationType]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foodType</td><td>.participation[typeCode=PRD].role[classCode=MANU], manufacturedFoodKind; .code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fluidConsistencyType</td><td>.code  (Not differentiated from dietTextureModificationType in HL7 v3)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction</td><td>.text</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supplement</td><td>.outboundRelationship [typeCode =COMP], target [classCode=SPLY, moodCode=RQO, code=SUPPLEMENT]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>.participation[typeCode=PRD].role[classCode=MANU], manufacturedFoodKind; .code (NutritionalSupplementType)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;productName</td><td>.id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>.quantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction</td><td>.text</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;enteralFormula</td><td>.outboundRelationship [typeCode =COMP], target [classCode=SPLY, moodCode=RQO, code=FORMULA]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baseFormulaType</td><td>.participation[typeCode=PRD].role[classCode=MANU], manufacturedFoodKind; .code (NutritionalFormulaType)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baseFormulaProductName</td><td>.id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additiveType</td><td>N/A (not differentiated from NutritionalFormulaType in HL7 v3)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additiveProductName</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;caloricDensity</td><td>.quantity (caloricDensity)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;routeofAdministration</td><td>.routeCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;administration</td><td>.outboundRelationship [typeCode =COMP], target [classCode=SBADM, moodCode=RQO]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;schedule</td><td>.effectiveUseTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>.doseQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rate[x]</td><td>.rateQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxVolumeToDeliver</td><td>.maxDoseQuantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;administrationInstruction</td><td>N/A</td> </tr>
+</table>
+<a name="w5"> </a><h3>Mappings for FiveWs Pattern (http://hl7.org/fhir/fivews)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD NutritionOrder</b></td></tr>
+ <tr><td>NutritionOrder</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>FiveWs.class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>FiveWs.subject[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>FiveWs.context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dateTime</td><td>FiveWs.recorded</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderer</td><td>FiveWs.author</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;oralDiet</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nutrient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifier</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supplement</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;enteralFormula</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baseFormulaType</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additiveType</td><td>FiveWs.what[x]</td> </tr>
+</table>
+</body>
+</html>

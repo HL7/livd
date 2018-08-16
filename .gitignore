@@ -43,13 +43,12 @@ Thumbs.db
 # FHIR IG Publisher local build directories #
 #############################################
 
-generated_output/qa
-generated_output/temp
 output
-archived
-validation
-validateme
-my_notes
+/temp
+*.dropbox
+/src/resources/desktop.ini
+src/.DS_Store
+.DS_Store
 
 # Altova files #
 ################

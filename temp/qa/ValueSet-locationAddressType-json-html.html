@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+  <title>ValueSet-locationAddressType-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.id">id</a>" : "locationAddressType",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;CRD Location Address Types&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Address codes allowed for CRD locations - those that are physical addresses&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://build.fhir.org/codesystem-address-type.html&quot;&gt;&lt;code&gt;http://hl7.org/fhir/address-type&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://build.fhir.org/codesystem-address-type.html#address-type-both&quot;&gt;both&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Postal &amp;amp; Physical&lt;/td&gt;&lt;td&gt;An address that is both physical and postal.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://build.fhir.org/codesystem-address-type.html#address-type-physical&quot;&gt;physical&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physical&lt;/td&gt;&lt;td&gt;A physical address that can be visited.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/davinci-crd/ValueSet/locationAddressType",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.version">version</a>" : "current",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.name">name</a>" : "CRD Location Address Types",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.date">date</a>" : "2018-08-15T14:16:32-05:00",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.description">description</a>" : "Address codes allowed for CRD locations - those that are physical addresses",
+  "<a href="http://build.fhir.org/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://build.fhir.org/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.system">system</a>" : "http://hl7.org/fhir/address-type",
+        "<a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "both"
+          },
+          {
+            "<a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "physical"
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+</body>
+</html>

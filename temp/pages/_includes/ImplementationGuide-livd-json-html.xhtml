@@ -1,0 +1,130 @@
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide">resourceType</a>" : "ImplementationGuide",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.id">id</a>" : "livd",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;LIVD IG&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://hl7.org/fhir/us/livd/ImplementationGuide/livd&lt;/pre&gt;&lt;div&gt;&lt;p&gt;Recommended LOINC mappings for IVD Devices&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.url">url</a>" : "http://hl7.org/fhir/us/livd/ImplementationGuide/livd",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.version">version</a>" : "current",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a>" : "LIVD IG",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.experimental">experimental</a>" : false,
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "HL7 International",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.description">description</a>" : "Recommended LOINC mappings for IVD Devices",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "001"
+        }
+      ]
+    }
+  ],
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.packageId">packageId</a>" : "hl7.fhir.uv.livd",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.license">license</a>" : "CC0-1.0",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhirVersion</a>" : "3.4.0",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">definition</a>" : {
+    "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package">package</a>" : [
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.id">id</a>" : "profiles",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">name</a>" : "Profiles",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.description">description</a>" : "Profiles to be supported by EHRs and payor systems conforming to this implementation guide"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.id">id</a>" : "extensions",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">name</a>" : "Extensions",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.description">description</a>" : "Extensions defined as part of this implementation guide"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.id">id</a>" : "terminology",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">name</a>" : "Terminology",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.description">description</a>" : "Value Sets and/or code systems defined as part of this implementation guide"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.id">id</a>" : "conceptmap-uv-livd-spreadsheet.xml",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">name</a>" : "LIVD ConceptMap"
+      }
+    ],
+    "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>" : [
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "valueset-conceptmap-livd-desc-prop.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/conceptmap-livd-desc-prop"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "ConceptMapLIVDDescriptionProperty",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">package</a>" : "conceptmap-uv-livd-spreadsheet.xml"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "conceptmap-livd-desc-prop.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/conceptmap-livd-desc-prop"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "ConceptMapLIVDDescriptionProperty",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">package</a>" : "conceptmap-uv-livd-spreadsheet.xml"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "conceptmap-uv-livd.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/conceptmap-uv-livd"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "A map from one set of concepts to one or more other concepts",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">package</a>" : "conceptmap-uv-livd-spreadsheet.xml"
+      }
+    ],
+    "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page">page</a>" : {
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "toc.html",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Table of Contents",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "html",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "introduction.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "LIVD Introduction",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "general.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "General Principles and Design",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "credits.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Credits",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+            }
+          ]
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "artifacts.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Artifact List",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "conceptmap-uv-livd.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "LIVD ConceptMap",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}</pre>

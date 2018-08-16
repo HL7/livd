@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+  <title>ValueSet-coverageClass-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ValueSet;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;coverageClass&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;CRD Coverage Classes&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Restriction of coverage classes for CRD purposes&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/coverage-class&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html#coverage-class-group\&quot;&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Group&lt;/td&gt;&lt;td&gt;An employee group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html#coverage-class-subgroup\&quot;&gt;subgroup&lt;/a&gt;&lt;/td&gt;&lt;td&gt;SubGroup&lt;/td&gt;&lt;td&gt;A sub-group of an employee group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html#coverage-class-plan\&quot;&gt;plan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plan&lt;/td&gt;&lt;td&gt;A specific suite of benefits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html#coverage-class-subplan\&quot;&gt;subplan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;SubPlan&lt;/td&gt;&lt;td&gt;A subset of a specific suite of benefits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html#coverage-class-class\&quot;&gt;class&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Class&lt;/td&gt;&lt;td&gt;A class of benefits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html#coverage-class-subclass\&quot;&gt;subclass&lt;/a&gt;&lt;/td&gt;&lt;td&gt;SubClass&lt;/td&gt;&lt;td&gt;A subset of a class of benefits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/codesystem-coverage-class.html#coverage-class-sequence\&quot;&gt;sequence&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sequence&lt;/td&gt;&lt;td&gt;A sequence number associated with a short-term continuance of the coverage.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/davinci-crd/ValueSet/coverageClass&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;current&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;CRD Coverage Classes&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2018-08-15T14:16:32-05:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Restriction of coverage classes for CRD purposes&quot;];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/coverage-class&quot; ];
+       <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;group&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;subgroup&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;plan&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;subplan&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;class&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;subclass&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;sequence&quot; ]       ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

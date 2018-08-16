@@ -1,0 +1,1470 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-profile-supplyrequest-r4-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition">resourceType</a>" : "StructureDefinition",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.id">id</a>" : "profile-supplyrequest-r4",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;The logical name of the element&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Information about the use of the element&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Minimum and Maximum # of times the the element can appear in the instance&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;width: 100px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Reference to the type of the element&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Additional information about the element&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;http://build.fhir.org/help16.png&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest&quot;&gt;SupplyRequest&lt;/a&gt;&lt;a name=&quot;SupplyRequest&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_extension_simple.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Simple Extension&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.extension:SupplyRequestInsurance&quot; title=&quot;Extension URL = http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance&quot;&gt;ext-insurance&lt;/a&gt;&lt;a name=&quot;SupplyRequest.extension&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/references.html&quot;&gt;Reference&lt;/a&gt;(&lt;a href=&quot;profile-coverage-r4.html&quot;&gt;CRD Coverage&lt;/a&gt;)&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Insurance&lt;br/&gt;&lt;span style=&quot;font-weight:bold&quot;&gt;URL: &lt;/span&gt;&lt;a href=&quot;http://build.fhir.org/extension-ext-insurance.html&quot;&gt;http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance&lt;/a&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.identifier&quot;&gt;identifier&lt;/a&gt;&lt;a name=&quot;SupplyRequest.identifier&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#Identifier&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_primitive.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Primitive Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.status&quot;&gt;status&lt;/a&gt;&lt;a name=&quot;SupplyRequest.status&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;1..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#code&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;font-weight:bold&quot;&gt;Fixed Value: &lt;/span&gt;&lt;span style=&quot;color: darkgreen&quot;&gt;draft&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.category&quot;&gt;category&lt;/a&gt;&lt;a name=&quot;SupplyRequest.category&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.priority&quot;&gt;priority&lt;/a&gt;&lt;a name=&quot;SupplyRequest.priority&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#code&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_choice.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Choice of Types&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.item[x]&quot;&gt;item[x]&lt;/a&gt;&lt;a name=&quot;SupplyRequest.item_x_&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/references.html&quot;&gt;Reference&lt;/a&gt;(&lt;a href=&quot;profile-medication-r4.html&quot;&gt;CRD Medication&lt;/a&gt; | &lt;a href=&quot;profile-device-r4.html&quot;&gt;CRD Device&lt;/a&gt;), &lt;a href=&quot;http://build.fhir.org/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.quantity&quot;&gt;quantity&lt;/a&gt;&lt;a name=&quot;SupplyRequest.quantity&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#Quantity&quot;&gt;Quantity&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.parameter&quot;&gt;parameter&lt;/a&gt;&lt;a name=&quot;SupplyRequest.parameter&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#BackboneElement&quot;&gt;BackboneElement&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.occurrence[x]&quot;&gt;occurrence[x]&lt;/a&gt;&lt;a name=&quot;SupplyRequest.occurrence_x_&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#dateTime&quot;&gt;dateTime&lt;/a&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;, &lt;/span&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#Period&quot;&gt;Period&lt;/a&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;, &lt;/span&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#Timing&quot;&gt;Timing&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.authoredOn&quot;&gt;authoredOn&lt;/a&gt;&lt;a name=&quot;SupplyRequest.authoredOn&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;1..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#dateTime&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_reference.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Reference to another Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.requester&quot;&gt;requester&lt;/a&gt;&lt;a name=&quot;SupplyRequest.requester&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;1..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/references.html&quot;&gt;Reference&lt;/a&gt;(&lt;a href=&quot;profile-practitioner-r4.html&quot;&gt;CRD Practitioner&lt;/a&gt; | &lt;a href=&quot;profile-practitionerrole-r4.html&quot;&gt;CRD PractitionerRole&lt;/a&gt;)&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_reference.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Reference to another Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.supplier&quot;&gt;supplier&lt;/a&gt;&lt;a name=&quot;SupplyRequest.supplier&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;..&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/references.html&quot;&gt;Reference&lt;/a&gt;(&lt;a href=&quot;profile-organization-r4.html&quot;&gt;CRD Organization&lt;/a&gt;)&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.reasonCode&quot;&gt;reasonCode&lt;/a&gt;&lt;a name=&quot;SupplyRequest.reasonCode&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.reasonReference&quot;&gt;reasonReference&lt;/a&gt;&lt;a name=&quot;SupplyRequest.reasonReference&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/references.html&quot;&gt;Reference&lt;/a&gt;(&lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/condition.html&quot;&gt;Condition&lt;/a&gt; | &lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/observation.html&quot;&gt;Observation&lt;/a&gt; | &lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/diagnosticreport.html&quot;&gt;DiagnosticReport&lt;/a&gt; | &lt;a style=&quot;opacity: 0.4&quot; href=&quot;http://build.fhir.org/documentreference.html&quot;&gt;DocumentReference&lt;/a&gt;)&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_reference.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Reference to another Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.deliverFrom&quot;&gt;deliverFrom&lt;/a&gt;&lt;a name=&quot;SupplyRequest.deliverFrom&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/references.html&quot;&gt;Reference&lt;/a&gt;(&lt;a href=&quot;profile-organization-r4.html&quot;&gt;CRD Organization&lt;/a&gt; | &lt;a href=&quot;profile-location-r4.html&quot;&gt;CRD Location&lt;/a&gt;)&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_reference.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Reference to another Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;profile-supplyrequest-r4-definitions.html#SupplyRequest.deliverTo&quot;&gt;deliverTo&lt;/a&gt;&lt;a name=&quot;SupplyRequest.deliverTo&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.4&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/references.html&quot;&gt;Reference&lt;/a&gt;(&lt;a href=&quot;profile-organization-r4.html&quot;&gt;CRD Organization&lt;/a&gt; | &lt;a href=&quot;profile-location-r4.html&quot;&gt;CRD Location&lt;/a&gt; | &lt;a href=&quot;profile-patient-r4.html&quot;&gt;CRD Patient&lt;/a&gt;)&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;5&quot; class=&quot;hierarchy&quot;&gt;&lt;br/&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;http://build.fhir.org/help16.png&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.url">url</a>" : "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-supplyrequest-r4",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.version">version</a>" : "current",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a>" : "CRD SupplyRequest",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a>" : "2018-07-25",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "DaVinci",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.description">description</a>" : "Constraints on Service Request",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a>" : "3.4.0",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping">mapping</a>" : [
+    {
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a>" : "workflow",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.uri">uri</a>" : "http://hl7.org/fhir/workflow",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.name">name</a>" : "Workflow Pattern"
+    },
+    {
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a>" : "v2",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.uri">uri</a>" : "http://hl7.org/v2",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.name">name</a>" : "HL7 v2 Mapping"
+    },
+    {
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a>" : "rim",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.uri">uri</a>" : "http://hl7.org/v3",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.name">name</a>" : "RIM Mapping"
+    },
+    {
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a>" : "w5",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.uri">uri</a>" : "http://hl7.org/fhir/fivews",
+      "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.name">name</a>" : "FiveWs Pattern"
+    }
+  ],
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.kind">kind</a>" : "resource",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.abstract">abstract</a>" : false,
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.type">type</a>" : "SupplyRequest",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.baseDefinition">baseDefinition</a>" : "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.derivation">derivation</a>" : "constraint",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot">snapshot</a>" : {
+    "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Request for a medication, substance or device",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A record of a request for a medication, substance or device used in the healthcare setting.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.contained.empty()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(parent::f:contained and f:contained)",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "DomainResource"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-4",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "DomainResource"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-3",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(exists(for $contained in f:contained return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "DomainResource"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.extension">extension</a>" : [
+              {
+                "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+                "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueBoolean</a>" : true
+              },
+              {
+                "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation",
+                "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueMarkdown</a>" : "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a guman readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
+              }
+            ],
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-6",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "warning",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "A resource should have narrative for robust management",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "text.div.exists()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:text/h:div)",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "DomainResource"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If a resource is contained in another resource, it SHALL NOT have a security label",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.meta.security.empty()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(exists(f:contained/*/f:meta/f:security))",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "DomainResource"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Entity. Role, or Act"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ORC"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Act[moodCode&lt;=INT]"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Logical id of this artifact",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "The only time that a resource does not have an id is when it is being submitted to the server using a create operation.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Resource.id",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "id"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.meta",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.meta",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Metadata about the resource",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Resource.meta",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Meta"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.implicitRules",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.implicitRules",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "A set of rules under which this content was created",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Resource.implicitRules",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "uri"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.language",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.language",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Language of the resource content",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The base language in which the resource is written.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Resource.language",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCanonical</a>" : "http://hl7.org/fhir/ValueSet/all-languages"
+            },
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Language"
+            },
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueBoolean</a>" : true
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "preferred",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A human language.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/languages"
+        }
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.text",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.text",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Text summary of the resource, for human interpretation",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded information is added later.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "DomainResource.text",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Narrative"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Act.text?"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.contained",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.contained",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Contained, inline Resources",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "DomainResource.contained",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Resource"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.id">id</a>" : "3",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
+              "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a>" : "url"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a>" : false,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a>" : "open"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "DomainResource.extension",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.extension:SupplyRequestInsurance",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "SupplyRequestInsurance",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "DomainResource.extension",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
+          "ele-1"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "All FHIR elements must have a @value or children",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "hasValue() or (children().count() &gt; id.count())",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Element"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ext-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Extension"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.modifierExtension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.modifierExtension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extensions that cannot be ignored",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "extensions",
+          "user content"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "DomainResource.modifierExtension",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.identifier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.identifier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Unique identifier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Unique identifier for this supply request.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "This is assigned by the requester, and used to refer to this order in other external standards.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.identifier",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Identifier"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.identifier"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.identifier"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ORC.2, ORC.3"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".identifier"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.status",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.status",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "draft | active | suspended +",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Status of the supply request.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.status",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a>" : "draft",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "SupplyRequestStatus"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Status of the supply request.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/supplyrequest-status"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.status"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.status"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ORC.5"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".status"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.category",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.category",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The kind of supply (central, non-stock, etc.)",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Category of supply, e.g.  central, non-stock, etc. This is used to support work flows associated with the supply process.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "potentially relevant for CRD in some situations.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "kind"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.category",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "SupplyRequestKind"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Category of supply request.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/supplyrequest-kind"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.class"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".code"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.priority",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.priority",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "routine | urgent | asap | stat",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Indicates how quickly this SupplyRequest should be addressed with respect to other requests.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.priority",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.meaningWhenMissing">meaningWhenMissing</a>" : "If missing, this task should be performed with normal priority",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "RequestPriority"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Identifies the level of importance to be assigned to actioning the request.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/request-priority"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.priority"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.grade"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "TQ1.9"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".priorityCode"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.item[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.item[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Medication, Substance, or Device requested to be supplied",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The item that is requested to be supplied. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Note that there's a difference between a prescription - an instruction to take a medication, along with a (sometimes) implicit supply, and an explicit request to supply, with no explicit instructions.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.item[x]",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 1,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-medication-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-device-r4"
+            ]
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "SupplyRequestItem"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The item that was requested.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/supply-item"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.code"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".code"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.quantity",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.quantity",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The requested amount of the item indicated",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The amount that is being ordered of the indicated item.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.quantity",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 1,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Quantity"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".quantity"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.parameter",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.parameter",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Ordered item details",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Specific parameters for the ordered item.  For example, the size of the indicated item.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.parameter",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "BackboneElement"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "All FHIR elements must have a @value or children",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "hasValue() or (children().count() &gt; id.count())",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Element"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.what[x]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Varies by domain"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.parameter.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.parameter.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a>" : [
+          "xmlAttr"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "xml:id (or equivalent in JSON)",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Element.id",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.parameter.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.parameter.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Additional content defined by implementations",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "extensions",
+          "user content"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Element.extension",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.parameter.modifierExtension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.parameter.modifierExtension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extensions that cannot be ignored if unrecognized",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "BackboneElement.modifierExtension",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.parameter.code",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.parameter.code",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Item detail",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A code or string that identifies the device detail being asserted.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.parameter.code",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "ParameterCode"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A code that identifies the device detail."
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.what[x]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Varies by domain"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".code"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.parameter.value[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.parameter.value[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Value of detail",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The value of the device detail.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Range means device should have a value that falls somewhere within the specified range.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.parameter.value[x]",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Quantity"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Range"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "boolean"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.what[x]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Varies by domain"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".code"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.occurrence[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.occurrence[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "When the request should be fulfilled",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "When the request should be fulfilled.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "when",
+          "timing"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.occurrence[x]",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "dateTime"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Period"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Timing"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.occurrence[x]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.planned"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Accompanying TQ1/TQ2 segments"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".effectiveTime"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.authoredOn",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.authoredOn",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "When the request was made",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "When the request was made.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "date",
+          "createdOn",
+          "signedOn"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.authoredOn",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "dateTime"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.authoredOn"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.recorded"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ORC.9"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".participation[typeCode=AUT].time"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.requester",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.requester",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Individual making the request",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The device, practitioner, etc. who initiated the request.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "author",
+          "source"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.requester",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-practitioner-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-practitionerrole-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.requester"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.author"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ORC.12"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".participation[typeCode=AUT].role"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.supplier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.supplier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Who is intended to fulfill the request",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Who is intended to fulfill the request.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "performer"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.supplier",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-organization-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.performer"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.actor"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "PRT"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.reasonCode",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.reasonCode",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The reason why the supply item was requested",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The reason why the supply item was requested.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "potentially relevant for CRD in some situations.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.reasonCode",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "SupplyRequestReason"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The reason why the supply item was requested.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/supplyrequest-reason"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.reasonCode"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.why[x]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ORC.16"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".reasonCode"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.reasonReference",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.reasonReference",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The reason why the supply item was requested",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The reason why the supply item was requested.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "potentially relevant for CRD in some situations.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.reasonReference",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/StructureDefinition/Condition",
+              "http://hl7.org/fhir/StructureDefinition/Observation",
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.reasonReference"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.why[x]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ORC.16"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".outboundRelationship[typeCode=RSON].target"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.deliverFrom",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.deliverFrom",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The origin of the supply",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Where the supply is expected to come from.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.deliverFrom",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-organization-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-location-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "PRT"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".participation"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.deliverTo",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.deliverTo",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The destination of the supply",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Where the supply is destined to go.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "SupplyRequest.deliverTo",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-organization-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-location-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-patient-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "PRT"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".participation"
+          }
+        ]
+      }
+    ]
+  },
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential">differential</a>" : {
+    "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.extension:SupplyRequestInsurance",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "SupplyRequestInsurance",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-insurance"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.identifier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.identifier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.status",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.status",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a>" : "draft",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.category",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.category",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "potentially relevant for CRD in some situations.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.priority",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.priority",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.item[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.item[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-medication-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-device-r4"
+            ]
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.quantity",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.quantity",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.parameter",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.parameter",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.occurrence[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.occurrence[x]",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.authoredOn",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.authoredOn",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.requester",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.requester",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-practitioner-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-practitionerrole-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.supplier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.supplier",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-organization-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.reasonCode",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.reasonCode",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "potentially relevant for CRD in some situations.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.reasonReference",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.reasonReference",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "potentially relevant for CRD in some situations.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.deliverFrom",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.deliverFrom",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-organization-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-location-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "SupplyRequest.deliverTo",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "SupplyRequest.deliverTo",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-organization-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-location-r4",
+              "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-patient-r4"
+            ]
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false
+      }
+    ]
+  }
+}</pre>
+</body>
+</html>

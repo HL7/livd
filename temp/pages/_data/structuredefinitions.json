@@ -1,0 +1,17 @@
+﻿{
+  "conceptmap-uv-livd": {
+    "index": 0,
+    "url": "http://hl7.org/fhir/us/livd/StructureDefinition/conceptmap-uv-livd",
+    "name": "A map from one set of concepts to one or more other concepts",
+    "path": "conceptmap-uv-livd.html",
+    "kind": "resource",
+    "type": "ConceptMap",
+    "base": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
+    "basename": "ConceptMap",
+    "basepath": "http://build.fhir.org/conceptmap.html",
+    "status": "draft",
+    "date": "Tue Aug 14 00:00:00 CDT 2018",
+    "publisher": "Health Level Seven, Inc. - Orders \u0026 Observations WG",
+    "description": "Explanation of what this profile contains/is for"
+  }
+}

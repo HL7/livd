@@ -1,0 +1,71 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-profile-patient-deident-r4-maps</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<a name="rim"> </a><h3>Mappings for RIM Mapping (http://hl7.org/v3)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD Deidentified Patient</b></td></tr>
+ <tr><td>Patient</td><td>Entity. Role, or Act</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>statusCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>addr</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;state</td><td>AD.part[parttype = STA]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;country</td><td>AD.part[parttype = CNT]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;maritalStatus</td><td>player[classCode=PSN]/maritalStatusCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;communication</td><td>LanguageCommunication</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;language</td><td>player[classCode=PSN|ANM and determinerCode=INSTANCE]/languageCommunication/code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;preferred</td><td>preferenceInd</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;generalPractitioner</td><td>subjectOf.CareEvent.performer.AssignedEntity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;managingOrganization</td><td>scoper</td> </tr>
+</table>
+<a name="cda"> </a><h3>Mappings for CDA (R2) (http://hl7.org/v3/cda)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD Deidentified Patient</b></td></tr>
+ <tr><td>Patient</td><td>ClinicalDocument.recordTarget.patientRole</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>.patient.administrativeGenderCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>.patient.birthTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>.addr</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;maritalStatus</td><td>.patient.maritalStatusCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;communication</td><td>patient.languageCommunication</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;language</td><td>.languageCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;preferred</td><td>.preferenceInd</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;generalPractitioner</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;managingOrganization</td><td>.providerOrganization</td> </tr>
+</table>
+<a name="w5"> </a><h3>Mappings for FiveWs Pattern (http://hl7.org/fhir/fivews)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD Deidentified Patient</b></td></tr>
+ <tr><td>Patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>FiveWs.status</td> </tr>
+</table>
+<a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (http://hl7.org/v2)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD Deidentified Patient</b></td></tr>
+ <tr><td>Patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>PID-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>PID-7</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>PID-11</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;state</td><td>XAD.4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;country</td><td>XAD.6</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;maritalStatus</td><td>PID-16</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;communication</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;language</td><td>PID-15, LAN-2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;preferred</td><td>PID-15</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;generalPractitioner</td><td>PD1-4</td> </tr>
+</table>
+<a name="loinc"> </a><h3>Mappings for LOINC code for the element (http://loinc.org)</h3><table class="grid">
+ <tr><td colspan="3"><b>CRD Deidentified Patient</b></td></tr>
+ <tr><td>Patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>21112-8</td> </tr>
+</table>
+</body>
+</html>
