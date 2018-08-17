@@ -97,6 +97,9 @@ Provide mapping between IICC spreadsheet column headers and FHIR components used
 
 Clarify that this is only using FHIR definitions, but does not depend on FHIR based APIs, RESTful services, SMART, or any other particular implementation.
 
+### Security
+
+Considering the initial transport methods expected to be deployed for the LIVD materials, specific security considerations are out of scope. However, once there is sufficient interest in deploying service based APIs, it is anticipated that this will be addressed in a future version of the IG.
 
 ### Underlying technologies
 

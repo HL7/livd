@@ -96,7 +96,17 @@
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="credits.html"/>
+          <nameUrl value="examples.html"/>
+          <title value="Examples"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="glossary.html"/>
+          <title value="Glossary"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="acknowledgements.html"/>
           <title value="Credits"/>
           <generation value="markdown"/>
         </page>

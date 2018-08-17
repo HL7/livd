@@ -2,7 +2,9 @@
   <li><a href="index.html">Introduction</a></li>
   <li><a href="general.html">General Principles and Design</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li><a href="credits.html">Credits</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="glossary.html">Glossary</a></li>
+  <li><a href="acknowledgements.html">Acknowledgements</a></li>
   <li><a href="{{site.data.fhir.path}}index.html">Core FHIR Spec</a></li>
 </ul>      
