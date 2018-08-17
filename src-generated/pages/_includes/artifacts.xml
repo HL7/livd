@@ -14,10 +14,17 @@
 <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
 <a name="1"> </a>
 <h3>Profiles </h3>
-<p>Profiles to be supported by EHRs and payor systems conforming to this implementation guide</p>
+<p>Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide</p>
 <p>
 <table>
 <tbody>
+<tr>
+<td style="column-width:30%">
+<a href="bundle-uv-livd.html">
+                        •  LIVD Bundle</a>
+</td>
+<td>Bundle profile for the LIVD project.</td>
+</tr>
 <tr>
 <td style="column-width:30%">
 <a href="conceptmap-uv-livd.html">

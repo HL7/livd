@@ -88,9 +88,12 @@
   "canonicalBase": "http://hl7.org/fhir/us/livd",
   "source": "livd.xml",
   "spreadsheets": [
+    "bundle-uv-livd-spreadsheet.xml",
     "conceptmap-uv-livd-spreadsheet.xml"
   ],
   "resources": {
+    "StructureDefinition/bundle-uv-livd":{
+    },
     "StructureDefinition/conceptmap-uv-livd":{
     }
   }

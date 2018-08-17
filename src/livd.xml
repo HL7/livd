@@ -17,11 +17,19 @@
   <definition>
     <!-- Note: Order of these spreadsheets matters -->
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="bundle-uv-livd-spreadsheet.xml"/>
+    </extension>
+    <!--
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="catalog-uv-livd-spreadsheet.xml"/>
+    </extension>
+    -->
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="conceptmap-uv-livd-spreadsheet.xml"/>
     </extension>
     <package id="profiles">
       <name value="Profiles"/>
-      <description value="Profiles to be supported by EHRs and payor systems conforming to this implementation guide"/>
+      <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide"/>
     </package>
     <package id="extensions">
       <name value="Extensions"/>
@@ -36,6 +44,32 @@
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the CG profiles"/>
     </package>-->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/bundle-uv-livd"/>
+      </reference>
+      <name value="LIVD Bundle"/>
+      <description value="Bundle profile for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <package value="profiles"/>
+    </resource>
+    <!-->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/catalog-uv-livd"/>
+      </reference>
+      <name value="LIVD Catalog"/>
+      <description value="Catalog profile for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <package value="profiles"/>
+    </resource>
+    -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
