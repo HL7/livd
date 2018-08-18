@@ -1,5 +1,3 @@
-### LIVD Acknowledgements
-
 The LIVD Implementation Guide is the result of a combined IICC and HL7 project team to express the content into FHIR profiles. The following individuals supported creating this guide:
 
 * Pam Banning - 3M

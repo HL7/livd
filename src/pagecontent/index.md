@@ -1,3 +1,12 @@
+<blockquote class="stu-note">
+<p>
+This specification is currently undergoing ballot and Connectathon testing.  The current ballot is For Comment Only, thus this ballot will not result in a publication.  Subsequent Connectathons and balloting, targeted for the January 2019 ballot cycle, are intended to drive toward a LIVD STU R1 version.  The IG is expected to undergo changes, possibly significantly, as part of that process.
+</p>
+<p>
+Feedback is welcome and may be submitted through the <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">FHIR gForge tracker</a>
+</p>
+</blockquote>
+
 ### Background
 
 The objective of this implementation guide is to define an In Vitro Diagnostic (IVD) industry format to facilitate the publication and exchange of suggested LOINC codes for vendor IVD test assays, based on either vendor IVD test transmission codes or manual test identification, for use by laboratory personnel or laboratory applications. It is not intended to cover information for other related activities, such as purchasing tests from a vendor. Expected systems using the format include Laboratory Information Systems (LIS), clinical middleware applications, databases, and terminology servers.
@@ -27,16 +36,6 @@ The implementation guide has an initial scope that does not address:
 * Which LOINC codes vendors should choose for their tests, or what content is needed to make this decision. It only addresses the format used to publish these associations, for use by laboratory personnel or laboratory applications.
 * What information is required to automatically set up a configuration between an IVD instrument and an IVD software system.
 
-### Ballot
-
-<blockquote class="stu-note">
-<p>
-This specification is currently undergoing ballot and Connectathon testing.  The current ballot is For Comment Only, thus this ballot will not result in a publication.  Subsequent Connectathons and balloting, targeted for the January 2019 ballot cycle, are intended to drive toward a LIVD STU R1 version.  The IG is expected to undergo changes, possibly significantly, as part of that process.
-</p>
-<p>
-Feedback is welcome and may be submitted through the <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">FHIR gForge tracker</a>
-</p>
-
-</blockquote>
+### Download
 
 The complete content of this implementation guide can be downloaded [here](full-ig.zip).

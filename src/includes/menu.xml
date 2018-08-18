@@ -6,5 +6,6 @@
   <li><a href="examples.html">Examples</a></li>
   <li><a href="glossary.html">Glossary</a></li>
   <li><a href="acknowledgements.html">Acknowledgements</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
   <li><a href="{{site.data.fhir.path}}index.html">Core FHIR Spec</a></li>
 </ul>      

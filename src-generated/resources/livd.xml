@@ -91,7 +91,12 @@
         </page>
         <page>
           <nameUrl value="acknowledgements.html"/>
-          <title value="Credits"/>
+          <title value="Acknowledgements"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Downloads"/>
           <generation value="markdown"/>
         </page>
       </page>
