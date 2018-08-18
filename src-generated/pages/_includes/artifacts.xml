@@ -32,6 +32,20 @@
 </td>
 <td>ConceptMap profile for the LIVD project.</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="codesystem-loinc-uv-livd.html">
+                        •  LIVD LOINC CodeSystem</a>
+</td>
+<td>CodeSystem profile for LOINC for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="valueset-uv-livd.html">
+                        •  LIVD ValueSet</a>
+</td>
+<td>ValueSet profile for the LIVD project.</td>
+</tr>
 </tbody>
 </table>
 </p>

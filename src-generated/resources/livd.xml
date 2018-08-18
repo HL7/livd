@@ -22,6 +22,8 @@
     </extension>
     -->
     
+    
+    
     <package id="profiles">
       <name value="Profiles"/>
       <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide"/>
@@ -54,6 +56,8 @@
       <package value="profiles"/>
     </resource>
     -->
+    
+    
     
     <!-->
     <resource>
@@ -112,6 +116,16 @@
 <page>
 <nameUrl value="conceptmap-uv-livd.html"/>
 <ns1:title xmlns:ns1="http://hl7.org/fhir" value="LIVD ConceptMap"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="codesystem-loinc-uv-livd.html"/>
+<ns2:title xmlns:ns2="http://hl7.org/fhir" value="LIVD LOINC CodeSystem"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="valueset-uv-livd.html"/>
+<ns3:title xmlns:ns3="http://hl7.org/fhir" value="LIVD ValueSet"/>
 <generation value="generated"/>
 </page>
 </page>

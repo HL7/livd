@@ -89,12 +89,18 @@
   "source": "livd.xml",
   "spreadsheets": [
     "bundle-uv-livd-spreadsheet.xml",
-    "conceptmap-uv-livd-spreadsheet.xml"
+    "conceptmap-uv-livd-spreadsheet.xml",
+    "codesystem-loinc-uv-livd-spreadsheet.xml",
+    "valueset-uv-livd-spreadsheet.xml"
   ],
   "resources": {
     "StructureDefinition/bundle-uv-livd":{
     },
     "StructureDefinition/conceptmap-uv-livd":{
+    },
+    "StructureDefinition/codesystem-loinc-uv-livd":{
+    },
+    "StructureDefinition/valueset-uv-livd":{
     }
   }
 }
