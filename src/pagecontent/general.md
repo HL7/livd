@@ -1,6 +1,6 @@
 ### Structure and Supported Mappings
 
-The basic structure that the LIVD Publication must support can be represented as follows, using the HL7® V2 message syntax of brackets ([…]) to identify optional items and braces ({…}) to identify repeatable items. The italic items are used to provide grouping and cardinality, while the bold items are actual data elements of the definition.
+The basic structure that the LIVD IG Publication must support can be represented as follows, using the HL7® V2 message syntax of brackets ([…]) to identify optional items and braces ({…}) to identify repeatable items. The italic items are used to provide grouping and cardinality, while the bold items are actual data elements of the definition.
 
 <ul>
 <li> *IVD LOINC Publication* begin
@@ -125,6 +125,9 @@ Provide mapping between IICC spreadsheet column headers and FHIR components used
 
 Clarify that this is only using FHIR definitions, but does not depend on FHIR based APIs, RESTful services, SMART, or any other particular implementation.
 
+### Security
+
+Considering the initial transport methods expected to be deployed for the LIVD materials, specific security considerations are out of scope. However, once there is sufficient interest in deploying service based APIs, it is anticipated that this will be addressed in a future version of the IG.
 
 ### Underlying technologies
 

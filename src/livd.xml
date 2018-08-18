@@ -82,6 +82,17 @@
       <exampleBoolean value="false"/>
       <package value="profiles"/>
     </resource>
+    <!-->
+    <resource>
+      <reference>
+        <reference value="ValueSet/coverageClass"/>
+      </reference>
+      <name value="CRD Coverage Classes"/>
+      <description value="TODO"/>
+      <exampleBoolean value="false"/>
+      <package value="terminology"/>
+    </resource>
+    -->
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>

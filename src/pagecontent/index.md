@@ -1,10 +1,10 @@
 ### Background
-Background
+
 The objective of this implementation guide is to define an In Vitro Diagnostic (IVD) industry format to facilitate the publication and exchange of suggested LOINC codes for vendor IVD test assays, based on either vendor IVD test transmission codes or manual test identification, for use by laboratory personnel or laboratory applications. It is not intended to cover information for other related activities, such as purchasing tests from a vendor. Expected systems using the format include Laboratory Information Systems (LIS), clinical middleware applications, databases, and terminology servers.
 
-This proposal will define a digital format that can be easily:
+This implementation guide defines a digital format that can be easily:
 
-* Used as-is by IVD software systems to automate the mapping between vendor IVD test transmission codes and LOINC codes.
+* Used as-is by IVD software systems to guide the mapping between vendor IVD test transmission codes and LOINC codes.
 * Transformed into an alternate format, such as an Excel spreadsheet, to support the manual selection of LOINC codes for results produced by vendor IVD tests used by the laboratory.
 
 Both vendor-defined IVD tests performed by a vendor IVD instrument and vendor-defined manual IVD tests are in scope.
@@ -16,6 +16,7 @@ By voluntarily adopting the format described here as an industry convention, IVD
 Ultimately, it is expected that the LOINC codes selected by manufacturers would be reviewed by a common party (e.g. Regenstrief) for correctness and consistency across vendors, and also that the industry would establish conventions for the storage and access of the IVD vendor LOINC publications. The effort required for these objectives will also be reduced by having this standard publication format and associated content.
 
 ### Out of Scope
+
 The implementation guide has an initial scope that does not address:
 
 * The mapping of IVD Test Orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD Test Orders and IVD Test Results are related, information required for IVD Test Order mapping should be provided by a separate mapping table.
@@ -30,7 +31,7 @@ The implementation guide has an initial scope that does not address:
 
 <blockquote class="stu-note">
 <p>
-This specification is currently undergoing ballot and connectathon testing.  It is expected to evolve, possibly significantly, as part of that process.
+This specification is currently undergoing ballot and Connectathon testing.  The current ballot is For Comment Only, thus this ballot will not result in a publication.  Subsequent Connectathons and balloting, targeted for the January 2019 ballot cycle, are intended to drive toward a LIVD STU R1 version.  The IG is expected to undergo changes, possibly significantly, as part of that process.
 </p>
 <p>
 Feedback is welcome and may be submitted through the <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">FHIR gForge tracker</a>

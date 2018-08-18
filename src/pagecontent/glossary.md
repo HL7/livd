@@ -1,7 +1,5 @@
 ### LIVD Glossary
 
-LIVD Glossary
-
 **Analyte:** CLIA defines an analyte as “a substance or constituent for which the laboratory conducts testing.”[1] Lab Tests Online indicates in lay terms, it may be called a test[2].
 
 Some laboratories and IVD vendors may use the term parameter instead of analyte. Others may use assay to describe the test process. Synonyms: parameter, assay, result.
