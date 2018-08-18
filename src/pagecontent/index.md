@@ -35,7 +35,3 @@ The implementation guide has an initial scope that does not address:
 * Transmitting LOINC codes directly from IVD instruments, leaving that content to be represented by vendor-defined codes due to issues in achieving one-to-one appropriate LOINC codes, as discussed in the Data Definition section.
 * Which LOINC codes vendors should choose for their tests, or what content is needed to make this decision. It only addresses the format used to publish these associations, for use by laboratory personnel or laboratory applications.
 * What information is required to automatically set up a configuration between an IVD instrument and an IVD software system.
-
-### Download
-
-The complete content of this implementation guide can be downloaded [here](full-ig.zip).
