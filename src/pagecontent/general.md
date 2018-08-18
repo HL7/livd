@@ -1,45 +1,49 @@
 ### Structure and Supported Mappings
 
-The basic structure that the LIVD IG Publication must support can be represented as follows, using the HL7® V2 message syntax of brackets ([…]) to identify optional items and braces ({…}) to identify repeatable items. The italic items are used to provide grouping and cardinality, while the bold items are actual data elements of the definition.
+The basic structure that the LIVD Publication must support can be represented as follows, using the HL7® V2 message syntax of brackets ([…]) to identify optional items and braces ({…}) to identify repeatable items. The italic items are used to provide grouping and cardinality, while the bold items are actual data elements of the definition.
 
 <ul>
-<li> *IVD LOINC Publication* begin
-<ul>
-<li> **Vendor Publication**
-<li> {*Vendor Equipment Mapping* begin
-<ul>
-<li> **Equipment**
-<li> {*IVD Test Mapping* begin
-<ul>
-<li> **IVD Test Result**
-<li> [**LOINC**]
-</ul>
-<li> *IVD Test Mapping* end}
-</ul>
-<li>
-</ul>
-<li> *Vendor Equipment Mapping* end}
-</ul>
-<li> *IVD LOINC Publication* end
+     <li> *IVD LOINC Publication* begin 
+         <ul>
+             <li> **Vendor Publication** </li>
+             <li> {*Vendor Equipment Mapping* begin 
+                <ul>
+                     <li> **Equipment** </li>
+                     <li> {*IVD Test Mapping* begin
+                         <ul>
+                             <li> **IVD Test Result** </li>
+                             <li> [**LOINC**] </li>
+                         </ul>
+                     </li>
+                     <li> *IVD Test Mapping* end} </li>
+                 </ul>
+             </li>
+             <li> *Vendor Equipment Mapping* end} </li>
+        </ul>
+     </li>
+     <li> *IVD LOINC Publication* end </li>
 </ul>
 
 The implementation guide supports the following mappings:
 
 <ul>
-<li> One vendor **_IVD Test Result_** to many **_LOINC_**s
-<ul>
-<li> This is a very common occurrence. For example, an IVD test for serum glucose could map to a LOINC code for a mass concentration (e.g. mg/dL) or one that defines a substance concentration (e.g. mol/L). Or, a urine albumin could map to a LOINC test for a 24 hour excretion rate with units of mg/(24.h),  versus one for a random urine with unit of md/dL.
-<li> The structure of the data definition naturally supports this relationship.
-</ul>
-<li> One **_LOINC_** to many vendor **_IVD Test Results_**
-<ul>
-<li> This is a much less common occurrence.
-<ul>
-<li> For example, an IVD instrument may distinguish stat tests from routine tests by the IVD test code. In this case, the LOINC [13969-1] Creatine kinase.MB [Mass/volume] in Serum or Plasma is associated with two **_IVD Test Results_**, depending if the test is routine or stat (prioritized).
-<li> Or, consider a susceptibility test that has different IVD Test IDs based on the original specimen source. In this case, the LOINC [6932-8] Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC), which is named for testing on the isolate, could be associated with multiple **_IVD Test Results_** for one IVD Instrument depending on the clinical context. For example, the break points are different for suspected meningitis versus blood infections and to date LOINC has only distinguished test codes by suspected source of infection for some antibiotic susceptibility codes.
-</ul>
-<li> The structure of the data definition supports this relationship through repeating LOINC data content across multiple IVD Test Results.
-</ul>
+     <li> One vendor **_IVD Test Result_** to many **_LOINC_**s
+         <ul>
+             <li> This is a very common occurrence. For example, an IVD test for serum glucose could map to a LOINC code for a mass concentration (e.g. mg/dL) or one that defines a substance concentration (e.g. mol/L). Or, a urine albumin could map to a LOINC test for a 24 hour excretion rate with units of mg/(24.h),  versus one for a random urine with unit of md/dL.</li>
+            <li> The structure of the data definition naturally supports this relationship.</li>
+         </ul>
+     </li>
+     <li> One **_LOINC_** to many vendor **_IVD Test Results_**
+         <ul>
+             <li> This is a much less common occurrence.
+                  <ul>
+                     <li> For example, an IVD instrument may distinguish stat tests from routine tests by the IVD test code. In this case, the LOINC [13969-1] Creatine kinase.MB [Mass/volume] in Serum or Plasma is associated with two **_IVD Test Results_**, depending if the test is routine or stat (prioritized).</li>
+                     <li> Or, consider a susceptibility test that has different IVD Test IDs based on the original specimen source. In this case, the LOINC [6932-8] Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC), which is named for testing on the isolate, could be associated with multiple **_IVD Test Results_** for one IVD Instrument depending on the clinical context. For example, the break points are different for suspected meningitis versus blood infections and to date LOINC has only distinguished test codes by suspected source of infection for some antibiotic susceptibility codes.</li>
+                 </ul>
+             </li>
+             <li> The structure of the data definition supports this relationship through repeating LOINC data content across multiple **_IVD Test Results_**. </li>
+        </ul>
+     </li>
 </ul>
 
 ### Data Definitions
@@ -69,13 +73,14 @@ Note that types and cardinality are aligned with values reported in LAW OBX-18 E
 The IVD Test Result components are aligned with values reported in OBX-3 Observation Identifier as applicable and expressed using the LIVD Observation Definition profile.
 
 <ul>
-<li> **_Vendor Analyte Code_** is one of two possible values:
-<ul>
-<li> For an automated test result, it contains **_Vendor Transmission Code_** used by the instrument when sending the test result to a health information system, such as an LIS.
-<li> For a manual test result, it is the **_Vendor Analyte Identifier_** for the test result produced by the Test Kit.
-</ul>
-<li> **_Vendor Analyte Name_** is human-readable text the vendor used to identify the analyte. The text might be displayed by the instrument or could be used within an assay insert.
-<li> **_Vendor Reference ID_** is an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.
+     <li> **_Vendor Analyte Code_** is one of two possible values:
+         <ul>
+             <li> For an automated test result, it contains **_Vendor Transmission Code_** used by the instrument when sending the test result to a health information system, such as an LIS.</li>
+             <li> For a manual test result, it is the **_Vendor Analyte Identifier_** for the test result produced by the Test Kit.</li>
+         </ul>
+     </li>
+     <li> **_Vendor Analyte Name_** is human-readable text the vendor used to identify the analyte. The text might be displayed by the instrument or could be used within an assay insert.</li>
+     <li> **_Vendor Reference ID_** is an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.</li>
 </ul>
 
 Additionally, various details on the Observation Definition that can aid in the mapping from the IVD Test Code to a LOINC are included as optional attributes, even though not referenced in the original IICC white paper.
@@ -85,25 +90,27 @@ Additionally, various details on the Observation Definition that can aid in the 
 The potential mappings of the IVD Analyte Code to LOINC code are captured in the LIVD Concept Map profile.  For each IVD Analyte Code and a suggested LOINC code, the following attributes are captured.
 
 <ul>
-<li> **_Vendor Specimen Description_** is human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.” The field is used to document the vendor description of the specimen used for the IVD test.
-<li> **_Vendor Result Description_** is human-readable text that provides information about the result that is produced.
-<ul>
-<li> For non-numeric results, this field should describe the result by including one of the following:
-<ul>
-<li> **Binary** – pos/neg, reactive/non-reactive.
-<li> **Ordinal** – none, few, many.
-<li> **Nominal** – the test can report none found or one or more possibilities from a taxonomy of choices, such as organism names.
-</ul>
-<li> Numeric results and associated units of measure:
-<ul>
-<li> For numeric results, this field should describe the result by including a representative unit of measure, preferably represented as a UCUM unit.
-<li> If one unit of measure is reported, then include it in this field.
-<li> If multiple units can be reported that can be converted to one another by a multiplicative scale factor independent of the analyte (such as mg/L and ug/dL), select one of the units as a representative unit.
-<li> If multiple units can be reported that cannot be converted by an analyte-independent scale factor (such as mol/L and as mg/L), then define a mapping for each unit. These different types of numeric results require their own LOINC codes – one for the test reported as molar concentration and one for the test reported as mass concentration. Similarly, the results of a urine analyte (e.g. Sodium) reported as either mmol/L (spot urine) versus mmol/(24.h) (24 hour urine) have different LOINC properties and map to two different LOINC codes. The same is true for viral loads which can be reported in units of copies/mL, Log (copies/mL), IU/mL and Log (IU)/mL; and none of which can be converted by a simple scale factor. These result types have different properties and thus different LOINC codes. In such cases, define a mapping for all units that are appropriate for this IVD test.
-<li> In some cases, the same IVD Test may be reported as a **Binary** result, or a spot numeric result of the mass concentration, etc. In such instances, the same **_IVD Test Result_** will map to multiple LOINCs. The Vendor Result Description should be used to assist the laboratory in manually selecting the appropriate LOINC for their laboratory. 
-</ul>
-</ul>
-<li> **_Vendor Comment_** is human-readable text clarification, such as “This is a STAT (prioritized) version of the test”. 
+     <li> **_Vendor Specimen Description_** is human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.” The field is used to document the vendor description of the specimen used for the IVD test.</li>
+     <li> **_Vendor Result Description_** is human-readable text that provides information about the result that is produced.
+         <ul>
+             <li> For non-numeric results, this field should describe the result by including one of the following:
+                 <ul>
+                     <li> **Binary** – pos/neg, reactive/non-reactive.</li>
+                     <li> **Ordinal** – none, few, many.</li>
+                     <li> **Nominal** – the test can report none found or one or more possibilities from a taxonomy of choices, such as organism names.</li>
+                 </ul>
+             </li>
+             <li> Numeric results and associated units of measure:
+                 <ul>
+                     <li> For numeric results, this field should describe the result by including a representative unit of measure, preferably represented as a UCUM unit.</li>
+                 <li> If one unit of measure is reported, then include it in this field.</li>
+                 <li> If multiple units can be reported that can be converted to one another by a multiplicative scale factor independent of the analyte (such as mg/L and ug/dL), select one of the units as a representative unit.</li>
+                 <li> If multiple units can be reported that cannot be converted by an analyte-independent scale factor (such as mol/L and as mg/L), then define a mapping for each unit. These different types of numeric results require their own LOINC codes – one for the test reported as molar concentration and one for the test reported as mass concentration. Similarly, the results of a urine analyte (e.g. Sodium) reported as either mmol/L (spot urine) versus mmol/(24.h) (24 hour urine) have different LOINC properties and map to two different LOINC codes. The same is true for viral loads which can be reported in units of copies/mL, Log (copies/mL), IU/mL and Log (IU)/mL; and none of which can be converted by a simple scale factor. These result types have different properties and thus different LOINC codes. In such cases, define a mapping for all units that are appropriate for this IVD test.</li>
+                 <li> In some cases, the same IVD Test may be reported as a **Binary** result, or a spot numeric result of the mass concentration, etc. In such instances, the same **_IVD Test Result_** will map to multiple LOINCs. The Vendor Result Description should be used to assist the laboratory in manually selecting the appropriate LOINC for their laboratory. 
+             </li>
+         </ul>
+     </li>
+     <li> **_Vendor Comment_** is human-readable text clarification, such as “This is a STAT (prioritized) version of the test”. </li>
 </ul>
 
 Note that **_Vendor Specimen Description_**, **_Vendor Result Description_**, and **_Vendor Comment_** are included to assist a laboratory in selecting the appropriate LOINC code(s) for the vendor IVD tests used by the laboratory. This information is not intended to be parsed by an IVD Software System that automates the mapping of vendor IVD transmission codes to LOINC codes. The inclusion of this information should reduce errors in the manual selection of LOINC codes by a laboratory.
@@ -125,9 +132,6 @@ Provide mapping between IICC spreadsheet column headers and FHIR components used
 
 Clarify that this is only using FHIR definitions, but does not depend on FHIR based APIs, RESTful services, SMART, or any other particular implementation.
 
-### Security
-
-Considering the initial transport methods expected to be deployed for the LIVD materials, specific security considerations are out of scope. However, once there is sufficient interest in deploying service based APIs, it is anticipated that this will be addressed in a future version of the IG.
 
 ### Underlying technologies
 
