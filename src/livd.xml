@@ -45,15 +45,19 @@
     </extension>
     <package id="profiles">
       <name value="Profiles"/>
-      <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide"/>
+      <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide."/>
     </package>
     <package id="extensions">
       <name value="Extensions"/>
-      <description value="Extensions defined as part of this implementation guide"/>
+      <description value="Extensions defined as part of this implementation guide."/>
     </package>
     <package id="terminology">
       <name value="Terminology"/>
-      <description value="Value Sets and/or code systems defined as part of this implementation guide"/>
+      <description value="Value Sets and/or code systems defined as part of this implementation guide.  
+      The &quot;LOINC Code System fragment for LIVD&quot; CodeSystem resource contains a sample set of LOINC codes.
+      The actual set of LOINC codes that will be used in a LIVD bundle instance would be based on the specific 
+      devices and LOINC mappings that are included.  This content is duplicated for LIVD to provide the source of
+      all of the needed content fully contained within the LIVD bundle."/>
     </package>
     <!-- Uncomment when we have some
     <package id="examples">
