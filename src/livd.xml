@@ -29,6 +29,12 @@
       <valueUri value="devicedefinition-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="devicemetric-uv-livd-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="entrydefinition-uv-livd-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="conceptmap-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
@@ -99,6 +105,30 @@
       </reference>
       <name value="LIVD DeviceDefinition"/>
       <description value="DeviceDefinition profile for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <package value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/devicemetric-uv-livd"/>
+      </reference>
+      <name value="LIVD DeviceMetric"/>
+      <description value="DeviceMetric profile for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <package value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/entrydefinition-uv-livd"/>
+      </reference>
+      <name value="LIVD EntryDefinition"/>
+      <description value="EntryDefinition profile for the LIVD project."/>
       <exampleBoolean value="false"/>
       <package value="profiles"/>
     </resource>

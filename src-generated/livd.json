@@ -92,6 +92,8 @@
     "catalog-uv-livd-spreadsheet.xml",
     "observationdefinition-uv-livd-spreadsheet.xml",
     "devicedefinition-uv-livd-spreadsheet.xml",
+    "devicemetric-uv-livd-spreadsheet.xml",
+    "entrydefinition-uv-livd-spreadsheet.xml",
     "conceptmap-uv-livd-spreadsheet.xml",
     "codesystem-loinc-uv-livd-spreadsheet.xml",
     "valueset-uv-livd-spreadsheet.xml"
@@ -104,6 +106,10 @@
     "StructureDefinition/observationdefinition-uv-livd":{
     },
     "StructureDefinition/devicedefinition-uv-livd":{
+    },
+    "StructureDefinition/devicemetric-uv-livd":{
+    },
+    "StructureDefinition/entrydefinition-uv-livd":{
     },
     "StructureDefinition/conceptmap-uv-livd":{
     },

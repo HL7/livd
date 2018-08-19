@@ -48,6 +48,20 @@
 </tr>
 <tr>
 <td style="column-width:30%">
+<a href="devicemetric-uv-livd.html">
+                        •  LIVD DeviceMetric</a>
+</td>
+<td>DeviceMetric profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="entrydefinition-uv-livd.html">
+                        •  LIVD EntryDefinition</a>
+</td>
+<td>EntryDefinition profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
 <a href="conceptmap-uv-livd.html">
                         •  LIVD ConceptMap</a>
 </td>

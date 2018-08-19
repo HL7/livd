@@ -22,6 +22,8 @@
     
     
     
+    
+    
     <package id="profiles">
       <name value="Profiles"/>
       <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide"/>
@@ -39,6 +41,8 @@
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the CG profiles"/>
     </package>-->
+    
+    
     
     
     
@@ -116,18 +120,28 @@
 <generation value="generated"/>
 </page>
 <page>
+<nameUrl value="devicemetric-uv-livd.html"/>
+<ns4:title xmlns:ns4="http://hl7.org/fhir" value="LIVD DeviceMetric"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="entrydefinition-uv-livd.html"/>
+<ns5:title xmlns:ns5="http://hl7.org/fhir" value="LIVD EntryDefinition"/>
+<generation value="generated"/>
+</page>
+<page>
 <nameUrl value="conceptmap-uv-livd.html"/>
-<ns4:title xmlns:ns4="http://hl7.org/fhir" value="LIVD ConceptMap"/>
+<ns6:title xmlns:ns6="http://hl7.org/fhir" value="LIVD ConceptMap"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="codesystem-loinc-uv-livd.html"/>
-<ns5:title xmlns:ns5="http://hl7.org/fhir" value="LIVD LOINC CodeSystem"/>
+<ns7:title xmlns:ns7="http://hl7.org/fhir" value="LIVD LOINC CodeSystem"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="valueset-uv-livd.html"/>
-<ns6:title xmlns:ns6="http://hl7.org/fhir" value="LIVD ValueSet"/>
+<ns8:title xmlns:ns8="http://hl7.org/fhir" value="LIVD ValueSet"/>
 <generation value="generated"/>
 </page>
 </page>
