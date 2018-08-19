@@ -89,7 +89,29 @@
 <p>Extensions defined as part of this implementation guide</p>
 <p>
 <table>
-<tbody/>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="extension-ext-capability.html">
+                        •  LIVD Test Capability</a>
+</td>
+<td>Test Capability extension for the LIVD project</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="extension-ext-device.html">
+                        •  LIVD Device</a>
+</td>
+<td>Device extension for the LIVD project</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="extension-ext-vendorReferenceIdentifier.html">
+                        •  LIVD Vendor Reference Identifier</a>
+</td>
+<td>Vendor Reference Identifier extension for the LIVD project</td>
+</tr>
+</tbody>
 </table>
 </p>
 <a name="3"> </a>

@@ -50,6 +50,33 @@
     
     
     
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-capability"/>
+      </reference>
+      <name value="LIVD Test Capability"/>
+      <description value="Test Capability extension for the LIVD project"/>
+      <exampleBoolean value="false"/>
+      <package value="extensions"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-device"/>
+      </reference>
+      <name value="LIVD Device"/>
+      <description value="Device extension for the LIVD project"/>
+      <exampleBoolean value="false"/>
+      <package value="extensions"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-vendorReferenceIdentifier"/>
+      </reference>
+      <name value="LIVD Vendor Reference Identifier"/>
+      <description value="Vendor Reference Identifier extension for the LIVD project"/>
+      <exampleBoolean value="false"/>
+      <package value="extensions"/>
+    </resource>
     <!-->
     <resource>
       <reference>
@@ -142,6 +169,21 @@
 <page>
 <nameUrl value="valueset-uv-livd.html"/>
 <ns8:title xmlns:ns8="http://hl7.org/fhir" value="LIVD ValueSet"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="extension-ext-capability.html"/>
+<ns9:title xmlns:ns9="http://hl7.org/fhir" value="LIVD Test Capability"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="extension-ext-device.html"/>
+<ns10:title xmlns:ns10="http://hl7.org/fhir" value="LIVD Device"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="extension-ext-vendorReferenceIdentifier.html"/>
+<ns11:title xmlns:ns11="http://hl7.org/fhir" value="LIVD Vendor Reference Identifier"/>
 <generation value="generated"/>
 </page>
 </page>

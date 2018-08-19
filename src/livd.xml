@@ -168,6 +168,33 @@
       <exampleBoolean value="false"/>
       <package value="profiles"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-capability"/>
+      </reference>
+      <name value="LIVD Test Capability"/>
+      <description value="Test Capability extension for the LIVD project"/>
+      <exampleBoolean value="false"/>
+      <package value="extensions"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-device"/>
+      </reference>
+      <name value="LIVD Device"/>
+      <description value="Device extension for the LIVD project"/>
+      <exampleBoolean value="false"/>
+      <package value="extensions"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-vendorReferenceIdentifier"/>
+      </reference>
+      <name value="LIVD Vendor Reference Identifier"/>
+      <description value="Vendor Reference Identifier extension for the LIVD project"/>
+      <exampleBoolean value="false"/>
+      <package value="extensions"/>
+    </resource>
     <!-->
     <resource>
       <reference>
