@@ -27,6 +27,27 @@
 </tr>
 <tr>
 <td style="column-width:30%">
+<a href="catalog-uv-livd.html">
+                        •  LIVD Catalog</a>
+</td>
+<td>Catalog profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="observationdefinition-uv-livd.html">
+                        •  LIVD ObservationDefinition</a>
+</td>
+<td>ObservationDefinition profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="devicedefinition-uv-livd.html">
+                        •  LIVD DeviceDefinition</a>
+</td>
+<td>DeviceDefinition profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
 <a href="conceptmap-uv-livd.html">
                         •  LIVD ConceptMap</a>
 </td>

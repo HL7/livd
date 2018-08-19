@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="livd"/>
-  <url value="http://hl7.org/fhir/us/livd/ImplementationGuide/livd"/>
+  <url value="http://hl7.org/fhir/uv/livd/ImplementationGuide/livd"/>
   <name value="LIVD IG"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -19,11 +19,15 @@
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="bundle-uv-livd-spreadsheet.xml"/>
     </extension>
-    <!--
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="catalog-uv-livd-spreadsheet.xml"/>
     </extension>
-    -->
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="observationdefinition-uv-livd-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="devicedefinition-uv-livd-spreadsheet.xml"/>
+    </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="conceptmap-uv-livd-spreadsheet.xml"/>
     </extension>
@@ -62,7 +66,6 @@
       <exampleBoolean value="false"/>
       <package value="profiles"/>
     </resource>
-    <!-->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
@@ -75,7 +78,30 @@
       <exampleBoolean value="false"/>
       <package value="profiles"/>
     </resource>
-    -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observationdefinition-uv-livd"/>
+      </reference>
+      <name value="LIVD ObservationDefinition"/>
+      <description value="ObservationDefinition profile for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <package value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/devicedefinition-uv-livd"/>
+      </reference>
+      <name value="LIVD DeviceDefinition"/>
+      <description value="DeviceDefinition profile for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <package value="profiles"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>

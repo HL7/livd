@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Fri, Aug 17, 2018 10:44+0000 for FHIR v3.4.0 
+  Generated on Sat, Aug 18, 2018 08:14+0000 for FHIR v3.4.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="3.4.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -11496,7 +11496,7 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Official human-readable label for the composition.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="confidentiality" minOccurs="0" maxOccurs="1" type="ConfidentialityClassification">
+          <xs:element name="confidentiality" minOccurs="0" maxOccurs="1" type="vConfidentialityClassification">
             <xs:annotation>
               <xs:documentation xml:lang="en">The code specifying the level of confidentiality of the Composition.</xs:documentation>
            </xs:annotation>
@@ -11661,42 +11661,7 @@ into another (possibly the same) biological entity.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:simpleType name="CompositionStatus-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="preliminary">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Preliminary</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="final">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Final</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="amended">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Amended</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="entered-in-error">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="CompositionStatus">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The workflow/clinical status of the composition.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="CompositionStatus-list" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="ConfidentialityClassification-list">
+  <xs:simpleType name="vConfidentialityClassification-list">
     <xs:restriction base="code-primitive">
       <xs:enumeration value="U">
         <xs:annotation>
@@ -11730,14 +11695,49 @@ into another (possibly the same) biological entity.</xs:documentation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:complexType name="ConfidentialityClassification">
+  <xs:complexType name="vConfidentialityClassification">
     <xs:annotation>
       <xs:documentation xml:lang="en">Codes specifying the level of confidentiality of the composition.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="Element">
-        <xs:attribute name="value" type="ConfidentialityClassification-list" use="optional"/>
+        <xs:attribute name="value" type="vConfidentialityClassification-list" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="CompositionStatus-list">
+    <xs:restriction base="code-primitive">
+      <xs:enumeration value="preliminary">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Preliminary</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="final">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Final</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="amended">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Amended</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="entered-in-error">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CompositionStatus">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The workflow/clinical status of the composition.</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Element">
+        <xs:attribute name="value" type="CompositionStatus-list" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
