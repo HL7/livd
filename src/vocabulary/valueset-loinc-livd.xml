@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="loinc-livd"/>
+  <url value="http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd"/>
+  <name value="LIVD LOINC value set"/>
+  <status value="draft"/>
+  <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd"/>
+    </include>
+  </compose>
+</ValueSet>

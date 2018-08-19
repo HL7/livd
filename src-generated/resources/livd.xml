@@ -77,17 +77,24 @@
       <exampleBoolean value="false"/>
       <package value="extensions"/>
     </resource>
-    <!-->
     <resource>
       <reference>
-        <reference value="ValueSet/coverageClass"/>
+        <reference value="CodeSystem/loinc-fragment-livd"/>
       </reference>
-      <name value="CRD Coverage Classes"/>
-      <description value="TODO"/>
+      <name value="LOINC Code System fragment for LIVD"/>
+      <description value="LOINC Code System fragment for LIVD"/>
       <exampleBoolean value="false"/>
       <package value="terminology"/>
     </resource>
-    -->
+    <resource>
+      <reference>
+        <reference value="ValueSet/loinc-livd"/>
+      </reference>
+      <name value="LIVD LOINC value set"/>
+      <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
+      <exampleBoolean value="false"/>
+      <package value="terminology"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -184,6 +191,16 @@
 <page>
 <nameUrl value="extension-ext-vendorReferenceIdentifier.html"/>
 <ns11:title xmlns:ns11="http://hl7.org/fhir" value="LIVD Vendor Reference Identifier"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="loinc-fragment-livd.html"/>
+<ns12:title xmlns:ns12="http://hl7.org/fhir" value="LOINC Code System fragment for LIVD"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="valueset-loinc-livd.html"/>
+<ns13:title xmlns:ns13="http://hl7.org/fhir" value="LIVD LOINC value set"/>
 <generation value="generated"/>
 </page>
 </page>

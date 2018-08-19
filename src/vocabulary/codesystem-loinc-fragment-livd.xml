@@ -1,0 +1,428 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="loinc-fragment-livd"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2018-06-21T22:26:26.954+00:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.6.1"/>
+    </identifier>
+    <name value="LOINC"/>
+    <title value="LOINC Code System fragment for LIVD"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="LOINC is a freely available international standard for tests, measurements, and observations"/>
+    <copyright value="This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+    <caseSensitive value="false"/>
+    <valueSet value="http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd"/>
+    <compositional value="false"/>
+    <versionNeeded value="false"/>
+    <content value="fragment"/>
+    <filter>
+        <code value="parent"/>
+        <description value="Allows for the selection of a set of codes based on their appearance in the LOINC Multiaxial Hierarchy. parent selects immediate children only. For example, the code '79190-5' has the parent 'LP203413-2'"/>
+        <operator value="="/>
+        <value value="A Part code"/>
+    </filter>
+    <filter>
+        <code value="child"/>
+        <description value="Allows for the selection of a set of codes based on their appearance in the LOINC Multiaxial Hierarchy. child selects immediate children only. For example, the code 'LP203413-2' has the child '79190-5'"/>
+        <operator value="in"/>
+        <value value="A comma separated list of Part codes"/>
+    </filter>
+    <filter>
+        <code value="ancestor"/>
+        <description value="Allows for the selection of a set of codes based on their appearance in the LOINC Multiaxial Hierarchy. ancestor includes parents transitively, e.g. 'LP203413-2' eventually has an ancestor 'LP14559-6', so the code '79190-5' is in the set of codes that have ancestor=LP14559-6"/>
+        <operator value="="/>
+        <value value="A Part code"/>
+    </filter>
+    <filter>
+        <code value="descendant"/>
+        <description value="Allows for the selection of a set of codes based on their appearance in the LOINC Multiaxial Hierarchy. descendant includes children transitively, e.g. 'LP14559-6' eventually has a descendant 'LP203413-2', so the code '79190-5' is in the set of codes that have descendant=LP14559-6"/>
+        <operator value="in"/>
+        <value value="A comma separated list of Part codes"/>
+    </filter>
+    <filter>
+        <code value="copyright"/>
+        <description value="Allows for the inclusion or exclusion of LOINC codes that include 3rd party copyright notices. LOINC = only codes with a sole copyright by Regenstrief. 3rdParty = only codes with a 3rd party copyright in addition to the one from Regenstrief"/>
+        <operator value="="/>
+        <value value="LOINC | 3rdParty"/>
+    </filter>
+    <property>
+        <code value="parent"/>
+        <uri value="http://hl7.org/fhir/concept-properties#parent"/>
+        <description value="A parent code in the Multiaxial Hierarchy"/>
+    </property>
+    <property>
+        <code value="child"/>
+        <uri value="http://hl7.org/fhir/concept-properties#child"/>
+        <description value="A child code in the Multiaxial Hierarchy"/>
+    </property>
+    <property>
+        <code value="STATUS"/>
+        <uri value="http://loinc.org/property/STATUS"/>
+        <description value="Status of the term. Within LOINC, codes with STATUS=DEPRECATED are considered inactive. Current values: ACTIVE, TRIAL, DISCOURAGED, and DEPRECATED"/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="COMPONENT"/>
+        <uri value="http://loinc.org/property/COMPONENT"/>
+        <description value="First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="PROPERTY"/>
+        <uri value="http://loinc.org/property/PROPERTY"/>
+        <description value="Second major axis-property observed: Kind of Property (also called kind of quantity)"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="TIME_ASPCT"/>
+        <uri value="http://loinc.org/property/TIME_ASPCT"/>
+        <description value="Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="SYSTEM"/>
+        <uri value="http://loinc.org/property/SYSTEM"/>
+        <description value="Fourth major axis-type of specimen or system: System (Sample) Type"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="SCALE_TYP"/>
+        <uri value="http://loinc.org/property/SCALE_TYP"/>
+        <description value="Fifth major axis-scale of measurement: Type of Scale"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="METHOD_TYP"/>
+        <uri value="http://loinc.org/property/METHOD_TYP"/>
+        <description value="Sixth major axis-method of measurement: Type of Method"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="CLASS"/>
+        <uri value="http://loinc.org/property/CLASS"/>
+        <description value="An arbitrary classification of the terms for grouping related observations together"/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="VersionLastChanged"/>
+        <uri value="http://loinc.org/property/VersionLastChanged"/>
+        <description value="The LOINC version number in which the record has last changed. For new records, this field contains the same value as the FirstPublishedRelease property."/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="CONSUMER_NAME"/>
+        <uri value="http://loinc.org/property/CONSUMER_NAME"/>
+        <description value="An experimental (beta) consumer friendly name for this item. The intent is to provide a test name that health care consumers will recognize; it will be similar to the names that might appear on a lab report"/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="CLASSTYPE"/>
+        <uri value="http://loinc.org/property/CLASSTYPE"/>
+        <description value="1=Laboratory class; 2=Clinical class; 3=Claims attachments; 4=Surveys"/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="ORDER_OBS"/>
+        <uri value="http://loinc.org/property/ORDER_OBS"/>
+        <description value="Provides users with an idea of the intended use of the term by categorizing it as an order only, observation only, or both"/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="HL7_ATTACHMENT_STRUCTURE"/>
+        <uri value="http://loinc.org/property/HL7_ATTACHMENT_STRUCTURE"/>
+        <description value="This property is populated in collaboration with the HL7 Attachments Work Group as described in the HL7 Attachment Specification: Supplement to Consolidated CDA Templated Guide."/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="VersionFirstReleased"/>
+        <uri value="http://loinc.org/property/VersionFirstReleased"/>
+        <description value="This is the LOINC version number in which this LOINC term was first published."/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="PanelType"/>
+        <uri value="http://loinc.org/property/PanelType"/>
+        <description value="For LOINC terms that are panels, this attribute classifies them as a 'Convenience group', 'Organizer', or 'Panel'"/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="ValidHL7AttachmentRequest"/>
+        <uri value="http://loinc.org/property/ValidHL7AttachmentRequest"/>
+        <description value="A value of Y in this field indicates that this LOINC code can be sent by a payer as part of an HL7 Attachment request for additional information."/>
+        <type value="string"/>
+    </property>
+    <property>
+        <code value="rad-modality-modality-type"/>
+        <uri value="http://loinc.org/property/rad-modality-type"/>
+        <description value="Modality is used to represent the device used to acquire imaging information."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-modality-modality-subtype"/>
+        <uri value="http://loinc.org/property/rad-modality-subtype"/>
+        <description value="Modality subtype may be optionally included to signify a particularly common or evocative configuration of the modality."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-anatomic-location-region-imaged"/>
+        <uri value="http://loinc.org/property/rad-anatomic-location-region-imaged"/>
+        <description value="The Anatomic Location Region Imaged attribute is used in two ways: as a coarse-grained descriptor of the area imaged and a grouper for finding related imaging exams; or, it is used just as a grouper."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-anatomic-location-imaging-focus"/>
+        <uri value="http://loinc.org/property/rad-anatomic-location-imaging-focus"/>
+        <description value="The Anatomic Location Imaging Focus is a more fine-grained descriptor of the specific target structure of an imaging exam. In many areas, the focus should be a specific organ."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-anatomic-location-laterality-presence"/>
+        <uri value="http://loinc.org/property/rad-anatomic-location-laterality-presence"/>
+        <description value="Radiology Exams that require laterality to be specified in order to be performed are signified with an Anatomic Location Laterality Presence attribute set to 'True'"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-anatomic-location-laterality"/>
+        <uri value="http://loinc.org/property/rad-anatomic-location-laterality"/>
+        <description value="Radiology exam Laterality is specified as one of: Left, Right, Bilateral, Unilateral, Unspecified"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-view-view-aggregation"/>
+        <uri value="http://loinc.org/property/rad-view-aggregation"/>
+        <description value="Aggregation describes the extent of the imaging performed, whether in quantitative terms (e.g., '3 or more views') or subjective terms (e.g., 'complete')."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-view-view-type"/>
+        <uri value="http://loinc.org/property/rad-view-view-type"/>
+        <description value="View type names specific views, such as 'lateral' or 'AP'."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-maneuver-maneuver-type"/>
+        <uri value="http://loinc.org/property/rad-maneuver-maneuver-type"/>
+        <description value="Maneuver type indicates an action taken with the goal of elucidating or testing a dynamic aspect of the anatomy."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-timing"/>
+        <uri value="http://loinc.org/property/rad-timing"/>
+        <description value="The Timing/Existence property used in conjunction with pharmaceutical and manueuver properties. It specifies whether or not the imaging occurs in the presence of the administered pharmaceutical or a manuever designed to test some dynamic aspect of anatomy or physiology ."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-pharmaceutical-substance-given"/>
+        <uri value="http://loinc.org/property/rad-pharmaceutical-substance-given"/>
+        <description value="The Pharmaceutical Substance Given specifies administered contrast agents, radiopharmaceuticals, medications, or other clinically important agents and challenges during the imaging procedure."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-pharmaceutical-route"/>
+        <uri value="http://loinc.org/property/rad-pharmaceutical-route"/>
+        <description value="Route specifies the route of administration of the pharmeceutical."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-reason-for-exam"/>
+        <uri value="http://loinc.org/property/rad-reason-for-exam"/>
+        <description value="Reason for exam is used to describe a clinical indication or a purpose for the study."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-guidance-for-presence"/>
+        <uri value="http://loinc.org/property/rad-guidance-for-presence"/>
+        <description value="Guidance for.Presence indicates when a procedure is guided by imaging."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-guidance-for-approach"/>
+        <uri value="http://loinc.org/property/rad-guidance-for-approach"/>
+        <description value="Guidance for.Approach refers to the primary route of access used, such as percutaneous, transcatheter, or transhepatic."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-guidance-for-action"/>
+        <uri value="http://loinc.org/property/rad-guidance-for-action"/>
+        <description value="Guidance for.Action indicates the intervention performed, such as biopsy, aspiration, or ablation."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-guidance-for-object"/>
+        <uri value="http://loinc.org/property/rad-guidance-for-object"/>
+        <description value="Guidance for.Object specifies the target of the action, such as mass, abscess or cyst."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="rad-subject"/>
+        <uri value="http://loinc.org/property/rad-subject"/>
+        <description value="Subject is intended for use when there is a need to distinguish between the patient associated with an imaging study, and the target of the study."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="document-kind"/>
+        <uri value="http://loinc.org/property/document-kind"/>
+        <description value="Characterizes the general structure of the document at a macro level."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="document-role"/>
+        <uri value="http://loinc.org/property/document-role"/>
+        <description value="Characterizes the training or professional level of the author of the document, but does not break down to specialty or subspecialty.."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="document-setting"/>
+        <uri value="http://loinc.org/property/document-setting"/>
+        <description value="Setting is a modest extension of CMS’s coarse definition of care settings, such as outpatient, hospital, etc. Setting is not equivalent to location, which typically has more locally defined meanings."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="document-subject-matter-domain"/>
+        <uri value="http://loinc.org/property/document-subject-matter-domain"/>
+        <description value="Characterizes the clinical domain that is the subject of the document. For example, Internal Medicine, Neurology, Physical Therapy, etc."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="document-type-of-service"/>
+        <uri value="http://loinc.org/property/document-type-of-service"/>
+        <description value="Characterizes the kind of service or activity provided to/for the patient (or other subject of the service) that is described in the document."/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="answer-list"/>
+        <uri value="http://loinc.org/property/answer-list"/>
+        <description value="An answer list associated with this LOINC code (if there are matching answer lists defined). Only on normal LOINC Codes"/>
+        <type value="Coding"/>
+    </property>
+    <property>
+        <code value="answers-for"/>
+        <uri value="http://loinc.org/property/answers-for"/>
+        <description value="A LOINC Code for which this answer list is used. Only on normal LL- Codes"/>
+        <type value="Coding"/>
+    </property>
+    <!-- This is an example set of LOINC codes (concepts) for laboratory tests.  All LOINC codes that are relevant
+    for a particular ConceptMap instance should be included.  The property values for the individual code are not 
+    included in this example but would be expected to be added. -->
+    <concept>
+        <code value="6556-5"/>
+        <display value="Deprecated Streptococcus pyogenes Ag [Presence] in Throat by Immunoassay"/>
+    </concept>
+    <concept>
+        <code value="74736-0"/>
+        <display value="Deprecated Streptococcus pyogenes hsp60 gene [Presence] by Nucleic acid capture and probe detection in Positive blood culture"/>
+    </concept>
+    <concept>
+        <code value="11268-0"/>
+        <display value="Streptococcus pyogenes [Presence] in Throat by Organism specific culture"/>
+    </concept>
+    <concept>
+        <code value="17656-0"/>
+        <display value="Streptococcus pyogenes [Presence] in Unspecified specimen by Organism specific culture"/>
+    </concept>
+    <concept>
+        <code value="31970-7"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Serum"/>
+    </concept>
+    <concept>
+        <code value="11269-8"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Serum by Agglutination"/>
+    </concept>
+    <concept>
+        <code value="18481-2"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Throat"/>
+    </concept>
+    <concept>
+        <code value="6557-3"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Throat by Immunofluorescence"/>
+    </concept>
+    <concept>
+        <code value="78012-2"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Throat by Rapid immunoassay"/>
+    </concept>
+    <concept>
+        <code value="31971-5"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Unspecified specimen"/>
+    </concept>
+    <concept>
+        <code value="6558-1"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Unspecified specimen by Immunoassay"/>
+    </concept>
+    <concept>
+        <code value="6559-9"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Unspecified specimen by Immunofluorescence"/>
+    </concept>
+    <concept>
+        <code value="76596-6"/>
+        <display value="Streptococcus pyogenes csrS gene [#/mass] in XXX.tissue by NAA with probe detection"/>
+    </concept>
+    <concept>
+        <code value="76609-7"/>
+        <display value="Streptococcus pyogenes csrS gene [#/volume] in XXX.body fluid by NAA with probe detection"/>
+    </concept>
+    <concept>
+        <code value="76581-8"/>
+        <display value="Streptococcus pyogenes csrS gene [Presence] in XXX.swab by NAA with probe detection"/>
+    </concept>
+    <concept>
+        <code value="49610-9"/>
+        <display value="Streptococcus pyogenes DNA [Identifier] in Unspecified specimen by NAA with probe detection"/>
+    </concept>
+    <concept>
+        <code value="85769-8"/>
+        <display value="Streptococcus pyogenes DNA [Presence] by NAA with non-probe detection in Positive blood culture"/>
+    </concept>
+    <concept>
+        <code value="60489-2"/>
+        <display value="Streptococcus pyogenes DNA [Presence] in Throat by NAA with probe detection"/>
+    </concept>
+    <concept>
+        <code value="22566-4"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Presence] in Serum"/>
+    </concept>
+    <concept>
+        <code value="5172-2"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Presence] in Serum by Latex agglutination"/>
+    </concept>
+    <concept>
+        <code value="12259-8"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Presence] in Serum by Sheep Cell Agglutination"/>
+    </concept>
+    <concept>
+        <code value="22567-2"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Titer] in Serum"/>
+    </concept>
+    <concept>
+        <code value="5173-0"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Titer] in Serum by Latex agglutination"/>
+    </concept>
+    <concept>
+        <code value="31658-8"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Units/volume] in Serum"/>
+    </concept>
+    <concept>
+        <code value="72268-6"/>
+        <display value="Streptococcus pyogenes exotoxin B speB gene [Presence] in Unspecified specimen by NAA with probe detection"/>
+    </concept>
+    <concept>
+        <code value="88276-1"/>
+        <display value="Streptococcus pyogenes hsp60 gene [Presence] by Probe in Positive blood culture"/>
+    </concept>
+    <concept>
+        <code value="67569-4"/>
+        <display value="Streptococcus pyogenes M protein (emm) gene [Type] in Isolate by Sequencing"/>
+    </concept>
+    <concept>
+        <code value="68954-7"/>
+        <display value="Streptococcus pyogenes rRNA [Presence] in Throat by Probe"/>
+    </concept>
+    <concept>
+        <code value="5036-9"/>
+        <display value="Streptococcus pyogenes rRNA [Presence] in Unspecified specimen by Probe"/>
+    </concept>
+</CodeSystem>

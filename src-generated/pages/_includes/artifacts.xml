@@ -119,7 +119,22 @@
 <p>Value Sets and/or code systems defined as part of this implementation guide</p>
 <p>
 <table>
-<tbody/>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="loinc-fragment-livd.html">
+                        •  LOINC Code System fragment for LIVD</a>
+</td>
+<td>LOINC Code System fragment for LIVD</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="valueset-loinc-livd.html">
+                        •  LIVD LOINC value set</a>
+</td>
+<td>Includes the subset of LOINC codes that are relevant for this ConceptMap.</td>
+</tr>
+</tbody>
 </table>
 </p>
 </div>

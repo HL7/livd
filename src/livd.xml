@@ -195,17 +195,24 @@
       <exampleBoolean value="false"/>
       <package value="extensions"/>
     </resource>
-    <!-->
     <resource>
       <reference>
-        <reference value="ValueSet/coverageClass"/>
+        <reference value="CodeSystem/loinc-fragment-livd"/>
       </reference>
-      <name value="CRD Coverage Classes"/>
-      <description value="TODO"/>
+      <name value="LOINC Code System fragment for LIVD"/>
+      <description value="LOINC Code System fragment for LIVD"/>
       <exampleBoolean value="false"/>
       <package value="terminology"/>
     </resource>
-    -->
+    <resource>
+      <reference>
+        <reference value="ValueSet/loinc-livd"/>
+      </reference>
+      <name value="LIVD LOINC value set"/>
+      <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
+      <exampleBoolean value="false"/>
+      <package value="terminology"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
