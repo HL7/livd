@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="livd"/>
   <url value="http://hl7.org/fhir/uv/livd/ImplementationGuide/livd"/>
-  <name value="LIVD IG"/>
+  <name value="LOINC – IVD Test Code (LIVD) Mapping"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International"/>
