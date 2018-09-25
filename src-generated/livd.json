@@ -2,7 +2,7 @@
   "DO_NOT_EDIT_THIS_FILE": "This file is generated.  Any edits made will be overwritten",
   "tool": "jekyll",
   "logging": ["html"],
-  "version": "3.5.0",
+  "version": "3.6.0",
   "fixed-business-version": "0.1.0",
   "html-template": "template-page.html",
   "md-template": "template-page-md.html",
@@ -93,7 +93,7 @@
     "observationdefinition-uv-livd-spreadsheet.xml",
     "devicedefinition-uv-livd-spreadsheet.xml",
     "devicemetric-uv-livd-spreadsheet.xml",
-    "entrydefinition-uv-livd-spreadsheet.xml",
+    "catalogentry-uv-livd-spreadsheet.xml",
     "conceptmap-uv-livd-spreadsheet.xml",
     "codesystem-loinc-uv-livd-spreadsheet.xml",
     "valueset-uv-livd-spreadsheet.xml"
@@ -109,7 +109,7 @@
     },
     "StructureDefinition/devicemetric-uv-livd":{
     },
-    "StructureDefinition/entrydefinition-uv-livd":{
+    "StructureDefinition/catalogentry-uv-livd":{
     },
     "StructureDefinition/conceptmap-uv-livd":{
     },

@@ -9,6 +9,6 @@
 }}
 ####
 e: {
-  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd"
+  "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd"
 }
 -------------------------------------------------------------------------------------

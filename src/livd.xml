@@ -13,7 +13,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <fhirVersion value="3.5.0"/>
+  <fhirVersion value="3.6.0"/>
   <definition>
     <!-- Note: Order of these spreadsheets matters -->
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
@@ -32,7 +32,7 @@
       <valueUri value="devicemetric-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="entrydefinition-uv-livd-spreadsheet.xml"/>
+      <valueUri value="catalogentry-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="conceptmap-uv-livd-spreadsheet.xml"/>
@@ -129,10 +129,10 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/entrydefinition-uv-livd"/>
+        <reference value="StructureDefinition/catalogentry-uv-livd"/>
       </reference>
-      <name value="LIVD EntryDefinition"/>
-      <description value="EntryDefinition profile for the LIVD project."/>
+      <name value="LIVD CatalogEntry"/>
+      <description value="CatalogEntry profile for the LIVD project."/>
       <exampleBoolean value="false"/>
       <package value="profiles"/>
     </resource>
