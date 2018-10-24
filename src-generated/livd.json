@@ -92,11 +92,8 @@
     "catalog-uv-livd-spreadsheet.xml",
     "observationdefinition-uv-livd-spreadsheet.xml",
     "devicedefinition-uv-livd-spreadsheet.xml",
-    "devicemetric-uv-livd-spreadsheet.xml",
-    "catalogentry-uv-livd-spreadsheet.xml",
     "conceptmap-uv-livd-spreadsheet.xml",
-    "codesystem-loinc-uv-livd-spreadsheet.xml",
-    "valueset-uv-livd-spreadsheet.xml"
+    "codesystem-loinc-uv-livd-spreadsheet.xml"
   ],
   "resources": {
     "StructureDefinition/bundle-uv-livd":{
@@ -107,15 +104,9 @@
     },
     "StructureDefinition/devicedefinition-uv-livd":{
     },
-    "StructureDefinition/devicemetric-uv-livd":{
-    },
-    "StructureDefinition/catalogentry-uv-livd":{
-    },
     "StructureDefinition/conceptmap-uv-livd":{
     },
     "StructureDefinition/codesystem-loinc-uv-livd":{
-    },
-    "StructureDefinition/valueset-uv-livd":{
     },
     "StructureDefinition/ext-capability":{
       "template-base": "../framework/templates/template-ext.html",

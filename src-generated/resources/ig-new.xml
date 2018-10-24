@@ -36,19 +36,20 @@
   <packageId value="hl7.fhir.uv.livd"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="3.6.0"/>
+  <fhirVersion value="3.6.0"/>
   <definition>
-    <package id="profiles">
+    <grouping id="profiles">
       <name value="Profiles"/>
       <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide."/>
-    </package>
-    <package id="extensions">
+    </grouping>
+    <grouping id="extensions">
       <name value="Extensions"/>
       <description value="Extensions defined as part of this implementation guide."/>
-    </package>
-    <package id="terminology">
+    </grouping>
+    <grouping id="terminology">
       <name value="Terminology"/>
       <description value="Value Sets and/or code systems defined as part of this implementation guide.         The &quot;LOINC Code System fragment for LIVD&quot; CodeSystem resource contains a sample set of LOINC codes.       The actual set of LOINC codes that will be used in a LIVD bundle instance would be based on the specific        devices and LOINC mappings that are included.  This content is duplicated for LIVD to provide the source of       all of the needed content fully contained within the LIVD bundle."/>
-    </package>
+    </grouping>
     <resource>
       <reference>
         <reference value="StructureDefinition/ext-capability"/>
@@ -56,7 +57,7 @@
       <name value="LIVD Test Capability"/>
       <description value="Test Capability extension for the LIVD project"/>
       <exampleBoolean value="false"/>
-      <package value="extensions"/>
+      <groupingId value="extensions"/>
     </resource>
     <resource>
       <reference>
@@ -65,7 +66,7 @@
       <name value="LIVD Device"/>
       <description value="Device extension for the LIVD project"/>
       <exampleBoolean value="false"/>
-      <package value="extensions"/>
+      <groupingId value="extensions"/>
     </resource>
     <resource>
       <reference>
@@ -74,7 +75,7 @@
       <name value="LIVD Vendor Reference Identifier"/>
       <description value="Vendor Reference Identifier extension for the LIVD project"/>
       <exampleBoolean value="false"/>
-      <package value="extensions"/>
+      <groupingId value="extensions"/>
     </resource>
     <resource>
       <reference>
@@ -83,7 +84,7 @@
       <name value="LOINC Code System fragment for LIVD"/>
       <description value="LOINC Code System fragment for LIVD"/>
       <exampleBoolean value="false"/>
-      <package value="terminology"/>
+      <groupingId value="terminology"/>
     </resource>
     <resource>
       <reference>
@@ -92,7 +93,7 @@
       <name value="LIVD LOINC value set"/>
       <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
       <exampleBoolean value="false"/>
-      <package value="terminology"/>
+      <groupingId value="terminology"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -153,16 +154,6 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="devicemetric-uv-livd.html"/>
-          <title value="LIVD DeviceMetric"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="catalogentry-uv-livd.html"/>
-          <title value="LIVD CatalogEntry"/>
-          <generation value="generated"/>
-        </page>
-        <page>
           <nameUrl value="conceptmap-uv-livd.html"/>
           <title value="LIVD ConceptMap"/>
           <generation value="generated"/>
@@ -170,11 +161,6 @@
         <page>
           <nameUrl value="codesystem-loinc-uv-livd.html"/>
           <title value="LIVD LOINC CodeSystem"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="valueset-uv-livd.html"/>
-          <title value="LIVD ValueSet"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -205,8 +191,8 @@
       </page>
     </page>
     <parameter>
-      <code value="apply-business-version"/>
-      <value value="0.1.0"/>
+      <code value="apply"/>
+      <value value="version"/>
     </parameter>
     <parameter>
       <code value="html-template"/>

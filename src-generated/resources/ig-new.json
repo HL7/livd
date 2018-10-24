@@ -40,9 +40,10 @@
   }],
   "packageId" : "hl7.fhir.uv.livd",
   "license" : "CC0-1.0",
-  "fhirVersion" : "3.6.0",
+  "fhirVersion" : ["3.6.0",
+  "3.6.0"],
   "definition" : {
-    "package" : [{
+    "grouping" : [{
       "id" : "profiles",
       "name" : "Profiles",
       "description" : "Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide."
@@ -64,7 +65,7 @@
       "name" : "LIVD Test Capability",
       "description" : "Test Capability extension for the LIVD project",
       "exampleBoolean" : false,
-      "package" : "extensions"
+      "groupingId" : "extensions"
     },
     {
       "reference" : {
@@ -73,7 +74,7 @@
       "name" : "LIVD Device",
       "description" : "Device extension for the LIVD project",
       "exampleBoolean" : false,
-      "package" : "extensions"
+      "groupingId" : "extensions"
     },
     {
       "reference" : {
@@ -82,7 +83,7 @@
       "name" : "LIVD Vendor Reference Identifier",
       "description" : "Vendor Reference Identifier extension for the LIVD project",
       "exampleBoolean" : false,
-      "package" : "extensions"
+      "groupingId" : "extensions"
     },
     {
       "reference" : {
@@ -91,7 +92,7 @@
       "name" : "LOINC Code System fragment for LIVD",
       "description" : "LOINC Code System fragment for LIVD",
       "exampleBoolean" : false,
-      "package" : "terminology"
+      "groupingId" : "terminology"
     },
     {
       "reference" : {
@@ -100,7 +101,7 @@
       "name" : "LIVD LOINC value set",
       "description" : "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
       "exampleBoolean" : false,
-      "package" : "terminology"
+      "groupingId" : "terminology"
     }],
     "page" : {
       "nameUrl" : "toc.html",
@@ -161,16 +162,6 @@
           "generation" : "generated"
         },
         {
-          "nameUrl" : "devicemetric-uv-livd.html",
-          "title" : "LIVD DeviceMetric",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "catalogentry-uv-livd.html",
-          "title" : "LIVD CatalogEntry",
-          "generation" : "generated"
-        },
-        {
           "nameUrl" : "conceptmap-uv-livd.html",
           "title" : "LIVD ConceptMap",
           "generation" : "generated"
@@ -178,11 +169,6 @@
         {
           "nameUrl" : "codesystem-loinc-uv-livd.html",
           "title" : "LIVD LOINC CodeSystem",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "valueset-uv-livd.html",
-          "title" : "LIVD ValueSet",
           "generation" : "generated"
         },
         {
@@ -213,8 +199,8 @@
       }]
     },
     "parameter" : [{
-      "code" : "apply-business-version",
-      "value" : "0.1.0"
+      "code" : "apply",
+      "value" : "version"
     },
     {
       "code" : "html-template",
