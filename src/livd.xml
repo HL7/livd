@@ -29,19 +29,10 @@
       <valueUri value="devicedefinition-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="devicemetric-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="catalogentry-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="conceptmap-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="codesystem-loinc-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="valueset-uv-livd-spreadsheet.xml"/>
     </extension>
     <package id="profiles">
       <name value="Profiles"/>
@@ -117,30 +108,6 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/devicemetric-uv-livd"/>
-      </reference>
-      <name value="LIVD DeviceMetric"/>
-      <description value="DeviceMetric profile for the LIVD project."/>
-      <exampleBoolean value="false"/>
-      <package value="profiles"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/catalogentry-uv-livd"/>
-      </reference>
-      <name value="LIVD CatalogEntry"/>
-      <description value="CatalogEntry profile for the LIVD project."/>
-      <exampleBoolean value="false"/>
-      <package value="profiles"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/conceptmap-uv-livd"/>
       </reference>
       <name value="LIVD ConceptMap"/>
@@ -157,18 +124,6 @@
       </reference>
       <name value="LIVD LOINC CodeSystem"/>
       <description value="CodeSystem profile for LOINC for the LIVD project."/>
-      <exampleBoolean value="false"/>
-      <package value="profiles"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/valueset-uv-livd"/>
-      </reference>
-      <name value="LIVD ValueSet"/>
-      <description value="ValueSet profile for the LIVD project."/>
       <exampleBoolean value="false"/>
       <package value="profiles"/>
     </resource>
