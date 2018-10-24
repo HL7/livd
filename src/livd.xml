@@ -13,6 +13,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <packageId value="hl7.fhir.uv.livd"/>
   <fhirVersion value="3.6.0"/>
   <definition>
     <!-- Note: Order of these spreadsheets matters -->
@@ -34,27 +35,27 @@
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="codesystem-loinc-uv-livd-spreadsheet.xml"/>
     </extension>
-    <package id="profiles">
+    <grouping id="profiles">
       <name value="Profiles"/>
       <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide."/>
-    </package>
-    <package id="extensions">
+    </grouping>
+    <grouping id="extensions">
       <name value="Extensions"/>
       <description value="Extensions defined as part of this implementation guide."/>
-    </package>
-    <package id="terminology">
+    </grouping>
+    <grouping id="terminology">
       <name value="Terminology"/>
       <description value="Value Sets and/or code systems defined as part of this implementation guide.  
       The &quot;LOINC Code System fragment for LIVD&quot; CodeSystem resource contains a sample set of LOINC codes.
       The actual set of LOINC codes that will be used in a LIVD bundle instance would be based on the specific 
       devices and LOINC mappings that are included.  This content is duplicated for LIVD to provide the source of
       all of the needed content fully contained within the LIVD bundle."/>
-    </package>
+    </grouping>
     <!-- Uncomment when we have some
-    <package id="examples">
+    <grouping id="examples">
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the CG profiles"/>
-    </package>-->
+    </grouping>-->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
@@ -65,7 +66,7 @@
       <name value="LIVD Bundle"/>
       <description value="Bundle profile for the LIVD project."/>
       <exampleBoolean value="false"/>
-      <package value="profiles"/>
+      <groupingId value="profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
@@ -77,7 +78,7 @@
       <name value="LIVD Catalog"/>
       <description value="Catalog profile for the LIVD project."/>
       <exampleBoolean value="false"/>
-      <package value="profiles"/>
+      <groupingId value="profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
@@ -89,7 +90,7 @@
       <name value="LIVD ObservationDefinition"/>
       <description value="ObservationDefinition profile for the LIVD project."/>
       <exampleBoolean value="false"/>
-      <package value="profiles"/>
+      <groupingId value="profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
@@ -101,7 +102,7 @@
       <name value="LIVD DeviceDefinition"/>
       <description value="DeviceDefinition profile for the LIVD project."/>
       <exampleBoolean value="false"/>
-      <package value="profiles"/>
+      <groupingId value="profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
@@ -113,7 +114,7 @@
       <name value="LIVD ConceptMap"/>
       <description value="ConceptMap profile for the LIVD project."/>
       <exampleBoolean value="false"/>
-      <package value="profiles"/>
+      <groupingId value="profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
@@ -125,7 +126,7 @@
       <name value="LIVD LOINC CodeSystem"/>
       <description value="CodeSystem profile for LOINC for the LIVD project."/>
       <exampleBoolean value="false"/>
-      <package value="profiles"/>
+      <groupingId value="profiles"/>
     </resource>
     <resource>
       <reference>
@@ -134,7 +135,7 @@
       <name value="LIVD Test Capability"/>
       <description value="Test Capability extension for the LIVD project"/>
       <exampleBoolean value="false"/>
-      <package value="extensions"/>
+      <groupingId value="extensions"/>
     </resource>
     <resource>
       <reference>
@@ -143,7 +144,7 @@
       <name value="LIVD Device"/>
       <description value="Device extension for the LIVD project"/>
       <exampleBoolean value="false"/>
-      <package value="extensions"/>
+      <groupingId value="extensions"/>
     </resource>
     <resource>
       <reference>
@@ -152,7 +153,7 @@
       <name value="LIVD Vendor Reference Identifier"/>
       <description value="Vendor Reference Identifier extension for the LIVD project"/>
       <exampleBoolean value="false"/>
-      <package value="extensions"/>
+      <groupingId value="extensions"/>
     </resource>
     <resource>
       <reference>
@@ -161,7 +162,7 @@
       <name value="LOINC Code System fragment for LIVD"/>
       <description value="LOINC Code System fragment for LIVD"/>
       <exampleBoolean value="false"/>
-      <package value="terminology"/>
+      <groupingId value="terminology"/>
     </resource>
     <resource>
       <reference>
@@ -170,7 +171,7 @@
       <name value="LIVD LOINC value set"/>
       <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
       <exampleBoolean value="false"/>
-      <package value="terminology"/>
+      <groupingId value="terminology"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
