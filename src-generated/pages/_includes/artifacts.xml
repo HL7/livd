@@ -3,4 +3,108 @@
 <p>Artifact Packages</p>
 </div>
 <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+<a name="1"> </a>
+<h3>Profiles </h3>
+<p>Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide.</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="bundle-uv-livd.html">
+                        •  LIVD Bundle</a>
+</td>
+<td>Bundle profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="catalog-uv-livd.html">
+                        •  LIVD Catalog</a>
+</td>
+<td>Catalog profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="observationdefinition-uv-livd.html">
+                        •  LIVD ObservationDefinition</a>
+</td>
+<td>ObservationDefinition profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="devicedefinition-uv-livd.html">
+                        •  LIVD DeviceDefinition</a>
+</td>
+<td>DeviceDefinition profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="conceptmap-uv-livd.html">
+                        •  LIVD ConceptMap</a>
+</td>
+<td>ConceptMap profile for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="codesystem-loinc-uv-livd.html">
+                        •  LIVD LOINC CodeSystem</a>
+</td>
+<td>CodeSystem profile for LOINC for the LIVD project.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<a name="2"> </a>
+<h3>Extensions </h3>
+<p>Extensions defined as part of this implementation guide.</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="extension-ext-capability.html">
+                        •  LIVD Test Capability</a>
+</td>
+<td>Test Capability extension for the LIVD project</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="extension-ext-device.html">
+                        •  LIVD Device</a>
+</td>
+<td>Device extension for the LIVD project</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="extension-ext-vendorReferenceIdentifier.html">
+                        •  LIVD Vendor Reference Identifier</a>
+</td>
+<td>Vendor Reference Identifier extension for the LIVD project</td>
+</tr>
+</tbody>
+</table>
+</p>
+<a name="3"> </a>
+<h3>Terminology </h3>
+<p>Value Sets and/or code systems defined as part of this implementation guide.         The "LOINC Code System fragment for LIVD" CodeSystem resource contains a sample set of LOINC codes.       The actual set of LOINC codes that will be used in a LIVD bundle instance would be based on the specific        devices and LOINC mappings that are included.  This content is duplicated for LIVD to provide the source of       all of the needed content fully contained within the LIVD bundle.</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="loinc-fragment-livd.html">
+                        •  LOINC Code System fragment for LIVD</a>
+</td>
+<td>LOINC Code System fragment for LIVD</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="valueset-loinc-livd.html">
+                        •  LIVD LOINC value set</a>
+</td>
+<td>Includes the subset of LOINC codes that are relevant for this ConceptMap.</td>
+</tr>
+</tbody>
+</table>
+</p>
 </div>

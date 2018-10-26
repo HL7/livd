@@ -1,6 +1,9 @@
 {
+  "ballotstatus":"${ballotstatus}",
   "copyrightyear":"2018+",
   "excludexml":"Yes",
   "excludejson":"No",
-  "excludettl":"Yes"
+  "excludettl":"Yes",
+  "assets":"",
+  "headingOffset":""
 }
