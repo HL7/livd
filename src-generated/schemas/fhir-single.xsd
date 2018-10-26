@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, Oct 24, 2018 08:41+0000 for FHIR v3.6.0 
+  Generated on Wed, Oct 24, 2018 13:06+0000 for FHIR v3.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="3.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -13907,12 +13907,12 @@ into another (possibly the same) biological entity.</xs:documentation>
   </xs:complexType>
   <xs:element name="Coverage" type="Coverage">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services.</xs:documentation>
+      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="Coverage">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services.</xs:documentation>
+      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -13920,10 +13920,10 @@ into another (possibly the same) biological entity.</xs:documentation>
         <xs:sequence>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The main (and possibly only) identifier for the coverage - often referred to as a Member Id, Certificate number, Personal Health Number or Case ID. May be constructed as the concatenation of the Coverage.SubscriberID and the Coverage.dependant.</xs:documentation>
+              <xs:documentation xml:lang="en">A unique identifier assigned to this coverage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="0" maxOccurs="1" type="FinancialResourceStatusCodes">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="FinancialResourceStatusCodes">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of the resource instance.</xs:documentation>
            </xs:annotation>
@@ -13935,7 +13935,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="policyHolder" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The party who 'owns' the insurance policy,  may be an individual, corporation or the subscriber's employer.</xs:documentation>
+              <xs:documentation xml:lang="en">The party who 'owns' the insurance policy.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="subscriber" minOccurs="0" maxOccurs="1" type="Reference">
@@ -13948,9 +13948,9 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The insurer assigned ID for the Subscriber.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="beneficiary" minOccurs="0" maxOccurs="1" type="Reference">
+          <xs:element name="beneficiary" minOccurs="1" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The party who benefits from the insurance coverage; the patient when services are provided.</xs:documentation>
+              <xs:documentation xml:lang="en">The party who benefits from the insurance coverage; the patient when products and/or services are provided.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="dependent" minOccurs="0" maxOccurs="1" type="string">
@@ -13968,14 +13968,14 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="payor" minOccurs="0" maxOccurs="unbounded" type="Reference">
+          <xs:element name="payor" minOccurs="1" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The program or plan underwriter or payor including both insurance and non-insurance agreements, such as patient-pay agreements. May provide multiple identifiers such as insurance company identifier or business identifier (BIN number).</xs:documentation>
+              <xs:documentation xml:lang="en">The program or plan underwriter or payor including both insurance and non-insurance agreements, such as patient-pay agreements.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="class" type="Coverage.Class" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A suite of underwriter specific classifiers, for example may be used to identify a class of coverage or employer group, Policy, Plan.</xs:documentation>
+              <xs:documentation xml:lang="en">A suite of underwriter specific classifiers.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="order" minOccurs="0" maxOccurs="1" type="positiveInt">
@@ -13988,9 +13988,14 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' terms and conditions apply.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="copay" type="Coverage.Copay" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="costToBeneficiary" type="Coverage.CostToBeneficiary" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A suite of underwriter specific classifiers, for example may be used to identify a class of coverage or employer group, Policy, Plan.</xs:documentation>
+              <xs:documentation xml:lang="en">A suite of codes indicating the cost category and associated amount which have been detailed in the policy and may have been  included on the health card.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="subrogation" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">When 'subrogation=true' this insurance instance has been included not for adjudication but to provide insurers with the details to recover costs.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="contract" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -14004,19 +14009,19 @@ into another (possibly the same) biological entity.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="Coverage.Class">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services.</xs:documentation>
+      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="Coding">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The type of classification for which an insurer-specific class tag or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.</xs:documentation>
+              <xs:documentation xml:lang="en">The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="value" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">For example, the Group or Plan number.</xs:documentation>
+              <xs:documentation xml:lang="en">The alphanumeric string value associated with the insurer issued label.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
@@ -14028,21 +14033,49 @@ into another (possibly the same) biological entity.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="Coverage.Copay">
+  <xs:complexType name="Coverage.CostToBeneficiary">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services.</xs:documentation>
+      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="Coding">
+          <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Types of products or services such as visit, specialist visits, emergency, inpatient care, etc.</xs:documentation>
+              <xs:documentation xml:lang="en">The category of patient centric costs associated with treatment.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="value" minOccurs="1" maxOccurs="1" type="Quantity">
+          <xs:choice minOccurs="1" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">The amount of patient payments for various types of services/products, expressed as a percentage of the service/product cost or a fixed amount of currency.</xs:documentation>
+              <xs:documentation xml:lang="en">The amount due from the patient for the cost category.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="valueQuantity" type="Quantity"/>
+            <xs:element name="valueMoney" type="Money"/>
+          </xs:choice>
+          <xs:element name="exception" type="Coverage.Exception" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A suite of codes indicating exceptions or reductions to patient costs and their effective periods.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Coverage.Exception">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The code for the specific exception.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="period" minOccurs="0" maxOccurs="1" type="Period">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The timeframe during when the exception is in force.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
