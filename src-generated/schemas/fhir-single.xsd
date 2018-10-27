@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, Oct 24, 2018 13:06+0000 for FHIR v3.6.0 
+  Generated on Fri, Oct 26, 2018 22:54+0000 for FHIR v3.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="3.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -5124,12 +5124,12 @@ A coverage may only be resposible for specific types of charges, and the sequenc
               <xs:documentation xml:lang="en">Business identifiers assigned to this AllergyIntolerance by the performer or other systems which remain constant as the resource is updated and propagates from server to server.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="clinicalStatus" minOccurs="0" maxOccurs="1" type="AllergyIntoleranceClinicalStatus">
+          <xs:element name="clinicalStatus" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The clinical status of the allergy or intolerance.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="verificationStatus" minOccurs="0" maxOccurs="1" type="AllergyIntoleranceVerificationStatus">
+          <xs:element name="verificationStatus" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).</xs:documentation>
            </xs:annotation>
@@ -5344,41 +5344,6 @@ A coverage may only be resposible for specific types of charges, and the sequenc
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:simpleType name="AllergyIntoleranceVerificationStatus-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="unconfirmed">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Unconfirmed</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="confirmed">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Confirmed</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="refuted">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Refuted</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="entered-in-error">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Entered In Error</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="AllergyIntoleranceVerificationStatus">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Assertion about certainty associated with a propensity, or potential risk, of a reaction to the identified substance.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="AllergyIntoleranceVerificationStatus-list" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:simpleType name="AllergyIntoleranceSeverity-list">
     <xs:restriction base="code-primitive">
       <xs:enumeration value="mild">
@@ -5406,36 +5371,6 @@ A coverage may only be resposible for specific types of charges, and the sequenc
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="AllergyIntoleranceSeverity-list" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="AllergyIntoleranceClinicalStatus-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="active">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Active</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="inactive">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Inactive</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="resolved">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Resolved</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="AllergyIntoleranceClinicalStatus">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The clinical status of the allergy or intolerance.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="AllergyIntoleranceClinicalStatus-list" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -23103,7 +23038,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">Indicates the authority who published the protocol (e.g. ACIP) that is being followed.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="targetDisease" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="targetDisease" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The vaccine preventable disease the dose is being administered against.</xs:documentation>
            </xs:annotation>
@@ -23114,6 +23049,13 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
             </xs:annotation>
             <xs:element name="doseNumberPositiveInt" type="positiveInt"/>
             <xs:element name="doseNumberString" type="string"/>
+          </xs:choice>
+          <xs:choice minOccurs="0" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The recommended number of doses to achieve immunity.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="seriesDosesPositiveInt" type="positiveInt"/>
+            <xs:element name="seriesDosesString" type="string"/>
           </xs:choice>
         </xs:sequence>
       </xs:extension>
@@ -29200,6 +29142,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">The dose form for a single part product, or combined form of a multiple part product.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="legalStatusOfSupply" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The legal status of supply of the medicinal product as classified by the regulator.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="additionalMonitoringIndicator" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Whether the Medicinal Product is subject to additional monitoring for regulatory reasons.</xs:documentation>
@@ -29490,11 +29437,6 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           <xs:element name="jurisdiction" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Jurisdiction within a country.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="legalStatusOfSupply" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The legal status of supply of the medicinal product as classified by the regulator.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="status" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -29931,6 +29873,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">Strength expressed in terms of a reference substance.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="strengthLowLimit" minOccurs="0" maxOccurs="1" type="Ratio">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Strength expressed in terms of a reference substance.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="measurementPoint" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">For when strength is measured at a particular point or distance.</xs:documentation>
@@ -30091,6 +30038,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Textual description.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="legalStatusOfSupply" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The legal status of supply of the medicinal product as classified by the regulator.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="marketingStatus" minOccurs="0" maxOccurs="unbounded" type="MarketingStatus">
@@ -38092,14 +38044,9 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="precision" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="exact" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Identify the exact boundaries of variant sequences. Each type of structure variant requires the DNA duplex to be broken and rejoined, and this creates a new sequence of bases at the rejoined sites, known as breakpoints or boundaries.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="reportedaCGHRatio" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Structural Variant reported aCGH ratio.</xs:documentation>
+              <xs:documentation xml:lang="en">Used to indicate if the outer and inner start-end values have the same meaning.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="length" minOccurs="0" maxOccurs="1" type="integer">
