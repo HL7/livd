@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.corelaboratory.com/ARCHITECT",
+  "code" : "1069"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.corelaboratory.com/ARCHITECT\" is not known; The code provided (http://www.corelaboratory.com/ARCHITECT#1069) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

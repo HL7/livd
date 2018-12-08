@@ -1,0 +1,407 @@
+{
+    "resourceType": "Bundle",
+    "id": "livd-example",
+    "meta": {
+        "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/bundle-uv-livd"
+    },
+    "identifier": {
+        "system": "https://www.abbott.com",
+        "value": "a809e430-5d17-4248-b595-d575fea6eb10"
+    },
+    "type": "collection",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:40baf389-d34c-4402-8589-59cd48095584",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "40baf389-d34c-4402-8589-59cd48095584",
+                "language": "en-US",
+                "meta": {
+                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/catalog-uv-livd"
+                },
+                "identifier": {
+                    "system": "https://www.abbott.com",
+                    "value": "ARCHITECT CC v0.9.0",
+                    "assigner": {
+                        "display": "Abbott Diagnostics"
+                    }
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://new-loinc-code.org",
+                            "version": "2.64",
+                            "code": "90370-8",
+                            "display": "LIVD mapping data set"
+                        }
+                    ]
+                },
+                "date": "2018-09-12",
+                "author": [
+                    {
+                        "display": "Abbott"
+                    }
+                ],
+                "title": "Abbott LIVD HL7 Connectathon",
+                "section": [
+                    {
+                        "title": "Devices",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                                    "code": "devices",
+                                    "display": "Device Definitions"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Observation Definitions",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                                    "code": "observation-definitions",
+                                    "display": "Observation Definitions"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Concept Maps",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                                    "code": "concept-map",
+                                    "display": "Concept Map"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:1faf1d64-df18-4d7a-b45d-3872ddd3f165",
+            "resource": {
+                "resourceType": "DeviceDefinition",
+                "id": "1faf1d64-df18-4d7a-b45d-3872ddd3f165",
+                "meta": {
+                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                        "valueReference": {
+                            "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+                        }
+                    }
+                ],
+                "udiDeviceIdentifier": [
+                    {
+                        "deviceIdentifier": "00380740003746",
+                        "issuer": "FDA",
+                        "jurisdiction": "https://unstats.un.org/unsd/methodology/m49/021"
+                    }
+                ],
+                "manufacturerString": "Abbott Diagnostics",
+                "modelNumber": "ARCHITECT c4000",
+                "capability": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "ObservationDefinition"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:b87458ca-b29a-4244-b347-39111caf9ef2",
+            "resource": {
+                "resourceType": "ObservationDefinition",
+                "id": "b87458ca-b29a-4244-b347-39111caf9ef2",
+                "meta": {
+                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.corelaboratory.com/ARCHITECT",
+                            "code": "1069",
+                            "display": "GluC"
+                        }
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+                        "valueReference": {
+                            "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+                        }
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier",
+                        "valueIdentifier": {
+                            "value": "3L82"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+            "resource": {
+                "resourceType": "ConceptMap",
+                "id": "66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+                "meta": {
+                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+                },
+                "url": "http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+                "status": "active",
+                "sourceUri": "ObservationDefinition",
+                "targetCanonical": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+                "group": [
+                    {
+                        "element": [
+                            {
+                                "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
+                                "display": "GluC",
+                                "target": [
+                                    {
+                                        "code": "14749-6",
+                                        "display": "Glucose [Moles/volume] in Serum or Plasma",
+                                        "equivalence": "equivalent",
+                                        "dependsOn": [
+                                            {
+                                                "property": "specimen",
+                                                "value": "Serum/Plasma"
+                                            },
+                                            {
+                                                "property": "result",
+                                                "value": "mmol/L"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
+                                "display": "GluC",
+                                "target": [
+                                    {
+                                        "code": "2345-7",
+                                        "display": "Glucose [Mass/volume] in Serum or Plasma",
+                                        "equivalence": "equivalent",
+                                        "dependsOn": [
+                                            {
+                                                "property": "specimen",
+                                                "value": "Serum/Plasma"
+                                            },
+                                            {
+                                                "property": "result",
+                                                "value": "mg/dL"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "loinc-livd",
+                "url": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+                "version": "0.1.0",
+                "name": "LivdLoincVS",
+                "title": "LOINC value set for LIVD",
+                "status": "draft",
+                "date": "2018-09-25",
+                "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd",
+            "resource": {
+                "resourceType": "CodeSystem",
+                "id": "loinc-fragment-livd",
+                "meta": {
+                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-uv-livd"
+                },
+                "url": "http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/uv/livd",
+                        "value": "loinc-fragment-livd"
+                    }
+                ],
+                "version": "0.1.0",
+                "name": "LivdLoincCS",
+                "title": "LOINC Code System fragment for LIVD",
+                "status": "active",
+                "publisher": "Regenstrief Institute, Inc.",
+                "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+                "content": "fragment",
+                "property": [
+                    {
+                        "code": "COMPONENT",
+                        "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
+                        "type": "Coding"
+                    },
+                    {
+                        "code": "PROPERTY",
+                        "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
+                        "type": "Coding"
+                    },
+                    {
+                        "code": "TIME_ASPCT",
+                        "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
+                        "type": "Coding"
+                    },
+                    {
+                        "code": "SYSTEM",
+                        "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
+                        "type": "Coding"
+                    },
+                    {
+                        "code": "SCALE_TYP",
+                        "description": "Fifth major axis-scale of measurement: Type of Scale",
+                        "type": "Coding"
+                    },
+                    {
+                        "code": "METHOD_TYP",
+                        "description": "Sixth major axis-method of measurement: Type of Method",
+                        "type": "Coding"
+                    }
+                ],
+                "concept": [
+                    {
+                        "code": "14749-6",
+                        "display": "Glucose [Moles/volume] in Serum or Plasma",
+                        "property": [
+                            {
+                                "code": "COMPONENT",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP14635-4",
+                                    "display": "Glucose"
+                                }
+                            },
+                            {
+                                "code": "PROPERTY",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP6860-3",
+                                    "display": "SCnc"
+                                }
+                            },
+                            {
+                                "code": "TIME",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP6960-1",
+                                    "display": "Pt"
+                                }
+                            },
+                            {
+                                "code": "SYSTEM",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP7576-4",
+                                    "display": "Ser/Plas"
+                                }
+                            },
+                            {
+                                "code": "SCALE",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP7753-9",
+                                    "display": "Qn"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": "2345-7",
+                        "display": "Glucose [Mass/volume] in Serum or Plasma",
+                        "property": [
+                            {
+                                "code": "COMPONENT",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP14635-4",
+                                    "display": "Glucose"
+                                }
+                            },
+                            {
+                                "code": "PROPERTY",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP6827-2",
+                                    "display": "MCnc"
+                                }
+                            },
+                            {
+                                "code": "TIME_ASPCT",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP6960-1",
+                                    "display": "Pt"
+                                }
+                            },
+                            {
+                                "code": "SYSTEM",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP7576-4",
+                                    "display": "Ser/Plas"
+                                }
+                            },
+                            {
+                                "code": "SCALE_TYP",
+                                "valueCoding": {
+                                    "system": "http://part-code-loinc.org",
+                                    "code": "LP7753-9",
+                                    "display": "Qn"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

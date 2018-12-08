@@ -22,7 +22,8 @@
   </extension>
   <url value="http://hl7.org/fhir/uv/livd/ImplementationGuide/livd"/>
   <version value="0.1.0"/>
-  <name value="LOINC &#x2013; IVD Test Code (LIVD) Mapping"/>
+  <name value="LoincIvdTestCodeMapping"/>
+  <title value="LOINC &#x2013; IVD Test Code (LIVD) Mapping"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International"/>
@@ -49,6 +50,10 @@
     <grouping id="terminology">
       <name value="Terminology"/>
       <description value="Value Sets and/or code systems defined as part of this implementation guide.         The &quot;LOINC Code System fragment for LIVD&quot; CodeSystem resource contains a sample set of LOINC codes.       The actual set of LOINC codes that will be used in a LIVD bundle instance would be based on the specific        devices and LOINC mappings that are included.  This content is duplicated for LIVD to provide the source of       all of the needed content fully contained within the LIVD bundle."/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Example(s)"/>
+      <description value="Example(s) showing the use of the LIVD profiles"/>
     </grouping>
     <resource>
       <reference>
@@ -94,6 +99,33 @@
       <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
       <exampleBoolean value="false"/>
       <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/livd-section-type"/>
+      </reference>
+      <name value="LIVD section type code system"/>
+      <description value="Includes the allowed section types for the LIVD catalog."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/livd-section-type"/>
+      </reference>
+      <name value="LIVD section type value set"/>
+      <description value="Includes the allowed section types for the LIVD catalog."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/livd-example"/>
+      </reference>
+      <name value="LIVD bundle"/>
+      <description value="Example LIVD publication bundle."/>
+      <exampleBoolean value="true"/>
+      <groupingId value="examples"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -186,6 +218,21 @@
         <page>
           <nameUrl value="valueset-loinc-livd.html"/>
           <title value="LIVD LOINC value set"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="livd-section-type.html"/>
+          <title value="LIVD section type code system"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="valueset-livd-section-type.html"/>
+          <title value="LIVD section type value set"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="livd-example.html"/>
+          <title value="LIVD bundle"/>
           <generation value="generated"/>
         </page>
       </page>

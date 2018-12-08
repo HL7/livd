@@ -2,8 +2,11 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <id value="loinc-livd"/>
   <url value="http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd"/>
-  <name value="LIVD LOINC value set"/>
+  <version value="0.1.0"/>
+  <name value="LivdLoincVS"/>
+  <title value="LOINC value set for LIVD"/>
   <status value="draft"/>
+  <date value="2018-09-25"/>
   <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
   <compose>
     <include>

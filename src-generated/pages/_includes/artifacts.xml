@@ -104,6 +104,36 @@
 </td>
 <td>Includes the subset of LOINC codes that are relevant for this ConceptMap.</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="livd-section-type.html">
+                        •  LIVD section type code system</a>
+</td>
+<td>Includes the allowed section types for the LIVD catalog.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="valueset-livd-section-type.html">
+                        •  LIVD section type value set</a>
+</td>
+<td>Includes the allowed section types for the LIVD catalog.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<a name="4"> </a>
+<h3>Example(s) </h3>
+<p>Example(s) showing the use of the LIVD profiles</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="livd-example.html">
+                        •  LIVD bundle</a>
+</td>
+<td>Example LIVD publication bundle.</td>
+</tr>
 </tbody>
 </table>
 </p>

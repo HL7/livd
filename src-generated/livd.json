@@ -150,6 +150,12 @@
     "CodeSystem/loinc-fragment-livd":{
     },
     "ValueSet/loinc-livd":{
+    },
+    "CodeSystem/livd-section-type":{
+    },
+    "ValueSet/livd-section-type":{
+    },
+    "Bundle/livd-example":{
     }
   }
 }

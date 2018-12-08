@@ -2,7 +2,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="livd"/>
   <url value="http://hl7.org/fhir/uv/livd/ImplementationGuide/livd"/>
-  <name value="LOINC – IVD Test Code (LIVD) Mapping"/>
+  <title value="LOINC – IVD Test Code (LIVD) Mapping"/>
+  <name value="LoincIvdTestCodeMapping"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International"/>
@@ -51,11 +52,10 @@
       devices and LOINC mappings that are included.  This content is duplicated for LIVD to provide the source of
       all of the needed content fully contained within the LIVD bundle."/>
     </grouping>
-    <!-- Uncomment when we have some
     <grouping id="examples">
       <name value="Example(s)"/>
-      <description value="Example(s) showing the use of the CG profiles"/>
-    </grouping>-->
+      <description value="Example(s) showing the use of the LIVD profiles"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
@@ -172,6 +172,33 @@
       <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
       <exampleBoolean value="false"/>
       <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/livd-section-type"/>
+      </reference>
+      <name value="LIVD section type code system"/>
+      <description value="Includes the allowed section types for the LIVD catalog."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/livd-section-type"/>
+      </reference>
+      <name value="LIVD section type value set"/>
+      <description value="Includes the allowed section types for the LIVD catalog."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/livd-example"/>
+      </reference>
+      <name value="LIVD bundle"/>
+      <description value="Example LIVD publication bundle."/>
+      <exampleBoolean value="true"/>
+      <groupingId value="examples"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

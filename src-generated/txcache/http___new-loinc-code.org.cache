@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://new-loinc-code.org",
+  "code" : "90370-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://new-loinc-code.org\" is not known; The code provided (http://new-loinc-code.org#90370-8) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://new-loinc-code.org",
+    "version" : "2.64",
+    "code" : "90370-8",
+    "display" : "LIVD mapping data set"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://new-loinc-code.org\" is not known; The code provided (http://new-loinc-code.org#90370-8) is not  valid in the value set FHIRDocumentTypeCodes"
+}
+-------------------------------------------------------------------------------------
