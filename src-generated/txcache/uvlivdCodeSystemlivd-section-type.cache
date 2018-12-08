@@ -1,0 +1,61 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+    "code" : "devices",
+    "display" : "Device Definitions"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type-cs"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type\" is not known; The code provided (http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type#devices) is not  valid in the value set LivdSectionTypeVS"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+    "code" : "observation-definitions",
+    "display" : "Observation Definitions"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type-cs"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type\" is not known; The code provided (http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type#observation-definitions) is not  valid in the value set LivdSectionTypeVS"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+    "code" : "concept-map",
+    "display" : "Concept Map"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type-cs"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type\" is not known; The code provided (http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type#concept-map) is not  valid in the value set LivdSectionTypeVS"
+}
+-------------------------------------------------------------------------------------

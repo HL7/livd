@@ -1,0 +1,32 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="livd-section-type"/>
+    <url value="http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type"/>
+    <version value="0.1.0"/>
+    <name value="LivdSectionTypeCS"/>
+    <title value="Types of sections for the LIVD catalog"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+    <description value="Types of sections for the LIVD catalog"/>
+    <content value="complete"/>
+    <concept>
+        <code value="devices"/>
+        <display value="Device Definitions"/>
+    </concept>
+    <concept>
+        <code value="concept-map"/>
+        <display value="Concept Map"/>
+    </concept>
+    <concept>
+        <code value="loinc-codes"/>
+        <display value="LOINC Codes"/>
+    </concept>
+    <concept>
+        <code value="ivd-test-codes"/>
+        <display value="IVD Test Codes"/>
+    </concept>
+    <concept>
+        <code value="observation-definitions"/>
+        <display value="Observation Definitions"/>
+    </concept>
+</CodeSystem>
