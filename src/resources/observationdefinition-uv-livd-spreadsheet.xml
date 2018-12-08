@@ -17,10 +17,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>16040</WindowHeight>
-  <WindowWidth>27240</WindowWidth>
-  <WindowTopX>340</WindowTopX>
-  <WindowTopY>760</WindowTopY>
+  <WindowHeight>13040</WindowHeight>
+  <WindowWidth>24840</WindowWidth>
+  <WindowTopX>880</WindowTopX>
+  <WindowTopY>2060</WindowTopY>
   <TabRatio>837</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
@@ -1106,9 +1106,7 @@
     <Cell ss:StyleID="s64"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s83"><Data ss:Type="String">LIVD ObservationDefinition</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="20"><Data ss:Type="String">In a catalog of health-related services that use or produce observations and measurements, this resource describes the expected characteristics of these observation / measurements</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">An instance of this resource informs the consumer of a health-related service (such as a lab diagnostic test or panel) about how the observations used or produced by this service will look like.</Data><NamedCell
+    <Cell ss:Index="21"><Data ss:Type="String">An instance of this resource informs the consumer of a health-related service (such as a lab diagnostic test or panel) about how the observations used or produced by this service will look like.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="23"><Data ss:Type="String">Observation[classCode=OBS, moodCode=DEF]</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1736,7 +1734,7 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="41.5">
-    <Cell ss:Index="2"><Data ss:Type="String">value</Data></Cell>
+    <Cell ss:Index="2"><Data ss:Type="String">url</Data></Cell>
     <Cell ss:Index="4" ss:StyleID="s82"><Data ss:Type="String">ObservationDefinition.extension</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s64"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2433,9 +2431,9 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>3</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <LeftColumnRightPane>18</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -2447,12 +2445,10 @@
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>4</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveCol>19</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
