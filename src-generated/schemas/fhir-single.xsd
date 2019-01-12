@@ -27,9 +27,9 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Dec 6, 2018 23:00+0000 for FHIR v3.6.0 
+  Generated on Fri, Dec 21, 2018 01:26+0000 for FHIR v4.0.0 
 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="3.6.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.0.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
   <xs:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="fhir-xhtml.xsd"/>
@@ -431,7 +431,6 @@
       <xs:element ref="ImplementationGuide"/>
       <xs:element ref="InsurancePlan"/>
       <xs:element ref="Invoice"/>
-      <xs:element ref="ItemInstance"/>
       <xs:element ref="Library"/>
       <xs:element ref="Linkage"/>
       <xs:element ref="List"/>
@@ -4056,11 +4055,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           <xs:documentation xml:lang="en">3.5.0</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="3.6.0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">3.6.0</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="4.0.0">
         <xs:annotation>
           <xs:documentation xml:lang="en">4.0.0</xs:documentation>
@@ -6514,7 +6508,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A summary, charactarization or explanation of the body structure.</xs:documentation>
+              <xs:documentation xml:lang="en">A summary, characterization or explanation of the body structure.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="image" minOccurs="0" maxOccurs="unbounded" type="Attachment">
@@ -10779,7 +10773,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="hierarchyMeaning" minOccurs="0" maxOccurs="1" type="CodeSystemHierarchyMeaning">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The meaning of the hierarchy of concepts as represnted in this resource.</xs:documentation>
+              <xs:documentation xml:lang="en">The meaning of the hierarchy of concepts as represented in this resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="compositional" minOccurs="0" maxOccurs="1" type="boolean">
@@ -10819,7 +10813,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="concept" type="CodeSystem.Concept" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are.</xs:documentation>
+              <xs:documentation xml:lang="en">Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meanings of the hierarchical relationships are.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -12228,7 +12222,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="unmapped" type="ConceptMap.Unmapped" minOccurs="0" maxOccurs="1">
             <xs:annotation>
-              <xs:documentation xml:lang="en">What to do when there is no mapping for the source concept. &quot;Unmapped&quot; does not include codes that are unamatched, and the unmapped element is ignored in a code is specified to have equivalence = unmatched.</xs:documentation>
+              <xs:documentation xml:lang="en">What to do when there is no mapping for the source concept. &quot;Unmapped&quot; does not include codes that are unmatched, and the unmapped element is ignored in a code is specified to have equivalence = unmatched.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -14945,7 +14939,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="partNumber" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The part number of thedevice.</xs:documentation>
+              <xs:documentation xml:lang="en">The part number of the device.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -16177,7 +16171,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           </xs:element>
           <xs:element name="subject" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The subject of the report. Usually, but not always, this is a patient. However diagnostic services also perform analyses on specimens collected from a variety of other sources.</xs:documentation>
+              <xs:documentation xml:lang="en">The subject of the report. Usually, but not always, this is a patient. However, diagnostic services also perform analyses on specimens collected from a variety of other sources.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="Reference">
@@ -19403,12 +19397,6 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
         <xs:annotation>
           <xs:documentation xml:lang="en">Invoice</xs:documentation>
           <xs:documentation xml:lang="en">Invoice</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ItemInstance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ItemInstance</xs:documentation>
-          <xs:documentation xml:lang="en">ItemInstance</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Library">
@@ -23562,7 +23550,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           </xs:element>
           <xs:element name="fhirVersion" minOccurs="1" maxOccurs="unbounded" type="FHIRVersion">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The version(s) of the FHIR specification that this ImplementationGuide targets - e.g. describes how to use. The value of this element is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 3.6.0. for this version.</xs:documentation>
+              <xs:documentation xml:lang="en">The version(s) of the FHIR specification that this ImplementationGuide targets - e.g. describes how to use. The value of this element is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 4.0.0. for this version.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="dependsOn" type="ImplementationGuide.DependsOn" minOccurs="0" maxOccurs="unbounded">
@@ -26301,73 +26289,6 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="InvoiceStatus-list" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="ItemInstance" type="ItemInstance">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">A physical, countable instance of an item, for example one box or one unit.</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="ItemInstance">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">A physical, countable instance of an item, for example one box or one unit.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DomainResource">
-        <xs:sequence>
-          <xs:element name="count" minOccurs="1" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The quantity or amount of instances. For example if several units are being counted for inventory, this quantity can be more than one, provided they are not unique. Seriallized items are considered unique and as such would have a quantity max 1. This element is required and its presence asserts that the reource refers to a physical item.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="location" minOccurs="0" maxOccurs="1" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The location where the item is phisically located.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="subject" minOccurs="0" maxOccurs="1" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The patient that the item is associated with (implanted in, given to).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="manufactureDate" minOccurs="0" maxOccurs="1" type="dateTime">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The manufacture or preparation date and time. Times are necessary for several examples - for example biologically derived products, prepared or coumpounded medication, rapidly decaying isotopes.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="expiryDate" minOccurs="0" maxOccurs="1" type="dateTime">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The expiry or preparation date and time.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="currentSWVersion" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The Software version associated with the device, typically only used for devices with embedded software or firmware.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The lot or batch number.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="serialNumber" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The serial number if available.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="carrierAIDC" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The machine-readable AIDC string in base64 encoding. Can correspond to the UDI pattern in devices.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="carrierHRF" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The human-readable barcode string. Can correspond to the UDI pattern in devices.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -35057,17 +34978,17 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
         <xs:sequence>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Business identifiers assigned to this procedure by the performer or other systems which remain constant as the resource is updated and propagates from server to server.</xs:documentation>
+              <xs:documentation xml:lang="en">Business identifiers assigned to this procedure by the performer or other systems which remain constant as the resource is updated and is propagated from server to server.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="instantiatesCanonical" minOccurs="0" maxOccurs="unbounded" type="canonical">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Procedure.</xs:documentation>
+              <xs:documentation xml:lang="en">The URL pointing to a FHIR-defined protocol, guideline, order set or other definition that is adhered to in whole or in part by this Procedure.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="instantiatesUri" minOccurs="0" maxOccurs="unbounded" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Procedure.</xs:documentation>
+              <xs:documentation xml:lang="en">The URL pointing to an externally maintained protocol, guideline, order set or other definition that is adhered to in whole or in part by this Procedure.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="basedOn" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -35082,7 +35003,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="EventStatus">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A code specifying the state of the procedure. Generally this will be in-progress or completed state.</xs:documentation>
+              <xs:documentation xml:lang="en">A code specifying the state of the procedure. Generally, this will be the in-progress or completed state.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="statusReason" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -35132,7 +35053,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="performer" type="Procedure.Performer" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Limited to 'real' people rather than equipment.</xs:documentation>
+              <xs:documentation xml:lang="en">Limited to &quot;real&quot; people rather than equipment.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="location" minOccurs="0" maxOccurs="1" type="Reference">
@@ -35142,7 +35063,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="reasonCode" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The coded reason why the procedure was performed. This may be coded entity of some type, or may simply be present as text.</xs:documentation>
+              <xs:documentation xml:lang="en">The coded reason why the procedure was performed. This may be a coded entity of some type, or may simply be present as text.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="reasonReference" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -35157,7 +35078,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="outcome" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The outcome of the procedure - did it resolve reasons for the procedure being performed?</xs:documentation>
+              <xs:documentation xml:lang="en">The outcome of the procedure - did it resolve the reasons for the procedure being performed?</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="report" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -35177,7 +35098,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="followUp" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">If the procedure required specific follow up - e.g. removal of sutures. The followup may be represented as a simple note, or could potentially be more complex in which case the CarePlan resource can be used.</xs:documentation>
+              <xs:documentation xml:lang="en">If the procedure required specific follow up - e.g. removal of sutures. The follow up may be represented as a simple note or could potentially be more complex, in which case the CarePlan resource can be used.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
@@ -35213,7 +35134,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
         <xs:sequence>
           <xs:element name="function" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Distinguishes the type of involvement of the performer in the procedure. For example, surgeon, anaethetist, endoscopist.</xs:documentation>
+              <xs:documentation xml:lang="en">Distinguishes the type of involvement of the performer in the procedure. For example, surgeon, anaesthetist, endoscopist.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="actor" minOccurs="1" maxOccurs="1" type="Reference">
@@ -38377,12 +38298,12 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="reasonCode" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An explanation or justification for why this service is being requested in coded or textual form.   This is often for billing purposes.  May relate to the resources referred to in supportingInformation.</xs:documentation>
+              <xs:documentation xml:lang="en">An explanation or justification for why this service is being requested in coded or textual form.   This is often for billing purposes.  May relate to the resources referred to in `supportingInfo`.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="reasonReference" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates another resource that provides a justification for why this service is being requested.   May relate to the resources referred to in supportingInformation.</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates another resource that provides a justification for why this service is being requested.   May relate to the resources referred to in `supportingInfo`.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="insurance" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -38571,7 +38492,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="subject" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Where the specimen came from. This may be from patient(s),from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device.</xs:documentation>
+              <xs:documentation xml:lang="en">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="receivedTime" minOccurs="0" maxOccurs="1" type="dateTime">
@@ -39099,7 +39020,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="fhirVersion" minOccurs="0" maxOccurs="1" type="FHIRVersion">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The version of the FHIR specification on which this StructureDefinition is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 3.6.0. for this version.</xs:documentation>
+              <xs:documentation xml:lang="en">The version of the FHIR specification on which this StructureDefinition is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 4.0.0. for this version.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="mapping" type="StructureDefinition.Mapping" minOccurs="0" maxOccurs="unbounded">
@@ -42210,7 +42131,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="location" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The principal physical location where the this task is performed.</xs:documentation>
+              <xs:documentation xml:lang="en">Principal physical location where the this task is performed.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="reasonCode" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -42560,12 +42481,12 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:element name="TerminologyCapabilities" type="TerminologyCapabilities">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="TerminologyCapabilities">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -42697,7 +42618,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Software">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42718,7 +42639,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Implementation">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42739,7 +42660,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.CodeSystem">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42765,7 +42686,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Version">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42806,7 +42727,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Filter">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42827,7 +42748,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Expansion">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42863,7 +42784,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Parameter">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42884,7 +42805,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.ValidateCode">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42900,7 +42821,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Translation">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -42916,7 +42837,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="TerminologyCapabilities.Closure">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A Terminology Capabilities documents a set of capabilities (behaviors) of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
+      <xs:documentation xml:lang="en">A TerminologyCapabilities resource documents a set of capabilities (behaviors) of a FHIR Terminology Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -44436,7 +44357,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The version of the code system that the codes are selected from, or the special version &quot;*&quot; for all versions.</xs:documentation>
+              <xs:documentation xml:lang="en">The version of the code system that the codes are selected from, or the special version '*' for all versions.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="concept" type="ValueSet.Concept" minOccurs="0" maxOccurs="unbounded">

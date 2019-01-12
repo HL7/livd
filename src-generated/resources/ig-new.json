@@ -41,8 +41,8 @@
   }],
   "packageId" : "hl7.fhir.uv.livd",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["3.6.0",
-  "3.6.0"],
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
   "definition" : {
     "grouping" : [{
       "id" : "profiles",
