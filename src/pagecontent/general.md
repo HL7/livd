@@ -1,32 +1,77 @@
-### Structure and Supported Mappings
+### LOINC Mapping Summary
 
-The basic structure that the LIVD Publication must support can be represented as follows, using the HL7® V2 message syntax of brackets ([…]) to identify optional items and braces ({…}) to identify repeatable items. The italic items are used to provide grouping and cardinality, while the bold items are actual data elements of the definition.
+When communicating results from a device to the Laboratory Information System (LIS), two concepts must be mapped: the device's Vendor Analyte Code to the LIS Test Result code.  Neither In-Vitro Diagnostic (IVD) Test codes or LIS Test Result codes are based on industry standard vocabulary.  The manufacturer assigns Vendor Analyte Code to their devices, while the Laboratory creates test result codes for the tests they provide.  Through LIS configuration tools, the test result code is associated with one or more LIS test result codes based on context, e.g., IVD Test Code used with one vs. another specimen would yield a different LIS test result code.  This process has been in place for decades and has been optimized to support the Laboratory's specific reporting requirements (including conformance to Clinical Laboratory Improvement Amendments (CLIA) for the US).
+
+To enable analytics and clinical decision support, harmonization to a common vocabulary is critical.  For Lab test results, Logical Observation Identifiers Names and Codes (LOINC(R)) is the coding system of choice, thus introducing the question on how to map the LIS Test Result Code to LOINC and do so consistently across all labs to enable analytics and clinical decision support reliably.
+
+For now, and particularly until an LIS communicates ordered tests with the device using LOINC, the device cannot provide the appropriate LOINC code with the test result.  The LIS must provide the mapping as they associate the Vendor Analyte Code with the LIS Test Result Code.   To date this mapping process has relied on a combination of the LOINC registry, RELMA, and the individual's knowledge of LOINC plus the LIS' test compendium.
+
+The device manufacturer can aid in the process by providing a list of suggested LOINC codes for each of their IVD Test Codes, including context of the result, specimen, and other considerations that would influence the choice.  Such guidance would help reduce the scope of potential LOINC codes to consider, thus improving efficiency and quality of the mapping process, particularly across laboratories, i.e., arriving at the same LOINC code for the same test.
+
+The following diagram may help further clarify that:
+
+![LIVD FHIR Mapping](LIVD_FHIR_Mapping.jpg)
 
 <ul>
-     <li> <i>IVD LOINC Publication</i> begin 
-         <ul>
-             <li> <b>Vendor Publication</b> </li>
-             <li> {<i>Vendor Equipment Mapping</i> begin 
-                <ul>
-                     <li> <b>Equipment</b> </li>
-                     <li> {<i>IVD Test Mapping</i> begin
-                         <ul>
-                             <li> <b>IVD Test Result</b> </li>
-                             <li> [<b>LOINC</b>] </li>
-                         </ul>
-                     </li>
-                     <li> <i>IVD Test Mapping</i> end} </li>
-                 </ul>
-             </li>
-             <li> <i>Vendor Equipment Mapping</i> end} </li>
+    <li> The LIS maintains a map between the IVD Test Code and their LIS Test Result Code.  
+        <ul>
+            <li> One IVD Test Code can yield different LIS Test Result Codes depending on specimen and other parameters.</li>
         </ul>
-     </li>
-     <li> <i>IVD LOINC Publication</i> end </li>
+    </li>
+    <li> Each of the LIS Test Result Codes must have a LOINC code associated with it so the results report includes the appropriate LOINC code as well for downstream use.
+    </li> Laboratory staff today rely on LOINC definitions (using RELMA or the web based tool), their local mappings, and their expertise/knowledge about the device, test, and parameters, to associate a specific LOINC code to the LIS Test Result Code. </li>
+    </li> Adding the LIVD suggested mappings, where available, enhances the Laboratory's staff to arrive more quickly and correctly at the right LOINC code.</li>
 </ul>
+
+Example:
+
+<ul> 
+    <li> Vendor Analyte Code = 1067 (Gluc) is mapped in the LIS to:
+        <ul>
+            <li> LIS Test Result Code = 123 - Random Glucose</li>
+            <li> LIS Test Result Code = 456 - Fasting Glucose</li>
+            <li> LIS Test Result Code = 789 - 1 Hour Glucose</li>
+        </ul>
+    </li>
+    <li> LIVD Mapping Vendor Analyte Code = 1067 (Gluc) suggests:
+        <ul>
+            <li> Based on vendor comment [comment], vendor result description [result] A, vendor specimen description [specimen] "cerebrospinal", LOINC axes => 2342-4</li>
+            <li> Based on  vendor comment [comment], vendor result description [result] B, vendor specimen description "urine", LOINC axes => 63382-6</li>
+            <li> Based on  vendor comment [comment], vendor result description [result] C, vendor specimen description "serum/plasma", LOINC axes => 20438-8</li>
+        </ul>
+    </li>
+    <li> Consequently, most appropriate mapping:
+        <ul>
+            <li> LIS Test Result Code = 123 - Random Glucose
+                <ul>
+                    <li> LOINC Code = 2342-4</li>
+                </ul>
+            </li>
+            <li> LIS Test Result Code = 456 - Fasting Glucose
+                <ul>
+                    <li> LOINC Code = 63382-6</li>
+                </ul>
+            </li>
+            <li> LIS Test Result Code = 789 - 1 Hour Glucose
+                <ul>
+                    <li> LOINC Code = 20438-8</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+### LIVD Concepts
+
+The basic structure that the LIVD Publication must support is based on the **_[Digital Format for Publication of LOINC to Vendor IVD Test Results](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf)_** as published by [IICC](https://ivdconnectivity.org/) - IVD Industry Connectivity Consortium. It can be represented as follows:
+
+![LIVD Publication Structure](Publication_Structure.jpg)
 
 The implementation guide supports the following mappings:
 
 <ul>
+     <li> A publication is typically for one vendor's devices, but it is possible to combine information from multiple vendors into an aggregate publication.
+     </li>
      <li> One vendor <b><i>IVD Test Result</i></b> to many <b><i>LOINC</i></b>s
          <ul>
              <li> This is a very common occurrence. For example, an IVD test for serum glucose could map to a LOINC code for a mass concentration (e.g. mg/dL) or one that defines a substance concentration (e.g. mol/L). Or, a urine albumin could map to a LOINC test for a 24 hour excretion rate with units of mg/(24.h),  versus one for a random urine with unit of md/dL.</li>
@@ -46,9 +91,9 @@ The implementation guide supports the following mappings:
      </li>
 </ul>
 
-### Data Definitions
+### LIVD Data Definitions
 #### Publication
-This information establishes the version for the publication are expressed through the LIVD Catalog profile, including.
+This information establishes the version for the publication are expressed through the LIVD Catalog profile, including:
 
 * **_Publisher_** is the entity publishing the mapping information.
 * **_Publication Version ID_** is human-readable information provided by the vendor that can be used to differentiate LOINC publication versions.
@@ -56,7 +101,7 @@ This information establishes the version for the publication are expressed throu
 * The **_[LOINC License](https://loinc.org/license/)_** requires a statement of attribution and notice that LOINC content is copyrighted. 
 * **_LOINCCopyright_** component holds the required attribution statement.
 * **_Localization_** is the language used for this publication.
-* **_Region_** is an optional vendor description for which geographic or administrative region this localization is valid, e.g. de-CH is self-explanatory, but not en-CH.
+* **_Region_** is an optional vendor description for which geographic or administrative region this localization is valid, e.g.  de-CH (German (Switzerland)) is self-explanatory, but not en-CH (English (Switzerland)).
 
 #### Equipment
 The equipment elements are expressed through the LIVD Device Definition profile, including:
@@ -83,7 +128,7 @@ The IVD Test Result components are aligned with values reported in OBX-3 Observa
      <li> <b><i>Vendor Reference ID</i></b> is an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.</li>
 </ul>
 
-Additionally, various details on the Observation Definition that can aid in the mapping from the IVD Test Code to a LOINC are included as optional attributes, even though not referenced in the original IICC white paper.
+Additionally, various details on the Observation Definition that can aid in the mapping from the IVD Test Code to a LOINC are included as optional attributes, even though not referenced in the original [IICC white paper](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf).
 
 #### IVD Analyte Code - LOINC Mapping
 
@@ -128,22 +173,13 @@ For each of the LOINC codes being considered, a minimum set from the code system
 * **_Scale_**
 * **_Method_**
 
-#### IICC-FHIR Structural Mappings
-Provide mapping between IICC spreadsheet column headers and FHIR components used.
-
-Clarify that this is only using FHIR definitions, but does not depend on FHIR based APIs, RESTful services, SMART, or any other particular implementation.
+### Sample Data
+As part of defining the whitepaper, IICC also developed a spreadsheets that contains the relevant data and a potential representation of that data that can be found [here](https://ivdconnectivity.org/livd/).
 
 
-### Underlying technologies
+### LIVD Data Mappings to FHIR
 
-This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standard.
-
-#### FHIR
-
-This implementation guide uses terminology, notations and design principles that are
-specific to FHIR.  Before reading this implementation guide, it's important to be familiar with some of the basic principles of FHIR as well
-as general guidance on how to read FHIR specifications.  Readers who are unfamiliar with FHIR are encouraged to read (or at least skim) the following
-prior to reading the rest of this implementation guide.
+This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standard and therefore uses terminology, notations and design principles that are specific to FHIR.  Before continue reading this implementation guide, it's important to be familiar with some of the basic principles of FHIR as well as general guidance on how to read FHIR specifications.  Readers who are unfamiliar with FHIR are encouraged to read (or at least skim) the following prior to reading the rest of this implementation guide.
 
 * [FHIR overview]({{site.data.fhir.path}}overview.html)
 * [Developer's introduction]({{site.data.fhir.path}}overview-dev.html)
@@ -153,3 +189,262 @@ prior to reading the rest of this implementation guide.
 * [References between resources]({{site.data.fhir.path}}references.html)
 * [How to read resource & profile definitions]({{site.data.fhir.path}}formats.html)
 * [Base resource]({{site.data.fhir.path}}resource.html)
+
+#### Overview
+
+The concepts described above are mapped to a number of FHIR resource that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
+
+![LIVD Profile Structure](LIVD_Profile_Structure.jpg)
+
+* LIVD Catalog Profile - This provides the information about the LIVD Publication.  The profile is based on the Catalog profile based on the Composition resource.   Note that, while the LIVD Catalog Profile does some organization of the resources, there is no need for representing the format of the data.  The formatting and presentation is left to the client consuming these resources.
+* LIVD Device Definition Profile - This profile reflects the equipment (device) that is represented in the publication.  Each LIVD publication must include at least one device, and can be many.
+* LIVD Device Observation Definition - This profile reflects the IVD test codes that each device can produce.
+* LIVD Concept Map Profile - This profile supports the data necessary to document the actual mapping between the IVD test code for a device and the LOINC codes (0, 1, or more) to consider.
+* LIVD LOINC Code System Profile - This profile supports the relevant LOINC code data to assist in the mapping process.
+
+The LIVD Bundle Profile will enable packaging of the resources.  
+
+#### Detailed Mapping
+
+The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.
+
+<table>
+<tr>
+    <th><b>LIVD Attribute</b></th>
+    <th><b>FHIR</b></th>
+    <th><b>Comments</b></th>
+</tr>
+<tr>
+    <td><b><i>Publication</i></b></td>
+</tr>
+<tr>
+    <td>Publisher</td>
+    <td>Composition.author.display</td>
+</tr>
+<tr>
+    <td>Publication Version ID</td>
+    <td>Composition.identifier.system  Composition.identifier.value</td>
+</tr>
+<tr>
+    <td>LOINC Version ID</td>
+    <td>CodeSystem.version</td>
+</tr>
+<tr>
+    <td>LOINC Copyright</td>
+    <td>CodeSystem.copyright</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+    <td> </td>
+    <td>CodeSystem.publisher</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>CodeSystem.status</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>CodeSystem.title</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>CodeSystem.name</td>
+</tr>
+<tr>
+    <td>Localization</td>
+    <td>Composition.language</td>	
+</tr>
+<tr>
+    <td>Region</td>
+    <td>Composition.ext-region</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>Composition.type</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>Composition.status</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>Composition.date</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>Composition.title</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>Composition.section</td>	
+</tr>
+<tr>
+    <td><b><i>Equipment</i></b></td>
+</tr>
+<tr>
+    <td>Manufacturer</td>
+    <td>DeviceDefinition.manufacturerString</td>
+</tr>
+<tr>
+    <td>Model</td>
+    <td>DeviceDefinition.modelNumber</td>
+</tr>
+<tr>
+    <td>UID</td>
+    <td>DeviceDefinition.uidDeviceIdentifier.deviceIdentifier</td>
+</tr>
+<tr>
+    <td>UID Type</td>
+    <td>DeviceDefinition.udiDeviceIdentifier.issuer</td>
+</tr>
+<tr>
+    <td></td>
+    <td>DeviceDefinition.udiDeviceIdentifier.jurisdiction</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>DeviceDefintiion.capability.ext-observationDefinition</td>
+</tr>
+<tr>
+    <td><b><i>IVD Test Results</i>,/b></tr>
+</tr>
+<tr>
+    <td>Vendor Analyte Code
+    Vendor Transmission Code
+    Vendor Analyte Identifier
+    </td>
+    <td>ObservationDefinition.code.system
+    ObservationDefinition.code.code	
+    </td>
+</tr>
+<tr>
+    <td>Vendor Analyte Name</td>
+    <td>ObservationDefinition.code.display</td>
+</tr>
+<tr>
+    <td>Vendor Reference ID</td>
+    <td>ObservationDefinition.ext-vendorReferenceIdentifier</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ObservationDefinition.code.version</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ObservationDefinition.permittedDataType</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ObservationDefinition.method</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ObservationDefinition.quantitativeDetails</td>	
+</tr>
+<tr>
+    <td> </td>
+    <td>ObservationDefinitio.validCodedValueSet</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ObservvationDefinition.ext-device</td>
+</tr>
+<tr>
+    <td><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
+</tr>
+<tr>
+    <td>Vendor Specimen Description
+ConceptMap.group.element.target.dependsOn.property
+ConceptMap.group.element.target.dependsOn.value	
+    </td>
+</tr>
+<tr>
+    <td>Vendor Result Description
+    Binary
+    Ordinal
+    Nominal
+    </td>
+    <td>ConceptMap.group.element.target.dependsOn.property
+    ConceptMap.group.element.target.dependsOn.value	
+    </td>
+</tr>
+<tr>
+    <td>Vendor Comment</td>
+    <td>ConceptMap.group.element.target.comment</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ConceptMap.status</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ConceptMap.source</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ConceptMap.group.element.code</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ConceptMap.group.element.display	
+</tr>
+<tr>
+    <td><b><i>LOINC Code System</i></b></td>
+</tr>
+<tr>
+    <td>LOINC Code</td>
+    <td>CodeSystem.concept.code</td>
+</tr>
+<tr>
+    <td>LOINC Long Name</td>
+    <td>CodeSystem.concept.display</td>
+</tr>
+<tr>
+    <td>Component</td>
+    <td> CodeSystem.concept.property.code
+    CodeSystem.concept.property.valueCoding.code
+    </td>
+</tr>
+<tr>
+    <td>Property</td>
+    <td> CodeSystem.concept.property.code
+    CodeSystem.concept.property.valueCoding.code
+    </td>
+</tr>
+<tr>
+    <td>Time</td>
+    <td> CodeSystem.concept.property.code
+    CodeSystem.concept.property.valueCoding.code
+    </td>
+</tr>
+<tr>
+    <td>System</td>
+    <td> CodeSystem.concept.property.code
+    CodeSystem.concept.property.valueCoding.code
+    </td>
+</tr>
+<tr>
+    <td>Scale</td>
+    <td> CodeSystem.concept.property.code
+    CodeSystem.concept.property.valueCoding.code
+    </td>
+</tr>
+<tr>
+    <td>Method</td>
+    <td> CodeSystem.concept.property.code
+    CodeSystem.concept.property.valueCoding.code
+    </td>
+</tr>
+<tr>
+    <td> </td>
+    <td>CodeSystem.property</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>CodeSystem.content</td>
+</tr>
+</table> 
