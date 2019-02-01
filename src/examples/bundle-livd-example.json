@@ -107,14 +107,6 @@
                 "meta": {
                     "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
-                        "valueReference": {
-                            "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
-                        }
-                    }
-                ],
                 "udiDeviceIdentifier": [
                     {
                         "deviceIdentifier": "00380740003746",
@@ -126,6 +118,14 @@
                 "modelNumber": "ARCHITECT c4000",
                 "capability": [
                     {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                                "valueReference": {
+                                    "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+                                }
+                            }
+                        ],
                         "type": {
                             "coding": [
                                 {

@@ -150,11 +150,6 @@
           "generation" : "markdown"
         },
         {
-          "nameUrl" : "examples.html",
-          "title" : "Examples",
-          "generation" : "markdown"
-        },
-        {
           "nameUrl" : "glossary.html",
           "title" : "Glossary",
           "generation" : "markdown"
