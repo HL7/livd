@@ -18,10 +18,12 @@ The following diagram may help further clarify that:
             <li> One IVD Test Code can yield different LIS Test Result Codes depending on specimen and other parameters.</li>
         </ul>
     </li>
-    <li> Each of the LIS Test Result Codes must have a LOINC code associated with it so the results report includes the appropriate LOINC code as well for downstream use.
-    </li> Laboratory staff today rely on LOINC definitions (using RELMA or the web based tool), their local mappings, and their expertise/knowledge about the device, test, and parameters, to associate a specific LOINC code to the LIS Test Result Code. </li>
-    </li> Adding the LIVD suggested mappings, where available, enhances the Laboratory's staff to arrive more quickly and correctly at the right LOINC code.</li>
+    <li> Each of the LIS Test Result Codes must have a LOINC code associated with it so the results report includes the appropriate LOINC code as well for downstream use.</li>
+    <li> Laboratory staff today rely on LOINC definitions (using RELMA or the web based tool), their local mappings, and their expertise/knowledge about the device, test, and parameters, to associate a specific LOINC code to the LIS Test Result Code. </li>
+    <li> Adding the LIVD suggested mappings, where available, enhances the Laboratory's staff to arrive more quickly and correctly at the right LOINC code.</li>
 </ul>
+
+When the lab professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Code.  The following example clarifies the information a lab professional would use during their configuration.
 
 Example:
 
@@ -223,7 +225,8 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Publication Version ID</td>
-    <td>Composition.identifier.system  Composition.identifier.value</td>
+    <td>Composition.identifier.system  
+    <br>Composition.identifier.value</td>
 </tr>
 <tr>
     <td>LOINC Version ID</td>
@@ -233,11 +236,6 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>LOINC Copyright</td>
     <td>CodeSystem.copyright</td>
 </tr>
-
-</table>
-
-<table>
-
 <tr>
     <td> </td>
     <td>CodeSystem.publisher</td>
@@ -310,15 +308,15 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>DeviceDefintiion.capability.ext-observationDefinition</td>
 </tr>
 <tr>
-    <td><b><i>IVD Test Results</i>,/b></tr>
+    <td><b><i>IVD Test Results</i>,</b></td>
 </tr>
 <tr>
     <td>Vendor Analyte Code
-    Vendor Transmission Code
-    Vendor Analyte Identifier
+    <br>Vendor Transmission Code
+    <br>Vendor Analyte Identifier
     </td>
     <td>ObservationDefinition.code.system
-    ObservationDefinition.code.code	
+    <br>ObservationDefinition.code.code	
     </td>
 </tr>
 <tr>
@@ -358,18 +356,18 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Specimen Description
-ConceptMap.group.element.target.dependsOn.property
-ConceptMap.group.element.target.dependsOn.value	
+    <br>ConceptMap.group.element.target.dependsOn.property
+    <br>ConceptMap.group.element.target.dependsOn.value	
     </td>
 </tr>
 <tr>
     <td>Vendor Result Description
-    Binary
-    Ordinal
-    Nominal
+    <br>Binary
+    <br>Ordinal
+    <br>Nominal
     </td>
     <td>ConceptMap.group.element.target.dependsOn.property
-    ConceptMap.group.element.target.dependsOn.value	
+    <br>ConceptMap.group.element.target.dependsOn.value	
     </td>
 </tr>
 <tr>
@@ -405,38 +403,38 @@ ConceptMap.group.element.target.dependsOn.value
 </tr>
 <tr>
     <td>Component</td>
-    <td> CodeSystem.concept.property.code
-    CodeSystem.concept.property.valueCoding.code
+    <td>CodeSystem.concept.property.code
+    <br>CodeSystem.concept.property.valueCoding.code
     </td>
 </tr>
 <tr>
     <td>Property</td>
-    <td> CodeSystem.concept.property.code
-    CodeSystem.concept.property.valueCoding.code
+    <td>CodeSystem.concept.property.code
+    <br>CodeSystem.concept.property.valueCoding.code
     </td>
 </tr>
 <tr>
     <td>Time</td>
-    <td> CodeSystem.concept.property.code
-    CodeSystem.concept.property.valueCoding.code
+    <td>CodeSystem.concept.property.code
+    <br>CodeSystem.concept.property.valueCoding.code
     </td>
 </tr>
 <tr>
     <td>System</td>
-    <td> CodeSystem.concept.property.code
-    CodeSystem.concept.property.valueCoding.code
+    <td>CodeSystem.concept.property.code
+    <br>CodeSystem.concept.property.valueCoding.code
     </td>
 </tr>
 <tr>
     <td>Scale</td>
-    <td> CodeSystem.concept.property.code
-    CodeSystem.concept.property.valueCoding.code
+    <td>CodeSystem.concept.property.code
+    <br>CodeSystem.concept.property.valueCoding.code
     </td>
 </tr>
 <tr>
     <td>Method</td>
-    <td> CodeSystem.concept.property.code
-    CodeSystem.concept.property.valueCoding.code
+    <td>CodeSystem.concept.property.code
+    <br>CodeSystem.concept.property.valueCoding.code
     </td>
 </tr>
 <tr>
