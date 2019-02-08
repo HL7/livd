@@ -76,8 +76,7 @@ The implementation guide supports the following mappings:
      </li>
      <li> One vendor <b><i>IVD Test Result</i></b> to many <b><i>LOINC</i></b>s
          <ul>
-             <li> This is a very common occurrence. For example, an IVD test for serum glucose could map to a LOINC code for a mass concentration (e.g. mg/dL) or one that defines a substance concentration (e.g. mol/L). Or, a urine albumin could map to a LOINC test for a 24 hour excretion rate with units of mg/(24.h),  versus one for a random urine with unit of md/dL.</li>
-            <li> The structure of the data definition naturally supports this relationship.</li>
+             <li> This is a very common occurrence. Depending on the context of the result, specimen, or other qualification, the same IVD Test Result can be mapped to different suggested LOINC codes as also shown in the example above.  Antoher example may be that an IVD test for serum glucose could map to one LOINC code considering a mass concentration (e.g. mg/dL) or another LOINC considering a substance concentration (e.g. mol/L). Or, a urine albumin could map to one LOINC code for a 24 hour excretion rate with units of mg/(24.h), versus another LOINC code for a random urine with unit of md/dL.</li>
          </ul>
      </li>
      <li> One <b><i>LOINC</i></b> to many vendor <b><i>IVD Test Results</i></b>
@@ -88,21 +87,21 @@ The implementation guide supports the following mappings:
                      <li> Or, consider a susceptibility test that has different IVD Test IDs based on the original specimen source. In this case, the LOINC [6932-8] Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC), which is named for testing on the isolate, could be associated with multiple <b><i>IVD Test Results</i></b> for one IVD Instrument depending on the clinical context. For example, the break points are different for suspected meningitis versus blood infections and to date LOINC has only distinguished test codes by suspected source of infection for some antibiotic susceptibility codes.</li>
                  </ul>
              </li>
-             <li> The structure of the data definition supports this relationship through repeating LOINC data content across multiple <b><i>IVD Test Results</i></b>. </li>
         </ul>
      </li>
+     <li> The IVD Test Code Map enable these many to many mappings, also considering that there may not be a suggested LOINC code for a particular IVD Test Result, or clearly that not every LOINC code is related to an IVD Test Result.</li>
 </ul>
 
 ### LIVD Data Definitions
-#### Publication
-This information establishes the version for the publication are expressed through the LIVD Catalog profile, including:
+#### LIVD Publication
+This information establishes the version for the publication as expressed through the LIVD Catalog profile, including:
 
 * **_Publisher_** is the entity publishing the mapping information.
-* **_Publication Version ID_** is human-readable information provided by the vendor that can be used to differentiate LOINC publication versions.
+* **_Publication Version ID_** is human-readable information provided by the vendor that can be used to differentiate LIVD Publication versions.
 * **_LOINC Version ID_** is the version of LOINC that was used for the mapping.
 * The **_[LOINC License](https://loinc.org/license/)_** requires a statement of attribution and notice that LOINC content is copyrighted. 
 * **_LOINCCopyright_** component holds the required attribution statement.
-* **_Localization_** is the language used for this publication.
+* **_Localization_** is the language used for this LIVD Publication.
 * **_Region_** is an optional vendor description for which geographic or administrative region this localization is valid, e.g.  de-CH (German (Switzerland)) is self-explanatory, but not en-CH (English (Switzerland)).
 
 #### Equipment
@@ -113,7 +112,7 @@ The equipment elements are expressed through the LIVD Device Definition profile,
 * **_UID_** is the unique device identifier, that may be the one used in the Unique Device Identifier (UDI) constructs.
 * **_UID Type_** is capable of supporting the unique device identification system to identify medical devices through their distribution and use. When fully implemented, the label of most devices will include a unique device identifier (UDI) in human- and machine-readable form.
 
-Note that types and cardinality are aligned with values reported in LAW OBX-18 Equipment Instance Identifier.
+Note that types and cardinality are aligned with values reported in [Laboratory Analytical Workflow (LAW) Profile](https://www.ihe.net/resources/technical_frameworks/#PaLM) OBX-18 Equipment Instance Identifier.
 
 #### IVD Test Results
 
@@ -209,7 +208,6 @@ The LIVD Bundle Profile will enable packaging of the resources.
 #### Detailed Mapping
 
 The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.
-
 <table>
 <tr>
     <th><b>LIVD Attribute</b></th>
