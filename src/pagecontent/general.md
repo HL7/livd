@@ -386,7 +386,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
-    <td>ConceptMap.group.element.display	
+    <td>ConceptMap.group.element.display</td>
 </tr>
 <tr>
     <td><b><i>LOINC Code System</i></b></td>
