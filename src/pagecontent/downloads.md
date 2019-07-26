@@ -4,8 +4,9 @@ This implementation guide is web-based and is intended to be browsed online.  Ho
 
 * This [full IG](full-ig.zip)
 * The [R4](definitions.json.zip) resource definitions from this IG
-* The FHIR [R4]({{site.data.fhir.path}}fhir-spec.zip) specification
+* The FHIR [R4]({{site.data.fhir.path}}R4/fhir-spec-r4.zip) specification
+* The FHIR [R4]({{site.data.fhir.path}}definitions.json.zip) definitions (value sets, profiles, etc.)
 * A [validator]({{site.data.fhir.path}}validator.zip) that can be used to check FHIR resource instance validity
-* The [R4](validator.pack) validator pack that can be used with that validator
+* The [R4]({{site.data.fhir.path}}package.tgz) NPM package that can be used with that validator
 
-<!-- Todo: SMART App, reference implementations -->
+<!-- Todo: SMART App, reference implementations --> 
