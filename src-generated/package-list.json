@@ -1,7 +1,7 @@
 {
-  "package-id": "hl7.fhir.uv.ips",
-  "title": "International Patient Summary Implementation Guide",
-  "canonical": "http://hl7.org/fhir/uv/ips",
+  "package-id": "hl7.fhir.uv.livd",
+  "title": "LOINC – IVD Test Code (LIVD) Mapping",
+  "canonical": "http://hl7.org/fhir/uv/livd",
   "list": [
     {
       "version": "current",
@@ -17,7 +17,7 @@
       "desc": "Release 0.1.0 Draft for Comment",
       "path": "http://hl7.org/fhir/uv/livd/2018Sep",
       "sequence": "Draft for Comment 1",
-      "fhir-version": "3.5.0",
+      "fhir-version": "4.0.0",
       "status": "ballot"
     }
   ]
