@@ -54,7 +54,7 @@
     </condition>
   </target>
   <target name="local-downloads" depends="local-setup" if="downloads" description="--Download current IG generator files">
-    <get src="${jar.publisher}" dest="${dir.srcgenned}" usetimestamp="true"/>
+    <get src="https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&amp;g=org.hl7.fhir.publisher&amp;a=org.hl7.fhir.publisher.cli&amp;v=LATEST&amp;e=jar" dest="${dir.srcgenned}/org.hl7.fhir.igpublisher.jar"/>
     <get src="${fhirspec}fhir-single.xsd" dest="${dir.schemas}" usetimestamp="true"/>
     <get src="${fhirspec}fhir-xhtml.xsd" dest="${dir.schemas}" usetimestamp="true"/>
     <get src="${fhirspec}xml.xsd" dest="${dir.schemas}" usetimestamp="true"/>
@@ -75,6 +75,7 @@
   "excludejson":"${excludejson}",
   "excludettl":"${excludettl}",
   "assets":"",
+  "child":"${additionalVersion}/",
   "headingOffset":""
 }</echo>
     <xslt in="${dir.src}/${guidename}.xml" out="${dir.includes}/artifacts.xml" style="${dir.xslt}/createArtifactSummary.xslt"/>
@@ -121,6 +122,7 @@
   "excludejson":"${excludejson}",
   "excludettl":"${excludettl}",
   "assets":"../",
+  "child":"",
   "headingOffset":"${childHeadingOffset}."
 }</echo>
     <xslt in="${dir.src}/${guidename}.xml" out="${dir.altincludes}/artifacts.xml" style="${dir.xslt}/createArtifactSummary.xslt">
