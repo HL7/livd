@@ -1,0 +1,24 @@
+{
+  "package-id": "hl7.fhir.uv.ips",
+  "title": "International Patient Summary Implementation Guide",
+  "canonical": "http://hl7.org/fhir/uv/ips",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "https://build.fhir.org/ig/HL7/livd",
+      "fhir-version": "4.0.0",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.1.0",
+      "date": "2018-09-01",
+      "desc": "Release 0.1.0 Draft for Comment",
+      "path": "http://hl7.org/fhir/uv/livd/2018Sep",
+      "sequence": "Draft for Comment 1",
+      "fhir-version": "3.5.0",
+      "status": "ballot"
+    }
+  ]
+}
