@@ -1,9 +1,9 @@
 {
-  "ballotstatus":"${ballotstatus}",
+  "ballotstatus":"CI Build",
   "copyrightyear":"2018+",
-  "excludexml":"Yes",
+  "excludexml":"No",
   "excludejson":"No",
-  "excludettl":"Yes",
+  "excludettl":"No",
   "assets":"",
   "child":"${additionalVersion}/",
   "headingOffset":""

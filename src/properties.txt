@@ -2,8 +2,9 @@
 guidename=livd
 copyrightyear=2018+
 license=CC0-1.0
-version=0.1.0
-fhirspec=http://build.fhir.org/
-excludexml=Yes
+version=0.2.0
+ballotstatus=CI Build
+fhirspec=http://hl7.org/fhir/
+#excludexml=Yes
 #excludejson=Yes
-excludettl=Yes
+#excludettl=Yes
