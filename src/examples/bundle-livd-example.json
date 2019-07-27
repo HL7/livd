@@ -30,8 +30,8 @@
                 "type": {
                     "coding": [
                         {
-                            "system": "http://new-loinc-code.org",
-                            "version": "2.64",
+                            "system": "http://loinc.org",
+                            "version": "2.65",
                             "code": "90370-8",
                             "display": "LIVD mapping data set"
                         }
