@@ -214,3 +214,153 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "22314-9",
+        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "31616-6",
+        "display" : "Rubella virus IgM Ab [Presence] in Serum"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:d41a48c3-193a-40d5-986b-2c720ccd5222",
+    "timestamp" : "2019-07-28T16:58:06.977Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "22314-9",
+      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31616-6",
+      "display" : "Rubella virus IgM Ab [Presence] in Serum"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "22314-9",
+        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "31616-6",
+        "display" : "Rubella virus IgM Ab [Presence] in Serum"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:78b0e83f-f46f-4638-9179-09f6fdaf31db",
+    "timestamp" : "2019-07-28T16:58:25.821Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "22314-9",
+      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31616-6",
+      "display" : "Rubella virus IgM Ab [Presence] in Serum"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

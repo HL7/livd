@@ -25,6 +25,14 @@
                     {
                         "code": "2345-7",
                         "display": "Glucose [Mass/volume] in Serum or Plasma"
+                    },
+                    {
+                        "code": "22314-9",
+                        "display": "Hepatitis A virus IgM Ab [Presence] in Serum"
+                    },
+                    {
+                        "code": "31616-6",
+                        "display": "Rubella virus IgM Ab [Presence] in Serum"
                     }
                 ]
             }

@@ -72,6 +72,10 @@
                     "valueString": "Pt (LP6960-1)"
                 },
                 {
+                    "code": "SYSTEM",
+                    "valueString": "{Device} (LP76022-0)"
+                },
+                {
                     "code": "SCALE_TYP",
                     "valueString": "Doc (LP7753-9)"
                 }
@@ -126,6 +130,58 @@
                 {
                     "code": "SCALE_TYP",
                     "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "22314-9",
+            "display": "Hepatitis A virus IgM Ab [Presence] in Serum",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Hepatitis A virus Ab.IgM (LP38318-9)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "PrThr (LP217195-9)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Ser (LP7567-3)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Ord (LP7751-3)"
+                }
+            ]
+        },
+        {
+            "code": "31616-6",
+            "display": "Rubella virus IgM Ab [Presence] in Serum",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Rubella virus Ab.IgM (LP39632-2)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "PrThr (LP217195-9)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Ser (LP7567-3)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Ord (LP7751-3)"
                 }
             ]
         }
