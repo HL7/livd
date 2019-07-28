@@ -43,7 +43,7 @@
     </grouping>
     <grouping id="examples">
       <name value="Example(s)"/>
-      <description value="Example(s) showing the use of the LIVD profiles.       DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.       This content is not to be used for actual LOINC mappings.       "/>
+      <description value="Example(s) showing the use of the LIVD profiles.       DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.       This content is not to be used for actual LOINC mappings."/>
     </grouping>
     
     
