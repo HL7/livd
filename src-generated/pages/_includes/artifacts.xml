@@ -11,6 +11,13 @@
 <tbody>
 <tr>
 <td style="column-width:30%">
+<a href="codesystem-loinc-uv-livd.html">
+                        •  LIVD LOINC CodeSystem</a>
+</td>
+<td>CodeSystem profile for LOINC for the LIVD project.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
 <a href="bundle-uv-livd.html">
                         •  LIVD Bundle</a>
 </td>
@@ -43,13 +50,6 @@
                         •  LIVD ConceptMap</a>
 </td>
 <td>ConceptMap profile for the LIVD project.</td>
-</tr>
-<tr>
-<td style="column-width:30%">
-<a href="codesystem-loinc-uv-livd.html">
-                        •  LIVD LOINC CodeSystem</a>
-</td>
-<td>CodeSystem profile for LOINC for the LIVD project.</td>
 </tr>
 </tbody>
 </table>
@@ -117,6 +117,13 @@
                         •  LIVD section type value set</a>
 </td>
 <td>Includes the allowed section types for the LIVD catalog.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="valueset-livd-bundle-type.html">
+                        •  LIVD bundle type value set</a>
+</td>
+<td>Allowed types of bundles for the LIVD catalog</td>
 </tr>
 </tbody>
 </table>

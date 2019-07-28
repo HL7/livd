@@ -116,6 +116,15 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/livd-bundle-type"/>
+      </reference>
+      <name value="LIVD bundle type value set"/>
+      <description value="Allowed types of bundles for the LIVD catalog"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Bundle/livd-example"/>
       </reference>
       <name value="LIVD bundle"/>
@@ -157,33 +166,33 @@
         <title value="Artifact List"/>
         <generation value="html"/>
       <page>
+<nameUrl value="codesystem-loinc-uv-livd.html"/>
+<ns0:title xmlns:ns0="http://hl7.org/fhir" value="LIVD LOINC CodeSystem"/>
+<generation value="generated"/>
+</page>
+<page>
 <nameUrl value="bundle-uv-livd.html"/>
-<ns0:title xmlns:ns0="http://hl7.org/fhir" value="LIVD Bundle"/>
+<ns1:title xmlns:ns1="http://hl7.org/fhir" value="LIVD Bundle"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="catalog-uv-livd.html"/>
-<ns1:title xmlns:ns1="http://hl7.org/fhir" value="LIVD Catalog"/>
+<ns2:title xmlns:ns2="http://hl7.org/fhir" value="LIVD Catalog"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="observationdefinition-uv-livd.html"/>
-<ns2:title xmlns:ns2="http://hl7.org/fhir" value="LIVD ObservationDefinition"/>
+<ns3:title xmlns:ns3="http://hl7.org/fhir" value="LIVD ObservationDefinition"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="devicedefinition-uv-livd.html"/>
-<ns3:title xmlns:ns3="http://hl7.org/fhir" value="LIVD DeviceDefinition"/>
+<ns4:title xmlns:ns4="http://hl7.org/fhir" value="LIVD DeviceDefinition"/>
 <generation value="generated"/>
 </page>
 <page>
 <nameUrl value="conceptmap-uv-livd.html"/>
-<ns4:title xmlns:ns4="http://hl7.org/fhir" value="LIVD ConceptMap"/>
-<generation value="generated"/>
-</page>
-<page>
-<nameUrl value="codesystem-loinc-uv-livd.html"/>
-<ns5:title xmlns:ns5="http://hl7.org/fhir" value="LIVD LOINC CodeSystem"/>
+<ns5:title xmlns:ns5="http://hl7.org/fhir" value="LIVD ConceptMap"/>
 <generation value="generated"/>
 </page>
 <page>
@@ -222,8 +231,13 @@
 <generation value="generated"/>
 </page>
 <page>
+<nameUrl value="valueset-livd-bundle-type.html"/>
+<ns13:title xmlns:ns13="http://hl7.org/fhir" value="LIVD bundle type value set"/>
+<generation value="generated"/>
+</page>
+<page>
 <nameUrl value="livd-example.html"/>
-<ns13:title xmlns:ns13="http://hl7.org/fhir" value="LIVD bundle"/>
+<ns14:title xmlns:ns14="http://hl7.org/fhir" value="LIVD bundle"/>
 <generation value="generated"/>
 </page>
 </page>

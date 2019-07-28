@@ -1,3 +1,0 @@
-// These structure definitions are generated
-
-// These are just info messages and aren't relevant

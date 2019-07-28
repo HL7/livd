@@ -45,3 +45,172 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.6.5",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:a577e761-a80e-4a54-a011-5329a755bdf6",
+    "timestamp" : "2019-07-28T00:07:10.500Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.6.5",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:c0d67d4a-7150-46f9-a2a7-5185d4b19319",
+    "timestamp" : "2019-07-28T00:07:27.969Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:ea557880-e31a-4c10-a64c-6539c0db5e45",
+    "timestamp" : "2019-07-28T07:30:03.135Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

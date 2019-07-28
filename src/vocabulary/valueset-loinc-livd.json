@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "id": "loinc-livd",
+    "url": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+    "version": "0.1.0",
+    "name": "LivdLoincVS",
+    "title": "LOINC value set for LIVD",
+    "status": "draft",
+    "date": "2018-09-25",
+    "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://loinc.org",
+                "version": "2.65",
+                "concept": [
+                    {
+                        "code": "90370-8",
+                        "display": "LIVD mapping data set"
+                    },
+                    {
+                        "code": "14749-6",
+                        "display": "Glucose [Moles/volume] in Serum or Plasma"
+                    },
+                    {
+                        "code": "2345-7",
+                        "display": "Glucose [Mass/volume] in Serum or Plasma"
+                    }
+                ]
+            }
+        ]
+    }
+}

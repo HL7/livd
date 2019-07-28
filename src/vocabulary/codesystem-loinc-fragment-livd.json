@@ -1,0 +1,133 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "loinc-fragment-livd",
+    "url": "http://loinc.org",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113883.6.1"
+        }
+    ],
+    "version": "2.65",
+    "name": "LOINC",
+    "title": "LOINC Code System",
+    "status": "active",
+    "publisher": "Regenstrief Institute, Inc.",
+    "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+    "caseSensitive": false,
+    "content": "fragment",
+    "property": [
+        {
+            "code": "COMPONENT",
+            "uri": "http://loinc.org/property/COMPONENT",
+            "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
+            "type": "string"
+        },
+        {
+            "code": "PROPERTY",
+            "uri": "http://loinc.org/property/PROPERTY",
+            "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
+            "type": "string"
+        },
+        {
+            "code": "TIME_ASPCT",
+            "uri": "http://loinc.org/property/TIME_ASPCT",
+            "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
+            "type": "string"
+        },
+        {
+            "code": "SYSTEM",
+            "uri": "http://loinc.org/property/SYSTEM",
+            "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
+            "type": "string"
+        },
+        {
+            "code": "SCALE_TYP",
+            "uri": "http://loinc.org/property/SCALE_TYP",
+            "description": "Fifth major axis-scale of measurement: Type of Scale",
+            "type": "string"
+        },
+        {
+            "code": "METHOD_TYP",
+            "uri": "http://loinc.org/property/METHOD_TYP",
+            "description": "Sixth major axis-method of measurement: Type of Method",
+            "type": "string"
+        }
+    ],
+    "concept": [
+        {
+            "code": "90370-8",
+            "display": "LIVD mapping data set",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Vendor test code to LOINC mapping data set (LP269198-0)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "Find (LP6813-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Doc (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "14749-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "SCnc (LP6860-3)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Ser/Plas (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "2345-7",
+            "display": "Glucose [Mass/volume] in Serum or Plasma",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "MCnc (LP6827-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Ser/Plas (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        }
+    ]
+}

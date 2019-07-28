@@ -25,6 +25,9 @@
   <definition>
     <!-- Note: Order of these spreadsheets matters -->
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+      <valueUri value="codesystem-loinc-uv-livd-spreadsheet.xml"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="bundle-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
@@ -38,9 +41,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="conceptmap-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="codesystem-loinc-uv-livd-spreadsheet.xml"/>
     </extension>
     <grouping id="profiles">
       <name value="Profiles"/>
@@ -62,6 +62,18 @@
       <name value="Example(s)"/>
       <description value="Example(s) showing the use of the LIVD profiles"/>
     </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/codesystem-loinc-uv-livd"/>
+      </reference>
+      <name value="LIVD LOINC CodeSystem"/>
+      <description value="CodeSystem profile for LOINC for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
@@ -119,18 +131,6 @@
       </reference>
       <name value="LIVD ConceptMap"/>
       <description value="ConceptMap profile for the LIVD project."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="profiles"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/codesystem-loinc-uv-livd"/>
-      </reference>
-      <name value="LIVD LOINC CodeSystem"/>
-      <description value="CodeSystem profile for LOINC for the LIVD project."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
     </resource>
@@ -194,6 +194,15 @@
       </reference>
       <name value="LIVD section type value set"/>
       <description value="Includes the allowed section types for the LIVD catalog."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/livd-bundle-type"/>
+      </reference>
+      <name value="LIVD bundle type value set"/>
+      <description value="Allowed types of bundles for the LIVD catalog"/>
       <exampleBoolean value="false"/>
       <groupingId value="terminology"/>
     </resource>

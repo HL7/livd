@@ -257,6 +257,9 @@
     </xsl:for-each>
     <xsl:text>
   ],
+  "special-urls" : [
+    "http://loinc.org"
+  ],
   "resources": {</xsl:text>
     <xsl:for-each select="f:*[self::f:package or self::f:definition]/f:resource[not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/tools-alternateVersion'] or $additional) or (f:extension[@url='http://hl7.org/fhir/StructureDefinition/tools-alternateVersion']/f:valueCode/@value=$additional)]">
       <xsl:variable name="type" select="substring-before(*[self::f:reference or self::f:sourceReference]/f:reference/@value, '/')"/>

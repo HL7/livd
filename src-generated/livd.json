@@ -98,14 +98,19 @@
   "canonicalBase": "http://hl7.org/fhir/uv/livd",
   "source": "livd.xml",
   "spreadsheets": [
+    "codesystem-loinc-uv-livd-spreadsheet.xml",
     "bundle-uv-livd-spreadsheet.xml",
     "catalog-uv-livd-spreadsheet.xml",
     "observationdefinition-uv-livd-spreadsheet.xml",
     "devicedefinition-uv-livd-spreadsheet.xml",
-    "conceptmap-uv-livd-spreadsheet.xml",
-    "codesystem-loinc-uv-livd-spreadsheet.xml"
+    "conceptmap-uv-livd-spreadsheet.xml"
+  ],
+  "special-urls" : [
+    "http://loinc.org"
   ],
   "resources": {
+    "StructureDefinition/codesystem-loinc-uv-livd":{
+    },
     "StructureDefinition/bundle-uv-livd":{
     },
     "StructureDefinition/catalog-uv-livd":{
@@ -115,8 +120,6 @@
     "StructureDefinition/devicedefinition-uv-livd":{
     },
     "StructureDefinition/conceptmap-uv-livd":{
-    },
-    "StructureDefinition/codesystem-loinc-uv-livd":{
     },
     "StructureDefinition/ext-capability":{
       "template-base": "../framework/templates/template-ext.html",
@@ -176,6 +179,8 @@
     "CodeSystem/livd-section-type":{
     },
     "ValueSet/livd-section-type":{
+    },
+    "ValueSet/livd-bundle-type":{
     },
     "Bundle/livd-example":{
     }
