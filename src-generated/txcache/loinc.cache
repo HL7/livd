@@ -364,3 +364,297 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "22314-9",
+        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "31616-6",
+        "display" : "Rubella virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "14744-7",
+        "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
+      },
+      {
+        "code" : "2342-4",
+        "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
+      },
+      {
+        "code" : "15076-3",
+        "display" : "Glucose [Moles/volume] in Urine"
+      },
+      {
+        "code" : "2350-7",
+        "display" : "Glucose [Mass/volume] in Urine"
+      },
+      {
+        "code" : "15077-1",
+        "display" : "Glucose [Moles/time] in 24 hour Urine"
+      },
+      {
+        "code" : "2351-5",
+        "display" : "Glucose [Mass/time] in 24 hour Urine"
+      },
+      {
+        "code" : "70151-6",
+        "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
+      },
+      {
+        "code" : "21431-2",
+        "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:d673befe-0dfb-4a3c-837f-fff9a7655e13",
+    "timestamp" : "2019-07-28T20:52:32.748Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "22314-9",
+      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31616-6",
+      "display" : "Rubella virus IgM Ab [Presence] in Serum"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14744-7",
+      "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2342-4",
+      "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "15076-3",
+      "display" : "Glucose [Moles/volume] in Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2350-7",
+      "display" : "Glucose [Mass/volume] in Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "15077-1",
+      "display" : "Glucose [Moles/time] in 24 hour Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2351-5",
+      "display" : "Glucose [Mass/time] in 24 hour Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "70151-6",
+      "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21431-2",
+      "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "22314-9",
+        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "31616-6",
+        "display" : "Rubella virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "14744-7",
+        "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
+      },
+      {
+        "code" : "2342-4",
+        "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
+      },
+      {
+        "code" : "15076-3",
+        "display" : "Glucose [Moles/volume] in Urine"
+      },
+      {
+        "code" : "2350-7",
+        "display" : "Glucose [Mass/volume] in Urine"
+      },
+      {
+        "code" : "15077-1",
+        "display" : "Glucose [Moles/time] in 24 hour Urine"
+      },
+      {
+        "code" : "2351-5",
+        "display" : "Glucose [Mass/time] in 24 hour Urine"
+      },
+      {
+        "code" : "70151-6",
+        "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
+      },
+      {
+        "code" : "21431-2",
+        "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:e4113470-86ae-46bf-9bb3-664bd64eae68",
+    "timestamp" : "2019-07-28T20:52:52.482Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "22314-9",
+      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31616-6",
+      "display" : "Rubella virus IgM Ab [Presence] in Serum"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14744-7",
+      "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2342-4",
+      "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "15076-3",
+      "display" : "Glucose [Moles/volume] in Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2350-7",
+      "display" : "Glucose [Mass/volume] in Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "15077-1",
+      "display" : "Glucose [Moles/time] in 24 hour Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2351-5",
+      "display" : "Glucose [Mass/time] in 24 hour Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "70151-6",
+      "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21431-2",
+      "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

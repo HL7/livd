@@ -1,0 +1,1238 @@
+{
+  "resourceType": "Bundle",
+  "id": "livd-example-abbott-architect",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/livd/StructureDefinition/bundle-uv-livd"
+    ]
+  },
+  "identifier": {
+    "system": "https://www.corelaboratory.abbott",
+    "value": "a809e430-5d17-4248-b595-d575fea6eb10"
+  },
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:40baf389-d34c-4402-8589-59cd48095584",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "40baf389-d34c-4402-8589-59cd48095584",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/catalog-uv-livd"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 40baf389-d34c-4402-8589-59cd48095584</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: ARCHITECT CC v0.9.0</p><p><b>status</b>: final</p><p><b>type</b>: LIVD mapping data set <span style=\"background: LightGoldenRodYellow\">(Details : {http://loinc.org code '90370-8' = '90370-8', given as 'LIVD mapping data set'})</span></p><p><b>date</b>: Sep 12, 2018</p><p><b>author</b>: Abbott</p><p><b>title</b>: Abbott LIVD HL7 Connectathon</p></div>"
+        },
+        "identifier": {
+          "system": "https://www.corelaboratory.abbott",
+          "value": "ARCHITECT CC v0.9.0",
+          "assigner": {
+            "display": "Abbott Diagnostics"
+          }
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "version": "2.65",
+              "code": "90370-8",
+              "display": "LIVD mapping data set"
+            }
+          ]
+        },
+        "date": "2018-12-21",
+        "author": [
+          {
+            "display": "Abbott"
+          }
+        ],
+        "title": "Abbott LIVD HL7 Connectathon",
+        "section": [
+          {
+            "title": "Devices",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                  "code": "devices",
+                  "display": "Device Definitions"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+              },
+              {
+                "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
+              },
+              {
+                "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
+              }
+            ]
+          },
+          {
+            "title": "Observation Definitions",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                  "code": "observation-definitions",
+                  "display": "Observation Definitions"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+              },
+              {
+                "reference": "ObservationDefinition/46088aef-7bea-4832-9296-66051eb7d12e"
+              },
+              {
+                "reference": "ObservationDefinition/eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246"
+              },
+              {
+                "reference": "ObservationDefinition/2a673ad5-ecb9-406b-959d-121f24fb1146"
+              }
+            ]
+          },
+          {
+            "title": "Concept Maps",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                  "code": "concept-map",
+                  "display": "Concept Map"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/40baf389-d34c-4402-8589-59cd48095584"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1faf1d64-df18-4d7a-b45d-3872ddd3f165",
+      "resource": {
+        "resourceType": "DeviceDefinition",
+        "id": "1faf1d64-df18-4d7a-b45d-3872ddd3f165",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1faf1d64-df18-4d7a-b45d-3872ddd3f165</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"FDA\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
+        },
+        "udiDeviceIdentifier": [
+          {
+            "deviceIdentifier": "00380740003746",
+            "issuer": "FDA",
+            "jurisdiction": "https://unstats.un.org/unsd/methodology/m49/021"
+          }
+        ],
+        "manufacturerString": "Abbott Diagnostics",
+        "modelNumber": "ARCHITECT c4000",
+        "capability": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ObservationDefinition"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/46088aef-7bea-4832-9296-66051eb7d12e"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/2a673ad5-ecb9-406b-959d-121f24fb1146"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6c4d6831-9392-45aa-816f-fb7e61cee5d4",
+      "resource": {
+        "resourceType": "DeviceDefinition",
+        "id": "6c4d6831-9392-45aa-816f-fb7e61cee5d4",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c4d6831-9392-45aa-816f-fb7e61cee5d4</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"FDA\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
+        },
+        "udiDeviceIdentifier": [
+          {
+            "deviceIdentifier": "00380740000509",
+            "issuer": "FDA",
+            "jurisdiction": "https://unstats.un.org/unsd/methodology/m49/021"
+          }
+        ],
+        "manufacturerString": "Abbott Diagnostics",
+        "modelNumber": "ARCHITECT c8000",
+        "capability": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ObservationDefinition"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/46088aef-7bea-4832-9296-66051eb7d12e"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/2a673ad5-ecb9-406b-959d-121f24fb1146"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:767661e1-9f1f-4dc7-b52b-d9e751cb799c",
+      "resource": {
+        "resourceType": "DeviceDefinition",
+        "id": "767661e1-9f1f-4dc7-b52b-d9e751cb799c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 767661e1-9f1f-4dc7-b52b-d9e751cb799c</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"FDA\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
+        },
+        "udiDeviceIdentifier": [
+          {
+            "deviceIdentifier": "00380740005924",
+            "issuer": "FDA",
+            "jurisdiction": "https://unstats.un.org/unsd/methodology/m49/021"
+          }
+        ],
+        "manufacturerString": "Abbott Diagnostics",
+        "modelNumber": "ARCHITECT c16000",
+        "capability": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ObservationDefinition"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/46088aef-7bea-4832-9296-66051eb7d12e"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/2a673ad5-ecb9-406b-959d-121f24fb1146"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b87458ca-b29a-4244-b347-39111caf9ef2",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "b87458ca-b29a-4244-b347-39111caf9ef2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier",
+            "valueIdentifier": {
+              "value": "3L82"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "code": "1069",
+              "display": "GluC"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:46088aef-7bea-4832-9296-66051eb7d12e",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "46088aef-7bea-4832-9296-66051eb7d12e",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier",
+            "valueIdentifier": {
+              "value": "3L82"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "code": "1095",
+              "display": "GluCU"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition/46088aef-7bea-4832-9296-66051eb7d12e"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier",
+            "valueIdentifier": {
+              "value": "3L34"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "code": "2843",
+              "display": "Opi3Q"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition/eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2a673ad5-ecb9-406b-959d-121f24fb1146",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "2a673ad5-ecb9-406b-959d-121f24fb1146",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier",
+            "valueIdentifier": {
+              "value": "3L34"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "code": "2844",
+              "display": "Opi2Q"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition/eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+      "resource": {
+        "resourceType": "ConceptMap",
+        "id": "66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7\">http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7</a></p><p><b>status</b>: active</p><p><b>source</b>: <a href=\"ObservationDefinition\">ObservationDefinition</a></p><p><b>target</b>: <a href=\"http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd\">http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd</a></p><blockquote><p><b>group</b></p><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 14749-6</p><p><b>display</b>: Glucose [Moles/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"specimen\">specimen</a></p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"result\">result</a></p><p><b>value</b>: mmol/L</p></blockquote></blockquote></blockquote><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 2345-7</p><p><b>display</b>: Glucose [Mass/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"specimen\">specimen</a></p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"result\">result</a></p><p><b>value</b>: mg/dL</p></blockquote></blockquote></blockquote></blockquote></div>"
+        },
+        "url": "https://www.corelaboratory.abbott/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+        "name": "AbbottArchitectLivdConceptMap",
+        "status": "active",
+        "sourceUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd",
+        "targetCanonical": "https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott",
+        "group": [
+          {
+            "element": [
+              {
+                "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
+                "display": "GluC",
+                "target": [
+                  {
+                    "code": "14749-6",
+                    "display": "Glucose [Moles/volume] in Serum or Plasma",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Serum/Plasma"
+                      },
+                      {
+                        "property": "result",
+                        "value": "mmol/L"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
+                "display": "GluC",
+                "target": [
+                  {
+                    "code": "2345-7",
+                    "display": "Glucose [Mass/volume] in Serum or Plasma",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Serum/Plasma"
+                      },
+                      {
+                        "property": "result",
+                        "value": "mg/dL"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "46088aef-7bea-4832-9296-66051eb7d12e",
+                "display": "GluCU",
+                "target": [
+                  {
+                    "code": "14744-7",
+                    "display": "Glucose [Moles/volume] in Cerbral spinal fluid",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "CSF"
+                      },
+                      {
+                        "property": "result",
+                        "value": "mmol/L"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "46088aef-7bea-4832-9296-66051eb7d12e",
+                "display": "GluCU",
+                "target": [
+                  {
+                    "code": "2342-4",
+                    "display": "Glucose [Mass/volume] in Cerebral spinal fluid",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "CSF"
+                      },
+                      {
+                        "property": "result",
+                        "value": "mg/dL"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "46088aef-7bea-4832-9296-66051eb7d12e",
+                "display": "GluCU",
+                "target": [
+                  {
+                    "code": "15076-3",
+                    "display": "Glucose [Moles/volume] in Urine",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Urine"
+                      },
+                      {
+                        "property": "result",
+                        "value": "mmol/L"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "46088aef-7bea-4832-9296-66051eb7d12e",
+                "display": "GluCU",
+                "target": [
+                  {
+                    "code": "2350-7",
+                    "display": "Glucose [Mass/volume] in Urine",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Urine"
+                      },
+                      {
+                        "property": "result",
+                        "value": "mg/dL"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "46088aef-7bea-4832-9296-66051eb7d12e",
+                "display": "GluCU",
+                "target": [
+                  {
+                    "code": "15077-1",
+                    "display": "Glucose [Mass/volume] in Urine",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Urine"
+                      },
+                      {
+                        "property": "result",
+                        "value": "mmol/day"
+                      },
+                      {
+                        "property": "other",
+                        "value": "mmol/day is client calculated result value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "46088aef-7bea-4832-9296-66051eb7d12e",
+                "display": "GluCU",
+                "target": [
+                  {
+                    "code": "2351-5",
+                    "display": "Glucose [Mass/volume] in Urine",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Urine"
+                      },
+                      {
+                        "property": "result",
+                        "value": "g/day"
+                      },
+                      {
+                        "property": "other",
+                        "value": "g/day is client calculated result value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "eadcd6c5-5706-4ab1-9a0a-b37b7a4dc246",
+                "display": "Opi3Q",
+                "target": [
+                  {
+                    "code": "70151-6",
+                    "display": "Opiates [Presence] in Urine by Screen method >300 ng/mL",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Urine"
+                      },
+                      {
+                        "property": "result",
+                        "value": "Binary"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2a673ad5-ecb9-406b-959d-121f24fb1146",
+                "display": "Opi2Q",
+                "target": [
+                  {
+                    "code": "21431-2",
+                    "display": "Opiates [Presence] in Urine by Screen method >2000 ng/mL",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Urine"
+                      },
+                      {
+                        "property": "result",
+                        "value": "Binary"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b35a850f-2cf2-42c6-9bcb-f721b6a8a4fe",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "loinc-livd-abbott",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd\">http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: LivdLoincVS</p><p><b>title</b>: LOINC value set for LIVD</p><p><b>status</b>: draft</p><p><b>date</b>: Sep 25, 2018</p><p><b>description</b>: Includes the subset of LOINC codes that are relevant for this ConceptMap.</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td>-</td><td><b>System</b></td></tr><tr><td>*</td><td><a href=\"http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd\">http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd</a></td></tr></table></blockquote></div>"
+        },
+        "url": "https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott",
+        "version": "0.1.0",
+        "name": "AbbottLivdLoincVS",
+        "title": "Abbott LOINC value set for LIVD",
+        "status": "draft",
+        "date": "2018-09-25",
+        "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "version": "2.65",
+              "concept": [
+                {
+                  "code": "90370-8",
+                  "display": "LIVD mapping data set"
+                },
+                {
+                  "code": "14749-6",
+                  "display": "Glucose [Moles/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "2345-7",
+                  "display": "Glucose [Mass/volume] in Serum or Plasma"
+                },
+                {
+                  "code": "14744-7",
+                  "display": "Glucose [Moles/volume] in Cerbral spinal fluid"
+                },
+                {
+                  "code": "2342-4",
+                  "display": "Glucose [Mass/volume] in Cerebral spinal fluid"
+                },
+                {
+                  "code": "15076-3",
+                  "display": "Glucose [Moles/volume] in Urine"
+                },
+                {
+                  "code": "2350-7",
+                  "display": "Glucose [Mass/volume] in Urine"
+                },
+                {
+                  "code": "15077-1",
+                  "display": "Glucose [Moles/time] in 24 hour Urine"
+                },
+                {
+                  "code": "2351-5",
+                  "display": "Glucose [Mass/time] in 24 hour Urine"
+                },
+                {
+                  "code": "70151-6",
+                  "display": "Opiates [Presence] in Urine by Screen method >300 ng/mL"
+                },
+                {
+                  "code": "21431-2",
+                  "display": "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "ValueSet/loinc-livd-abbott"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b1d0643e-5c5b-4d73-b598-62265aa5d19b",
+      "resource": {
+        "resourceType": "CodeSystem",
+        "id": "loinc-fragment-livd-abbott",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
+          ]
+        },
+        "url": "http://loinc.org",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113883.6.1"
+          }
+        ],
+        "version": "2.65",
+        "name": "LOINC",
+        "title": "LOINC Code System",
+        "status": "active",
+        "publisher": "Regenstrief Institute, Inc.",
+        "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+        "caseSensitive": false,
+        "content": "fragment",
+        "property": [
+          {
+            "code": "COMPONENT",
+            "uri": "http://loinc.org/property/COMPONENT",
+            "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
+            "type": "string"
+          },
+          {
+            "code": "PROPERTY",
+            "uri": "http://loinc.org/property/PROPERTY",
+            "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
+            "type": "string"
+          },
+          {
+            "code": "TIME_ASPCT",
+            "uri": "http://loinc.org/property/TIME_ASPCT",
+            "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
+            "type": "string"
+          },
+          {
+            "code": "SYSTEM",
+            "uri": "http://loinc.org/property/SYSTEM",
+            "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
+            "type": "string"
+          },
+          {
+            "code": "SCALE_TYP",
+            "uri": "http://loinc.org/property/SCALE_TYP",
+            "description": "Fifth major axis-scale of measurement: Type of Scale",
+            "type": "string"
+          },
+          {
+            "code": "METHOD_TYP",
+            "uri": "http://loinc.org/property/METHOD_TYP",
+            "description": "Sixth major axis-method of measurement: Type of Method",
+            "type": "string"
+          }
+        ],
+        "concept": [
+          {
+            "code": "90370-8",
+            "display": "LIVD mapping data set",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Vendor test code to LOINC mapping data set (LP269198-0)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "Find (LP6813-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "{Device} (LP76022-0)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Doc (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "14749-6",
+            "display": "Glucose [Moles/volume] in Serum or Plasma",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "SCnc (LP6860-3)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Ser/Plas (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "2345-7",
+            "display": "Glucose [Mass/volume] in Serum or Plasma",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "MCnc (LP6827-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Ser/Plas (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "14744-7",
+            "display": "Glucose [Moles/volume] in Cerbral spinal fluid",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "SCnc (LP6860-3)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "CSF (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "2342-4",
+            "display": "Glucose [Mass/volume] in Cerebral spinal fluid",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "MCnc (LP6827-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "CSF (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "15076-3",
+            "display": "Glucose [Moles/volume] in Urine",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "SCnc (LP6860-3)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Urine (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "2350-7",
+            "display": "Glucose [Mass/volume] in Urine",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "MCnc (LP6827-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Urine (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "15077-1",
+            "display": "Glucose [Moles/time] in 24 hour Urine",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "SRat (LP6827-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "24h (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Urine (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "2351-5",
+            "display": "Glucose [Mass/time] in 24 hour Urine",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Glucose (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "MRat (LP6827-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "24h (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Urine (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Qn (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "70151-6",
+            "display": "Opiates [Presence] in Urine by Screen method >300 ng/mL",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Opiates (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "PrThr (LP6827-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Urine (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Ord (LP7753-9)"
+              },
+              {
+                "code": "METHOD_TYP",
+                "valueString": "Screen>300 ng/mL (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "21431-2",
+            "display": "Opiates [Presence] in Urine by Screen method >2000 ng/mL",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Opiates (LP14635-4)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "PrThr (LP6827-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Urine (LP7576-4)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Ord (LP7753-9)"
+              },
+              {
+                "code": "METHOD_TYP",
+                "valueString": "Screen>2000 ng/mL (LP7753-9)"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "CodeSystem/loinc-fragment-livd-abbott"
+      }
+    }
+  ]
+}

@@ -130,16 +130,30 @@
 </p>
 <a name="4"> </a>
 <h3>Example(s) </h3>
-<p>Example(s) showing the use of the LIVD profiles.       DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.       This content is not to be used for actual LOINC mappings.</p>
+<p>Example(s) showing the use of the LIVD profiles.  DRAFT content not to be used for actual LOINC mappings.</p>
 <p>
 <table>
 <tbody>
 <tr>
 <td style="column-width:30%">
 <a href="livd-example.html">
-                        •  LIVD bundle</a>
+                        •  LIVD example bundle</a>
 </td>
-<td>Example LIVD publication bundle.</td>
+<td>Example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.       This content is not to be used for actual LOINC mappings.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="livd-example-abbott-architect.html">
+                        •  Abbott ARCHITECT LIVD example bundle</a>
+</td>
+<td>Abbott ARCHITECT example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Abbott manufacturer mappings.         This content is not to be used for actual LOINC mappings.</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="livd-example-roche-qual.html">
+                        •  Roche qualitative LIVD example bundle</a>
+</td>
+<td>Roche qualitative example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Roche manufacturer mappings.       This content is not to be used for actual LOINC mappings.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,11 @@
 {
     "resourceType": "CodeSystem",
     "id": "loinc-fragment-livd",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
+        ]
+    },
     "url": "http://loinc.org",
     "identifier": [
         {
@@ -130,6 +135,222 @@
                 {
                     "code": "SCALE_TYP",
                     "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "14744-7",
+            "display": "Glucose [Moles/volume] in Cerbral spinal fluid",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "SCnc (LP6860-3)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "CSF (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "2342-4",
+            "display": "Glucose [Mass/volume] in Cerebral spinal fluid",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "MCnc (LP6827-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "CSF (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "15076-3",
+            "display": "Glucose [Moles/volume] in Urine",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "SCnc (LP6860-3)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Urine (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "2350-7",
+            "display": "Glucose [Mass/volume] in Urine",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "MCnc (LP6827-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Urine (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "15077-1",
+            "display": "Glucose [Moles/time] in 24 hour Urine",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "SRat (LP6827-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "24h (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Urine (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "2351-5",
+            "display": "Glucose [Mass/time] in 24 hour Urine",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Glucose (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "MRat (LP6827-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "24h (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Urine (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Qn (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "70151-6",
+            "display": "Opiates [Presence] in Urine by Screen method >300 ng/mL",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Opiates (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "PrThr (LP6827-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Urine (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Ord (LP7753-9)"
+                },
+                {
+                    "code": "METHOD_TYP",
+                    "valueString": "Screen>300 ng/mL (LP7753-9)"
+                }
+            ]
+        },
+        {
+            "code": "21431-2",
+            "display": "Opiates [Presence] in Urine by Screen method >2000 ng/mL",
+            "property": [
+                {
+                    "code": "COMPONENT",
+                    "valueString": "Opiates (LP14635-4)"
+                },
+                {
+                    "code": "PROPERTY",
+                    "valueString": "PrThr (LP6827-2)"
+                },
+                {
+                    "code": "TIME_ASPCT",
+                    "valueString": "Pt (LP6960-1)"
+                },
+                {
+                    "code": "SYSTEM",
+                    "valueString": "Urine (LP7576-4)"
+                },
+                {
+                    "code": "SCALE_TYP",
+                    "valueString": "Ord (LP7753-9)"
+                },
+                {
+                    "code": "METHOD_TYP",
+                    "valueString": "Screen>2000 ng/mL (LP7753-9)"
                 }
             ]
         },

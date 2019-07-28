@@ -43,7 +43,7 @@
     </grouping>
     <grouping id="examples">
       <name value="Example(s)"/>
-      <description value="Example(s) showing the use of the LIVD profiles.       DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.       This content is not to be used for actual LOINC mappings."/>
+      <description value="Example(s) showing the use of the LIVD profiles.  DRAFT content not to be used for actual LOINC mappings."/>
     </grouping>
     
     
@@ -127,8 +127,26 @@
       <reference>
         <reference value="Bundle/livd-example"/>
       </reference>
-      <name value="LIVD bundle"/>
-      <description value="Example LIVD publication bundle."/>
+      <name value="LIVD example bundle"/>
+      <description value="Example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.       This content is not to be used for actual LOINC mappings."/>
+      <exampleBoolean value="true"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+        <reference>
+          <reference value="Bundle/livd-example-abbott-architect"/>
+        </reference>
+        <name value="Abbott ARCHITECT LIVD example bundle"/>
+        <description value="Abbott ARCHITECT example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Abbott manufacturer mappings.         This content is not to be used for actual LOINC mappings."/>
+        <exampleBoolean value="true"/>
+        <groupingId value="examples"/>
+      </resource>
+      <resource>
+      <reference>
+        <reference value="Bundle/livd-example-roche-qual"/>
+      </reference>
+      <name value="Roche qualitative LIVD example bundle"/>
+      <description value="Roche qualitative example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Roche manufacturer mappings.       This content is not to be used for actual LOINC mappings."/>
       <exampleBoolean value="true"/>
       <groupingId value="examples"/>
     </resource>
@@ -237,7 +255,17 @@
 </page>
 <page>
 <nameUrl value="livd-example.html"/>
-<ns14:title xmlns:ns14="http://hl7.org/fhir" value="LIVD bundle"/>
+<ns14:title xmlns:ns14="http://hl7.org/fhir" value="LIVD example bundle"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="livd-example-abbott-architect.html"/>
+<ns15:title xmlns:ns15="http://hl7.org/fhir" value="Abbott ARCHITECT LIVD example bundle"/>
+<generation value="generated"/>
+</page>
+<page>
+<nameUrl value="livd-example-roche-qual.html"/>
+<ns16:title xmlns:ns16="http://hl7.org/fhir" value="Roche qualitative LIVD example bundle"/>
 <generation value="generated"/>
 </page>
 </page>

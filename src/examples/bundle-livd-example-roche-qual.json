@@ -1,0 +1,733 @@
+{
+  "resourceType": "Bundle",
+  "id": "livd-example-roche-qual",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/livd/StructureDefinition/bundle-uv-livd"
+    ]
+  },
+  "identifier": {
+    "system": "https://www.roche.com",
+    "value": "e5de61d7-b46b-49cc-858a-50b107ecf5f7"
+  },
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:c336182e-b6a8-422e-b657-7b51c2daeaa6",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "c336182e-b6a8-422e-b657-7b51c2daeaa6",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/catalog-uv-livd"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div lang=\"en-US\" xml:lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c336182e-b6a8-422e-b657-7b51c2daeaa6</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: cobas 8000</p><p><b>status</b>: generated</p><p><b>type</b>: LIVD mapping data set</p><p><b>date</b>: 2019-01-12</p><p><b>author</b>: Roche Diagnosticss</p><p><b>title</b>: HL7 Connectathon Demo Resource File</p></div>"
+        },
+        "identifier": {
+          "system": "http://www.roche.com",
+          "value": "a809e430-5d17-4248-b595-d575fea6eb10",
+          "assigner": {
+            "display": "Roche Diagnostics"
+          }
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http:loinc.org",
+              "version": "2.65",
+              "code": "90370-8",
+              "display": "LIVD mapping data set"
+            }
+          ]
+        },
+        "date": "2019-01-12",
+        "author": [
+          {
+            "display": "Roche Diagnostics"
+          }
+        ],
+        "title": "HL7 Connectathon Demo Resource File",
+        "section": [
+          {
+            "title": "Devices",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                  "code": "devices",
+                  "display": "Device Definitions"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
+              },
+              {
+                "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
+              }
+            ]
+          },
+          {
+            "title": "Observation Definitions",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                  "code": "observation-definitions",
+                  "display": "Observation Definitions"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "ObservationDefinition/8a806407-a06b-49ca-86f5-df610b7c38df"
+              },
+              {
+                "reference": "ObservationDefinition/1a2e73f2-311b-4c35-b948-350bb8faa1a1"
+              },
+              {
+                "reference": "ObservationDefinition/f54e972f-3529-437f-a718-5324aaaa8838"
+              },
+              {
+                "reference": "ObservationDefinition/ff56fcf9-09a1-496c-90cb-88c70808bc2a"
+              }
+            ]
+          },
+          {
+            "title": "Concept Maps",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+                  "code": "concept-map",
+                  "display": "Concept Map"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "ConceptMap/34c7c855-8d86-418e-9046-3d7405f8321f"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/c336182e-b6a8-422e-b657-7b51c2daeaa6"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a9660225-e924-49bb-8456-6068167f1d50",
+      "resource": {
+        "resourceType": "DeviceDefinition",
+        "id": "a9660225-e924-49bb-8456-6068167f1d50",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>blindtext</b></p></div>"
+        },
+        "udiDeviceIdentifier": [
+          {
+            "deviceIdentifier": "6a7f3e0c-5a37-43df-9c84-07322fbd214d",
+            "issuer": "FDA",
+            "jurisdiction": "US"
+          }
+        ],
+        "manufacturerString": "Roche Diagnostics",
+        "modelNumber": "cobas 8000",
+        "capability": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ObservationDefinition"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/8a806407-a06b-49ca-86f5-df610b7c38df"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/1a2e73f2-311b-4c35-b948-350bb8faa1a1"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/f54e972f-3529-437f-a718-5324aaaa8838"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/ff56fcf9-09a1-496c-90cb-88c70808bc2a"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cf22def7-0ba8-46c7-8595-ba148fc27343",
+      "resource": {
+        "resourceType": "DeviceDefinition",
+        "id": "cf22def7-0ba8-46c7-8595-ba148fc27343",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>blindtext</b></p></div>"
+        },
+        "udiDeviceIdentifier": [
+          {
+            "deviceIdentifier": "23979baf-b4db-4d9d-8021-b28652f7f9d6",
+            "issuer": "FDA",
+            "jurisdiction": "US"
+          }
+        ],
+        "manufacturerString": "Roche Diagnostics",
+        "modelNumber": "cobas 8000",
+        "capability": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ObservationDefinition"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/8a806407-a06b-49ca-86f5-df610b7c38df"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/1a2e73f2-311b-4c35-b948-350bb8faa1a1"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/f54e972f-3529-437f-a718-5324aaaa8838"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "valueReference": {
+                  "reference": "ObservationDefinition/ff56fcf9-09a1-496c-90cb-88c70808bc2a"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a806407-a06b-49ca-86f5-df610b7c38df",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "8a806407-a06b-49ca-86f5-df610b7c38df",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 8a806407-a06b-49ca-86f5-df610b7c38df</p><p><b>meta</b>: </p><p><b>code</b>: Hepatitis A Virus;Antibody IgM<span style=\"background: LightGoldenRodYellow\">(Details : {http://www.roche.com/cobas8000 code '480' = '480', given as 'Hepatitis A Virus;Antibody IgM'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://ww.roche.com/cobas8000",
+              "code": "480",
+              "display": "Hepatitis A Virus;Antibody IgM"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ObservationDefinition/8a806407-a06b-49ca-86f5-df610b7c38df"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1a2e73f2-311b-4c35-b948-350bb8faa1a1",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "1a2e73f2-311b-4c35-b948-350bb8faa1a1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1a2e73f2-311b-4c35-b948-350bb8faa1a1</p><p><b>meta</b>: </p><p><b>code</b>: Rubella IgM<span style=\"background: LightGoldenRodYellow\">(Details : {http://www.roche.com/cobas8000 code '550' = '550', given as 'Rubella IgM'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://ww.roche.com/cobas8000",
+              "code": "550",
+              "display": "Rubella IgM"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ObservationDefinition/1a2e73f2-311b-4c35-b948-350bb8faa1a1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f54e972f-3529-437f-a718-5324aaaa8838",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "f54e972f-3529-437f-a718-5324aaaa8838",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f54e972f-3529-437f-a718-5324aaaa8838</p><p><b>meta</b>: </p><p><b>code</b>: Hepatitis A Virus;Antibody IgM<span style=\"background: LightGoldenRodYellow\">(Details : {http://www.roche.com/cobas8000 code '85' = '85', given as 'Hepatitis A Virus;Antibody IgM'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://ww.roche.com/cobas8000",
+              "code": "85",
+              "display": "Hepatitis A Virus;Antibody IgM"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ObservationDefinition/f54e972f-3529-437f-a718-5324aaaa8838"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ff56fcf9-09a1-496c-90cb-88c70808bc2a",
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "ff56fcf9-09a1-496c-90cb-88c70808bc2a",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ff56fcf9-09a1-496c-90cb-88c70808bc2a</p><p><b>meta</b>: </p><p><b>code</b>: Rubella IgM<span style=\"background: LightGoldenRodYellow\">(Details : {http://www.roche.com/cobas8000 code '106' = '106', given as 'Rubella IgM'})</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+              "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://ww.roche.com/cobas8000",
+              "code": "106",
+              "display": "Rubella IgM"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ObservationDefinition/ff56fcf9-09a1-496c-90cb-88c70808bc2a"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:34c7c855-8d86-418e-9046-3d7405f8321f",
+      "resource": {
+        "resourceType": "ConceptMap",
+        "id": "34c7c855-8d86-418e-9046-3d7405f8321f",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd</p><p><b>url</b></p></div>"
+        },
+        "url": "https://www.roche.com/livd/ConceptMap/34c7c855-8d86-418e-9046-3d7405f8321f",
+        "name": "RocheLivdConceptMap",
+        "status": "active",
+        "sourceUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd",
+        "targetCanonical": "https://www.roche.com/livd/ValueSet/loinc-livd-roche",
+        "group": [
+          {
+            "element": [
+              {
+                "code": "8a806407-a06b-49ca-86f5-df610b7c38df",
+                "display": "Hepatitis A Virus;Antibody IgM",
+                "target": [
+                  {
+                    "code": "22314-9",
+                    "display": "Hepatitis A virus IgM Ab [Presence] in Serum",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Ser"
+                      },
+                      {
+                        "property": "result",
+                        "value": "Non- Reactive/Borderline/ Reactive"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1a2e73f2-311b-4c35-b948-350bb8faa1a1",
+                "display": "Rubella IgM",
+                "target": [
+                  {
+                    "code": "31616-6",
+                    "display": "Rubella virus IgM Ab [Presence] in Serum",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Ser"
+                      },
+                      {
+                        "property": "result",
+                        "value": "Non- reactive/Indeterminate/ Reactive"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "f54e972f-3529-437f-a718-5324aaaa8838",
+                "display": "Hepatitis A Virus;Antibody IgM",
+                "target": [
+                  {
+                    "code": "22314-9",
+                    "display": "Hepatitis A virus IgM Ab [Presence] in Serum",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Ser"
+                      },
+                      {
+                        "property": "result",
+                        "value": "Non- Reactive/Borderline/ Reactive"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "ff56fcf9-09a1-496c-90cb-88c70808bc2a",
+                "display": "Rubella IgM",
+                "target": [
+                  {
+                    "code": "31616-6",
+                    "display": "Rubella virus IgM Ab [Presence] in Serum",
+                    "equivalence": "equivalent",
+                    "dependsOn": [
+                      {
+                        "property": "specimen",
+                        "value": "Ser"
+                      },
+                      {
+                        "property": "result",
+                        "value": "Non- reactive/Indeterminate/ Reactive"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ConceptMap/34c7c855-8d86-418e-9046-3d7405f8321f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1dc90ae1-c5a6-4002-b8c9-bc88dbce8b29",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "loinc-livd-roche",
+        "url": "https://www.roche.com/livd/ValueSet/loinc-livd-roche",
+        "version": "0.1.0",
+        "name": "RocheLivdLoincVS",
+        "title": "Roche LOINC value set for LIVD",
+        "status": "draft",
+        "date": "2018-09-25",
+        "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "version": "2.65",
+              "concept": [
+                {
+                  "code": "90370-8",
+                  "display": "LIVD mapping data set"
+                },
+                {
+                  "code": "22314-9",
+                  "display": "Hepatitis A virus IgM Ab [Presence] in Serum"
+                },
+                {
+                  "code": "31616-6",
+                  "display": "Rubella virus IgM Ab [Presence] in Serum"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/loinc-livd-roche"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7bcf6cb0-f337-46e0-a22c-59b5741091fe",
+      "resource": {
+        "resourceType": "CodeSystem",
+        "id": "loinc-fragment-livd-roche",
+        "meta": {
+          "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
+        },
+        "url": "http://loinc.org",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113883.6.1"
+          }
+        ],
+        "version": "2.65",
+        "name": "LOINC",
+        "title": "LOINC Code System",
+        "status": "active",
+        "publisher": "Regenstrief Institute, Inc.",
+        "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+        "caseSensitive": false,
+        "content": "fragment",
+        "property": [
+          {
+            "code": "COMPONENT",
+            "uri": "http://loinc.org/property/COMPONENT",
+            "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
+            "type": "string"
+          },
+          {
+            "code": "PROPERTY",
+            "uri": "http://loinc.org/property/PROPERTY",
+            "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
+            "type": "string"
+          },
+          {
+            "code": "TIME_ASPCT",
+            "uri": "http://loinc.org/property/TIME_ASPCT",
+            "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
+            "type": "string"
+          },
+          {
+            "code": "SYSTEM",
+            "uri": "http://loinc.org/property/SYSTEM",
+            "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
+            "type": "string"
+          },
+          {
+            "code": "SCALE_TYP",
+            "uri": "http://loinc.org/property/SCALE_TYP",
+            "description": "Fifth major axis-scale of measurement: Type of Scale",
+            "type": "string"
+          },
+          {
+            "code": "METHOD_TYP",
+            "uri": "http://loinc.org/property/METHOD_TYP",
+            "description": "Sixth major axis-method of measurement: Type of Method",
+            "type": "string"
+          }
+        ],
+        "concept": [
+          {
+            "code": "90370-8",
+            "display": "LIVD mapping data set",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Vendor test code to LOINC mapping data set (LP269198-0)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "Find (LP6813-2)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "{Device} (LP76022-0)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Doc (LP7753-9)"
+              }
+            ]
+          },
+          {
+            "code": "22314-9",
+            "display": "Hepatitis A virus IgM Ab [Presence] in Serum",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Hepatitis A virus Ab.IgM (LP38318-9)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "PrThr (LP217195-9)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Ser (LP7567-3)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Ord (LP7751-3)"
+              }
+            ]
+          },
+          {
+            "code": "31616-6",
+            "display": "Rubella virus IgM Ab [Presence] in Serum",
+            "property": [
+              {
+                "code": "COMPONENT",
+                "valueString": "Rubella virus Ab.IgM (LP39632-2)"
+              },
+              {
+                "code": "PROPERTY",
+                "valueString": "PrThr (LP217195-9)"
+              },
+              {
+                "code": "TIME_ASPCT",
+                "valueString": "Pt (LP6960-1)"
+              },
+              {
+                "code": "SYSTEM",
+                "valueString": "Ser (LP7567-3)"
+              },
+              {
+                "code": "SCALE_TYP",
+                "valueString": "Ord (LP7751-3)"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "CodeSystem/loinc-fragment-livd-roche"
+      }
+    }
+  ]
+}
