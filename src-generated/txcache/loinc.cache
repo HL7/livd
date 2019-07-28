@@ -1,4 +1,153 @@
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "concept" : [{
+        "code" : "90370-8",
+        "display" : "LIVD mapping data set"
+      },
+      {
+        "code" : "14749-6",
+        "display" : "Glucose [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "14744-7",
+        "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
+      },
+      {
+        "code" : "2342-4",
+        "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
+      },
+      {
+        "code" : "15076-3",
+        "display" : "Glucose [Moles/volume] in Urine"
+      },
+      {
+        "code" : "2350-7",
+        "display" : "Glucose [Mass/volume] in Urine"
+      },
+      {
+        "code" : "15077-1",
+        "display" : "Glucose [Moles/time] in 24 hour Urine"
+      },
+      {
+        "code" : "2351-5",
+        "display" : "Glucose [Mass/time] in 24 hour Urine"
+      },
+      {
+        "code" : "70151-6",
+        "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
+      },
+      {
+        "code" : "21431-2",
+        "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+      },
+      {
+        "code" : "22314-9",
+        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "31616-6",
+        "display" : "Rubella virus IgM Ab [Presence] in Serum"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:2c8993a5-1341-49f1-bf25-a0f00840f3f0",
+    "timestamp" : "2019-07-28T22:09:02.203Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "90370-8",
+      "display" : "LIVD mapping data set"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14749-6",
+      "display" : "Glucose [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "14744-7",
+      "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2342-4",
+      "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "15076-3",
+      "display" : "Glucose [Moles/volume] in Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2350-7",
+      "display" : "Glucose [Mass/volume] in Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "15077-1",
+      "display" : "Glucose [Moles/time] in 24 hour Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2351-5",
+      "display" : "Glucose [Mass/time] in 24 hour Urine"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "70151-6",
+      "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21431-2",
+      "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "22314-9",
+      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31616-6",
+      "display" : "Rubella virus IgM Ab [Presence] in Serum"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
   "code" : "90370-8"
@@ -45,120 +194,6 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "version" : "2.6.5",
-      "concept" : [{
-        "code" : "90370-8",
-        "display" : "LIVD mapping data set"
-      },
-      {
-        "code" : "14749-6",
-        "display" : "Glucose [Moles/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "2345-7",
-        "display" : "Glucose [Mass/volume] in Serum or Plasma"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:a577e761-a80e-4a54-a011-5329a755bdf6",
-    "timestamp" : "2019-07-28T00:07:10.500Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "90370-8",
-      "display" : "LIVD mapping data set"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "14749-6",
-      "display" : "Glucose [Moles/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2345-7",
-      "display" : "Glucose [Mass/volume] in Serum or Plasma"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "version" : "2.6.5",
-      "concept" : [{
-        "code" : "90370-8",
-        "display" : "LIVD mapping data set"
-      },
-      {
-        "code" : "14749-6",
-        "display" : "Glucose [Moles/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "2345-7",
-        "display" : "Glucose [Mass/volume] in Serum or Plasma"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:c0d67d4a-7150-46f9-a2a7-5185d4b19319",
-    "timestamp" : "2019-07-28T00:07:27.969Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "90370-8",
-      "display" : "LIVD mapping data set"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "14749-6",
-      "display" : "Glucose [Moles/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2345-7",
-      "display" : "Glucose [Mass/volume] in Serum or Plasma"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -176,219 +211,6 @@ e: {
       {
         "code" : "2345-7",
         "display" : "Glucose [Mass/volume] in Serum or Plasma"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:ea557880-e31a-4c10-a64c-6539c0db5e45",
-    "timestamp" : "2019-07-28T07:30:03.135Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "90370-8",
-      "display" : "LIVD mapping data set"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "14749-6",
-      "display" : "Glucose [Moles/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2345-7",
-      "display" : "Glucose [Mass/volume] in Serum or Plasma"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "version" : "2.65",
-      "concept" : [{
-        "code" : "90370-8",
-        "display" : "LIVD mapping data set"
-      },
-      {
-        "code" : "14749-6",
-        "display" : "Glucose [Moles/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "2345-7",
-        "display" : "Glucose [Mass/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "22314-9",
-        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
-      },
-      {
-        "code" : "31616-6",
-        "display" : "Rubella virus IgM Ab [Presence] in Serum"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:d41a48c3-193a-40d5-986b-2c720ccd5222",
-    "timestamp" : "2019-07-28T16:58:06.977Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "90370-8",
-      "display" : "LIVD mapping data set"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "14749-6",
-      "display" : "Glucose [Moles/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2345-7",
-      "display" : "Glucose [Mass/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "22314-9",
-      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "31616-6",
-      "display" : "Rubella virus IgM Ab [Presence] in Serum"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "version" : "2.65",
-      "concept" : [{
-        "code" : "90370-8",
-        "display" : "LIVD mapping data set"
-      },
-      {
-        "code" : "14749-6",
-        "display" : "Glucose [Moles/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "2345-7",
-        "display" : "Glucose [Mass/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "22314-9",
-        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
-      },
-      {
-        "code" : "31616-6",
-        "display" : "Rubella virus IgM Ab [Presence] in Serum"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:78b0e83f-f46f-4638-9179-09f6fdaf31db",
-    "timestamp" : "2019-07-28T16:58:25.821Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "90370-8",
-      "display" : "LIVD mapping data set"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "14749-6",
-      "display" : "Glucose [Moles/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2345-7",
-      "display" : "Glucose [Mass/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "22314-9",
-      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "31616-6",
-      "display" : "Rubella virus IgM Ab [Presence] in Serum"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "version" : "2.65",
-      "concept" : [{
-        "code" : "90370-8",
-        "display" : "LIVD mapping data set"
-      },
-      {
-        "code" : "14749-6",
-        "display" : "Glucose [Moles/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "2345-7",
-        "display" : "Glucose [Mass/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "22314-9",
-        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
-      },
-      {
-        "code" : "31616-6",
-        "display" : "Rubella virus IgM Ab [Presence] in Serum"
       },
       {
         "code" : "14744-7",
@@ -421,6 +243,14 @@ e: {
       {
         "code" : "21431-2",
         "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
+      },
+      {
+        "code" : "22314-9",
+        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+      },
+      {
+        "code" : "31616-6",
+        "display" : "Rubella virus IgM Ab [Presence] in Serum"
       }]
     }]
   }
@@ -429,14 +259,10 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:d673befe-0dfb-4a3c-837f-fff9a7655e13",
-    "timestamp" : "2019-07-28T20:52:32.748Z",
+    "identifier" : "urn:uuid:4cbf2d97-984d-4dd1-95b3-bcf55143922b",
+    "timestamp" : "2019-07-28T22:09:22.687Z",
     "parameter" : [{
       "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
       "valueString" : "-1"
     },
     {
@@ -457,16 +283,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "2345-7",
       "display" : "Glucose [Mass/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "22314-9",
-      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "31616-6",
-      "display" : "Rubella virus IgM Ab [Presence] in Serum"
     },
     {
       "system" : "http://loinc.org",
@@ -507,101 +323,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "21431-2",
       "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "version" : "2.65",
-      "concept" : [{
-        "code" : "90370-8",
-        "display" : "LIVD mapping data set"
-      },
-      {
-        "code" : "14749-6",
-        "display" : "Glucose [Moles/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "2345-7",
-        "display" : "Glucose [Mass/volume] in Serum or Plasma"
-      },
-      {
-        "code" : "22314-9",
-        "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
-      },
-      {
-        "code" : "31616-6",
-        "display" : "Rubella virus IgM Ab [Presence] in Serum"
-      },
-      {
-        "code" : "14744-7",
-        "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
-      },
-      {
-        "code" : "2342-4",
-        "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
-      },
-      {
-        "code" : "15076-3",
-        "display" : "Glucose [Moles/volume] in Urine"
-      },
-      {
-        "code" : "2350-7",
-        "display" : "Glucose [Mass/volume] in Urine"
-      },
-      {
-        "code" : "15077-1",
-        "display" : "Glucose [Moles/time] in 24 hour Urine"
-      },
-      {
-        "code" : "2351-5",
-        "display" : "Glucose [Mass/time] in 24 hour Urine"
-      },
-      {
-        "code" : "70151-6",
-        "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
-      },
-      {
-        "code" : "21431-2",
-        "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:e4113470-86ae-46bf-9bb3-664bd64eae68",
-    "timestamp" : "2019-07-28T20:52:52.482Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "90370-8",
-      "display" : "LIVD mapping data set"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "14749-6",
-      "display" : "Glucose [Moles/volume] in Serum or Plasma"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2345-7",
-      "display" : "Glucose [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -612,46 +333,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "31616-6",
       "display" : "Rubella virus IgM Ab [Presence] in Serum"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "14744-7",
-      "display" : "Glucose [Moles/volume] in Cerbral spinal fluid"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2342-4",
-      "display" : "Glucose [Mass/volume] in Cerebral spinal fluid"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "15076-3",
-      "display" : "Glucose [Moles/volume] in Urine"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2350-7",
-      "display" : "Glucose [Mass/volume] in Urine"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "15077-1",
-      "display" : "Glucose [Moles/time] in 24 hour Urine"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "2351-5",
-      "display" : "Glucose [Mass/time] in 24 hour Urine"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "70151-6",
-      "display" : "Opiates [Presence] in Urine by Screen method >300 ng/mL"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "21431-2",
-      "display" : "Opiates [Presence] in Urine by Screen method >2000 ng/mL"
     }]
   }
 },

@@ -138,7 +138,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1faf1d64-df18-4d7a-b45d-3872ddd3f165</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"FDA\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1faf1d64-df18-4d7a-b45d-3872ddd3f165</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"https://www.fda.gov/\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
         },
         "udiDeviceIdentifier": [
           {
@@ -204,7 +204,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c4d6831-9392-45aa-816f-fb7e61cee5d4</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"FDA\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c4d6831-9392-45aa-816f-fb7e61cee5d4</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"https://www.fda.gov/\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
         },
         "udiDeviceIdentifier": [
           {
@@ -270,7 +270,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 767661e1-9f1f-4dc7-b52b-d9e751cb799c</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"FDA\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 767661e1-9f1f-4dc7-b52b-d9e751cb799c</p><p><b>meta</b>: </p><h3>UdiDeviceIdentifiers</h3><table class=\"grid\"><tr><td>-</td><td><b>DeviceIdentifier</b></td><td><b>Issuer</b></td><td><b>Jurisdiction</b></td></tr><tr><td>*</td><td>00380740003746</td><td><a href=\"https://www.fda.gov/\">FDA</a></td><td><a href=\"https://unstats.un.org/unsd/methodology/m49/021\">https://unstats.un.org/unsd/methodology/m49/021</a></td></tr></table><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>modelNumber</b>: ARCHITECT c4000</p><h3>Capabilities</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>ObservationDefinition <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'ObservationDefinition' = 'ObservationDefinition)</span></td></tr></table></div>"
         },
         "udiDeviceIdentifier": [
           {
@@ -556,7 +556,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7\">http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7</a></p><p><b>status</b>: active</p><p><b>source</b>: <a href=\"ObservationDefinition\">ObservationDefinition</a></p><p><b>target</b>: <a href=\"http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd\">http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd</a></p><blockquote><p><b>group</b></p><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 14749-6</p><p><b>display</b>: Glucose [Moles/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"specimen\">specimen</a></p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"result\">result</a></p><p><b>value</b>: mmol/L</p></blockquote></blockquote></blockquote><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 2345-7</p><p><b>display</b>: Glucose [Mass/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"specimen\">specimen</a></p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: <a href=\"result\">result</a></p><p><b>value</b>: mg/dL</p></blockquote></blockquote></blockquote></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>meta</b>: </p><p><b>url</b>: ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>status</b>: active</p><p><b>source</b>: ObservationDefinition</p><p><b>target</b>: https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott</p><blockquote><p><b>group</b></p><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 14749-6</p><p><b>display</b>: Glucose [Moles/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mmol/L</p></blockquote></blockquote></blockquote><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 2345-7</p><p><b>display</b>: Glucose [Mass/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mg/dL</p></blockquote></blockquote></blockquote></blockquote></div>"
         },
         "url": "https://www.corelaboratory.abbott/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
         "name": "AbbottArchitectLivdConceptMap",
@@ -800,7 +800,7 @@
         "id": "loinc-livd-abbott",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd\">http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: LivdLoincVS</p><p><b>title</b>: LOINC value set for LIVD</p><p><b>status</b>: draft</p><p><b>date</b>: Sep 25, 2018</p><p><b>description</b>: Includes the subset of LOINC codes that are relevant for this ConceptMap.</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td>-</td><td><b>System</b></td></tr><tr><td>*</td><td><a href=\"http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd\">http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd</a></td></tr></table></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd-abbott</p><p><b>url</b>: https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: AbbottLivdLoincVS</p><p><b>title</b>: Abbott LOINC value set for LIVD</p><p><b>status</b>: draft</p><p><b>date</b>: Sep 25, 2018</p><p><b>description</b>: Includes the subset of LOINC codes that are relevant for this ConceptMap.</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td>-</td><td><b>System</b></td></tr><tr><td>*</td><td><a href=\"http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd\">http://hl7.org/fhir/uv/livd/CodeSystem/loinc-fragment-livd</a></td></tr></table></blockquote></div>"
         },
         "url": "https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott",
         "version": "0.1.0",
@@ -955,7 +955,7 @@
               },
               {
                 "code": "SCALE_TYP",
-                "valueString": "Doc (LP7753-9)"
+                "valueString": "Doc (LP32888-7)"
               }
             ]
           },
@@ -1029,7 +1029,7 @@
               },
               {
                 "code": "SYSTEM",
-                "valueString": "CSF (LP7576-4)"
+                "valueString": "CSF (LP7156-5)"
               },
               {
                 "code": "SCALE_TYP",
@@ -1055,7 +1055,7 @@
               },
               {
                 "code": "SYSTEM",
-                "valueString": "CSF (LP7576-4)"
+                "valueString": "CSF (LP7156-5)"
               },
               {
                 "code": "SCALE_TYP",
@@ -1081,7 +1081,7 @@
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Urine (LP7576-4)"
+                "valueString": "Urine (LP7681-2)"
               },
               {
                 "code": "SCALE_TYP",
@@ -1107,7 +1107,7 @@
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Urine (LP7576-4)"
+                "valueString": "Urine (LP7681-2)"
               },
               {
                 "code": "SCALE_TYP",
@@ -1125,15 +1125,15 @@
               },
               {
                 "code": "PROPERTY",
-                "valueString": "SRat (LP6827-2)"
+                "valueString": "SRat (LP6867-8)"
               },
               {
                 "code": "TIME_ASPCT",
-                "valueString": "24h (LP6960-1)"
+                "valueString": "24H (LP6924-7)"
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Urine (LP7576-4)"
+                "valueString": "Urine (LP7681-2)"
               },
               {
                 "code": "SCALE_TYP",
@@ -1151,15 +1151,15 @@
               },
               {
                 "code": "PROPERTY",
-                "valueString": "MRat (LP6827-2)"
+                "valueString": "MRat (LP6833-0)"
               },
               {
                 "code": "TIME_ASPCT",
-                "valueString": "24h (LP6960-1)"
+                "valueString": "24H (LP6924-7)"
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Urine (LP7576-4)"
+                "valueString": "Urine (LP7681-2)"
               },
               {
                 "code": "SCALE_TYP",
@@ -1173,11 +1173,11 @@
             "property": [
               {
                 "code": "COMPONENT",
-                "valueString": "Opiates (LP14635-4)"
+                "valueString": "Opiates (LP14565-3)"
               },
               {
                 "code": "PROPERTY",
-                "valueString": "PrThr (LP6827-2)"
+                "valueString": "PrThr (LP217195-9)"
               },
               {
                 "code": "TIME_ASPCT",
@@ -1185,15 +1185,15 @@
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Urine (LP7576-4)"
+                "valueString": "Urine (LP7681-2)"
               },
               {
                 "code": "SCALE_TYP",
-                "valueString": "Ord (LP7753-9)"
+                "valueString": "Ord (LP7751-3)"
               },
               {
                 "code": "METHOD_TYP",
-                "valueString": "Screen>300 ng/mL (LP7753-9)"
+                "valueString": "Screen>300 ng/mL (LP36647-3)"
               }
             ]
           },
@@ -1203,11 +1203,11 @@
             "property": [
               {
                 "code": "COMPONENT",
-                "valueString": "Opiates (LP14635-4)"
+                "valueString": "Opiates (LP14565-3)"
               },
               {
                 "code": "PROPERTY",
-                "valueString": "PrThr (LP6827-2)"
+                "valueString": "PrThr (LP217195-9)"
               },
               {
                 "code": "TIME_ASPCT",
@@ -1215,15 +1215,15 @@
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Urine (LP7576-4)"
+                "valueString": "Urine (LP7681-2)"
               },
               {
                 "code": "SCALE_TYP",
-                "valueString": "Ord (LP7753-9)"
+                "valueString": "Ord (LP7751-3)"
               },
               {
                 "code": "METHOD_TYP",
-                "valueString": "Screen>2000 ng/mL (LP7753-9)"
+                "valueString": "Screen>2000 ng/mL (LP6504-7)"
               }
             ]
           }

@@ -82,7 +82,7 @@
                 },
                 {
                     "code": "SCALE_TYP",
-                    "valueString": "Doc (LP7753-9)"
+                    "valueString": "Doc (LP32888-7)"
                 }
             ]
         },
@@ -156,7 +156,7 @@
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "CSF (LP7576-4)"
+                    "valueString": "CSF (LP7156-5)"
                 },
                 {
                     "code": "SCALE_TYP",
@@ -182,7 +182,7 @@
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "CSF (LP7576-4)"
+                    "valueString": "CSF (LP7156-5)"
                 },
                 {
                     "code": "SCALE_TYP",
@@ -208,7 +208,7 @@
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "Urine (LP7576-4)"
+                    "valueString": "Urine (LP7681-2)"
                 },
                 {
                     "code": "SCALE_TYP",
@@ -234,7 +234,7 @@
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "Urine (LP7576-4)"
+                    "valueString": "Urine (LP7681-2)"
                 },
                 {
                     "code": "SCALE_TYP",
@@ -252,15 +252,15 @@
                 },
                 {
                     "code": "PROPERTY",
-                    "valueString": "SRat (LP6827-2)"
+                    "valueString": "SRat (LP6867-8)"
                 },
                 {
                     "code": "TIME_ASPCT",
-                    "valueString": "24h (LP6960-1)"
+                    "valueString": "24H (LP6924-7)"
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "Urine (LP7576-4)"
+                    "valueString": "Urine (LP7681-2)"
                 },
                 {
                     "code": "SCALE_TYP",
@@ -278,15 +278,15 @@
                 },
                 {
                     "code": "PROPERTY",
-                    "valueString": "MRat (LP6827-2)"
+                    "valueString": "MRat (LP6833-0)"
                 },
                 {
                     "code": "TIME_ASPCT",
-                    "valueString": "24h (LP6960-1)"
+                    "valueString": "24H (LP6924-7)"
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "Urine (LP7576-4)"
+                    "valueString": "Urine (LP7681-2)"
                 },
                 {
                     "code": "SCALE_TYP",
@@ -300,11 +300,11 @@
             "property": [
                 {
                     "code": "COMPONENT",
-                    "valueString": "Opiates (LP14635-4)"
+                    "valueString": "Opiates (LP14565-3)"
                 },
                 {
                     "code": "PROPERTY",
-                    "valueString": "PrThr (LP6827-2)"
+                    "valueString": "PrThr (LP217195-9)"
                 },
                 {
                     "code": "TIME_ASPCT",
@@ -312,15 +312,15 @@
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "Urine (LP7576-4)"
+                    "valueString": "Urine (LP7681-2)"
                 },
                 {
                     "code": "SCALE_TYP",
-                    "valueString": "Ord (LP7753-9)"
+                    "valueString": "Ord (LP7751-3)"
                 },
                 {
                     "code": "METHOD_TYP",
-                    "valueString": "Screen>300 ng/mL (LP7753-9)"
+                    "valueString": "Screen>300 ng/mL (LP36647-3)"
                 }
             ]
         },
@@ -330,11 +330,11 @@
             "property": [
                 {
                     "code": "COMPONENT",
-                    "valueString": "Opiates (LP14635-4)"
+                    "valueString": "Opiates (LP14565-3)"
                 },
                 {
                     "code": "PROPERTY",
-                    "valueString": "PrThr (LP6827-2)"
+                    "valueString": "PrThr (LP217195-9)"
                 },
                 {
                     "code": "TIME_ASPCT",
@@ -342,15 +342,15 @@
                 },
                 {
                     "code": "SYSTEM",
-                    "valueString": "Urine (LP7576-4)"
+                    "valueString": "Urine (LP7681-2)"
                 },
                 {
                     "code": "SCALE_TYP",
-                    "valueString": "Ord (LP7753-9)"
+                    "valueString": "Ord (LP7751-3)"
                 },
                 {
                     "code": "METHOD_TYP",
-                    "valueString": "Screen>2000 ng/mL (LP7753-9)"
+                    "valueString": "Screen>2000 ng/mL (LP6504-7)"
                 }
             ]
         },
