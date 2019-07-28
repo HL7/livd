@@ -275,7 +275,7 @@
                 "resourceType": "CodeSystem",
                 "id": "loinc-fragment-livd",
                 "meta": {
-                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-uv-livd"
+                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
                 },
                 "url": "http://loinc.org",
                 "identifier": [

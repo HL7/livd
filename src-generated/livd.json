@@ -98,7 +98,7 @@
   "canonicalBase": "http://hl7.org/fhir/uv/livd",
   "source": "livd.xml",
   "spreadsheets": [
-    "codesystem-loinc-uv-livd-spreadsheet.xml",
+    "codesystem-loinc-frag-uv-livd-spreadsheet.xml",
     "bundle-uv-livd-spreadsheet.xml",
     "catalog-uv-livd-spreadsheet.xml",
     "observationdefinition-uv-livd-spreadsheet.xml",
@@ -109,7 +109,7 @@
     "http://loinc.org"
   ],
   "resources": {
-    "StructureDefinition/codesystem-loinc-uv-livd":{
+    "StructureDefinition/codesystem-loinc-frag-uv-livd":{
     },
     "StructureDefinition/bundle-uv-livd":{
     },

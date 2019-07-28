@@ -166,8 +166,8 @@
         <title value="Artifact List"/>
         <generation value="html"/>
       <page>
-<nameUrl value="codesystem-loinc-uv-livd.html"/>
-<ns0:title xmlns:ns0="http://hl7.org/fhir" value="LIVD LOINC CodeSystem"/>
+<nameUrl value="codesystem-loinc-frag-uv-livd.html"/>
+<ns0:title xmlns:ns0="http://hl7.org/fhir" value="LIVD LOINC Fragment CodeSystem"/>
 <generation value="generated"/>
 </page>
 <page>

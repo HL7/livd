@@ -25,7 +25,7 @@
   <definition>
     <!-- Note: Order of these spreadsheets matters -->
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="codesystem-loinc-uv-livd-spreadsheet.xml"/>
+      <valueUri value="codesystem-loinc-frag-uv-livd-spreadsheet.xml"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
       <valueUri value="bundle-uv-livd-spreadsheet.xml"/>
@@ -69,10 +69,10 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/codesystem-loinc-uv-livd"/>
+        <reference value="StructureDefinition/codesystem-loinc-frag-uv-livd"/>
       </reference>
-      <name value="LIVD LOINC CodeSystem"/>
-      <description value="CodeSystem profile for LOINC for the LIVD project."/>
+      <name value="LIVD LOINC Fragment CodeSystem"/>
+      <description value="CodeSystem profile for LOINC fragment for the LIVD project."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
     </resource>
