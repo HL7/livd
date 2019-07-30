@@ -64,8 +64,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:2c8993a5-1341-49f1-bf25-a0f00840f3f0",
-    "timestamp" : "2019-07-28T22:09:02.203Z",
+    "identifier" : "urn:uuid:ccb27b24-fe64-4042-aca3-868634a163e9",
+    "timestamp" : "2019-07-30T00:12:31.521Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -76,7 +76,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -259,15 +259,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:4cbf2d97-984d-4dd1-95b3-bcf55143922b",
-    "timestamp" : "2019-07-28T22:09:22.687Z",
+    "identifier" : "urn:uuid:c9983505-7181-47db-a648-8fbef596d06b",
+    "timestamp" : "2019-07-30T00:12:53.850Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
