@@ -12,6 +12,15 @@
       "current": true
     },
     {
+      "version": "0.2.0",
+      "date": "2019-08-01",
+      "desc": "STU 1 Ballot 1",
+      "path": "http://hl7.org/fhir/uv/livd/2019Sep",
+      "sequence": "STU 1 (FHIR R4)",
+      "fhir-version": "4.0.0",
+      "status": "ballot"
+    },
+    {
       "version": "0.1.0",
       "date": "2018-09-01",
       "desc": "Release 0.1.0 Draft for Comment",
