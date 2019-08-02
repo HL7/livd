@@ -16,10 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17040</WindowHeight>
-  <WindowWidth>28040</WindowWidth>
-  <WindowTopX>380</WindowTopX>
-  <WindowTopY>460</WindowTopY>
+  <WindowHeight>16040</WindowHeight>
+  <WindowWidth>27240</WindowWidth>
+  <WindowTopX>1180</WindowTopX>
+  <WindowTopY>1460</WindowTopY>
   <TabRatio>893</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
@@ -3058,7 +3058,7 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="45">
-    <Cell ss:Index="4" ss:StyleID="s98"><Data ss:Type="String">CodeSystem.concept.property.valueString</Data><NamedCell
+    <Cell ss:Index="4" ss:StyleID="s98"><Data ss:Type="String">CodeSystem.concept.property.value[x]</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s100"><Data ss:Type="String">1..1</Data><NamedCell
@@ -5721,7 +5721,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>59</TopRowBottomPane>
+   <TopRowBottomPane>52</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
    <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -5739,8 +5739,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>64</ActiveRow>
-     <ActiveCol>5</ActiveCol>
+     <ActiveRow>58</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
