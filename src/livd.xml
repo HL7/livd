@@ -225,8 +225,8 @@
         This content is not to be used for actual LOINC mappings."/>
         <exampleBoolean value="true"/>
         <groupingId value="examples"/>
-      </resource>
-      <resource>
+    </resource>
+    <resource>
       <reference>
         <reference value="Bundle/livd-example-roche-qual"/>
       </reference>
