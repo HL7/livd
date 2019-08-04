@@ -2,8 +2,8 @@
 guidename=livd
 copyrightyear=2018+
 license=CC0-1.0
-version=0.1.0
-ballotstatus=CI Build
+version=0.2.0
+ballotstatus=STU Ballot 1
 fhirspec=http://hl7.org/fhir/
 #excludexml=Yes
 #excludejson=Yes
