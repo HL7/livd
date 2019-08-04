@@ -155,6 +155,13 @@
 </td>
 <td>Roche qualitative example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Roche manufacturer mappings.       This content is not to be used for actual LOINC mappings.</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="livd-example-roche-quant.html">
+                        •  Roche quantitative LIVD example bundle</a>
+</td>
+<td>Roche quantitative example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Roche manufacturer mappings.       This content is not to be used for actual LOINC mappings.</td>
+</tr>
 </tbody>
 </table>
 </p>

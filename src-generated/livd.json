@@ -187,6 +187,8 @@
     "Bundle/livd-example-abbott-architect":{
     },
     "Bundle/livd-example-roche-qual":{
+    },
+    "Bundle/livd-example-roche-quant":{
     }
   }
 }

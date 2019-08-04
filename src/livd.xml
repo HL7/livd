@@ -236,6 +236,16 @@
       <exampleBoolean value="true"/>
       <groupingId value="examples"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/livd-example-roche-quant"/>
+      </reference>
+      <name value="Roche quantitative LIVD example bundle"/>
+      <description value="Roche quantitative example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Roche manufacturer mappings.
+      This content is not to be used for actual LOINC mappings."/>
+      <exampleBoolean value="true"/>
+      <groupingId value="examples"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
