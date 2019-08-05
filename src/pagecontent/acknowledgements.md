@@ -1,14 +1,15 @@
 The LIVD Implementation Guide is the result of a combined IICC and HL7 project team to express the content into FHIR profiles. The following individuals supported creating this guide:
 
-* Pam Banning - 3M
 * Hans Buitendijk - Cerner
 * Rob Hausam - Hausam Consulting
 * Ed Heierman - Abbott
+* Ralf Herzog - Roche
 * Riki Merrick - Association of Public Health Laboratories
 * JD Nolen - Children's Mercy Hospital
 * Andrea Pitkus
 * Dan Rutz - Epic
 * Kathy Walsh - LabCorp
+* Pam Banning - 3M
 * David Burgess - LabCorp
 * Ron van Duyne - CDC
 * Michael Waters - FDA
