@@ -6,11 +6,11 @@
   <name value="LoincIvdTestCodeMapping"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HL7 International"/>
+  <publisher value="HL7 International - Orders and Observations Work Group"/>
   <contact>
       <telecom>
         <system value="other"/>
-        <value value="http://www.hl7.org/"/>
+        <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
       </telecom>
     </contact>
     <description value="Recommended LOINC mappings for IVD Devices"/>
