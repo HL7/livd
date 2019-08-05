@@ -1,6 +1,6 @@
 #guidename must match the id of the implementation guide
 guidename=livd
-copyrightyear=2018+
+copyrightyear=2019+
 license=CC0-1.0
 version=0.2.0
 ballotstatus=STU Ballot 1
