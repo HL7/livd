@@ -1,6 +1,6 @@
 <blockquote class="stu-note">
 <p>
-This specification is currently undergoing ballot and Connectathon testing.  The current ballot is For Comment Only, thus this ballot will not result in a publication.  Subsequent Connectathons and balloting, targeted for the January 2019 ballot cycle, are intended to drive toward a LIVD STU R1 version.  The IG is expected to undergo changes, possibly significantly, as part of that process.
+This specification is currently undergoing ballot and Connectathon testing.  This is the first STU ballot.  Subsequent Connectathons and balloting are intended to drive toward a LIVD STU R1 version.  The IG is expected to undergo changes, possibly significantly, as part of that process.
 </p>
 <p>
 Feedback is welcome and may be submitted through the <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">FHIR gForge tracker</a>
