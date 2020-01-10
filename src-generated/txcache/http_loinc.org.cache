@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http:loinc.org",
+  "version" : "2.65",
+  "code" : "90370-8",
+  "display" : "LIVD mapping data set"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http:loinc.org\" is not known (encountered paired with code = \"90370-8\"); The code provided (http:loinc.org#90370-8) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
