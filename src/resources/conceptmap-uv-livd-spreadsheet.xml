@@ -16,12 +16,12 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>15040</WindowHeight>
-  <WindowWidth>26440</WindowWidth>
-  <WindowTopX>540</WindowTopX>
-  <WindowTopY>960</WindowTopY>
+  <WindowHeight>17040</WindowHeight>
+  <WindowWidth>28040</WindowWidth>
+  <WindowTopX>380</WindowTopX>
+  <WindowTopY>460</WindowTopY>
   <TabRatio>690</TabRatio>
-  <ActiveSheet>2</ActiveSheet>
+  <ActiveSheet>3</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -4549,11 +4549,10 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
+   <TopRowBottomPane>30</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
    <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -4567,11 +4566,12 @@
     </Pane>
     <Pane>
      <Number>2</Number>
+     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>0</ActiveRow>
-     <ActiveCol>8</ActiveCol>
+     <ActiveRow>32</ActiveRow>
+     <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -4593,8 +4593,8 @@
    <Column ss:StyleID="s125" ss:Width="56"/>
    <Column ss:StyleID="s125" ss:Width="165"/>
    <Column ss:StyleID="s125" ss:AutoFitWidth="0" ss:Width="205"/>
-   <Column ss:StyleID="s125" ss:AutoFitWidth="0" ss:Width="199"/>
-   <Column ss:StyleID="s125" ss:AutoFitWidth="0" ss:Width="188"/>
+   <Column ss:StyleID="s125" ss:AutoFitWidth="0" ss:Width="334"/>
+   <Column ss:StyleID="s125" ss:AutoFitWidth="0" ss:Width="294"/>
    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s80">
     <Cell ss:StyleID="s81"><Data ss:Type="String">Id</Data><Comment ss:Author=""><ss:Data
        xmlns="http://www.w3.org/TR/REC-html40"><Font html:Face="Tahoma"
@@ -4618,8 +4618,10 @@
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">English description of constraint</Font>       </ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s82"><Data ss:Type="String">Expression</Data><Comment
-      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font
-        html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Optional - OCL expression of the rule</Font>       </ss:Data></Comment><NamedCell
+      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Color="#000000">        </Font><Font html:Face="Tahoma"
+        x:Family="Swiss" html:Size="8" html:Color="#000000">Optional - OCL expression of the rule</Font><Font
+        html:Color="#000000">       </Font></ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s126"><Data ss:Type="String">XPath</Data><Comment
       ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font
@@ -4633,7 +4635,7 @@
     <Cell ss:StyleID="s108"><Data ss:Type="String">error</Data></Cell>
     <Cell ss:StyleID="s108"><Data ss:Type="String">ConceptMap.group.element.target.dependsOn</Data></Cell>
     <Cell ss:StyleID="s108"><Data ss:Type="String">If the dependsOn is valued, either the code or display must be present</Data></Cell>
-    <Cell ss:StyleID="s108"><Data ss:Type="String">(group.element.target.dependsOn.exists() and (group.element.target.code.exists() or group.element.target.display.exists())) or !group.element.target.dependsOn.exists()</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">(group.element.target.dependsOn.exists() and (group.element.target.code.exists() or group.element.target.display.exists())) or group.element.target.dependsOn.empty()</Data></Cell>
     <Cell ss:StyleID="s128"><Data ss:Type="String">(exists(f:group.element.target.dependsOn) and (exists(f:group.element.target.code) or exists(f:group.element.target.display))) or !exists(f:group.element.target.dependsOn)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -5055,6 +5057,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -5074,8 +5077,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>3</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
