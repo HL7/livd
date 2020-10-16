@@ -444,3 +444,21 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>CodeSystem.content</td>
 </tr>
 </table> 
+
+### Display Considerations
+When displaying the information to those configuring the mappings between IVD Test Codes, Result Values, and the appropriate LOINC or SNOMED code, one must consider the relevant data to assist in the mapping.  We provide the following guidance for consideration:
+
+* Test Codes
+** IVD Test Codes
+*** Display the vendor descriptions of results, specimen, and other comments together.
+*** complete
+** LOINC Code(s)
+*** Display the LOINC part information together
+*** complete
+* Result Values
+** Vendor Values
+*** complete
+** SNOMED Codes
+*** complete
+** LOINC Codes
+*** complete
