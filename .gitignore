@@ -1,77 +1,22 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-*.py
+# Temporary folders #
+#####################
+temp
+template
+output
 
+# Don't commit this because it's so large #
+###########################################
+/input-cache/publisher.jar
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-!definitions.json.zip
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+# Windows generated files #
+###########################
+Thumbs.db
 
 # OS generated files #
 ######################
 .DS_Store
 .DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-
-# FHIR IG Publisher local build directories #
-#############################################
-
-output
-/temp
-temp
-*.dropbox
-/src/resources/desktop.ini
-src/.DS_Store
-src/resources/.DS_Store
-src/pagecontent/.DS_Store
-.DS_Store
-c:\\temp\\json.json
-src-generated/org.hl7.fhir.igpublisher.jar
-website
-src-generated/resources/ig-new.xml
-src-generated/resources/ig-validation-parameters.json
-src-generated/resources/ig-expansion-parameters.json
-src-generated/resources/ig-new.json
-
-# Altova files #
+# backup files #
 ################
-*.spp
-tmp*.html
-tmp*.md
-*.mfd
-tmp*.xml
-~mf*.tmp
-*.xlst
-
-# Microsoft Office #
-####################
-~*.docx
-~*.xlsx
-~*.pptx
+*.bak
