@@ -25,27 +25,6 @@
 	<license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>
-    <!-- Note: Order of these spreadsheets matters -->
-    <!--
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="codesystem-loinc-frag-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="bundle-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="catalog-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="observationdefinition-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="devicedefinition-uv-livd-spreadsheet.xml"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-      <valueUri value="conceptmap-uv-livd-spreadsheet.xml"/>
-    </extension>
-  -->
     <grouping id="profiles">
       <name value="Profiles"/>
       <description value="Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide."/>
@@ -67,11 +46,6 @@
       <description value="Example(s) showing the use of the LIVD profiles.  DRAFT content not to be used for actual LOINC mappings."/>
     </grouping>
     <resource>
-      <!--
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-    -->
       <reference>
         <reference value="StructureDefinition/codesystem-loinc-frag-uv-livd"/>
       </reference>
@@ -81,11 +55,6 @@
       <groupingId value="profiles"/>
     </resource>
     <resource>
-      <!--
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-    -->
       <reference>
         <reference value="StructureDefinition/bundle-uv-livd"/>
       </reference>
@@ -95,11 +64,6 @@
       <groupingId value="profiles"/>
     </resource>
     <resource>
-      <!--
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-    -->
       <reference>
         <reference value="StructureDefinition/catalog-uv-livd"/>
       </reference>
@@ -109,11 +73,6 @@
       <groupingId value="profiles"/>
     </resource>
     <resource>
-      <!--
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-    -->
       <reference>
         <reference value="StructureDefinition/observationdefinition-uv-livd"/>
       </reference>
@@ -123,11 +82,6 @@
       <groupingId value="profiles"/>
     </resource>
     <resource>
-      <!--
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-    -->
       <reference>
         <reference value="StructureDefinition/devicedefinition-uv-livd"/>
       </reference>
@@ -137,11 +91,6 @@
       <groupingId value="profiles"/>
     </resource>
     <resource>
-      <!--
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
-        <valueBoolean value="true"/>
-      </extension>
-    -->
       <reference>
         <reference value="StructureDefinition/conceptmap-uv-livd"/>
       </reference>
