@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-capability",
+  "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+  "name": "LIVDTestCapability",
+  "title": "LIVD Test Capability",
+  "status": "active",
+  "description": "Add a reference from DeviceDefinition.capability to one or more test capabilities.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DeviceDefinition.capability"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension:ext-capability",
+        "path": "Extension"
+      },
+      {
+        "id": "Extension:ext-capability.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension:ext-capability.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability"
+      },
+      {
+        "id": "Extension:ext-capability.valueReference",
+        "path": "Extension.valueReference",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

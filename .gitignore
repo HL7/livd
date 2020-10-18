@@ -3,10 +3,14 @@
 temp
 template
 output
+fsh-generated
+gofsh
 
 # Don't commit this because it's so large #
 ###########################################
-/input-cache/publisher.jar
+input-cache/publisher.jar
+input-cache/schemas
+input-cache/schemas-r5
 
 # Windows generated files #
 ###########################
@@ -16,6 +20,7 @@ Thumbs.db
 ######################
 .DS_Store
 .DS_Store?
+Thumbs.db
 
 # backup files #
 ################

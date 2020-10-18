@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-vendorReferenceIdentifier",
+  "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier",
+  "name": "LIVDVendorReferenceIdentifier",
+  "title": "LIVD Vendor Reference Identifier",
+  "status": "active",
+  "description": "Add a vendor reference identifier to ObservationDefinition.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ObservationDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension:ext-vendorReferenceIdentifier",
+        "path": "Extension"
+      },
+      {
+        "id": "Extension:ext-vendorReferenceIdentifier.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension:ext-vendorReferenceIdentifier.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier"
+      },
+      {
+        "id": "Extension:ext-vendorReferenceIdentifier.valueIdentifier",
+        "path": "Extension.valueIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      }
+    ]
+  }
+}
