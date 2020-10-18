@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "id": "livd-section-type",
+  "url": "http://hl7.org/fhir/uv/livd/ValueSet/livd-section-type",
+  "version": "0.2.0",
+  "name": "LivdSectionTypeVS",
+  "title": "Types of sections for the LIVD catalog",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 International - Orders and Observations Work Group",
+  "description": "Types of sections for the LIVD catalog",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "livd-section-type",
+  "url": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
+  "version": "0.2.0",
+  "name": "LivdSectionTypeCS",
+  "title": "Types of sections for the LIVD catalog",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International - Orders and Observations Work Group",
+  "description": "Types of sections for the LIVD catalog",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "devices",
+      "display": "Device Definitions"
+    },
+    {
+      "code": "concept-map",
+      "display": "Concept Map"
+    },
+    {
+      "code": "loinc-codes",
+      "display": "LOINC Codes"
+    },
+    {
+      "code": "ivd-test-codes",
+      "display": "IVD Test Codes"
+    },
+    {
+      "code": "observation-definitions",
+      "display": "Observation Definitions"
+    }
+  ]
+}
