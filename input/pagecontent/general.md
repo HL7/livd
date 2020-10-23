@@ -94,7 +94,7 @@ The implementation guide supports the following mappings:
 
 ### LIVD Data Definitions
 #### LIVD Publication
-This information establishes the version for the publication as expressed through the LIVD Catalog profile, including:
+This information establishes the version for the publication expressed through the LIVD Catalog profile, including:
 
 * **_Publisher_** is the entity publishing the mapping information.
 * **_Publication Version ID_** is human-readable information provided by the vendor that can be used to differentiate LIVD Publication versions.
