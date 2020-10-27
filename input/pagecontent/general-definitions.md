@@ -22,7 +22,7 @@ Note that types and cardinality are aligned with values reported in [Laboratory 
 
 ### IVD Test Results
 
-The IVD Test Result components are aligned with values reported in OBX-3 Observation Identifier as applicable and expressed using the LIVD Observation Definition profile.
+The IVD Test Result components are aligned with obvservation definition attributes and expressed using the LIVD Observation Definition profile.
 
 <ul>
      <li> <b><i>Vendor Analyte Code</i></b> is one of two possible values:
