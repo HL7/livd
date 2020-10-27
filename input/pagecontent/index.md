@@ -22,7 +22,7 @@ The content uses FHIR resource profiles that can be expressed in either JSON or 
 
 By voluntarily adopting the format described here as an industry convention, IVD vendors will understand what data and in what format they should provide when publishing suggested LOINC codes for their IVD Tests. By doing so, this work will significantly reduce the variability of the content and format of the multiple publications received by laboratory environments, further reducing the time and effort required by laboratories to review and integrate this information into their laboratory software systems. The format includes additional vendor information, such as a description of the result, used to easily discriminate between multiple LOINC codes for the same IVD Test. 
 
-Ultimately, it is expected that the LOINC codes selected by manufacturers would be reviewed by a common party (e.g. Regenstrief) for correctness and consistency across vendors, and also that the industry would establish conventions for the storage and access of the IVD vendor LOINC publications. The effort required for these objectives will also be reduced by having this standard publication format and associated content.
+Ideally it is envisioned that the LOINC codes selected by manufacturers would be reviewed by a common party (e.g. Regenstrief) for correctness and consistency across vendors, and also that the industry would establish conventions for the storage and access of the IVD vendor LOINC publications. The effort required for these objectives will also be reduced by having this standard publication format and associated content.
 
 ### Out of Scope
 
