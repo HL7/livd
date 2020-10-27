@@ -86,7 +86,7 @@ Description: "Explanation of what this profile contains/is for"
 * type.coding.version ^short = "LOINC Code Version"
 * type.coding.code 1..1 MS
 * type.coding.code only code
-* type.coding.code ^short = "LIVD Mappipng Publication LOINC Code"
+* type.coding.code ^short = "LIVD Mapping Publication LOINC Code"
 * type.coding.code ^definition = "LOINC Code representing the LIVD Mapping Publication."
 * type.coding.display 1..1 MS
 * type.coding.display only string
