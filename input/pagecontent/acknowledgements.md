@@ -20,7 +20,7 @@ The FDA recognized that with the increasing implementation of electronic health 
 
 At present, LOINC is the IVD coding system that is most widely used by clinical laboratories and EHRs, and is the IVD coding standard recommended by the Office of the National Coordinator for Health Information Technology (ONC) in the U.S. Department of Health and Human Services (HHS) as an essential part of meaningful use. LOINC is a partially FDA-recognized consensus standard, where the recognition is limited to IVD tests.
 
-FDA strongly supports the use of an FDA-recognized consensus standard as the mechanism to communicate or disseminate the LOINC codes provided by manufacturers . The LOINC transmission document for IVDs (LIVD) standard is one standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC), and can be found at the following location: http://ivdconnectivity.org/livd/. The LIVD Implementation Guide is based on this work.
+FDA strongly supports the use of an FDA-recognized consensus standard as the mechanism to communicate or disseminate the LOINC codes provided by manufacturers . The LOINC transmission document for IVDs (LIVD) standard is one standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC), and can be found at the following location: [http://ivdconnectivity.org/livd/](http://ivdconnectivity.org/livd/). The LIVD Implementation Guide is based on this work.
 
 The development of the LIVD Specification and Implementation Guide was an international effort, as highlighted by the involvement of the following organizations:
 
