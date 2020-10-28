@@ -6,6 +6,7 @@ The basic structure that the LIVD Publication must support is based on the **_[D
 
 The implementation guide supports the following mappings:
 
+### IVD Test Results
 <ul>
      <li> A publication is typically for one vendor's devices, but it is possible to combine information from multiple vendors into an aggregate publication.
      </li>
@@ -27,3 +28,18 @@ The implementation guide supports the following mappings:
      </li>
      <li> The IVD Test Code Map enable these many to many mappings, also considering that there may not be a suggested LOINC code for a particular IVD Test Result, or clearly that not every LOINC code is related to an IVD Test Result.</li>
 </ul>
+
+### IVD Result Values
+<ul>
+     <li> One vendor <b><i>IVD Test Result</i></b> to zero or many <b><i>IVD Result Values</i></b>.
+          <ul>
+                <li> When an IVD Test Result represents a non-quantititative test, then there would be one or more coded result values that are used to result on the test.
+          </ul>
+     <li> One <b><i>IVD Result Value</i></b> to zero or many <b><i>LOINC</i></b> or <b><i>SNOMED codes</i></b>
+          <ul>
+               <li> The IVD Result Value may have a corresponding LOINC and/or SNOMED code.
+               <li> While the IVD Result Value could be represented in LOINC and SNOMED, the intent is not that a particular configuration mixes both coding approaches for the specific IVD Test Result's IVD Result Values.  Rather it should use one encoding or the other.  The LIVD Publication allows for documenting both to enable the LIS to make that choice.
+          </ul>
+</ul>
+          
+               
