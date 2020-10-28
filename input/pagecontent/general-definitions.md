@@ -1,4 +1,7 @@
 ## LIVD Data Definitions
+The following provides the specific definitions for each of the data elements relevant to LIVD.
+
+We encourage the use of GUIDs (Globally Unique IDentifier) for identifiers to enable consumers and aggregators of LIVD Catalogs to easily merge and identify duplicates.
 ### LIVD Publication
 This information that describes the overall LIVD publication is expressed through the LIVD Catalog profile, including:
 
