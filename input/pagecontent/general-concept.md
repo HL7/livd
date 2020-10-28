@@ -12,7 +12,7 @@ The implementation guide supports the following mappings:
      </li>
      <li> One vendor <b><i>IVD Test Result</i></b> to zero or many <b><i>LOINC</i></b>s
          <ul>
-             <li> Depending on the context of the result, specimen, or other qualification, the same IVD Test Result can be mapped to different suggested LOINC codes as also shown in the example above.  Antoher example may be that an IVD test for serum glucose could map to one LOINC code considering a mass concentration (e.g. mg/dL) or another LOINC considering a substance concentration (e.g. mol/L). Or, a urine albumin could map to one LOINC code for a 24 hour excretion rate with units of mg/(24.h), versus another LOINC code for a random urine with unit of md/dL.</li>
+             <li> Depending on the context of the result, specimen, or other qualification, the same IVD Test Result can be mapped to different suggested LOINC codes as also shown in the example above.  Another example may be that an IVD test for serum glucose could map to one LOINC code considering a mass concentration (e.g. mg/dL) or another LOINC considering a substance concentration (e.g. mol/L). Or, a urine albumin could map to one LOINC code for a 24 hour excretion rate with units of mg/(24.h), versus another LOINC code for a random urine with unit of md/dL.</li>
              <li> It is also possible that a LOINC code is not yet known or available at the time of the LIVD Publication, thus it is possible to not indicate any mapping.
          </ul>
      </li>
