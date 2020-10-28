@@ -2,7 +2,7 @@
 
 When communicating results from a device to the Laboratory Information System (LIS), two concepts must be mapped: the device's Vendor Analyte Code to the LIS Test Result code.  Neither In-Vitro Diagnostic (IVD) Test codes or LIS Test Result codes are based on industry standard vocabulary.  The manufacturer assigns Vendor Analyte Code to their devices, while the Laboratory creates test result codes for the tests they provide.  Through LIS configuration tools, the test result code is associated with one or more LIS test result codes based on context, e.g., IVD Test Code used with one vs. another specimen would yield a different LIS test result code.  This process has been in place for decades and has been optimized to support the Laboratory's specific reporting requirements (including conformance to Clinical Laboratory Improvement Amendments (CLIA) for the US).
 
-To enable analytics and clinical decision support, harmonization to a common vocabulary is critical.  For Lab test results, Logical Observation Identifiers Names and Codes (LOINC(R)) is the coding system of choice, thus introducing the question on how to map the LIS Test Result Code to LOINC and do so consistently across all labs to enable analytics and clinical decision support reliably.
+To enable analytics and clinical decision support, harmonization to a common vocabulary is critical.  For laboratory test results, Logical Observation Identifiers Names and Codes (LOINC(R)) is the coding system of choice, thus introducing the question on how to map the LIS Test Result Code to LOINC and do so consistently across all laboratories to enable analytics and clinical decision support reliably.
 
 For now, and particularly until an LIS communicates ordered tests with the device using LOINC, the device cannot provide the appropriate LOINC code with the test result.  The LIS must provide the mapping as they associate the Vendor Analyte Code with the LIS Test Result Code.   To date this mapping process has relied on a combination of the LOINC registry, RELMA, and the individual's knowledge of LOINC plus the LIS' test compendium.
 
@@ -23,7 +23,7 @@ The following diagram may help further clarify that:
     <li> Adding the LIVD suggested mappings, where available, enhances the Laboratory's staff to arrive more quickly and correctly at the right LOINC code.</li>
 </ul>
 
-When the lab professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Code.  The following example clarifies the information a lab professional would use during their configuration.
+When the laboratory professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Code.  The following example clarifies the information a laboratory professional would use during their configuration.
 
 Example:
 
