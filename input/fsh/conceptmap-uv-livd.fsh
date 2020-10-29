@@ -174,7 +174,7 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn[other].system ^definition = "An absolute URI that identifies the code system of the dependency code (if the source/dependency is a value set that crosses code systems)."
 * group.element.target.dependsOn[other].system ^mustSupport = false
 * group.element.target.dependsOn[other].value 1..1 MS
-* group.element.target.dependsOn[other].value ^short = "Value of the result property"
+* group.element.target.dependsOn[other].value ^short = "Value of the other value property"
 * group.element.target.dependsOn[other].value ^definition = "This provides the coded representation of the description for an additional dependency (not Specimen or Result) description."
 * group.element.target.dependsOn[other].value ^comment = "This human readable description provides further information for use by the Lab staff to finalize the appropriate mapping of the analyte test code to the LOINC code for the specific device and purpose within that Lab."
 * group.element.target.dependsOn[other].display 0..0
