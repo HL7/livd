@@ -116,7 +116,7 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn ^slicing.discriminator[0].path = "property"
 * group.element.target.dependsOn ^slicing.rules = #open
 * group.element.target.dependsOn ^short = "Other elements required for this mapping (from context)"
-* group.element.target.dependsOn ^definition = "A set of additional dependencies for this mapping to hold other than those for specimen or reult. This mapping is only applicable if the specified element can be resolved, and it has the specified value."
+* group.element.target.dependsOn ^definition = "A set of additional dependencies for this mapping to hold other than those for specimen or result. This mapping is only applicable if the specified element can be resolved, and it has the specified value."
 * group.element.target.dependsOn ^comment = "Either .code or .display must be valued.\nThere must be both a specimen and result related description."
 * group.element.target.dependsOn ^condition[0] = "livd-1"
 * group.element.target.dependsOn ^constraint[0].key = "livd-1"
