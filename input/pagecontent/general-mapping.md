@@ -21,7 +21,9 @@ The concepts described above are mapped to a number of FHIR resource that have b
 * LIVD Device Definition Profile - This profile reflects the equipment (device) that is represented in the publication.  Each LIVD publication must include at least one device, and can be many.
 * LIVD Device Observation Definition - This profile reflects the IVD test codes that each device can produce.
 * LIVD Concept Map Profile - This profile supports the data necessary to document the actual mapping between the IVD test code for a device and the LOINC codes (0, 1, or more) to consider.
-* LIVD LOINC Code System Profile - This profile supports the relevant LOINC code data to assist in the mapping process.
+* LIVD LOINC Value Set Profile - This profile supports the applicable value set from the LOINC Code System that is relevant to the mapping process.
+* LIVD LOINC Code System Profile - This profile supports the relevant LOINC Code System data to assist in the mapping process.  This enables the mapping process to be off-line as needed.
+ 
 
 The LIVD Bundle Profile will enable packaging of the resources.
 
