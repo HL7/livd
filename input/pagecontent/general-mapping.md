@@ -211,6 +211,21 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>ConceptMap.group.element.display</td>
 </tr>
 <tr>
+ <td><b><i>Test Result Values</i></b></td>
+ </tr>
+<tr>
+ <td>Vendor Test Result Value Code</td>	
+ <td>to be provided</td>
+</tr>
+<tr>
+ <td>Vendor Test Result Value Code Name</td>
+ <td>to be provided</td>
+</tr>
+<tr>
+ <td>Vendor Test Result Value Coding System</td>	
+ <td>to be provided</td>
+</tr>
+<tr>
     <td><b><i>LOINC Code System</i></b></td>
 </tr>
 <tr>
