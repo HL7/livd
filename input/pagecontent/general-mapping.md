@@ -163,7 +163,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
-    <td>ObservationDefinitio.validCodedValueSet</td>
+    <td>ObservationDefinition.validCodedValueSet</td>
 </tr>
 <tr>
     <td> </td>
