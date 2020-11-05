@@ -173,8 +173,8 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
 </tr>
 <tr>
-    <td>Vendor Specimen Description
-    <br>ConceptMap.group.element.target.dependsOn.property
+    <td>Vendor Specimen Description</td>
+    <td>ConceptMap.group.element.target.dependsOn.property
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
