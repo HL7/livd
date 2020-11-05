@@ -18,10 +18,10 @@ The concepts described above are mapped to a number of FHIR resource that have b
 ![LIVD Profile Structure](LIVD_Profile_Structure.jpg)
 
 * LIVD Catalog Profile - This provides the information about the LIVD Publication.  The profile is based on the Catalog profile based on the Composition resource.   Note that, while the LIVD Catalog Profile does some organization of the resources, there is no need for representing the format of the data.  The formatting and presentation is left to the client consuming these resources.
-* LIVD Device Definition Profile - This profile reflects the equipment (device) that is represented in the publication.  Each LIVD publication must include at least one device, and can be many.
+* LIVD Device Definition Profile - This profile reflects the equipment (device) that is represented in the publication.  Each LIVD publication must include at least one device, and can cover many.
 * LIVD Device Observation Definition - This profile reflects the IVD test codes that each device can produce.
 * LIVD Concept Map Profile - This profile supports the data necessary to document the actual mapping between the IVD test code for a device and the LOINC codes (0, 1, or more) to consider.
-* LIVD LOINC Value Set Profile - This profile supports the applicable value set from the LOINC Code System that is relevant to the mapping process.
+* LIVD LOINC Value Set Profile - This profile supports the applicable LOINC codes from the LOINC Code System that is relevant to the mapping process.
 * LIVD LOINC Code System Profile - This profile supports the relevant LOINC Code System data to assist in the mapping process.  This enables the mapping process to be off-line as needed.
  
 
