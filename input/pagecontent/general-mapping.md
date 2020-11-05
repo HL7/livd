@@ -167,7 +167,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
-    <td>ObservvationDefinition.ext-device</td>
+    <td>ObservationDefinition.ext-device</td>
 </tr>
 <tr>
     <td><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
