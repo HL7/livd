@@ -13,7 +13,7 @@ This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standar
 
 #### Overview
 
-The concepts described above are mapped to a number of FHIR resource that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
+The concepts described above are mapped to a number of FHIR resources that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
 
 ![LIVD Profile Structure](LIVD_Profile_Structure.jpg)
 
