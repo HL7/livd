@@ -148,7 +148,7 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn[result].property = "result" (exactly)
 * group.element.target.dependsOn[result].property ^short = "Reference to property mapping depends on"
 * group.element.target.dependsOn[result].property ^definition = "A reference to an element that holds a coded value that corresponds to a code system property. The idea is that the information model carries an element somwhere that is labeled to correspond with a code system property."
-* group.element.target.dependsOn[result].property ^comment = "This references the list of characteristics, e.g., Specimen or Result, for which further clarifying descriptions are provided."
+* group.element.target.dependsOn[result].property ^comment = "This references the list of characteristics, e.g., Specimen, Resul, or Othert, for which further clarifying descriptions are provided."
 * group.element.target.dependsOn[result].system 0..0
 * group.element.target.dependsOn[result].system ^short = "Code System (if necessary)"
 * group.element.target.dependsOn[result].system ^definition = "An absolute URI that identifies the code system of the dependency code (if the source/dependency is a value set that crosses code systems)."
@@ -162,13 +162,13 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn[result].display ^definition = "This represents the vendor description for the Result description."
 * group.element.target.dependsOn[result].display ^mustSupport = false
 * group.element.target.dependsOn contains other 0..1 MS
-* group.element.target.dependsOn[other] ^short = "The property for result"
+* group.element.target.dependsOn[other] ^short = "The property for other"
 * group.element.target.dependsOn[other].property 1..1 MS
 * group.element.target.dependsOn[other].property only uri
 * group.element.target.dependsOn[other].property = "other" (exactly)
 * group.element.target.dependsOn[other].property ^short = "Reference to property mapping depends on"
 * group.element.target.dependsOn[other].property ^definition = "A reference to an element that holds a coded value that corresponds to a code system property. The idea is that the information model carries an element somwhere that is labeled to correspond with a code system property."
-* group.element.target.dependsOn[other].property ^comment = "This references the list of characteristics, e.g., Specimen or Result, for which further clarifying descriptions are provided."
+* group.element.target.dependsOn[other].property ^comment = "This references the list of characteristics, e.g., Specimen, Result or Other, for which further clarifying descriptions are provided."
 * group.element.target.dependsOn[other].system 0..0
 * group.element.target.dependsOn[other].system ^short = "Code System (if necessary)"
 * group.element.target.dependsOn[other].system ^definition = "An absolute URI that identifies the code system of the dependency code (if the source/dependency is a value set that crosses code systems)."
