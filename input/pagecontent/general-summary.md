@@ -81,7 +81,7 @@ Consequently, most appropriate mapping would be:
    <ul>
       <li> LOINC Code = 3167-4 Volume of 24 hour Urine - provided as AOE </li>
    </ul>
-   <i> LIS Test Info =  Result Code 777 - Result Name <b>Total Protein, 24 Hour Urine Rate</b>  Units <b>g/24 Hr</b> </li>
+   <li> LIS Test Info =  Result Code 777 - Result Name <b>Total Protein, 24 Hour Urine Rate</b>  Units <b>g/24 Hr</b> </li>
    <ul>
        <li> LOINC Code = 2889-4 Protein [Mass/time] in 24 hour Urine - calculated from values in 333, 444 and 555 </li>
    </ul>
