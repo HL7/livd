@@ -21,7 +21,7 @@ The equipment elements are expressed through the LIVD Device Definition profile,
 * **_UID_** is the unique device identifier, that may be the one used in the Unique Device Identifier (UDI) constructs.
 * **_UID Type_** is capable of supporting the unique device identification system to identify medical devices through their distribution and use. When fully implemented, the label of most devices will include a unique device identifier (UDI) in human- and machine-readable form.
 
-Note that types and cardinality are aligned with values reported in [Laboratory Analytical Workflow (LAW) Profile](https://www.ihe.net/resources/technical_frameworks/#PaLM) OBX-18 Equipment Instance Identifier.
+Note that types and cardinality are aligned with values reported in the Integrating the Healthcare Enterpires (IHE) [Laboratory Analytical Workflow (LAW) Profile](https://www.ihe.net/resources/technical_frameworks/#PaLM) OBX-18 Equipment Instance Identifier.
 
 ### IVD Test Results
 
