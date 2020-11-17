@@ -54,7 +54,7 @@ Description: "Explanation of what this profile contains/is for"
 * entry 6..* MS
 * entry ^short = "Entry in the bundle - will have a resource, or information"
 * entry ^definition = "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only)."
-* entry ^comment = "The bundles must contain exactly one LIVDCatalogProfile instance, at least one LIVDCatalogEntryProfile instance, at least one LIVDDeviceDefinitionProfile instance, at least one LIVDConceptMapProfile instance, and at least one LIVDCodeSystemProfile instance."
+* entry ^comment = "The bundle must contain at least 6 entries such that there is at exactly one LIVDCatalogProfile instance, at least one LIVDCatalogEntryProfile instance, at least one LIVDDeviceDefinitionProfile instance, at least one LIVDConceptMapProfile instance, and at least one LIVDCodeSystemProfile instance."
 * entry.link 0..0
 * entry.link ^short = "Links related to this entry"
 * entry.link ^definition = "A series of links that provide context to this entry."
