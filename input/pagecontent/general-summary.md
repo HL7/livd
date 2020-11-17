@@ -1,26 +1,35 @@
 ## LOINC Mapping Summary
 
-When communicating results from a device to the Laboratory Information System (LIS), two concepts must be mapped: the device's Vendor Analyte Code to the LIS Test Result code.  Neither In-Vitro Diagnostic (IVD) Test codes or LIS Test Result codes are based on industry standard vocabulary.  The manufacturer assigns a Vendor Analyte Code to their devices, while the Laboratory creates test result codes for the tests they provide.  Through LIS configuration tools, the test result code is associated with one or more LIS test result codes based on context, e.g., IVD Test Code used with one vs. another specimen would yield a different LIS test result code.  This process has been in place for decades and has been optimized to support the Laboratory's specific reporting requirements (including conformance to Clinical Laboratory Improvement Amendments (CLIA) for the US).
+When communicating results from a device to the Laboratory Information System (LIS), the following concepts must be mapped: 
+<ul>
+    <li> The Vendor Analyte Code (also known as In-Vitro Diagnostic Code or IVD Test Code) to the LIS Test Result Code</li>; and
+    <li> The Vendor Analyte Code's Result Value Code to the LIS Test Result Code's Result Value Code</li>
+</ul>
+Neither the Vendor Analyte Code, the LIS Test Result codes, nor the respective Result Value Codes are likely based on industry standard vocabulary.  The manufacturer assigns a Vendor Analyte Code to their devices, plus associated Result Value Codes, while the Laboratory creates Test Result Codes and its Result Value Codes for the tests they provide.  Through LIS configuration tools, the Vendor Analyte Code is associated with one or more LIS Test Result Codes based on context, e.g., Vendor Analyte Code used with one vs. another specimen would yield a different LIS Test Result Code.  This process has been in place for decades and has been optimized to support the Laboratory's specific reporting requirements (including conformance to Clinical Laboratory Improvement Amendments (CLIA) for the US).
 
-To enable analytics and clinical decision support, harmonization to a common vocabulary is critical.  For laboratory test results, Logical Observation Identifiers Names and Codes (LOINC<sup>(R)</sup>) is the coding system of choice, thus introducing the question on how to map the LIS Test Result Code to LOINC and do so consistently across all laboratories to enable analytics and clinical decision support reliably.
+To enable analytics and clinical decision support, harmonization to a common vocabulary is critical.  For laboratory test results, Logical Observation Identifiers Names and Codes (LOINC<sup>(R)</sup>) is the coding system of choice, while for non-quantitative, encoded result values, SNOMED and LOINC are both in use to enable a consistent expression.  This introducing the question on how to map the LIS Test Result Code to LOINC, as well as corresponding Result Value Code to either LOINC or SNOMED, and do so consistently across all laboratories to enable analytics and clinical decision support reliably.
 
-For now, and particularly until an LIS communicates ordered tests with the device using LOINC, the device cannot provide the appropriate LOINC code with the test result.  The LIS must provide the mapping as they associate the Vendor Analyte Code with the LIS Test Result Code.   To date this mapping process has relied on a combination of the LOINC registry, RELMA, and the individual's knowledge of LOINC plus the LIS' test compendium.
+For now, and particularly until an LIS communicates ordered tests with the device using LOINC, the device cannot provide the appropriate LOINC code with the test result.  The LIS must provide the mapping as they associate the Vendor Analyte Code with the LIS Test Result Code, and then subsequently the appropriate Result Value Code.   To date this mapping process has relied on a combination of the LOINC registry, RELMA, and the individual's knowledge of LOINC plus the LIS' test compendium and further information on the Vendr Analyte Code's Result Value Codes to arrive at the appropriate LOINC or SNOMED codes for the actual value where applicable.
 
-The device manufacturer can aid in the process by providing a list of suggested LOINC codes for each of their IVD Test Codes, including context of the result, specimen, and other considerations that would influence the choice.  Such guidance would help reduce the scope of potential LOINC codes to consider, thus improving efficiency and quality of the mapping process, particularly across laboratories, i.e., arriving at the same LOINC code for the same test.
+The device manufacturer can aid in the process by providing a list of suggested LOINC codes for each of their IVD Test Codes, including context of the result, specimen, and other considerations that would influence the choice, as well as the appropriate LOINC or SNOMED codes for their device's Result Value Codes.  Such guidance would help reduce the scope of potential LOINC and SNOMED codes to consider, thus improving efficiency and quality of the mapping process, particularly across laboratories, i.e., arriving at the same LOINC or SNOMED code for the same test.
 
 The following diagram may help further clarify that:
 
 ![LIVD FHIR Mapping](LIVD_FHIR_Mapping.jpg)
 
 <ul>
-    <li> The LIS maintains a map between the IVD Test Code and their LIS Test Result Code.
+    <li> The LIS maintains a map between the Vendor Analyte Code and their LIS Test Result Code.
         <ul>
-            <li> One IVD Test Code can yield different LIS Test Result Codes depending on specimen and other parameters.</li>
+            <li> One Vendor Analyte Code can yield different LIS Test Result Codes depending on specimen and other parameters.</li>
+            <li> Each of the LIS Test Result Codes must have a LOINC code associated with it so the results report includes the appropriate LOINC code as well for downstream use.</li>
+            <li> Laboratory staff today rely on LOINC definitions (using RELMA or the web based tool), their local mappings, and their expertise/knowledge about the device, test, and parameters, to associate a specific LOINC code to the LIS Test Result Code. </li>
         </ul>
-    </li>
-    <li> Each of the LIS Test Result Codes must have a LOINC code associated with it so the results report includes the appropriate LOINC code as well for downstream use.</li>
-    <li> Laboratory staff today rely on LOINC definitions (using RELMA or the web based tool), their local mappings, and their expertise/knowledge about the device, test, and parameters, to associate a specific LOINC code to the LIS Test Result Code. </li>
-    <li> Adding the LIVD suggested mappings, where available, enhances the Laboratory's staff to arrive more quickly and correctly at the right LOINC code.</li>
+    <li> The LIS also maintains a map between the Vendor Analyte Code's Result Value Codes and the LIS Test Result Code's Result Value Code.</li>
+        <ul>
+            <li> One Vendor Analyte Code's Result Value Code yields one LOINC code or SNOMED code.</li>  
+            <li> While it may have a map to both, local reporting requirements would yield an LIS to only use the LOINC or only then SNOMED codes.</li>
+        </ul>
+    <li> Adding the LIVD suggested mappings, where available, enhances the Laboratory's staff to arrive more quickly and correctly at the right LOINC and SNOMED codes.</li>
 </ul>
 
 When the laboratory professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Code.  The following example clarifies the information a laboratory professional would use during their configuration.
@@ -86,3 +95,7 @@ Consequently, most appropriate mapping would be:
        <li> LOINC Code = 2889-4 Protein [Mass/time] in 24 hour Urine - calculated from values in 333, 444 and 555 </li>
    </ul>
 </ul>
+
+### Example #3 - Result Value Code
+
+UNDER CONSTRUCTION: Need a couple of examples on mapped result value codes.
