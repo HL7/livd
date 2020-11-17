@@ -25,40 +25,64 @@ The following diagram may help further clarify that:
 
 When the laboratory professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Code.  The following example clarifies the information a laboratory professional would use during their configuration.
 
-Example:
-
+### Example#1 – Glucose:
+Vendor Analyte Code = 1067 (Gluc) is mapped in the LIS to:
 <ul>
-    <li> Vendor Analyte Code = 1067 (Gluc) is mapped in the LIS to:
-        <ul>
-            <li> LIS Test Result Code = 123 - Random Glucose</li>
-            <li> LIS Test Result Code = 456 - Fasting Glucose</li>
-            <li> LIS Test Result Code = 789 - 1 Hour Glucose</li>
-        </ul>
-    </li>
-    <li> LIVD Mapping Vendor Analyte Code = 1067 (Gluc) suggests:
-        <ul>
-            <li> Based on vendor comment [comment], vendor result description [result] A, vendor specimen description [specimen] "cerebrospinal", LOINC axes => 2342-4</li>
-            <li> Based on  vendor comment [comment], vendor result description [result] B, vendor specimen description "urine", LOINC axes => 63382-6</li>
-            <li> Based on  vendor comment [comment], vendor result description [result] C, vendor specimen description "serum/plasma", LOINC axes => 20438-8</li>
-        </ul>
-    </li>
-    <li> Consequently, most appropriate mapping:
-        <ul>
-            <li> LIS Test Result Code = 123 - Random Glucose
-                <ul>
-                    <li> LOINC Code = 2342-4</li>
-                </ul>
-            </li>
-            <li> LIS Test Result Code = 456 - Fasting Glucose
-                <ul>
-                    <li> LOINC Code = 63382-6</li>
-                </ul>
-            </li>
-            <li> LIS Test Result Code = 789 - 1 Hour Glucose
-                <ul>
-                    <li> LOINC Code = 20438-8</li>
-                </ul>
-            </li>
-        </ul>
-    </li>
+   <li> LIS Test Result Info = 123 - Glucose CSF mg/dL </li>
+   <li> LIS Test Result Info = 456 - Fasting Glucose Urine mg/dL </li>
+   <li> LIS Test Result Info = 789 - 1 Hour Glucose Plasma mg/dL </li>
+</ul>
+LIVD Mapping Vendor Analyte Code = 1067 (Gluc) suggests:
+<ul>
+   <li> Based on vendor comment [comment], vendor result description [result] A, vendor specimen description [specimen] "cerebrospinal", unit of measure "mg/dL", LOINC axes => 2342-4 Glucose [Mass/volume] in Cerebral spinal fluid </li>
+   <li> Based on vendor comment [comment], vendor result description [result] B, vendor specimen description "urine", unit of measure "mg/dL", LOINC axes => 63382-6 </li>
+   <li> Based on vendor comment [comment], vendor result description [result] C, vendor specimen description "serum/plasma", unit of measure "mg/dL", LOINC axes => 20438-8 </li>
+</ul>
+Consequently, most appropriate mapping:
+<ul>
+   <li> LIS Test Result Code = 123 - Glucose CSF mg/dL MAP TO LOINC Code = 2342-4 Glucose [Mass/volume] in Cerebral spinal fluid </li>
+   <li> LIS Test Result Code = 456 - Fasting Glucose Urine mg/dL MAP TO LOINC Code = 63382-6 Fasting glucose [Mass/volume] in Urine </li>
+   <li> LIS Test Result Code = 789 - 1 Hour Glucose Plasma mg/dL MAP TO LOINC Code = 20438-8 Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose </li>
+</ul>
+
+### Example#2 - Total Protein (CSF/Urine):
+This IVD "test kit" is usually named Total Protein (CSF/Urine) and utilized for the analysis of CSF, Random/Spot Urine, or Timed urine (24 hr, 2 hr, etc) specimens.  It is often used to perform body fluid Total Proteins.  However, a different IVD "test kit" is typically used for serum/plasma Total Protein levels, which is out of scope for this example. Note that the LIVD file would NOT contain the local Ask at ORder entry questions (local codes 444 and 555), nor the calculated value for local code 777. CSF=Cerebrospinal Fluid.
+Vendor Analyte Code = 1099 (Total Protein CSF/Ur) is mapped in the LIS to:
+<ul>
+   <li> LIS Test Info =  Result Code 111 - Result Name <b>Protein, CSF</b>  Units <b>mg/dL</b> </li>
+   <li> LIS Test Info =  Result Code 222 - Result Name <b>Protein, Random Urine</b>  Units <b>mg/dL</b> </li>
+   <li> LIS Test Info =  Result Code 333 - Result Name <b>Protein, 24 Hour Urine</b>  Units <b>mg/dL</b> </li>
+</ul>
+LIVD Mapping Vendor Analyte Code = 1099 (Total Protein CSF/Ur) suggests:
+<ul>
+   <li> Based on vendor comment [comment], vendor <b>result description</b> [result] A, vendor <b>specimen</b> description [specimen] "<b>CSF</b>", LOINC axes => 2880-3 </li>
+   <li> Based on vendor comment [comment], vendor <b>result description</b> [result] B, vendor <b>specimen</b> description [specimen] "<b>Urine</b>", LOINC axes => 2888-6 </li>
+   <li> Based on vendor comment [comment], vendor <b>result description</b> [result] C, vendor <b>specimen</b> description [specimen] "<b>24 hour Urine</b>", LOINC axes => 21482-5 </li>
+</ul> 
+Consequently, most appropriate mapping would be:
+<ul>
+   <li>LIS Test Info =  Result Code111 - Result Name <b>Protein, CSF</b>  Units <b>mg/dL</b> </li>
+   <ul>
+       <li> LOINC Code = 2880-3 Protein [Mass/volume] in Cerebral spinal fluid </li>
+   </ul>
+   <li> LIS Test Info =  Result Code 222 - Result Name <b>Protein, Random Urine</b>  Units <b>mg/dL</b> </li>
+   <ul>
+      <li> LOINC Code = 2888-6 Protein [Mass/volume] in Urine </li>
+   </ul>
+   <li> LIS Test Info =  Result Code 333 - Result Name <b>Protein, 24 Hour Urine</b>  Units <b>mg/dL</b> </li>
+   <ul>
+      <li> LOINC Code = 21482-5 Protein [Mass/volume] in 24 hour Urine </li>
+   </ul>
+   <li> LIS Test Info =  Result Code 444 - Result Name <b>Hours of Collection</b> Units <b>Hours</b> - calculated from values in 333 and 444 </li>
+   <ul> 
+      <li> LOINC Code = 13362-9 Collection duration of Urine - provided as AOE </li>
+   </ul>
+   <li> LIS Test Info =  Result Code 555 - Result Name <b>Total Volume 24 Hour Urine Volume</b>  Units <b>mL</b> </li>
+   <ul>
+      <li> LOINC Code = 3167-4 Volume of 24 hour Urine - provided as AOE </li>
+   </ul>
+   <i> LIS Test Info =  Result Code 777 - Result Name <b>Total Protein, 24 Hour Urine Rate</b>  Units <b>g/24 Hr</b> </li>
+   <ul>
+       <li> LOINC Code = 2889-4 Protein [Mass/time] in 24 hour Urine - calculated from values in 333, 444 and 555 </li>
+   </ul>
 </ul>
