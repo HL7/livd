@@ -2,7 +2,7 @@
 
 When communicating results from a device to the Laboratory Information System (LIS), the following concepts must be mapped: 
 <ul>
-    <li> The Vendor Analyte Code (also known as In-Vitro Diagnostic Code or IVD Test Code) to the LIS Test Result Code</li>; and
+    <li> The Vendor Analyte Code (also known as In-Vitro Diagnostic Code or IVD Test Result) to the LIS Test Result Code; and</li>
     <li> The Vendor Analyte Code's Result Value Code to the LIS Test Result Code's Result Value Code</li>
 </ul>
 Neither the Vendor Analyte Code, the LIS Test Result codes, nor the respective Result Value Codes are likely based on industry standard vocabulary.  The manufacturer assigns a Vendor Analyte Code to their devices, plus associated Result Value Codes, while the Laboratory creates Test Result Codes and its Result Value Codes for the tests they provide.  Through LIS configuration tools, the Vendor Analyte Code is associated with one or more LIS Test Result Codes based on context, e.g., Vendor Analyte Code used with one vs. another specimen would yield a different LIS Test Result Code.  This process has been in place for decades and has been optimized to support the Laboratory's specific reporting requirements (including conformance to Clinical Laboratory Improvement Amendments (CLIA) for the US).
