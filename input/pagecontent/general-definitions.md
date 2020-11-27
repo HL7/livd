@@ -1,8 +1,9 @@
-## LIVD Data Definitions
+<h3> LIVD Data Definitions</h3>
 The following provides the specific definitions for each of the data elements relevant to LIVD.
 
 We encourage the use of GUIDs (Globally Unique IDentifier) for identifiers to enable consumers and aggregators of LIVD Catalogs to easily merge and identify duplicates.
-### LIVD Publication
+
+<h4> LIVD Publication </h4>
 This information that describes the overall LIVD publication is expressed through the LIVD Catalog profile, including:
 
 * **_Publisher_** is the entity publishing the mapping information.
@@ -13,7 +14,7 @@ This information that describes the overall LIVD publication is expressed throug
 * **_Localization_** is the language used for this LIVD Publication.
 * **_Region_** is an optional vendor description for which geographic or administrative region this localization is valid, e.g.  de-CH (German (Switzerland)) is self-explanatory, but not en-CH (English (Switzerland)).
 
-#### Equipment
+<h4> Equipment </h4>
 The equipment elements are expressed through the LIVD Device Definition profile, including:
 
 * **_Manufacturer_** is the name of the manufacturer of the device.
@@ -23,7 +24,7 @@ The equipment elements are expressed through the LIVD Device Definition profile,
 
 Note that types and cardinality are aligned with values reported in the Integrating the Healthcare Enterpires (IHE) [Laboratory Analytical Workflow (LAW) Profile](https://www.ihe.net/resources/technical_frameworks/#PaLM) OBX-18 Equipment Instance Identifier.
 
-### IVD Tests
+<h4> IVD Tests </h4>
 
 The IVD Test attributes are aligned with obvservation definition attributes and expressed using the LIVD Observation Definition profile.
 
@@ -40,7 +41,7 @@ The IVD Test attributes are aligned with obvservation definition attributes and 
 
 Additionally, various details on the Observation Definition that can aid in the mapping from the IVD Test's Vendor Analyte Code to a LOINC are included as optional attributes, even though not referenced in the original [IICC white paper](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf).
 
-### IVD Test - LOINC Mapping
+<h4> IVD Test - LOINC Mapping </h4>
 
 The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are captured in the LIVD Concept Map profile.  For each IVD Test' Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
 
@@ -71,7 +72,7 @@ The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are c
 
 Note that **_Vendor Specimen Description_**, **_Vendor Result Description_**, and **_Vendor Comment_** are included to assist a laboratory in selecting the appropriate LOINC code(s) for the vendor IVD tests used by the laboratory. This information is not intended to be parsed by an IVD Software System that automates the mapping of vendor IVD transmission codes to LOINC codes. The inclusion of this information should reduce errors in the manual selection of LOINC codes by a laboratory.
 
-### LOINC Code System
+<h4> LOINC Code System </h4>
 For each of the LOINC codes being considered, a minimum set from the code system is included to further aid in the mapping process.  These are included in the LIVD LOINC Code System profile.
 
 * **_LOINC Code_**
@@ -83,5 +84,5 @@ For each of the LOINC codes being considered, a minimum set from the code system
 * **_Scale_**
 * **_Method_**
 
-## Sample Data
+<h3> Sample Data </h3>
 As part of defining the whitepaper, IICC also developed a spreadsheets that contains the relevant data and a potential representation of that data that can be found [here](https://ivdconnectivity.org/livd/).
