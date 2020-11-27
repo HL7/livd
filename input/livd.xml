@@ -220,7 +220,27 @@
         <title value="LIVD Introduction"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="general.html"/>
+          <nameUrl value="general-concepts.html"/>
+          <title value="General Principles and Design"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="general-definitions.html"/>
+          <title value="General Principles and Design"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="general-display.html"/>
+          <title value="General Principles and Design"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="general-mapping.html"/>
+          <title value="General Principles and Design"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="general-summary.html"/>
           <title value="General Principles and Design"/>
           <generation value="markdown"/>
         </page>

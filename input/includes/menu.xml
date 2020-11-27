@@ -1,6 +1,16 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">Introduction</a></li>
-  <li><a href="general.html">General Principles and Design</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">General Principles and Design<b class="caret"> </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general-summary.html">LOINC Mapping Summary</a></li>
+      <li><a href="general-concepts.html">LIVD Concepts</a></li>
+      <li><a href="general-definitions.html">LIVD Data Definitions</a></li>
+      <li><a href="general-mapping.html">LIVD Data Mapping to FHIR</a></li>
+      <li><a href="general-display.html">Display Considerations</a></li>
+    </ul>
+  </li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifacts</a></li>
   <li><a href="glossary.html">Glossary</a></li>
