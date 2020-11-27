@@ -1,4 +1,4 @@
-### LIVD Data Mapping to FHIR
+<h3> LIVD Data Mapping to FHIR </h3>
 
 This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standard and therefore uses terminology, notations and design principles that are specific to FHIR.  Before continuing to read this implementation guide, it's important to be familiar with some of the basic principles of FHIR as well as general guidance on how to read FHIR specifications.  Readers who are unfamiliar with FHIR are encouraged to read (or at least skim) the following prior to reading the rest of this implementation guide.
 
@@ -11,7 +11,7 @@ This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standar
 * [How to read resource & profile definitions]({{site.data.fhir.path}}formats.html)
 * [Base resource]({{site.data.fhir.path}}resource.html)
 
-#### Overview
+<h4> Overview </h4>
 
 The concepts described above are mapped to a number of FHIR resources that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
 
@@ -27,7 +27,7 @@ The concepts described above are mapped to a number of FHIR resources that have 
 
 The LIVD Bundle Profile will enable packaging of the resources.
 
-#### Detailed Mapping
+<h4> Detailed Mapping </h4>
 
 The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.
 <table>
