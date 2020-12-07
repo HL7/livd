@@ -1,6 +1,8 @@
 <h3> Implementation Consideraitons </h3>
 
 <h4> Workflow Considerations </h4>
+At this point there is no expectation that a LIVD catalog will be made available through a RESTful API.  Rather, the device vendor most likely will make it available as part of a package insert.  They may consider at some point to make it available via a RESTful API or other methods.
+
 The device manufacturer creates the LIVD mappings based on their intended use of IVD test and result codes relative to the appropriate LOINC and/or SNOMED codes.  The manufacturer may already create a spreadsheet based mapping based on the LOINC transmission document for IVDs (LIVD) standard, which is a standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC).  This will help visualize the mapping described in the next sections to aid in the creation of the FHIR based LIVD maps.  One may opt to generate it directly from the available spreadsheet, or any other source that is used internally by the manufacturer to document these mappings.  If not yet documented, and there are no immediate plans to use the FHIR based format for internal documentation as well, it is recommended to use the IICC spreadsheet format is it is likely also one of the formats in which the Lab technician may be presented with the LIVD mappings.
 
 <h4> Display Considerations </h4>
