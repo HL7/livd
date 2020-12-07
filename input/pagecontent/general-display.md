@@ -4,8 +4,9 @@ When displaying the information to those configuring the mappings between IVD Te
 <ul>
    <li> General </li>
      <ul>
-       <li> Whenever LOINC codes and other contents are displayed, the license agreement requires the proper notice to be displayed according to this [guidance](https://loinc.org/kb/license/).  One may want to link to the proper web page, or make otherwise easily accessible.</li>
-       <li> Whenever the information is made available in multiple languages, one may make alternate languages available from the default language for the laboratory.
+       <li> Whenever LOINC codes and other contents are displayed, the license agreement requires the proper notice to be displayed according to this [guidance](https://www.loinc.org/kb/license/).  One may want to link to the proper web page, or make otherwise easily accessible.</li>
+       <li> Whenever the information is made available in multiple languages, one may make alternate languages available from the default language for the laboratory.</li>
+     </ul>
    <li> Test Codes </li>
      <ul>
        <li> IVD Test Codes  </li>
