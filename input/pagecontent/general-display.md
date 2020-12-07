@@ -1,4 +1,4 @@
-<h3> Implementation Consideraitons </h3>
+<h3> Implementation Considerations </h3>
 
 <h4> Workflow Considerations </h4>
 At this point there is no expectation that a LIVD catalog will be made available through a RESTful API.  Rather, the device vendor most likely will make it available as part of a package insert.  They may consider at some point to make it available via a RESTful API or other methods.
