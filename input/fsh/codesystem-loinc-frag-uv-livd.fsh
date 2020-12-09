@@ -9,7 +9,7 @@ Description: "Explanation of what this profile contains/is for"
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International - Orders and Observations Work Group"
 * ^contact[0].telecom[0].system = #other
-* ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders/index.cfm"
+* ^contact[0].telecom[0].value = "http://hl7.org/Special/committees/orders/index.cfm"
 * ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
 * ^jurisdiction[0].coding[0].code = #001
 * . ^short = "LIVDCodeSystemFragmentLOINC"
