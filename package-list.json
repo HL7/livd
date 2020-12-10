@@ -12,6 +12,15 @@
       "current": true
     },
     {
+      "version": "0.3.0",
+      "date": "2020-12-09",
+      "desc": "STU 1 Ballot 2",
+      "path": "http://hl7.org/fhir/uv/livd/2021Jan",
+      "sequence": "STU 1 (FHIR R4)",
+      "fhirversion": "4.0.1",
+      "status": "ballot"
+    },
+    {
       "version": "0.2.0",
       "date": "2019-08-01",
       "desc": "STU 1 Ballot 1",
