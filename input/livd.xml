@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="livd"/>
   <url value="http://hl7.org/fhir/uv/livd/ImplementationGuide/livd"/>
-	<version value="0.2.0"/>
+	<version value="0.3.0"/>
   <name value="LoincIvdTestCodeMapping"/>
   <title value="LOINC – IVD Test Code (LIVD) Mapping"/>
   <status value="draft"/>
@@ -10,7 +10,7 @@
   <publisher value="HL7 International - Orders and Observations Work Group"/>
   <contact>
       <telecom>
-        <system value="other"/>
+        <system value="url"/>
         <value value="http://hl7.org/Special/committees/orders/index.cfm"/>
       </telecom>
     </contact>
@@ -219,51 +219,51 @@
         <nameUrl value="index.html"/>
         <title value="LIVD Introduction"/>
         <generation value="markdown"/>
-        <page>
-          <nameUrl value="general-concepts.html"/>
-          <title value="General Principles and Design"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="general-definitions.html"/>
-          <title value="General Principles and Design"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="general-display.html"/>
-          <title value="General Principles and Design"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="general-mapping.html"/>
-          <title value="General Principles and Design"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="general-summary.html"/>
-          <title value="General Principles and Design"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="glossary.html"/>
-          <title value="Glossary"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="acknowledgements.html"/>
-          <title value="Acknowledgements"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="downloads.html"/>
-          <title value="Downloads"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="general-concepts.html"/>
+        <title value="LIVD Concepts"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="general-definitions.html"/>
+        <title value="LIVD Data Definitions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="general-implementation.html"/>
+        <title value="Implementation Considerations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="general-mapping.html"/>
+        <title value="LIVD Data Mapping to FHIR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="general-summary.html"/>
+        <title value="LOINC Mapping Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="glossary.html"/>
+        <title value="Glossary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="acknowledgements.html"/>
+        <title value="Acknowledgements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
       </page>
     </page>
 		<parameter>
@@ -282,5 +282,9 @@
 			<code value="path-binary"/>
 			<value value="input\cql"/>
 		</parameter>
+    <parameter>
+      <code value="jira-code"/>
+      <value value="us-livd"/>
+    </parameter>
   </definition>
 </ImplementationGuide>
