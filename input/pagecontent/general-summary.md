@@ -1,5 +1,3 @@
-<h3> LOINC Mapping Summary</h3>
-
 When communicating results from a device to the Laboratory Information System (LIS), the following concepts must be mapped: 
 <ul>
     <li> The IVD Test (In-Vitro Diagnostic Test) representing the analyte to the LIS Test Result Code; and</li>
@@ -34,7 +32,7 @@ The following diagram may help further clarify that:
 
 When the laboratory professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test.  Note that, as these are device vendor's suggestions, the expectation is that the suggested mappings are displayed and assist the laboratory staff to narrow the likely options that fit the laboratory's intended use based.  Therefore, the mappings are not suitable for automated configuration. The following example clarifies the information a laboratory professional would use during their configuration.
 
-<h4> Example#1 – Glucose</h4>
+<h3> Example#1 – Glucose</h3>
 Vendor Analyte Code = 1067 (Gluc) is mapped in the LIS to:
 <ul>
    <li> LIS Test Result Info = 123 - Glucose CSF mg/dL </li>
@@ -54,7 +52,7 @@ Consequently, most appropriate mapping:
    <li> LIS Test Result Code = 789 - 1 Hour Glucose Plasma mg/dL MAP TO LOINC Code = 20438-8 Glucose [Mass/volume] in Serum or Plasma --1 hour post dose glucose </li>
 </ul>
 
-<h4> Example#2 - Total Protein (CSF/Urine)</h4>
+<h3> Example#2 - Total Protein (CSF/Urine)</h3>
 This IVD "test kit" is usually named Total Protein (CSF/Urine) and utilized for the analysis of CSF, Random/Spot Urine, or Timed urine (24 hr, 2 hr, etc) specimens.  It is often used to perform body fluid Total Proteins.  However, a different IVD "test kit" is typically used for serum/plasma Total Protein levels, which is out of scope for this example. Note that the LIVD file would NOT contain the local Ask at ORder entry questions (local codes 444 and 555), nor the calculated value for local code 777. CSF=Cerebrospinal Fluid.
 Vendor Analyte Code = 1099 (Total Protein CSF/Ur) is mapped in the LIS to:
 <ul>
@@ -96,6 +94,6 @@ Consequently, most appropriate mapping would be:
    </ul>
 </ul>
 
-<h4> Example #3 - Result Value Code </h4>
+<h3> Example #3 - Result Value Code </h3>
 
 UNDER CONSTRUCTION: Need a couple of examples on mapped result value codes.

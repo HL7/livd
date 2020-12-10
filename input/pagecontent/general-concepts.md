@@ -1,12 +1,10 @@
-<h3> LIVD Concepts</h3>
-
 The basic structure that the LIVD Publication must support is based on the **_[Digital Format for Publication of LOINC to Vendor IVD Test Results](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf)_** as published by [IICC](https://ivdconnectivity.org/) - IVD Industry Connectivity Consortium. It can be represented as follows:
 
 ![LIVD Publication Structure](Publication_Structure.jpg)
 
 The implementation guide supports the following mappings:
 
-<h4> IVD Tests </h4>
+<h3> IVD Tests </h3>
 <ul>
      <li> A publication is typically for one vendor's devices, but it is possible to combine information from multiple vendors into an aggregate publication.
      </li>
@@ -26,7 +24,7 @@ The implementation guide supports the following mappings:
      <li> The IVD Test Map enable these many to many mappings, also considering that there may not be a suggested LOINC code for a particular IVD Test Code, or clearly that not every LOINC code is related to an IVD Test Result.</li>
 </ul>
 
-<h4> IVD Result Values </h4>
+<h3> IVD Result Values </h3>
 <ul>
      <li> One vendor <b><i>IVD Test</i></b> to zero or many <b><i>IVD Result Values</i></b>.</li>
           <ul>
