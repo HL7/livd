@@ -8,7 +8,7 @@
       <li><a href="general-concepts.html">LIVD Concepts</a></li>
       <li><a href="general-definitions.html">LIVD Data Definitions</a></li>
       <li><a href="general-mapping.html">LIVD Data Mapping to FHIR</a></li>
-      <li><a href="general-display.html">Display Considerations</a></li>
+      <li><a href="general-implementation.html">Implementation Considerations</a></li>
     </ul>
   </li>
   <li><a href="toc.html">Table of Contents</a></li>
