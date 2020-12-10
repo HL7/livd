@@ -588,7 +588,9 @@
         "resourceType": "CodeSystem",
         "id": "loinc-fragment-livd-roche",
         "meta": {
-          "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
+          "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
+          ]
         },
         "url": "http://loinc.org",
         "identifier": [

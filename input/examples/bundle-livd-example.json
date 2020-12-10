@@ -19,7 +19,9 @@
                 "id": "40baf389-d34c-4402-8589-59cd48095584",
                 "language": "en-US",
                 "meta": {
-                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/catalog-uv-livd"
+                    "profile": [
+                        "http://hl7.org/fhir/uv/livd/StructureDefinition/catalog-uv-livd"
+                    ]
                 },
                 "identifier": {
                     "system": "https://www.abbott.com",
@@ -107,7 +109,9 @@
                 "resourceType": "DeviceDefinition",
                 "id": "1faf1d64-df18-4d7a-b45d-3872ddd3f165",
                 "meta": {
-                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+                    "profile": [
+                        "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+                    ]
                 },
                 "udiDeviceIdentifier": [
                     {
@@ -145,7 +149,9 @@
                 "resourceType": "ObservationDefinition",
                 "id": "b87458ca-b29a-4244-b347-39111caf9ef2",
                 "meta": {
-                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+                    "profile": [
+                        "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+                    ]
                 },
                 "code": {
                     "coding": [
@@ -178,7 +184,9 @@
                 "resourceType": "ConceptMap",
                 "id": "66a4034b-6cc6-46ed-be83-343dfc51f2d7",
                 "meta": {
-                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+                    "profile": [
+                        "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+                    ]
                 },
                 "url": "http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
                 "name": "LivdConceptMap",
@@ -277,7 +285,9 @@
                 "resourceType": "CodeSystem",
                 "id": "loinc-fragment-livd",
                 "meta": {
-                    "profile": "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
+                    "profile": [
+                        "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
+                    ]
                 },
                 "url": "http://loinc.org",
                 "identifier": [
