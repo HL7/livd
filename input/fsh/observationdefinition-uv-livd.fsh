@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/ObservationDefinition
 Id: observationdefinition-uv-livd
 Title: "LIVDObservationDefinition"
 Description: "Explanation of what this profile contains/is for"
-* ^version = "0.2.0"
+* ^version = "0.3.0"
 * ^experimental = false
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International - Orders and Observations Work Group"

@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/CodeSystem
 Id: codesystem-loinc-frag-uv-livd
 Title: "LIVDCodeSystemFragmentLOINC"
 Description: "Explanation of what this profile contains/is for"
-* ^version = "0.2.0"
+* ^version = "0.3.0"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2018-08-14"
