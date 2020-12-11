@@ -116,7 +116,7 @@
                 "udiDeviceIdentifier": [
                     {
                         "deviceIdentifier": "00380740003746",
-                        "issuer": "FDA",
+                        "issuer": "https://www.fda.gov/",
                         "jurisdiction": "https://unstats.un.org/unsd/methodology/m49/021"
                     }
                 ],
