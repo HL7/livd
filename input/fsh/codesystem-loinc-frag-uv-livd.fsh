@@ -33,8 +33,7 @@ Description: "Explanation of what this profile contains/is for"
 * date 0..1
 * date ^mustSupport = false
 * publisher 1..1 MS
-// remove 'contact' cardinality constraint (temporarily) to work around publishing issue
-// * contact 0..0
+* contact 0..0
 * contact ^mustSupport = false
 * description 0..0
 * description ^alias[0] = "Scope"
@@ -44,8 +43,7 @@ Description: "Explanation of what this profile contains/is for"
 * description ^mapping[0].map = "N/A"
 * useContext 0..0
 * useContext ^mustSupport = false
-// remove 'jurisdiction' cardinality constraint (temporarily) to work around publishing issue
-// * jurisdiction 0..0
+* jurisdiction 0..0
 * jurisdiction ^mustSupport = false
 * purpose 0..0
 * purpose ^mustSupport = false

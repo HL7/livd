@@ -286,5 +286,33 @@
       <code value="jira-code"/>
       <value value="us-livd"/>
     </parameter>
+    <parameter>
+      <code value="apply-contact"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="apply-context"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="apply-copyright"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="apply-jurisdiction"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="apply-license"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="apply-publisher"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="apply-version"/>
+      <value value="false"/>
+    </parameter>
   </definition>
 </ImplementationGuide>

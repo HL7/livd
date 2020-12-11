@@ -2,6 +2,8 @@ Extension: LIVDDevice
 Id: ext-device
 Title: "LIVD Device"
 Description: "Add a reference from the ObservationDefinition to the Device."
+* ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
+* ^jurisdiction[0].coding[0].code = #001
 * ^context[0].type = #element
 * ^context[0].expression = "ObservationDefinition"
 * url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device" (exactly)
@@ -12,6 +14,8 @@ Extension: LIVDTestCapability
 Id: ext-capability
 Title: "LIVD Test Capability"
 Description: "Add a reference from DeviceDefinition.capability to one or more test capabilities."
+* ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
+* ^jurisdiction[0].coding[0].code = #001
 * ^context[0].type = #element
 * ^context[0].expression = "DeviceDefinition.capability"
 * url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability" (exactly)
@@ -22,6 +26,8 @@ Extension: LIVDVendorReferenceIdentifier
 Id: ext-vendorReferenceIdentifier
 Title: "LIVD Vendor Reference Identifier"
 Description: "Add a vendor reference identifier to ObservationDefinition."
+* ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
+* ^jurisdiction[0].coding[0].code = #001
 * ^context[0].type = #element
 * ^context[0].expression = "ObservationDefinition"
 * url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier" (exactly)
