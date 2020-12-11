@@ -25,7 +25,7 @@
         "language": "en-US",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 40baf389-d34c-4402-8589-59cd48095584</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: ARCHITECT CC v0.9.0</p><p><b>status</b>: final</p><p><b>type</b>: LIVD mapping data set <span style=\"background: LightGoldenRodYellow\">(Details : {http://loinc.org code '90370-8' = '90370-8', given as 'LIVD mapping data set'})</span></p><p><b>date</b>: Sep 12, 2018</p><p><b>author</b>: Abbott</p><p><b>title</b>: Abbott LIVD HL7 Connectathon</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 40baf389-d34c-4402-8589-59cd48095584</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: ARCHITECT CC v0.9.0</p><p><b>status</b>: final</p><p><b>type</b>: LIVD mapping data set <span style=\"background: LightGoldenRodYellow\">(Details : {http://loinc.org code '90370-8' = '90370-8', given as 'LIVD mapping data set'})</span></p><p><b>date</b>: Sep 12, 2018</p><p><b>author</b>: Abbott</p><p><b>title</b>: Abbott LIVD HL7 Connectathon</p></div>"
         },
         "identifier": {
           "system": "https://www.corelaboratory.abbott",
@@ -154,6 +154,7 @@
             "type": {
               "coding": [
                 {
+                  "system": "http://hl7.org/fhir/resource-types",
                   "code": "ObservationDefinition"
                 }
               ]
@@ -220,6 +221,7 @@
             "type": {
               "coding": [
                 {
+                  "system": "http://hl7.org/fhir/resource-types",
                   "code": "ObservationDefinition"
                 }
               ]
@@ -286,6 +288,7 @@
             "type": {
               "coding": [
                 {
+                  "system": "http://hl7.org/fhir/resource-types",
                   "code": "ObservationDefinition"
                 }
               ]
