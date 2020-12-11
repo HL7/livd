@@ -43,7 +43,6 @@ Description: "Explanation of what this profile contains/is for"
 * description ^mapping[0].map = "N/A"
 * useContext 0..0
 * useContext ^mustSupport = false
-* jurisdiction 0..0
 * jurisdiction ^mustSupport = false
 * purpose 0..0
 * purpose ^mustSupport = false
