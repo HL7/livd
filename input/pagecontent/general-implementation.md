@@ -9,7 +9,7 @@ When displaying the information to those configuring the mappings between IVD Te
 <ul>
    <li> General </li>
      <ul>
-       <li> Whenever external code systems are being displayed (e.g. LOINC and SNOMED CT) care should be taken to follow the rules in the respective license agreement.  For LOINC see <a href=https://loinc.org/license/>this guidance</a>.  For SNOMED see <a href=https://www.snomed.org/snomed-ct/get-snomed>this guidance</a>.  One may want to link to the proper web page, or make otherwise easily accessible.</li>
+       <li> Whenever external code systems are being displayed (e.g. LOINC and SNOMED CT) care should be taken to follow the rules in the respective license agreement.  For LOINC see <a href="https://loinc.org/license/">this guidance</a>.  For SNOMED see <a href="https://www.snomed.org/snomed-ct/get-snomed">this guidance</a>.  One may want to link to the proper web page, or make otherwise easily accessible.</li>
        <li> Whenever the information is made available in multiple languages, one may make alternate languages available from the default language for the laboratory.</li>
      </ul>
    <li> Test Codes </li>
