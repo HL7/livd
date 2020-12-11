@@ -96,4 +96,15 @@ Consequently, most appropriate mapping would be:
 
 <h3> Example #3 - Result Value Code </h3>
 
-UNDER CONSTRUCTION: Need a couple of examples on mapped result value codes.
+A manufacturer defined the following codes for an Immunoassay molecular antigen test:
+<ul>
+    <li>Positive</li>
+    <li>Negative</li>
+    <li>Invalid</li>
+</ul>
+The manufacture established the following SNOMED CT mappings for the result values:
+<ul>
+    <li>Positive = 260373001, “Detected”</li>
+    <li>Negative = 260415000, “Not Detected”</li>
+    <li>Invalid = 455371000124106, “Invalid result”UNDER CONSTRUCTION: Need a couple of examples on mapped result value codes.</li>
+</ul>
