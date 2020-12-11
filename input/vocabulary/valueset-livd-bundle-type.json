@@ -8,6 +8,16 @@
     "status": "draft",
     "date": "2019-07-28",
     "description": "Allowed types of bundles for the LIVD catalog",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
     "compose": {
         "include": [
             {

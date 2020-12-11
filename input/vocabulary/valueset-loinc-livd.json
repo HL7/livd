@@ -8,6 +8,16 @@
     "status": "draft",
     "date": "2018-09-25",
     "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],    
     "compose": {
         "include": [
             {

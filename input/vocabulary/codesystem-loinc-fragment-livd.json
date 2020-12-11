@@ -18,6 +18,16 @@
     "title": "LOINC Code System",
     "status": "active",
     "publisher": "Regenstrief Institute, Inc.",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
     "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
     "caseSensitive": false,
     "content": "fragment",

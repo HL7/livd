@@ -9,6 +9,16 @@
   "experimental": false,
   "publisher": "HL7 International - Orders and Observations Work Group",
   "description": "Types of sections for the LIVD catalog",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],    
   "compose": {
     "include": [
       {
