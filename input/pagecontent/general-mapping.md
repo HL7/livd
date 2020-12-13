@@ -74,6 +74,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
     <td>LOINC Version ID</td>
     <td>CodeSystem.version</td>
+    <td>This represents only the version of LOINC from which the LOINC code for the LIVD Catalog has been obtained.  It does not reflect the version of the LOINC code used in the detailed mapping.
 </tr>
 <tr>
     <td>LOINC Copyright</td>
@@ -198,6 +199,10 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
 </tr>
 <tr>
+  <td> LOINC Mapping Version</td>
+  <td>ConceptMap.group.element.target.version</td>
+</tr>
+<tr>
     <td>Vendor Specimen Description</td>
     <td>ConceptMap.group.element.target.dependsOn.property
     <br>ConceptMap.group.element.target.dependsOn.value
@@ -209,6 +214,12 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <br>Ordinal
     <br>Nominal
     </td>
+    <td>ConceptMap.group.element.target.dependsOn.property
+    <br>ConceptMap.group.element.target.dependsOn.value
+    </td>
+</tr>
+<tr>
+    <td>Vendor Device Description</dt>
     <td>ConceptMap.group.element.target.dependsOn.property
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
