@@ -72,9 +72,15 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <br>Composition.identifier.value</td>
 </tr>
 <tr>
-    <td>LOINC Version ID</td>
-    <td>CodeSystem.version</td>
-    <td>This represents only the version of LOINC from which the LOINC code for the LIVD Catalog has been obtained.  It does not reflect the version of the LOINC code used in the detailed mapping.
+    <td>Catalog LOINC Code</td>
+    <td>Composition.type.coding.code
+      <br>Composition.type.coding.version</td>
+    <td>This represents only the code and version of LOINC from which the LOINC code for the LIVD Catalog has been obtained.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
+</tr>
+<tr>
+  <td> LOINC Mapping Version</td>
+  <td> CodeSystem.version</td>
+  <td>This represents the version of LOINC used in the mapping for the code mapped in the Concept.  If there are multiple version of LOINC codes represented in the LIVD Catalog then there would be multiple CodeSystem instances, one for each version.</td>
 </tr>
 <tr>
     <td>LOINC Copyright</td>
