@@ -80,7 +80,7 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.comment 0..1 MS
 * group.element.target.comment ^short = "Vendor Comment"
 * group.element.target.comment ^comment = "This provides the ability for the vendor for additional human readable clarifications to the Laboratory on how to consider mapping IVD Test Codes to LOINC codes beyond the Result and Specimen descriptions in the dependsOn construct."
-* group.element.target.dependsOn 0..3 MS
+* group.element.target.dependsOn 0..4 MS
 * group.element.target.dependsOn ^slicing.discriminator[0].type = #value
 * group.element.target.dependsOn ^slicing.discriminator[0].path = "property"
 * group.element.target.dependsOn ^slicing.rules = #open
@@ -117,6 +117,19 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn[result].value ^comment = "This human readable description provides further information for use by the Lab staff to finalize the appropriate mapping of the analyte test code to the LOINC code for the specific device and purpose within that Lab."
 * group.element.target.dependsOn[result].display 0..0
 * group.element.target.dependsOn[result].display ^mustSupport = false
+* group.element.target.dependsOn contains device 1..1 MS
+* group.element.target.dependsOn[device] ^short = "The property for device"
+* group.element.target.dependsOn[device].property 1..1 MS
+* group.element.target.dependsOn[device].property only uri
+* group.element.target.dependsOn[device].property = "device" (exactly)
+* group.element.target.dependsOn[device].system 0..0
+* group.element.target.dependsOn[device].system ^mustSupport = false
+* group.element.target.dependsOn[device].value 1..1 MS
+* group.element.target.dependsOn[device].value ^short = "Value of the device property"
+* group.element.target.dependsOn[device].value ^definition = "This provides the coded representation of the description for the Device description."
+* group.element.target.dependsOn[device].value ^comment = "This human readable description provides further information for use by the Lab staff to finalize the appropriate mapping of the analyte test code to the LOINC code for the specific device and purpose within that Lab."
+* group.element.target.dependsOn[device].display 0..0
+* group.element.target.dependsOn[device].display ^mustSupport = false
 * group.element.target.dependsOn contains other 0..1 MS
 * group.element.target.dependsOn[other] ^short = "The property for other"
 * group.element.target.dependsOn[other].property 1..1 MS
