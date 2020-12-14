@@ -1,0 +1,32 @@
+{
+    "resourceType": "ObservationDefinition",
+    "id": "b87458ca-b29a-4244-b347-39111caf9ef2",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd"
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.corelaboratory.com/ARCHITECT",
+                "code": "1069",
+                "display": "GluC"
+            }
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "valueReference": {
+                "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier",
+            "valueIdentifier": {
+                "value": "3L82"
+            }
+        }
+    ]
+}

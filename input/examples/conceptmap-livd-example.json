@@ -1,0 +1,72 @@
+{
+    "resourceType": "ConceptMap",
+    "id": "66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+        ]
+    },
+    "url": "http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+    "name": "LivdConceptMap",
+    "status": "active",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
+    "sourceUri": "ObservationDefinition",
+    "targetCanonical": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+    "group": [
+        {
+            "element": [
+                {
+                    "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
+                    "display": "GluC",
+                    "target": [
+                        {
+                            "code": "14749-6",
+                            "display": "Glucose [Moles/volume] in Serum or Plasma",
+                            "equivalence": "equivalent",
+                            "dependsOn": [
+                                {
+                                    "property": "specimen",
+                                    "value": "Serum/Plasma"
+                                },
+                                {
+                                    "property": "result",
+                                    "value": "mmol/L"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
+                    "display": "GluC",
+                    "target": [
+                        {
+                            "code": "2345-7",
+                            "display": "Glucose [Mass/volume] in Serum or Plasma",
+                            "equivalence": "equivalent",
+                            "dependsOn": [
+                                {
+                                    "property": "specimen",
+                                    "value": "Serum/Plasma"
+                                },
+                                {
+                                    "property": "result",
+                                    "value": "mg/dL"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

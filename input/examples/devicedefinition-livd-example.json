@@ -1,0 +1,38 @@
+{
+    "resourceType": "DeviceDefinition",
+    "id": "1faf1d64-df18-4d7a-b45d-3872ddd3f165",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd"
+        ]
+    },
+    "udiDeviceIdentifier": [
+        {
+            "deviceIdentifier": "00380740003746",
+            "issuer": "https://www.fda.gov/",
+            "jurisdiction": "https://unstats.un.org/unsd/methodology/m49/021"
+        }
+    ],
+    "manufacturerString": "Abbott Diagnostics",
+    "modelNumber": "ARCHITECT c4000",
+    "capability": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                    "valueReference": {
+                        "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
+                    }
+                }
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/resource-types",
+                        "code": "ObservationDefinition"
+                    }
+                ]
+            }
+        }
+    ]
+}
