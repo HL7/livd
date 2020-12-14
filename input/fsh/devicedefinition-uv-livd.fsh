@@ -89,7 +89,7 @@ Description: "Explanation of what this profile contains/is for"
 * languageCode 0..0
 * languageCode ^mustSupport = false
 * capability 1..* MS
-* capability.extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability named DeviceDefinitionExtensionCapability 1..* MS
+* capability.extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte named DeviceDefinitionExtensionAnalyte 1..* MS
 * capability.type 1..1 MS
 * capability.type ^comment = "removed \"DeviceCapabilityType (ObservationDefinition)\" from Value column."
 * capability.description 0..0

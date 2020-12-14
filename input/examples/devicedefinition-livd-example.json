@@ -19,7 +19,7 @@
         {
             "extension": [
                 {
-                    "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                    "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte",
                     "valueReference": {
                         "reference": "ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2"
                     }

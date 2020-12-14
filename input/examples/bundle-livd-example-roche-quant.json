@@ -152,13 +152,13 @@
             },
             "extension": [
               {
-                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte",
                 "valueReference": {
                   "reference": "ObservationDefinition/26ac22bf-9fbb-4dc9-82ef-93de72f92680"
                 }
               },
               {
-                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte",
                 "valueReference": {
                   "reference": "ObservationDefinition/83fb6204-71b9-4659-8f90-1fca9e12518b"
                 }
@@ -207,13 +207,13 @@
             },
             "extension": [
               {
-                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte",
                 "valueReference": {
                   "reference": "ObservationDefinition/26ac22bf-9fbb-4dc9-82ef-93de72f92680"
                 }
               },
               {
-                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-capability",
+                "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte",
                 "valueReference": {
                   "reference": "ObservationDefinition/83fb6204-71b9-4659-8f90-1fca9e12518b"
                 }

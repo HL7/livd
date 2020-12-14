@@ -101,10 +101,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ext-capability"/>
+        <reference value="StructureDefinition/ext-analyte"/>
       </reference>
-      <name value="LIVD Test Capability"/>
-      <description value="Test Capability extension for the LIVD project"/>
+      <name value="LIVD Test Analyte"/>
+      <description value="Test Analyte extension for the LIVD project"/>
       <exampleBoolean value="false"/>
       <groupingId value="extensions"/>
     </resource>
