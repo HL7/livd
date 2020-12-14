@@ -27,7 +27,6 @@ Description: "Explanation of what this profile contains/is for"
 * status ^comment = "Only \"Active\" must be supported as it reflects the time of publication.  Others are not valid for that."
 * experimental 0..0
 * experimental ^mustSupport = false
-* date 0..0
 * date ^mustSupport = false
 * publisher 0..0
 * publisher ^mustSupport = false
@@ -37,7 +36,6 @@ Description: "Explanation of what this profile contains/is for"
 * description ^mustSupport = false
 * useContext 0..0
 * useContext ^mustSupport = false
-* jurisdiction 0..0
 * jurisdiction ^mustSupport = false
 * purpose 0..0
 * purpose ^mustSupport = false
@@ -91,7 +89,7 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn ^constraint[0].human = "If the dependsOn is valued, either the code or display must be present"
 * group.element.target.dependsOn ^constraint[0].expression = "(group.element.target.dependsOn.exists() and (group.element.target.code.exists() or group.element.target.display.exists())) or group.element.target.dependsOn.empty()"
 * group.element.target.dependsOn ^constraint[0].xpath = "(exists(f:group.element.target.dependsOn) and (exists(f:group.element.target.code) or exists(f:group.element.target.display))) or !exists(f:group.element.target.dependsOn)"
-* group.element.target.dependsOn contains specimen 1..1 MS
+* group.element.target.dependsOn contains specimen 0..1 MS
 * group.element.target.dependsOn[specimen] ^short = "The property for specimen"
 * group.element.target.dependsOn[specimen].property 1..1 MS
 * group.element.target.dependsOn[specimen].property only uri
@@ -104,7 +102,7 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn[specimen].value ^comment = "This human readable description provides further information for use by the Lab staff to finalize the appropriate mapping of the analyte test code to the LOINC code for the specific device and purpose within that Lab."
 * group.element.target.dependsOn[specimen].display 0..0
 * group.element.target.dependsOn[specimen].display ^mustSupport = false
-* group.element.target.dependsOn contains result 1..1 MS
+* group.element.target.dependsOn contains result 0..1 MS
 * group.element.target.dependsOn[result] ^short = "The property for result"
 * group.element.target.dependsOn[result].property 1..1 MS
 * group.element.target.dependsOn[result].property only uri
@@ -117,7 +115,7 @@ Description: "Explanation of what this profile contains/is for"
 * group.element.target.dependsOn[result].value ^comment = "This human readable description provides further information for use by the Lab staff to finalize the appropriate mapping of the analyte test code to the LOINC code for the specific device and purpose within that Lab."
 * group.element.target.dependsOn[result].display 0..0
 * group.element.target.dependsOn[result].display ^mustSupport = false
-* group.element.target.dependsOn contains device 1..1 MS
+* group.element.target.dependsOn contains device 0..1 MS
 * group.element.target.dependsOn[device] ^short = "The property for device"
 * group.element.target.dependsOn[device].property 1..1 MS
 * group.element.target.dependsOn[device].property only uri
