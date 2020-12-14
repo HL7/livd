@@ -30,7 +30,6 @@ Description: "Explanation of what this profile contains/is for"
 * status 1..1 MS
 * experimental 0..0
 * experimental ^mustSupport = false
-* date 0..1
 * date ^mustSupport = false
 * publisher 1..1 MS
 * contact 0..0
