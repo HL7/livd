@@ -588,7 +588,7 @@
       "fullUrl": "urn:uuid:7bcf6cb0-f337-46e0-a22c-59b5741091fe",
       "resource": {
         "resourceType": "CodeSystem",
-        "id": "loinc-fragment-livd-roche",
+        "id": "loinc-fragment-livd-roche-qual",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
@@ -614,37 +614,37 @@
             "code": "COMPONENT",
             "uri": "http://loinc.org/property/COMPONENT",
             "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
-            "type": "string"
+            "type": "Coding"
           },
           {
             "code": "PROPERTY",
             "uri": "http://loinc.org/property/PROPERTY",
             "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
-            "type": "string"
+            "type": "Coding"
           },
           {
             "code": "TIME_ASPCT",
             "uri": "http://loinc.org/property/TIME_ASPCT",
             "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
-            "type": "string"
+            "type": "Coding"
           },
           {
             "code": "SYSTEM",
             "uri": "http://loinc.org/property/SYSTEM",
             "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
-            "type": "string"
+            "type": "Coding"
           },
           {
             "code": "SCALE_TYP",
             "uri": "http://loinc.org/property/SCALE_TYP",
             "description": "Fifth major axis-scale of measurement: Type of Scale",
-            "type": "string"
+            "type": "Coding"
           },
           {
             "code": "METHOD_TYP",
             "uri": "http://loinc.org/property/METHOD_TYP",
             "description": "Sixth major axis-method of measurement: Type of Method",
-            "type": "string"
+            "type": "Coding"
           }
         ],
         "concept": [
@@ -654,23 +654,43 @@
             "property": [
               {
                 "code": "COMPONENT",
-                "valueString": "Vendor test code to LOINC mapping data set (LP269198-0)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP269198-0",
+                  "display": "Vendor test code to LOINC mapping data set"
+                }
               },
               {
                 "code": "PROPERTY",
-                "valueString": "Find (LP6813-2)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP6813-2",
+                  "display": "Find"
+                }
               },
               {
                 "code": "TIME_ASPCT",
-                "valueString": "Pt (LP6960-1)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP6960-1",
+                  "display": "Pt"
+                }
               },
               {
                 "code": "SYSTEM",
-                "valueString": "{Device} (LP76022-0)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP76022-0",
+                  "display": "{Device}"
+                }
               },
               {
                 "code": "SCALE_TYP",
-                "valueString": "Doc (LP32888-7)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP32888-7",
+                  "display": "Doc"
+                }
               }
             ]
           },
@@ -680,23 +700,43 @@
             "property": [
               {
                 "code": "COMPONENT",
-                "valueString": "Hepatitis A virus Ab.IgM (LP38318-9)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP38318-9",
+                  "display": "Hepatitis A virus Ab.IgM"
+                }
               },
               {
                 "code": "PROPERTY",
-                "valueString": "PrThr (LP217195-9)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP217195-9",
+                  "display": "PrThr"
+                }
               },
               {
                 "code": "TIME_ASPCT",
-                "valueString": "Pt (LP6960-1)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP6960-1",
+                  "display": "Pt"
+                }
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Ser (LP7567-3)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP7567-3",
+                  "display": "Ser"
+                }
               },
               {
                 "code": "SCALE_TYP",
-                "valueString": "Ord (LP7751-3)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP7751-3",
+                  "display": "Ord"
+                }
               }
             ]
           },
@@ -706,31 +746,91 @@
             "property": [
               {
                 "code": "COMPONENT",
-                "valueString": "Rubella virus Ab.IgM (LP39632-2)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP39632-2",
+                  "display": "Rubella virus Ab.IgM"
+                }
               },
               {
                 "code": "PROPERTY",
-                "valueString": "PrThr (LP217195-9)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP217195-9",
+                  "display": "PrThr"
+                }
               },
               {
                 "code": "TIME_ASPCT",
-                "valueString": "Pt (LP6960-1)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP6960-1",
+                  "display": "Pt"
+                }
               },
               {
                 "code": "SYSTEM",
-                "valueString": "Ser (LP7567-3)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP7567-3",
+                  "display": "Ser"
+                }
               },
               {
                 "code": "SCALE_TYP",
-                "valueString": "Ord (LP7751-3)"
+                "valueCoding": {
+                  "system": "http://loinc.org",
+                  "code": "LP7751-3",
+                  "display": "Ord"
+                }
               }
             ]
+          },
+          {
+            "code": "LP269198-0",
+            "display": "Vendor test code to LOINC mapping data set"
+          },
+          {
+            "code": "LP6813-2",
+            "display": "Find"
+          },
+          {
+            "code": "LP6960-1",
+            "display": "Pt"
+          },
+          {
+            "code": "LP76022-0",
+            "display": "{Device}"
+          },
+          {
+            "code": "LP32888-7",
+            "display": "Doc"
+          },
+          {
+            "code": "LP38318-9",
+            "display": "Hepatitis A virus Ab.IgM"
+          },
+          {
+            "code": "LP217195-9",
+            "display": "PrThr"
+          },
+          {
+            "code": "LP7567-3",
+            "display": "Ser"
+          },
+          {
+            "code": "LP7751-3",
+            "display": "Ord"
+          },
+          {
+            "code": "LP39632-2",
+            "display": "Rubella virus Ab.IgM"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "CodeSystem/loinc-fragment-livd-roche"
+        "url": "CodeSystem/loinc-fragment-livd-roche-qual"
       }
     }
   ]
