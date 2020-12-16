@@ -1,6 +1,11 @@
 {
     "resourceType": "ValueSet",
     "id": "loinc-livd",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/valueset-loinc-uv-livd"
+        ]
+    },
     "url": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
     "version": "0.1.0",
     "name": "LivdLoincVS",

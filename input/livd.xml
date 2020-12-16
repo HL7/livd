@@ -56,6 +56,15 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/valueset-loinc-uv-livd"/>
+      </reference>
+      <name value="LIVD LOINC ValueSet"/>
+      <description value="ValueSet profile for LOINC for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/bundle-uv-livd"/>
       </reference>
       <name value="LIVD Bundle"/>
