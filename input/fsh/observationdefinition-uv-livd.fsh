@@ -87,6 +87,7 @@ Description: "Explanation of what this profile contains/is for"
 * quantitativeDetails.unit ^mapping[0].map = "OM2-4"
 * quantitativeDetails.conversionFactor 0..1 MS
 * quantitativeDetails.conversionFactor only decimal
+* quantitativeDetails.conversionFactor ^short = "SI unit to customary unit conversion factor"
 * quantitativeDetails.conversionFactor ^definition = "Factor for converting value expressed with SI unit to value expressed with customary unit."
 * quantitativeDetails.conversionFactor ^mapping[0].identity = "v2"
 * quantitativeDetails.conversionFactor ^mapping[0].map = "OM2-5"
