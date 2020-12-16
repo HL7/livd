@@ -51,10 +51,6 @@ Description: "Explanation of what this profile contains/is for"
 * group.source ^mustSupport = false
 * group.sourceVersion 0..0
 * group.sourceVersion ^mustSupport = false
-* group.target 0..0
-* group.target ^mustSupport = false
-* group.targetVersion 0..0
-* group.targetVersion ^mustSupport = false
 * group.element 1..* MS
 * group.element ^short = "Mappings for a Vendor Analyte Code from the source set"
 * group.element ^definition = "Mappings for an individual Vendor Analyte Code in the source to one or more LOINC Codes in the target."
