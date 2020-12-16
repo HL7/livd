@@ -102,10 +102,10 @@ Description: "Explanation of what this profile contains/is for"
 * filter.value 1..1 MS
 * filter.value ^short = "What to use for the value"
 * filter.value ^definition = "A description of what the value for the filter should be."
-* property ..6 MS
+* property 6..6 MS
 * property ^slicing.discriminator[0].type = #value
 * property ^slicing.discriminator[0].path = "code"
-* property ^slicing.rules = #open
+* property ^slicing.rules = #closed
 * property ^short = "Additional information supplied about each concept"
 * property ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * property ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
@@ -121,7 +121,7 @@ Description: "Explanation of what this profile contains/is for"
 * property.description ^definition = "A description of the property- why it is defined, and how its value might be used."
 * property.type 1..1 MS
 * property.type only code
-* property.type = #string (exactly)
+* property.type = #Coding (exactly)
 * property.type ^short = "code | Coding | string | integer | boolean | dateTime"
 * property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
 * property contains loinc_component 1..1 MS
@@ -212,20 +212,20 @@ Description: "Explanation of what this profile contains/is for"
 * concept.designation.value ^short = "The text value for this designation"
 * concept.designation.value ^definition = "The text value for this designation."
 * concept.designation.value ^mustSupport = false
-* concept.property ..6 MS
+* concept.property 0..6 MS
 * concept.property ^slicing.discriminator[0].type = #value
 * concept.property ^slicing.discriminator[0].path = "code"
-* concept.property ^slicing.rules = #open
+* concept.property ^slicing.rules = #closed
 * concept.property ^short = "Property value for the concept"
 * concept.property ^definition = "A property value for this concept."
 * concept.property.code 1..1 MS
 * concept.property.code ^short = "Reference to CodeSystem.property.code"
 * concept.property.code ^definition = "A code that is a reference to CodeSystem.property.code."
 * concept.property.value[x] 1..1 MS
-* concept.property.value[x] only string
+* concept.property.value[x] only Coding
 * concept.property.value[x] ^short = "Value of the property for this concept"
 * concept.property.value[x] ^definition = "The value of this property."
-* concept.property contains loinc_component 1..1 MS
+* concept.property contains loinc_component 0..1 MS
 * concept.property[loinc_component] ^short = "Additional information supplied about each concept"
 * concept.property[loinc_component] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * concept.property[loinc_component] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
@@ -234,7 +234,7 @@ Description: "Explanation of what this profile contains/is for"
 * concept.property[loinc_component].code = #COMPONENT (exactly)
 * concept.property[loinc_component].code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * concept.property[loinc_component].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* concept.property contains loinc_property 1..1 MS
+* concept.property contains loinc_property 0..1 MS
 * concept.property[loinc_property] ^short = "Additional information supplied about each concept"
 * concept.property[loinc_property] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * concept.property[loinc_property] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
@@ -243,7 +243,7 @@ Description: "Explanation of what this profile contains/is for"
 * concept.property[loinc_property].code = #PROPERTY (exactly)
 * concept.property[loinc_property].code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * concept.property[loinc_property].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* concept.property contains loinc_time_aspct 1..1 MS
+* concept.property contains loinc_time_aspct 0..1 MS
 * concept.property[loinc_time_aspct] ^short = "Additional information supplied about each concept"
 * concept.property[loinc_time_aspct] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * concept.property[loinc_time_aspct] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
@@ -252,7 +252,7 @@ Description: "Explanation of what this profile contains/is for"
 * concept.property[loinc_time_aspct].code = #TIME_ASPCT (exactly)
 * concept.property[loinc_time_aspct].code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * concept.property[loinc_time_aspct].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* concept.property contains loinc_system 1..1 MS
+* concept.property contains loinc_system 0..1 MS
 * concept.property[loinc_system] ^short = "Additional information supplied about each concept"
 * concept.property[loinc_system] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * concept.property[loinc_system] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
@@ -261,7 +261,7 @@ Description: "Explanation of what this profile contains/is for"
 * concept.property[loinc_system].code = #SYSTEM (exactly)
 * concept.property[loinc_system].code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * concept.property[loinc_system].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* concept.property contains loinc_scale_typ 1..1 MS
+* concept.property contains loinc_scale_typ 0..1 MS
 * concept.property[loinc_scale_typ] ^short = "Additional information supplied about each concept"
 * concept.property[loinc_scale_typ] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * concept.property[loinc_scale_typ] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
