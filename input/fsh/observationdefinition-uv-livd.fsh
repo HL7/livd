@@ -47,7 +47,7 @@ Description: "Explanation of what this profile contains/is for"
 * identifier 0..0
 * identifier only Identifier
 * identifier ^mustSupport = false
-* permittedDataType 0..* MS
+* permittedDataType 0..1 MS
 * permittedDataType only code
 * permittedDataType ^definition = "data type allowed for the result of the observation."
 * permittedDataType ^mapping[0].identity = "v2"
