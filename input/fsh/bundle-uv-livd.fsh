@@ -66,4 +66,4 @@ Description: "LIVD constraints on the Bundle resource"
 * entry.response.etag ^mustSupport = false
 * entry.response.lastModified ^mustSupport = false
 * entry.response.outcome ^mustSupport = false
-* signature 0..1 MS
+* signature 0..0
