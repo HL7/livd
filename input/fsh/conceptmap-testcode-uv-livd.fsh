@@ -1,8 +1,8 @@
-Profile: LIVDConceptMap
+Profile: LIVDTestCodeConceptMap
 Parent: http://hl7.org/fhir/StructureDefinition/ConceptMap
-Id: conceptmap-uv-livd
-Title: "LIVDConceptMap"
-Description: "Explanation of what this profile contains/is for"
+Id: conceptmap-testcode-uv-livd
+Title: "LIVDTestCodeConceptMap"
+Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to standard LOINC codes."
 * ^version = "0.3.0"
 * ^experimental = false
 * ^date = "2018-08-14"
@@ -11,7 +11,7 @@ Description: "Explanation of what this profile contains/is for"
 * ^contact[0].telecom[0].value = "http://hl7.org/Special/committees/orders/index.cfm"
 * ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
 * ^jurisdiction[0].coding[0].code = #001
-* . ^short = "LIVDConceptMap"
+* . ^short = "LIVDTestCodeConceptMap"
 * . ^mustSupport = false
 * . ^mapping[0].identity = "rim"
 * . ^mapping[0].map = "N/A"
@@ -42,15 +42,16 @@ Description: "Explanation of what this profile contains/is for"
 * copyright 0..0
 * copyright ^mustSupport = false
 * source[x] 1..1 MS
-* source[x] ^comment = "This points to the device for which the IVD Test Codes are mapped to the suggested LOINC codes."
+* source[x] ^comment = "This points to the set of ObservationDefinition resource instances for the device for which the IVD Test Codes are mapped to the suggested LOINC codes."
 * target[x] 1..1 MS
-* target[x] ^comment = "This points to the LIVDLOINCCodeSystemProfile that contains the LOINC codes and their properties, used to map the  IVD Test Codes."
+* target[x] ^comment = "This points to the LIVD value set that contains the target LOINC codes and their properties, used to map the  IVD Test Codes."
 * group 1..1 MS
 * group ^comment = "Considering the scope is only IVD Test Code to LOINC, one group is sufficient."
 * group.source 0..0
 * group.source ^mustSupport = false
 * group.sourceVersion 0..0
 * group.sourceVersion ^mustSupport = false
+* group.targetVersion 0..1 MS
 * group.element 1..* MS
 * group.element ^short = "Mappings for a Vendor Analyte Code from the source set"
 * group.element ^definition = "Mappings for an individual Vendor Analyte Code in the source to one or more LOINC Codes in the target."
