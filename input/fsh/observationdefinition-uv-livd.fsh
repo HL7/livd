@@ -2,7 +2,7 @@ Profile: LIVDObservationDefinition
 Parent: http://hl7.org/fhir/StructureDefinition/ObservationDefinition
 Id: observationdefinition-uv-livd
 Title: "LIVDObservationDefinition"
-Description: "Explanation of what this profile contains/is for"
+Description: "Profile on the ObservationDefinition resource for representing the analytes that can be measured by the included devices for which the test codes and applicable result values are mapped."
 * ^version = "0.3.0"
 * ^experimental = false
 * ^date = "2018-08-14"
@@ -44,9 +44,7 @@ Description: "Explanation of what this profile contains/is for"
 * code ^mapping[0].map = "OM1-2"
 * code ^mapping[1].identity = "rim"
 * code ^mapping[1].map = "code"
-* identifier 0..0
-* identifier only Identifier
-* identifier ^mustSupport = false
+* identifier 0..* MS
 * permittedDataType 0..1 MS
 * permittedDataType only code
 * permittedDataType ^definition = "data type allowed for the result of the observation."
