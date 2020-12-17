@@ -1,0 +1,48 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "snomed-fragment-livd",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-snomed-frag-uv-livd"
+        ]
+    },
+    "url": "http://snomed.info/sct",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113883.6.96"
+        }
+    ],
+    "version": "http://snomed.info/sct/5991000124107/version/20200901",
+    "name": "SNOMED_CT",
+    "title": "SNOMED CT (all versions)",
+    "status": "active",
+    "publisher": "IHTSDO",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
+    "copyright": "© 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct",
+    "caseSensitive": false,
+    "content": "fragment",
+    "concept": [
+        {
+            "code": "260373001",
+            "display": "Detected"
+        },
+        {
+            "code": "260415000",
+            "display": "Not detected"
+        },
+        {
+            "code": "455371000124106",
+            "display": "Invalid result"
+        }
+    ]
+}

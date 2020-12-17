@@ -56,10 +56,28 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/valueset-loinc-uv-livd"/>
+        <reference value="StructureDefinition/codesystem-snomed-frag-uv-livd"/>
       </reference>
-      <name value="LIVD LOINC ValueSet"/>
-      <description value="ValueSet profile for LOINC for the LIVD project."/>
+      <name value="LIVD SNOMED CT Fragment CodeSystem"/>
+      <description value="CodeSystem profile for SNOMED CT fragment for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/codesystem-vendor-result-frag-uv-livd"/>
+      </reference>
+      <name value="LIVD Vendor Result Code Fragment CodeSystem"/>
+      <description value="CodeSystem profile for Vendor Result Codes for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/valueset-uv-livd"/>
+      </reference>
+      <name value="LIVD ValueSet"/>
+      <description value="ValueSet profile for the LIVD project."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
     </resource>
@@ -101,10 +119,19 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/conceptmap-uv-livd"/>
+        <reference value="StructureDefinition/conceptmap-testcode-uv-livd"/>
       </reference>
-      <name value="LIVD ConceptMap"/>
-      <description value="ConceptMap profile for the LIVD project."/>
+      <name value="LIVD Test Code ConceptMap"/>
+      <description value="ConceptMap Test Code profile for the LIVD project."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/conceptmap-resultvalue-uv-livd"/>
+      </reference>
+      <name value="LIVD Result Value ConceptMap"/>
+      <description value="ConceptMap Result Value profile for the LIVD project."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
     </resource>
@@ -139,17 +166,53 @@
       <reference>
         <reference value="CodeSystem/loinc-fragment-livd"/>
       </reference>
-      <name value="LOINC Code System fragment for LIVD"/>
-      <description value="LOINC Code System fragment for LIVD"/>
+      <name value="LOINC code system fragment for LIVD"/>
+      <description value="LOINC code cystem fragment for LIVD"/>
       <exampleBoolean value="false"/>
       <groupingId value="terminology"/>
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/loinc-livd"/>
+        <reference value="CodeSystem/snomed-fragment-livd"/>
       </reference>
-      <name value="LIVD LOINC value set"/>
-      <description value="Includes the subset of LOINC codes that are relevant for this ConceptMap."/>
+      <name value="SNOMED CT code system fragment for LIVD"/>
+      <description value="SNOMED CT code system fragment for LIVD"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/vendor-result-fragment-livd"/>
+      </reference>
+      <name value="Vendor Result Code code system fragment for LIVD"/>
+      <description value="Vendor Result Code code cystem fragment for LIVD"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/testcode-mappings-livd"/>
+      </reference>
+      <name value="LIVD Test Code Mappings value set"/>
+      <description value="Includes the subset of LOINC codes for mappings from manufacturer IVD test codes that are relevant for this ConceptMap."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/resultvalue-livd"/>
+      </reference>
+      <name value="LIVD Result Value value set"/>
+      <description value="Includes the complete set (superset) of manufacturer IVD result values that are mapped to LOINC or SNOMED CT codes in this ConceptMap."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/resultvalue-mappings-livd"/>
+      </reference>
+      <name value="LIVD Result Value Mappings value set"/>
+      <description value="Includes the subset of LOINC or SNOMED CT codes for mappings from result values that are relevant for this ConceptMap."/>
       <exampleBoolean value="false"/>
       <groupingId value="terminology"/>
     </resource>
@@ -224,10 +287,20 @@
       <reference>
         <reference value="ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7"/>
       </reference>
-      <name value="LIVD example ConceptMap"/>
+      <name value="LIVD example Test Code ConceptMap"/>
+      <description value="Example LIVD Test Code ConceptMap.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.
+      This content is not to be used for actual LOINC mappings."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-testcode-uv-livd"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/99797ef5-1ba3-4a6b-9b30-cf1e58c77b94"/>
+      </reference>
+      <name value="LIVD example Result ValueConceptMap"/>
       <description value="Example LIVD ConceptMap.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.
       This content is not to be used for actual LOINC mappings."/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-resultvalue-uv-livd"/>
       <groupingId value="examples"/>
     </resource>
     <resource>

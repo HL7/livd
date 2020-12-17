@@ -320,7 +320,7 @@
         "id": "5e10d8dc-a847-4e81-a0be-a54e8f0b9a4b",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-testcode-uv-livd"
           ]
         },
         "text": {

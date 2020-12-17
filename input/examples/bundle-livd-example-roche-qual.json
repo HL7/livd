@@ -436,7 +436,7 @@
         "id": "34c7c855-8d86-418e-9046-3d7405f8321f",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-testcode-uv-livd"
           ]
         },
         "text": {

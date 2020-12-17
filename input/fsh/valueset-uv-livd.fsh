@@ -1,8 +1,8 @@
-Profile: LIVDValueSetLOINC
+Profile: LIVDValueSet
 Parent: http://hl7.org/fhir/StructureDefinition/ValueSet
-Id: valueset-loinc-uv-livd
-Title: "LIVDValueSetLOINC"
-Description: "LIVD LOINC value set profile."
+Id: valueset-uv-livd
+Title: "LIVDValueSet"
+Description: "LIVD value set profile."
 * ^version = "0.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -12,7 +12,7 @@ Description: "LIVD LOINC value set profile."
 * ^contact[0].telecom[0].value = "http://hl7.org/Special/committees/orders/index.cfm"
 * ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
 * ^jurisdiction[0].coding[0].code = #001
-* . ^short = "LIVDValueSetLOINC"
+* . ^short = "LIVDValueSet"
 * url 1..1 MS
 * identifier 0..0
 * version 1..1 MS

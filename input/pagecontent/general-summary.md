@@ -106,5 +106,5 @@ The manufacture established the following SNOMED CT mappings for the result valu
 <ul>
     <li>Positive = 260373001, “Detected”</li>
     <li>Negative = 260415000, “Not Detected”</li>
-    <li>Invalid = 455371000124106, “Invalid result”UNDER CONSTRUCTION: Need a couple of examples on mapped result value codes.</li>
+    <li>Invalid = 455371000124106, “Invalid result”</li>
 </ul>

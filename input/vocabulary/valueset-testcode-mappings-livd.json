@@ -1,18 +1,18 @@
 {
     "resourceType": "ValueSet",
-    "id": "loinc-livd",
+    "id": "testcode-mappings-livd",
     "meta": {
         "profile": [
-            "http://hl7.org/fhir/uv/livd/StructureDefinition/valueset-loinc-uv-livd"
+            "http://hl7.org/fhir/uv/livd/StructureDefinition/valueset-uv-livd"
         ]
     },
-    "url": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+    "url": "http://hl7.org/fhir/uv/livd/ValueSet/testcode-mappings-livd",
     "version": "0.1.0",
-    "name": "LivdLoincVS",
-    "title": "LOINC value set for LIVD",
+    "name": "LivdTestCodeMappingsVS",
+    "title": "Test code mappings value set for LIVD",
     "status": "draft",
     "date": "2018-09-25",
-    "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
+    "description": "Includes the subset of LOINC codes for mappings from manufacturer IVD test codes that are relevant for this ConceptMap.",
     "jurisdiction": [
         {
             "coding": [

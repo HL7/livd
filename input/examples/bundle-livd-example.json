@@ -186,7 +186,7 @@
                 "id": "66a4034b-6cc6-46ed-be83-343dfc51f2d7",
                 "meta": {
                     "profile": [
-                        "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-uv-livd"
+                        "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-testcode-uv-livd"
                     ]
                 },
                 "url": "http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",

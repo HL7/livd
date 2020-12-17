@@ -2,7 +2,7 @@ Profile: LIVDCodeSystemFragmentLOINC
 Parent: http://hl7.org/fhir/StructureDefinition/CodeSystem
 Id: codesystem-loinc-frag-uv-livd
 Title: "LIVDCodeSystemFragmentLOINC"
-Description: "Explanation of what this profile contains/is for"
+Description: "Profile on the CodeSystem resource to include the relevant information from LOINC to enable the full mapping context without having to connect to a remote terminology service or other source of LOINC terminology content."
 * ^version = "0.3.0"
 * ^status = #draft
 * ^experimental = false
