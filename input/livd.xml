@@ -2,19 +2,19 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="livd"/>
   <url value="http://hl7.org/fhir/uv/livd/ImplementationGuide/livd"/>
-	<version value="0.3.0"/>
+  <version value="0.3.0"/>
   <name value="LoincIvdTestCodeMapping"/>
   <title value="LOINC – IVD Test Code (LIVD) Mapping"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International - Orders and Observations Work Group"/>
   <contact>
-      <telecom>
-        <system value="url"/>
-        <value value="http://hl7.org/Special/committees/orders/index.cfm"/>
-      </telecom>
-    </contact>
-    <description value="Recommended LOINC mappings for IVD Devices"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/orders/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Recommended LOINC mappings for IVD Devices"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -22,7 +22,7 @@
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.uv.livd"/>
-	<license value="CC0-1.0"/>
+  <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>
     <grouping id="profiles">
@@ -191,14 +191,14 @@
       <groupingId value="examples"/>
     </resource>
     <resource>
-        <reference>
-          <reference value="Bundle/livd-example-abbott-architect"/>
-        </reference>
-        <name value="Abbott ARCHITECT LIVD example bundle"/>
-        <description value="Abbott ARCHITECT example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Abbott manufacturer mappings.
+      <reference>
+        <reference value="Bundle/livd-example-abbott-architect"/>
+      </reference>
+      <name value="Abbott ARCHITECT LIVD example bundle"/>
+      <description value="Abbott ARCHITECT example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Abbott manufacturer mappings.
         This content is not to be used for actual LOINC mappings."/>
-        <exampleBoolean value="true"/>
-        <groupingId value="examples"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="examples"/>
     </resource>
     <resource>
       <reference>
@@ -260,9 +260,9 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="artifacts.html"/>
-        <title value="Artifact List"/>
-        <generation value="html"/>
+        <nameUrl value="general-summary.html"/>
+        <title value="LOINC Mapping Summary"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="general-concepts.html"/>
@@ -275,19 +275,19 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="general-implementation.html"/>
-        <title value="Implementation Considerations"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="general-mapping.html"/>
         <title value="LIVD Data Mapping to FHIR"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="general-summary.html"/>
-        <title value="LOINC Mapping Summary"/>
+        <nameUrl value="general-implementation.html"/>
+        <title value="Implementation Considerations"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="glossary.html"/>
@@ -305,22 +305,22 @@
         <generation value="markdown"/>
       </page>
     </page>
-		<parameter>
-			<code value="copyrightyear"/>
-			<value value="2020+"/>
-		</parameter>
-		<parameter>
-			<code value="releaselabel"/>
-			<value value="CI Build"/>
-		</parameter>
-		<parameter>
-			<code value="find-other-resources"/>
-			<value value="true"/>
-		</parameter>
-		<parameter>
-			<code value="path-binary"/>
-			<value value="input\cql"/>
-		</parameter>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2020+"/>
+    </parameter>
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-binary"/>
+      <value value="input\cql"/>
+    </parameter>
     <parameter>
       <code value="jira-code"/>
       <value value="us-livd"/>
