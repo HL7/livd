@@ -3,6 +3,6 @@ fhirVersion: 4.0.1
 id: hl7.fhir.uv.livd
 name: LoincIvdTestCodeMapping
 status: draft
-version: 0.2.0
+version: 0.3.0
 copyrightYear: 2020+
 releaseLabel: STU1
