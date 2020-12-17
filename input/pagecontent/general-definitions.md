@@ -3,7 +3,7 @@ The following provides the specific definitions for each of the data elements re
 We encourage the use of GUIDs (Globally Unique IDentifier) for identifiers to enable consumers and aggregators of LIVD Catalogs to easily merge and identify duplicates.
 
 <h3> LIVD Publication </h3>
-This information that describes the overall LIVD publication is expressed through the LIVD Catalog profile, including:
+This information that describes the overall LIVD publication is expressed through the [LIVD Catalog](StructureDefinition-catalog-uv-livd.html) profile, including:
 
 * **_Publisher_** is the entity publishing the mapping information.
 * **_Publication Version ID_** is human-readable information provided by the vendor that can be used to differentiate LIVD Publication versions.
@@ -14,7 +14,7 @@ This information that describes the overall LIVD publication is expressed throug
 * **_Region_** is an optional vendor description for which geographic or administrative region this localization is valid, e.g.  de-CH (German (Switzerland)) is self-explanatory, but not en-CH (English (Switzerland)).
 
 <h3> Equipment </h3>
-The equipment elements are expressed through the LIVD Device Definition profile, including:
+The equipment elements are expressed through the [LIVD Device Definition](StructureDefinition-devicedefinition-uv-livd.html) profile, including:
 
 * **_Manufacturer_** is the name of the manufacturer of the device.
 * **_Model_** is the model of the device as provided by the manufacturer.
@@ -25,7 +25,7 @@ Note that types and cardinality are aligned with values reported in the Integrat
 
 <h3> IVD Tests </h3>
 
-The IVD Test attributes are aligned with obvservation definition attributes and expressed using the LIVD Observation Definition profile.
+The IVD Test attributes are aligned with obvservation definition attributes and expressed using the [LIVD Observation Definition](StructureDefinition-observationdefinition-uv-livd.html) profile.
 
 <ul>
      <li> <b><i>Vendor Analyte Code</i></b> is one of two possible values:
@@ -42,7 +42,7 @@ Additionally, various details on the Observation Definition that can aid in the 
 
 <h3> IVD Test - LOINC Mapping </h3>
 
-The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are captured in the LIVD Concept Map profile.  For each IVD Test' Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
+The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are captured in the [LIVD Concept Map](StructureDefinition-conceptmap-uv-livd.html) profile.  For each IVD Test' Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
 
 <ul>
      <li> <b><i>Vendor Specimen Description</i></b> is human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.” The field is used to document the vendor description of the specimen used for the IVD test.</li>
@@ -72,7 +72,7 @@ The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are c
 Note that **_Vendor Specimen Description_**, **_Vendor Result Description_**, and **_Vendor Comment_** are included to assist a laboratory in selecting the appropriate LOINC code(s) for the vendor IVD tests used by the laboratory. This information is not intended to be parsed by an IVD Software System that automates the mapping of vendor IVD transmission codes to LOINC codes. The inclusion of this information should reduce errors in the manual selection of LOINC codes by a laboratory.
 
 <h3> LOINC Code System </h3>
-For each of the LOINC codes being considered, a minimum set from the code system is included to further aid in the mapping process.  These are included in the LIVD LOINC Code System profile.
+For each of the LOINC codes being considered, a minimum set from the code system is included to further aid in the mapping process.  These are included in the [LIVD LOINC Fragment CodeSystem](StructureDefinition-codesystem-loinc-frag-uv-livd.html) profile.
 
 * **_LOINC Code_**
 * **_LOINC Long Name_**
