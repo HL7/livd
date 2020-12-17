@@ -33,3 +33,15 @@ Description: "Add a vendor reference identifier to ObservationDefinition."
 * url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier" (exactly)
 * valueIdentifier 1..1
 * valueIdentifier only Identifier
+
+Extension: LIVDRegion
+Id: ext-region
+Title: "LIVD Region"
+Description: "Provides the region(s), such as country, state, continent, set of countries or states, where the LIVD Mapping Publication applies."
+* ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
+* ^jurisdiction[0].coding[0].code = #001
+* ^context[0].type = #element
+* ^context[0].expression = "Composition"
+* url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-region" (exactly)
+* valueCodeableConcept 1..1
+* valueCodeableConcept only CodeableConcept

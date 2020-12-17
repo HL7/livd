@@ -23,6 +23,21 @@
                         "http://hl7.org/fhir/uv/livd/StructureDefinition/catalog-uv-livd"
                     ]
                 },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-region",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                                    "code": "840",
+                                    "display": "United States of America (USA)"
+                                }                                
+                            ],
+                            "text": "USA region"
+                        }
+                    }
+                ],
                 "identifier": {
                     "system": "https://www.abbott.com",
                     "value": "ARCHITECT CC v0.9.0",

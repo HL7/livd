@@ -164,6 +164,15 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ext-region"/>
+      </reference>
+      <name value="LIVD Region"/>
+      <description value="Region extension for the LIVD project"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="extensions"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/loinc-fragment-livd"/>
       </reference>
       <name value="LOINC code system fragment for LIVD"/>

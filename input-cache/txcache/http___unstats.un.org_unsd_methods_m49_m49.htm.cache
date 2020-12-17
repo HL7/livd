@@ -59,3 +59,25 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "code" : "840",
+  "display" : "United States of America"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "United States of America (USA)",
+  "severity" : "warning",
+  "error" : "The display \"United States of America\" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}840 - should be one of [\"United States of America (USA)\"] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "code" : "840",
+  "display" : "United States of America (USA)"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "United States of America (USA)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

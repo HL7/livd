@@ -13,6 +13,11 @@ Description: "Profile on the Composition resource to specify and organize the se
 * ^jurisdiction[0].coding[0].code = #001
 * . ^short = "LIVDCatalog"
 * . ^mustSupport = false
+* extension ..* MS
+* extension ^slicing.discriminator[0].type = #value
+* extension ^slicing.discriminator[0].path = "url"
+* extension ^slicing.rules = #open
+* extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-region named CatalogRegion 0..* MS
 * language 1..1 MS
 * language only code
 * language ^short = "Publication Language"
