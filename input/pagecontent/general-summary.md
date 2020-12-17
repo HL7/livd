@@ -16,7 +16,7 @@ The following diagram may help further clarify that:
 ![LIVD FHIR Mapping](LIVD_FHIR_Mapping.jpg)
 
 <ul>
-    <li> The LIS maintains a map between the IVD Test's vendor analyte code and their LIS Test Result code.
+    <li> The LIS maintains a map between the IVD Test's vendor analyte code and their LIS Test Result code.</li>
         <ul>
             <li> One IVD Test can yield different LIS Test Results depending on specimen and other parameters.</li>
             <li> Each of the LIS Test Results must have a LOINC code associated with it so the results report includes the appropriate LOINC code as well for downstream use.</li>
