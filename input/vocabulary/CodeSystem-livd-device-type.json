@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "livd-device-type",
+  "url": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-device-type",
+  "version": "0.2.0",
+  "name": "LivdDeviceTypeCS",
+  "title": "IVD device types for LIVD device definitions",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International - Orders and Observations Work Group",
+  "description": "IVD device types for LIVD device definitions",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "instrument-test-combination",
+      "display": "Instrument Test Combination (ITC)"
+    },
+    {
+      "code": "instrument-platform",
+      "display": "Instrument Platform"
+    },
+    {
+      "code": "test-kit",
+      "display": "Test Kit"
+    }
+  ]
+}

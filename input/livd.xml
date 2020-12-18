@@ -254,6 +254,24 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/livd-device-type"/>
+      </reference>
+      <name value="LIVD device type code system"/>
+      <description value="IVD device types for LIVD device definitions (extensible)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/livd-device-type"/>
+      </reference>
+      <name value="LIVD device type value set"/>
+      <description value="IVD device types for LIVD device definitions (extensible)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Bundle/livd-example"/>
       </reference>
       <name value="LIVD example bundle"/>
