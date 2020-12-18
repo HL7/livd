@@ -6,7 +6,7 @@
     {
       "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "https://build.fhir.org/ig/HL7/livd",
+      "path": "http://build.fhir.org/ig/HL7/livd",
       "fhirversion": "4.0.1",
       "status": "ci-build",
       "current": true
