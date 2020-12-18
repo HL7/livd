@@ -20,9 +20,9 @@
   }
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY"}####
 v: {
-  "display" : "LIVD mapping data set",
-  "severity" : null,
-  "error" : ""
+  "display" : "",
+  "severity" : "error",
+  "error" : "No mapping for the Unicode character exists in the target multi-byte code page (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -46,8 +46,8 @@ v: {
   }
 }, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY"}####
 v: {
-  "display" : "LIVD mapping data set",
-  "severity" : null,
-  "error" : ""
+  "display" : "",
+  "severity" : "error",
+  "error" : "No mapping for the Unicode character exists in the target multi-byte code page (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
