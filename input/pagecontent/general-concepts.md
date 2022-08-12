@@ -2,7 +2,7 @@ The basic structure that the LIVD Publication must support is based on the **_[D
 
 ![LIVD Publication Structure](Publication_Structure.jpg)
 
-The implementation guide supports the following mappings:
+The implementation guide supports the following mappings including both IVD test codes using LOINC and IVD result values using either SNOMED or LOING:
 
 <h3> IVD Tests </h3>
 <ul>
