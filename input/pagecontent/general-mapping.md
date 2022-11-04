@@ -210,7 +210,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Specimen Description</td>
-    <td>ConceptMap.group.element.target.dependsOn.property
+    <td>ConceptMap.group.element.target.dependsOn.property (specimen)
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
@@ -220,18 +220,23 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <br>Ordinal
     <br>Nominal
     </td>
-    <td>ConceptMap.group.element.target.dependsOn.property
+    <td>ConceptMap.group.element.target.dependsOn.property (result)
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
 <tr>
     <td>Vendor Device Description</dt>
-    <td>ConceptMap.group.element.target.dependsOn.property
+    <td>ConceptMap.group.element.target.dependsOn.property (device)
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
 <tr>
     <td>Vendor Comment</td>
+    <td>ConceptMap.group.element.target.dependsOn.property (other)</td>
+    <td>ConceptMap.group.element.target.dependsOn.value</td>
+</tr>
+<tr>
+    <td> </td>
     <td>ConceptMap.group.element.target.comment</td>
 </tr>
 <tr>
