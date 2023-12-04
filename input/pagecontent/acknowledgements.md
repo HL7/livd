@@ -1,6 +1,6 @@
 The LIVD Implementation Guide is the result of a combined IICC and HL7 project team to express the content into FHIR profiles. The following individuals supported creating this guide:
 
-* Hans Buitendijk - Cerner
+* Hans Buitendijk - Oracle Health
 * Rob Hausam - Hausam Consulting
 * Ed Heierman - Abbott
 * Ralf Herzog - Roche
@@ -33,9 +33,9 @@ The development of the LIVD Specification and Implementation Guide was an intern
 * IHE Pathology and Laboratory Medicine (PaLM) Technical Committee
 * Phast
 * LIS vendors
-    * Cerner Corporation
     * Epic
     * LabCorp
+    * Oracle Health
     * Orchard Software
 * IVD instrument manufacturers
     * Abbott Laboratories
