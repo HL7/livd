@@ -13,40 +13,20 @@ This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standar
 
 The concepts described above are mapped to a number of FHIR resources that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
 
-![LIVD Profile Structure](LIVD_Profile_Structure.jpg)
+![LIVD Profile Structure](LIVD_Profile_Structure Version 1.jpg)
 
 * LIVD Bundle - Packages all relevant resources of the LIVD Catalog.
-* LIVD Catalog Profile - This provides the information about the LIVD Publication.  The profile is based on the Catalog profile based on the Composition resource.   Note that, while the LIVD Catalog Profile does some organization of the resources, there is no need for representing the format of the data.  The formatting and presentation is left to the client consuming these resources.
+* LIVD Catalog Profile - This provides the information about the LIVD Publication.  The profile is based on the Catalog profile that is based on the Composition resource.   Note that, while the LIVD Catalog Profile does some organization of the resources, there is no need for representing the format of the data.  The formatting and presentation is left to the client consuming these resources.
 * LIVD Device Definition Profile - This profile reflects the equipment (device) that is represented in the publication.  
    * (A) Each LIVD publication must include at least one device, and can cover many.
 * LIVD Device Observation Definition - This profile reflects the IVD test codes that each device can produce.
-  * (B) Each LIVD Device Definition has the capability to perform at least one observation, i.e., IVD test.
+   * (B) Each LIVD Device Definition has the capability to perform at least one observation, i.e., IVD test.
 * LIVD Test Code Concept Map Profile - This profile supports the data necessary to document the actual mapping between the IVD test code for a device and the LOINC codes to consider.
    * (C) A LIVD Test Code Concept Map must be associated with at least one LIVD Device Definition.  It may represent multiple LIVD Device Definitions where, e.g., different models performing the same tests could share the same map.
    * The ConceptMap.source reflects the IVD Test Code and must exist (D) as a LIVD Device Observation Definition.
-   * The ConceptMap.target reflects the LOINC code that the IVD Test Code maps to, as well as context information to aid in the mapping such as result, specimen or other considerations.
-      * An IVD Test Code may not have a mapping (e.g., no LOINC code available yet), one, or more.
-* LIVD LOINC Value Set Profile - This profile supports the applicable LOINC codes from the LOINC Code System that is relevant to the mapping process.
-      * (E) Each LOINC code in the LIVD Test Code Concept Map must exist in the LIVD LOINC Value Set.
-* LIVD LOINC Code System Profile - This profile supports the relevant LOINC Code System data to assist in the mapping process.  This enables the mapping process to be off-line as needed.
-   * (F) Each LOINC Code in the LIVD LOINC Value Set must exist in the LIVD LOINC Code System
-* LIVD Result Value Set Sub-Set Profile - This profile supports the non-quantitative, coded values that an IVD Test can yield as the observation value.
-   * (G) Each LIVD Device Observation Definition can only reference one Result Value Value Set Sub Set.
-   * (H) Each LIVD Result Value Value Set Sub Set may further reference another LIVD Result Value Value Set Sub Set to ease configuration and re-use.
-* LIVD Result Value Code System Profile - This profile contains the full set of result values used across devices sharing the same result value definitions.
-   * (I) Each LIVD Result Value in the LIVD Result Value Value Set Sub Set must exist in the LIVD Result Value Code System
-* LIVD Result Value Value Set Super-Set Profile - This profile is used to eas the mapping definitions by aggregating the all LIVD Result Values to be mapped.
-   * (J) Each LIVD Result Value in the LIVD Result Value Value Set Super Set must exist in the LIVD Result Value Code System
-* LIVD Result Value Concept Map Profile - This profile contains the mappings from the IVD Test Result Values to the respective SNOMED and/or LOINC codes
-   * The ConceptMap.source reflects the IVD Test Result Value and must exist int eh LIVD Result Value Value Set Super Set (K) in the context of the LIVD Result Value Value Set Subset (L) for the LIVD Device Observation Definition at hand.
-   * The ConceptMap.target reflects the SNOMED and/or LOINC codes that the IVD Test Code maps to.  Although an IVD Test Result Value can have both a SNOMED and a LOINC code representation, it can only have one of each.
-* LIVD LOINC Answer Value Set Profile - This profile supports the applicable LOINC codes from the LOINC Code System that is relevant to the mapping process.
-   * (M) Each LOINC code in the LIVD Result Value Concept Map must exist in the LIVD LOINC Answer Value Set or the LIVD SNOMED Value Set.
-   * (N) Each LIVD LOINC Answer code must exist in the LIVD LOINC Code System.
-* LIVD SNOMED Code System Profile - This profile supports the relevant SNOMED Code System data to assist in the mapping process.  This enables the mapping process to be off-line as needed.
-   * (O) Each LIVD SNOMED code must exist in the LIVD SNOMED Code Sysetm.
-
- 
+   * The ConceptMap.target and ConceptMap.group reflects the LOINC code or codes that the IVD Test Code maps to, including context information to aid in the mapping such as result, specimen or other considerations.
+   * The ConceptMap.traget references through (E) the value set where the LOINC codes used in the LIVD catalog are further defined.
+   * An IVD Test Code may not have a mapping (e.g., no LOINC code available yet), one, or more.
 
 The LIVD Bundle Profile will enable packaging of the resources.
 
@@ -69,50 +49,44 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
     <td>Publication Version ID</td>
     <td>Composition.identifier.system
-    <br>Composition.identifier.value</td>
+    <br>Composition.identifier.value
+    <br>Composition.assigner.display</td>
 </tr>
 <tr>
     <td>Catalog LOINC Code</td>
     <td>Composition.type.coding.code
-      <br>Composition.type.coding.version</td>
+      <br>Composition.type.coding.display
+      <br>Composition.type.coding.version
+      <br>Composition.type.coding.system</td>
     <td>This represents only the code and version of LOINC from which the LOINC code for the LIVD Catalog has been obtained.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
 </tr>
 <tr>
   <td> LOINC Mapping Version</td>
-  <td> CodeSystem.version</td>
-  <td>This represents the version of LOINC used in the mapping for the code mapped in the Concept.  If there are multiple version of LOINC codes represented in the LIVD Catalog then there would be multiple CodeSystem instances, one for each version.</td>
+  <td> ValueSet.expansion.contains.system.version</td>
+  <td>This represents the version of LOINC used in the mapping for the code mapped in the ConceptMap.</td>
 </tr>
 <tr>
     <td>LOINC Copyright</td>
-    <td>CodeSystem.copyright</td>
+    <td>Composition.section.title
+      <br>Composition.section.code
+      <br>Composition.section.entry.reference</td>
+    <td>The relevant copyright text is in .section.entry.reference where the .section.title is "Copyrights" and the section.code is "copy-right".</td>
 </tr>
 <tr>
     <td> </td>
-    <td>CodeSystem.publisher</td>
+    <td>ValueSet.status</td>
 </tr>
 <tr>
-    <td> </td>
-    <td>CodeSystem.status</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.title</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.name</td>
+    <td></td>
+    <td>Composition.extension-version</td>
 </tr>
 <tr>
     <td>Localization</td>
-    <td>Composition.language</td>
+    <td>extension-Composition.language</td>
 </tr>
 <tr>
     <td>Region</td>
-    <td>Composition.ext-region</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>Composition.type</td>
+    <td>extension-Composition.region</td>
 </tr>
 <tr>
     <td> </td>
@@ -128,10 +102,19 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
+    <td>extension-Composition.note</td>
+</tr>
+<tr>
+    <td> </td>
     <td>Composition.section</td>
+    <td>This enables organization like information together, particularly the equipment, tests, and mappings.
 </tr>
 <tr>
     <td><b><i>Equipment</i></b></td>
+</tr>
+<tr>
+   <td></td>
+   <td>DeviceDefinition.identifier</td>
 </tr>
 <tr>
     <td>Manufacturer</td>
@@ -143,7 +126,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>UID</td>
-    <td>DeviceDefinition.uidDeviceIdentifier.deviceIdentifier</td>
+    <td>DeviceDefinition.udiDeviceIdentifier.deviceIdentifier</td>
 </tr>
 <tr>
     <td>UID Type</td>
@@ -155,7 +138,17 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
-    <td>DeviceDefintiion.capability.ext-observationDefinition</td>
+    <td>DeviceDefinition.capability.type
+      <br>extension-DeviceDefinition.capability.observationDefinition</td>
+    <td>This enables a linkage to the ObservationDefinition that represents the test that the device can perform.</td>
+</tr>
+<tr>
+  <td></td>
+  <td>extension-DeviceDefinition.classification</td>
+</tr>
+<tr>
+  <td></td>
+  <td>extension-DeviceDefinition.hasPart</td>
 </tr>
 <tr>
     <td><b><i>IVD Test Results</i>,</b></td>
@@ -175,31 +168,13 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Reference ID</td>
-    <td>ObservationDefinition.ext-vendorReferenceIdentifier</td>
+    <td>ObservationDefinition.identifier.type
+    <br>ObservationDefinition.identifiervalue</td>
 </tr>
 <tr>
     <td> </td>
-    <td>ObservationDefinition.code.version</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.permittedDataType</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.method</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.quantitativeDetails</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.validCodedValueSet</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.ext-device</td>
+    <td>extension-ObservationDefinition.device</td>
+    <td>This enables a link to the device(s) that can perform this test</td>
 </tr>
 <tr>
     <td><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
@@ -207,6 +182,10 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
   <td> LOINC Mapping Version</td>
   <td>ConceptMap.group.element.target.version</td>
+</tr>
+<tr>
+  <td></td>
+  <td>ConceptMap.identifier</td>
 </tr>
 <tr>
     <td>Vendor Specimen Description</td>
@@ -244,80 +223,50 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
+    <td>ConceptMap.target</td>
+    <td>This represents the target value set where the suggested LOINC codes are further defined.</td>
+</tr>
+<tr>
+  <td></td>
+  <td>ConceptMap.group.target
+  <br>ConceptMap.group.targetVerion</td>
+  <td>This represents the LOINC code system and the version that was used for the mapping to the LOINC codes referenced.</td>
+<tr>
+    <td> </td>
     <td>ConceptMap.group.element.code</td>
+    <td>This represents the test code used by the manufacturer for which a mapping to a LOINC is provided.</td>
 </tr>
 <tr>
     <td> </td>
-    <td>ConceptMap.group.element.display</td>
+    <td>ConceptMap.group.element.target.display</td>
 </tr>
 <tr>
- <td><b><i>Test Result Values</i></b></td>
+ <td><b><i>Test Code Value Set</i></b></td>
  </tr>
 <tr>
- <td>Vendor Test Result Value Code</td>	
- <td>to be provided</td>
+    <td></td>
+    <td>ValueSet.version</td>
 </tr>
 <tr>
- <td>Vendor Test Result Value Code Name</td>
- <td>to be provided</td>
-</tr>
-<tr>
- <td>Vendor Test Result Value Coding System</td>	
- <td>to be provided</td>
-</tr>
-<tr>
-    <td><b><i>LOINC Code System</i></b></td>
+    <td></td>
+    <td>ValueSet.status</td>
 </tr>
 <tr>
     <td>LOINC Code</td>
-    <td>CodeSystem.concept.code</td>
+    <td>ValueSet.expansion.contains.code</td>
 </tr>
 <tr>
     <td>LOINC Long Name</td>
-    <td>CodeSystem.concept.display</td>
+    <td>ValueSet.expansion.contains.display</td>
 </tr>
 <tr>
-    <td>Component</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
+    <td></td>
+    <td>ValueSet.expansion.contains.system</td>
+</tr>
+<tr>
+    <td>Component, Property, time Aspect, System, Scale Type, Method Type</td>
+    <td>extension-ValueSet.expansion.conctains.property.code
+    <br>extension-ValueSet.expansion.conctains.property.valueCoding.code
     </td>
-</tr>
-<tr>
-    <td>Property</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>Time</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>System</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>Scale</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>Method</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.property</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.content</td>
 </tr>
 </table>
