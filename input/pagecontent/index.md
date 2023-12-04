@@ -1,6 +1,6 @@
 <blockquote class="stu-note">
 <p>
-This specification represents the updates from the first ballot (September 2019) and subsequent addition enabling documentation of Result Value mapping guidance.  It furthermore reflects updates in the "LIVD - Digital Format for Publication of LOINC to Vendor IVD Test Results" specification that is undergoing further updates to reflect Result Value mapping as well.  A draft is available  <a href="https://github.com/HL7/livd/blob/master/input/images/IICC%20LIVD%20Digital%20Format%20v2%20-%20Final%20Draft%20v0.1%20-%2020201113.docx">here</a>.  This is the second STU ballot with the intent to publish LIVD STU R1 version upon completing ballot reconciliaton.
+This specification represents the updates since the first ballot (September 2019) and updates necessary to accommodate a future version supporting the addition of enabling documentation of Result Value mapping guidance.  This is the second STU ballot with the intent to publish LIVD STU R1 version upon completing ballot reconciliaton.
 </p>
 <p>
 Feedback is welcome and may be submitted through the <a href="http://hl7.org/fhir-issues">FHIR Jira tracker</a>
