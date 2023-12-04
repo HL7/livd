@@ -1,6 +1,6 @@
 The basic structure that the LIVD Publication must support is based on the **_[Digital Format for Publication of LOINC to Vendor IVD Test Results](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf)_** as published by [IICC](https://ivdconnectivity.org/) - IVD Industry Connectivity Consortium. It can be represented as follows:
 
-![LIVD Publication Structure](Publication_Structure.jpg)
+![LIVD Publication Structure](Publication_Structure - Version 1.jpg)
 
 The implementation guide supports the following mappings:
 
@@ -22,17 +22,4 @@ The implementation guide supports the following mappings:
                  </ul>
         </ul>
      <li> The IVD Test Map enable these many to many mappings, also considering that there may not be a suggested LOINC code for a particular IVD Test Code, or clearly that not every LOINC code is related to an IVD Test Result.</li>
-</ul>
-
-<h3> IVD Result Values </h3>
-<ul>
-     <li> One vendor <b><i>IVD Test</i></b> to zero or many <b><i>IVD Result Values</i></b>.</li>
-          <ul>
-                <li> When an IVD Test represents a non-quantititative test, then there would be one or more coded result values that are used to result on the test.</li>
-          </ul>
-     <li> One <b><i>IVD Result Value</i></b> to zero or many <b><i>LOINC</i></b> or <b><i>SNOMED codes</i></b></li>
-          <ul>
-               <li> The IVD Result Value may have a corresponding LOINC and/or SNOMED code.</li>
-               <li> While the IVD Result Value could be represented in LOINC and SNOMED, the intent is not that a particular configuration mixes both coding approaches for the specific IVD Test Result's IVD Result Values.  Rather it should use one encoding or the other.  The LIVD Publication allows for documenting both to enable the LIS to make that choice.</li>
-          </ul>
 </ul>
