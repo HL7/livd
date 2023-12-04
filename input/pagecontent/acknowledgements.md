@@ -1,6 +1,6 @@
 The LIVD Implementation Guide is the result of a combined IICC and HL7 project team to express the content into FHIR profiles. The following individuals supported creating this guide:
 
-* Hans Buitendijk - Cerner
+* Hans Buitendijk - Oracle Health
 * Rob Hausam - Hausam Consulting
 * Ed Heierman - Abbott
 * Ralf Herzog - Roche
@@ -14,7 +14,7 @@ The LIVD Implementation Guide is the result of a combined IICC and HL7 project t
 * Ron van Duyne - CDC
 * Michael Waters - FDA
 
-The  Food and Drug Administration (FDA ) supports the development and use of the LIVD Implementation Guide.
+The Food and Drug Administration (FDA ) supports the development and use of the LIVD Implementation Guide.
 
 The FDA recognized that with the increasing implementation of electronic health records (EHR), there has been a greater demand to standardize the way that in vitro diagnostic (IVD) tests are coded. Efforts to harmonize and standardize information captured and stored in electronic healthcare systems carry important implications for public health, including expediting access to patient diagnostic information for healthcare providers, reducing burdens on laboratories for connecting new diagnostic systems to Laboratory Information Systems (LIS), and facilitating the use of healthcare information for decision support tools, in addition to many more potential uses.
 
@@ -33,9 +33,9 @@ The development of the LIVD Specification and Implementation Guide was an intern
 * IHE Pathology and Laboratory Medicine (PaLM) Technical Committee
 * Phast
 * LIS vendors
-    * Cerner Corporation
     * Epic
     * LabCorp
+    * Oracle Health Corporation
     * Orchard Software
 * IVD instrument manufacturers
     * Abbott Laboratories
