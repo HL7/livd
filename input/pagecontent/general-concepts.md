@@ -25,14 +25,4 @@ The implementation guide supports the following mappings:
 </ul>
 
 <h3> IVD Result Values </h3>
-<ul>
-     <li> One vendor <b><i>IVD Test</i></b> to zero or many <b><i>IVD Result Values</i></b>.</li>
-          <ul>
-                <li> When an IVD Test represents a non-quantititative test, then there would be one or more coded result values that are used to result on the test.</li>
-          </ul>
-     <li> One <b><i>IVD Result Value</i></b> to zero or many <b><i>LOINC</i></b> or <b><i>SNOMED codes</i></b></li>
-          <ul>
-               <li> The IVD Result Value may have a corresponding LOINC and/or SNOMED code.</li>
-               <li> While the IVD Result Value could be represented in LOINC and SNOMED, the intent is not that a particular configuration mixes both coding approaches for the specific IVD Test Result's IVD Result Values.  Rather it should use one encoding or the other.  The LIVD Publication allows for documenting both to enable the LIS to make that choice.</li>
-          </ul>
-</ul>
+A future version is expected to address LOINC or SNOMED encoded result values as well, but that is not within the scope of this version.
