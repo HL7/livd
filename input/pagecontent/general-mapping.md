@@ -231,6 +231,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
   <td>ConceptMap.group.target
   <br>ConceptMap.group.targetVerion</td>
   <td>This represents the LOINC code system and the version that was used for the mapping to the LOINC codes referenced.</td>
+</tr>
 <tr>
     <td> </td>
     <td>ConceptMap.group.element.code</td>
@@ -242,7 +243,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
  <td><b><i>Test Code Value Set</i></b></td>
- </tr>
+</tr>
 <tr>
     <td></td>
     <td>ValueSet.version</td>
