@@ -40,6 +40,10 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <th><b>Comments</b></th>
 </tr>
 <tr>
+  <td></td>
+  <td>Bundle.type</td>
+  <td>This is set to "collection" as LIVD is modeled in FHIR to serve as a payload while it is not needed to be in the form of a document either, thus a well structured collection.</td>
+<tr>
     <td><b><i>Publication</i></b></td>
 </tr>
 <tr>
@@ -73,20 +77,16 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>The relevant copyright text is in .section.entry.reference where the .section.title is "Copyrights" and the section.code is "copy-right".</td>
 </tr>
 <tr>
-    <td> </td>
-    <td>ValueSet.status</td>
-</tr>
-<tr>
-    <td></td>
-    <td>Composition.extension-version</td>
-</tr>
-<tr>
     <td>Localization</td>
     <td>extension-Composition.language</td>
 </tr>
 <tr>
     <td>Region</td>
     <td>extension-Composition.region</td>
+</tr>
+<tr>
+    <td></td>
+    <td>Composition.extension-version</td>
 </tr>
 <tr>
     <td> </td>
