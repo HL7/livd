@@ -15,6 +15,7 @@ The following diagram may help further clarify that:
 
 ![LIVD Publication Structure](LIVD_FHIR_Mapping.jpg)
 
+Note: The IVD Result Value to LOINC answer codes and SNOMED codes to support LIS Result Values to the codes are of of scope for this version, therefore greyed-out.
 <ul>
     <li> The LIS maintains a map between the IVD Test's vendor analyte code and their LIS Test Result code.</li>
         <ul>
