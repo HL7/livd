@@ -6,11 +6,9 @@ output
 fsh-generated
 gofsh
 
-# Don't commit this because it's so large #
+# Don't commit txcache or other input-cache files #
 ###########################################
-input-cache/publisher.jar
-input-cache/schemas
-input-cache/schemas-r5
+input-cache
 
 # Windows generated files #
 ###########################
@@ -20,7 +18,6 @@ Thumbs.db
 ######################
 .DS_Store
 .DS_Store?
-Thumbs.db
 
 # backup files #
 ################
