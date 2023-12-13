@@ -1,6 +1,6 @@
 <blockquote class="stu-note">
 <p>
-This specification represents the updates since the first ballot (September 2019) and updates necessary to accommodate a future version supporting the addition of enabling documentation of Result Value mapping guidance.  This is the second STU ballot with the intent to publish LIVD STU R1 version upon completing ballot reconciliaton.
+This specification is the is the third STU ballot, which represents the updates since the second ballot (December 2020).  It temporarily removes updates that were made in the 0.3.0 (December 2020) version which were intended to support the addition of Result Value mapping guidance.  These updates for supporting Result Value mapping are expected to be brought back and further developed in a subsequent version. The intent is to publish LIVD STU R1 version upon completing the reconciliation for this current January 2024 ballot.
 </p>
 <p>
 Feedback is welcome and may be submitted through the <a href="http://hl7.org/fhir-issues">FHIR Jira tracker</a>
