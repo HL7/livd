@@ -1,0 +1,9 @@
+{
+  "package-id" : "hl7.fhir.uv.livd",
+  "version" : "1.0.0-ballot",
+  "path" : "http://hl7.org/fhir/uv/pharm-quality/2024Jan",
+  "mode" : "working",
+  "status" : "ballot",
+  "sequence" : "STU1",
+  "desc" : "The January 2024 Ballot Version is the third STU ballot of this implementation guide."
+}
