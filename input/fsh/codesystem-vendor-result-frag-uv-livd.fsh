@@ -3,13 +3,13 @@ Parent: http://hl7.org/fhir/StructureDefinition/CodeSystem
 Id: codesystem-vendor-result-frag-uv-livd
 Title: "LIVDCodeSystemFragmentVendorResult"
 Description: "Profile on the CodeSystem resource to include the relevant information from a manufacturer for their set of IVD Result Codes that are relevant to this LIVD catalog."
-* ^version = "0.3.0"
+* ^version = "1.0.0-ballot"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2018-08-14"
-* ^publisher = "HL7 International - Orders and Observations Work Group"
+* ^publisher = "HL7 International / Orders and Observations"
 * ^contact[0].telecom[0].system = #url
-* ^contact[0].telecom[0].value = "http://hl7.org/Special/committees/orders/index.cfm"
+* ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"
 * ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
 * ^jurisdiction[0].coding[0].code = #001
 * . ^short = "LIVDCodeSystemFragmentVendorResult"
