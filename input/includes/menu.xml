@@ -10,6 +10,7 @@
       <li><a href="general-definitions.html">LIVD Data Definitions</a></li>
       <li><a href="general-mapping.html">LIVD Data Mapping to FHIR</a></li>
       <li><a href="general-implementation.html">Implementation Considerations</a></li>
+      <li><a href="analysis.html">IP Acknowledgements &amp; IG Analysis</a></li>
     </ul>
   </li>
   <li><a href="artifacts.html">Artifacts</a></li>

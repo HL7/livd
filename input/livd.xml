@@ -385,6 +385,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="analysis.html"/>
+        <title value="IP Acknowledgements &amp; IG Analysis"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="artifacts.html"/>
         <title value="Artifact List"/>
         <generation value="html"/>
