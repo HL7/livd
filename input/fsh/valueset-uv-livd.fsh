@@ -3,13 +3,13 @@ Parent: http://hl7.org/fhir/StructureDefinition/ValueSet
 Id: valueset-uv-livd
 Title: "LIVDValueSet"
 Description: "LIVD value set profile."
-* ^version = "0.3.0"
+* ^version = "1.0.0-ballot"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2020-12-15"
-* ^publisher = "HL7 International - Orders and Observations Work Group"
+* ^publisher = "HL7 International / Orders and Observations"
 * ^contact[0].telecom[0].system = #url
-* ^contact[0].telecom[0].value = "http://hl7.org/Special/committees/orders/index.cfm"
+* ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"
 * ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
 * ^jurisdiction[0].coding[0].code = #001
 * . ^short = "LIVDValueSet"
