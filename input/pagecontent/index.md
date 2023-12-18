@@ -26,7 +26,7 @@ Ideally it is envisioned that the LOINC codes selected by manufacturers would be
 
 ### Out of Scope
 
-The implementation guide has an **initial** scope that does not address:
+The implementation guide has an **initial** scope, supporting the scope of the IICC LIVD 2.0 specification and Excel format described <a href="https://ivdconnectivity.org/livd/">here</a>, that does not address:
 
 * The mapping of IVD Test Orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD Test Orders and IVD Test Results are related, information required for IVD Test Order mapping should be provided by a separate mapping table.
 * The mapping of result values to LOINC answer codes and/or SNOMED.
