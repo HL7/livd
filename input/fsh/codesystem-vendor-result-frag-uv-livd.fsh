@@ -25,17 +25,9 @@ Description: "Profile on the CodeSystem resource to include the relevant informa
 * name 1..1 MS
 * title 1..1 MS
 * status 1..1 MS
-* experimental 0..0
-* experimental ^mustSupport = false
 * date ^mustSupport = false
 * contact 0..0
 * contact ^mustSupport = false
-* description 0..0
-* description ^alias[0] = "Scope"
-* description ^alias[1] = "Purpose"
-* description ^mustSupport = false
-* description ^mapping[0].identity = "rim"
-* description ^mapping[0].map = "N/A"
 * useContext 0..0
 * useContext ^mustSupport = false
 * jurisdiction ^mustSupport = false

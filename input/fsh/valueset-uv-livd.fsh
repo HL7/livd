@@ -18,7 +18,6 @@ Description: "LIVD value set profile."
 * version 1..1 MS
 * name 1..1 MS
 * status 1..1 MS
-* experimental 0..0
 * publisher 0..0
 * contact 0..0
 * useContext 0..0
