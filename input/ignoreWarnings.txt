@@ -12,3 +12,6 @@ EXTENSION_EXTM_CONTEXT_WRONG_XVER
 
 # The LOINC part (LP) codes are not currently supported on tx.fhir.org.  The IG Publisher should be recognizing and using the loinc-fragment-livd CodeSystem resource, which is included in the IG and does contain those 'LP' codes, but that is not happening.
 %Unknown Code 'LP%
+
+# The SNOMED CT code system that is bundled in the IG is a fragment, so it is not expected to contain all SNOMED CT codes - only the ones that are needed in this LIVD bundle instance.
+%Target Code System http://snomed.info/sct doesn't have all content (content = fragment), so the target codes cannot be checked
