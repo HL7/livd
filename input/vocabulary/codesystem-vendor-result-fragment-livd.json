@@ -7,9 +7,12 @@
         ]
     },
     "url": "http://ivd-vendor-result.example",
+    "version": "1",
     "name": "IVDVendorResultCodes",
     "title": "IVD Vendor Result Codes",
     "status": "active",
+    "experimental": "false",
+    "description": "This CodeSystem resource is a fragment which contains the vendor result codes that are used in the LIVD bundle.",
     "jurisdiction": [
         {
             "coding": [
@@ -20,6 +23,7 @@
             ]
         }
     ],
+    "caseSensitive": false,
     "content": "fragment",
     "concept": [
         {
