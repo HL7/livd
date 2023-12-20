@@ -11,6 +11,7 @@
     "name": "LivdResultValueMappingsVS",
     "title": "Result value mappings value set for LIVD",
     "status": "draft",
+    "experimental": "false",
     "date": "2018-09-25",
     "description": "Includes the subset of LOINC or SNOMED CT codes for mappings from result values that are relevant for this ConceptMap.",
     "jurisdiction": [
