@@ -65,6 +65,12 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * group.element.target 0..* MS
 * group.element.target ^short = "Identifies the LOINC code being mapped to"
 * group.element.target ^definition = "A reference to the LOINC code being mapped to, including mapping criteria."
+* group.element.target ^constraint[0].key = "livd-1"
+* group.element.target ^constraint[0].severity = #error
+* group.element.target ^constraint[0].human = "If the dependsOn is valued, either the code or display must be present"
+* group.element.target ^constraint[0].expression = "(dependsOn.exists() and (code.exists() or display.exists())) or dependsOn.empty()"
+* group.element.target ^constraint[0].xpath = "(exists(f:dependsOn) and (exists(f:code) or exists(f:display))) or !exists(f:dependsOn)"
+* group.element.target ^constraint[0].source = "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-testcode-uv-livd"
 * group.element.target.code 1..1 MS
 * group.element.target.code ^short = "Code that identifies the LOINC Code"
 * group.element.target.code ^definition = "Identity (code or path) the LOINC Code that the map refers to."
@@ -81,11 +87,6 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * group.element.target.dependsOn ^slicing.rules = #open
 * group.element.target.dependsOn ^comment = "Either .code or .display must be valued.\nThere must be both a specimen and result related description."
 * group.element.target.dependsOn ^condition[0] = "livd-1"
-* group.element.target.dependsOn ^constraint[0].key = "livd-1"
-* group.element.target.dependsOn ^constraint[0].severity = #error
-* group.element.target.dependsOn ^constraint[0].human = "If the dependsOn is valued, either the code or display must be present"
-* group.element.target.dependsOn ^constraint[0].expression = "(group.element.target.dependsOn.exists() and (group.element.target.code.exists() or group.element.target.display.exists())) or group.element.target.dependsOn.empty()"
-* group.element.target.dependsOn ^constraint[0].xpath = "(exists(f:group.element.target.dependsOn) and (exists(f:group.element.target.code) or exists(f:group.element.target.display))) or !exists(f:group.element.target.dependsOn)"
 * group.element.target.dependsOn contains specimen 0..1 MS
 * group.element.target.dependsOn[specimen] ^short = "The property for specimen"
 * group.element.target.dependsOn[specimen].property 1..1 MS
