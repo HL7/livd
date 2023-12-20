@@ -215,6 +215,7 @@
                 "targetCanonical": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
                 "group": [
                     {
+                        "target": "http://loinc.org",
                         "element": [
                             {
                                 "code": "b87458ca-b29a-4244-b347-39111caf9ef2",

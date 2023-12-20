@@ -28,6 +28,7 @@
     "targetCanonical": "http://hl7.org/fhir/uv/livd/ValueSet/resultvalue-mappings-livd",
     "group": [
         {
+            "target": "http://snomed.info/sct",
             "element": [
                 {
                     "code": "Positive",

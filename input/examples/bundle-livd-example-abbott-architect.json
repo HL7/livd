@@ -572,6 +572,7 @@
         "targetCanonical": "https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott",
         "group": [
           {
+            "target": "http://loinc.org",
             "element": [
               {
                 "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
