@@ -18,18 +18,8 @@
             }
           ]
         }
-      ],
-        "contact": [
-        {
-          "telecom": [
-            {
-              "system": "url",
-              "value": "http://www.hl7.org/Special/committees/orders"
-            }
-          ]
-        }
-      ],
-        "description": "Allowed types of bundles for the LIVD catalog",
+    ],
+    "description": "Allowed types of bundles for the LIVD catalog",
     "jurisdiction": [
         {
             "coding": [
