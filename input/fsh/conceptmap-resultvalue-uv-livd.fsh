@@ -18,22 +18,14 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD result value 
 * url 0..1 MS
 * identifier 0..0
 * identifier ^mustSupport = false
-* version 0..0
-* version ^mustSupport = false
 * name 1..1 MS
-* title 0..0
-* title ^mustSupport = false
 * status 1..1 MS
 * status ^comment = "Only \"Active\" must be supported as it reflects the time of publication.  Others are not valid for that."
-* experimental 0..0
-* experimental ^mustSupport = false
 * date ^mustSupport = false
 * publisher 0..0
 * publisher ^mustSupport = false
 * contact 0..0
 * contact ^mustSupport = false
-* description 0..0
-* description ^mustSupport = false
 * useContext 0..0
 * useContext ^mustSupport = false
 * jurisdiction ^mustSupport = false
