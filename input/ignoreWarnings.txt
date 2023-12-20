@@ -4,3 +4,7 @@
 
 # These extensions do not appear in the ConceptMap instances and cannot be fixed in the IG
 EXTENSION_EXTM_CONTEXT_WRONG_XVER
+
+# These are example manufacturer local code systems that are used in only example instances, so they are not expected to be known to the IG Publisher.
+%Code System URI 'http://www.corelaboratory.com/ARCHITECT' could not be found so the code cannot be validated
+%Code System URI 'http://ww.roche.com/cobas8000' could not be found so the code cannot be validated
