@@ -328,8 +328,12 @@
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd</p><p><b>url</b></p></div>"
         },
         "url": "http://hl7.org/fhir/uv/livd/ConceptMap/5e10d8dc-a847-4e81-a0be-a54e8f0b9a4b",
+        "version": "1.0.0",
         "name": "RocheLivdConceptMap",
+        "title": "Roche Livd Concept Map",
         "status": "active",
+        "experimental": false,
+        "description": "Roche Livd Concept Map",
         "sourceUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd",
         "targetCanonical": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
         "group": [
@@ -543,7 +547,7 @@
         "name": "RocheLivdLoincVS",
         "title": "Roche LOINC value set for LIVD",
         "status": "draft",
-        "experimental": "false",
+        "experimental": false,
         "date": "2018-09-25",
         "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
         "compose": {
@@ -627,7 +631,7 @@
         "name": "LOINC",
         "title": "LOINC Code System",
         "status": "active",
-        "experimental": "false",
+        "experimental": false,
         "publisher": "Regenstrief Institute, Inc.",
         "description": "This CodeSystem resource is a fragment which contains the LOINC codes that are used in this LIVD bundle.",
         "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",

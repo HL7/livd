@@ -562,8 +562,12 @@
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>meta</b>: </p><p><b>url</b>: ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>status</b>: active</p><p><b>source</b>: ObservationDefinition</p><p><b>target</b>: https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott</p><blockquote><p><b>group</b></p><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 14749-6</p><p><b>display</b>: Glucose [Moles/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mmol/L</p></blockquote></blockquote></blockquote><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 2345-7</p><p><b>display</b>: Glucose [Mass/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mg/dL</p></blockquote></blockquote></blockquote></blockquote></div>"
         },
         "url": "https://www.corelaboratory.abbott/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+        "version": "1.0.0",
         "name": "AbbottArchitectLivdConceptMap",
+        "title": "Abbott Architect Livd Concept Map",
         "status": "active",
+        "experimental": false,
+        "description": "Abbott Architect Livd Concept Map",
         "sourceUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd",
         "targetCanonical": "https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott",
         "group": [
@@ -810,7 +814,7 @@
         "name": "AbbottLivdLoincVS",
         "title": "Abbott LOINC value set for LIVD",
         "status": "draft",
-        "experimental": "false",
+        "experimental": false,
         "date": "2018-09-25",
         "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
         "compose": {
@@ -894,7 +898,7 @@
         "name": "LOINC",
         "title": "LOINC Code System",
         "status": "active",
-        "experimental": "false",
+        "experimental": false,
         "publisher": "Regenstrief Institute, Inc.",
         "description": "This CodeSystem resource is a fragment which contains the LOINC codes that are used in this LIVD bundle.",
         "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",

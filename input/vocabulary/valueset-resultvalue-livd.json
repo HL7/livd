@@ -11,7 +11,7 @@
     "name": "LivdResultValueVS",
     "title": "Result Value value set for LIVD",
     "status": "draft",
-    "experimental": "false",
+    "experimental": false,
     "date": "2018-09-25",
     "description": "Includes the complete set (superset) of manufacturer IVD result values that are mapped to LOINC or SNOMED CT codes in this ConceptMap.",
     "jurisdiction": [

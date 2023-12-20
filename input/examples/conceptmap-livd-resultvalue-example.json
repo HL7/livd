@@ -7,8 +7,13 @@
         ]
     },
     "url": "http://hl7.org/fhir/uv/livd/ConceptMap/99797ef5-1ba3-4a6b-9b30-cf1e58c77b94",
+    "version": "1.0.0",
     "name": "LivdResultValueConceptMap",
+    "title": "Livd Result Value Concept Map",
     "status": "active",
+    "experimental": false,
+    "description": "Livd Result Value Concept Map",
+
     "jurisdiction": [
         {
             "coding": [

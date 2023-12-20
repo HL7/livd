@@ -7,8 +7,12 @@
         ]
     },
     "url": "http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+    "version": "1.0.0",
     "name": "LivdTestCodeConceptMap",
+    "title": "Livd Test Code Concept Map",
     "status": "active",
+    "experimental": false,
+    "description": "Livd Test Code Concept Map",
     "jurisdiction": [
         {
             "coding": [

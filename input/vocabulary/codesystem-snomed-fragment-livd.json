@@ -17,7 +17,7 @@
     "name": "SNOMED_CT",
     "title": "SNOMED CT (all versions)",
     "status": "active",
-    "experimental": "false",
+    "experimental": false,
     "publisher": "IHTSDO",
     "description": "This CodeSystem resource is a fragment which contains the SNOMED CT codes that are used for result values in this LIVD bundle.",
     "jurisdiction": [

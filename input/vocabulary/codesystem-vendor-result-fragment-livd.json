@@ -11,7 +11,7 @@
     "name": "IVDVendorResultCodes",
     "title": "IVD Vendor Result Codes",
     "status": "active",
-    "experimental": "false",
+    "experimental": false,
     "description": "This CodeSystem resource is a fragment which contains the vendor result codes that are used in the LIVD bundle.",
     "jurisdiction": [
         {

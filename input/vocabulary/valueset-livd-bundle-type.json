@@ -6,7 +6,7 @@
     "name": "LivdBundleTypeVS",
     "title": "Allowed types of bundles for the LIVD catalog",
     "status": "draft",
-    "experimental": "false",
+    "experimental": false,
     "date": "2019-07-28",
     "description": "Allowed types of bundles for the LIVD catalog",
     "jurisdiction": [
