@@ -8,6 +8,16 @@
   "status": "draft",
   "experimental": false,
   "publisher": "HL7 International / Orders and Observations",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
   "description": "IVD device types for LIVD device definitions",
   "jurisdiction": [
     {
