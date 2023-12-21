@@ -23,7 +23,6 @@ Description: "LIVD value set profile."
 * useContext 0..0
 * immutable 0..0
 * purpose 0..0
-* copyright 0..0
 * compose 1..1 MS
 * compose.lockedDate 0..0
 * compose.inactive 0..0
