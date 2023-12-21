@@ -221,7 +221,7 @@
       </reference>
       <name value="LIVD Test Code Mappings value set"/>
       <description value="Includes the subset of LOINC codes for mappings from manufacturer IVD test codes that are relevant for this ConceptMap."/>
-      <exampleBoolean value="false"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/livd/StructureDefinition/valueset-uv-livd"/>
       <groupingId value="terminology"/>
     </resource>
     <!--
