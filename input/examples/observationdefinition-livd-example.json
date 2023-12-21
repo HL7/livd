@@ -9,7 +9,7 @@
     "code": {
         "coding": [
             {
-                "system": "http://www.corelaboratory.com/ARCHITECT",
+                "system": "http://example.org/abbott/livd/ARCHITECT",
                 "code": "1069",
                 "display": "GluC"
             }

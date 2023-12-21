@@ -24,7 +24,7 @@
         }
     ],
     "sourceUri": "ObservationDefinition",
-    "targetCanonical": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+    "targetCanonical": "http://example.org/ivd-mfg/loinc-livd",
     "group": [
         {
             "target": "http://loinc.org",
