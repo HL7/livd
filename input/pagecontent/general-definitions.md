@@ -71,6 +71,7 @@ The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are c
 
 Note that **_Vendor Specimen Description_**, **_Vendor Result Description_**, and **_Vendor Comment_** are included to assist a laboratory in selecting the appropriate LOINC code(s) for the vendor IVD tests used by the laboratory. This information is not intended to be parsed by an IVD Software System that automates the mapping of vendor IVD transmission codes to LOINC codes. The inclusion of this information should reduce errors in the manual selection of LOINC codes by a laboratory.
 
+<!--
 <h3> LOINC Code System </h3>
 For each of the LOINC codes being considered, a minimum set from the code system is included to further aid in the mapping process.  These are included in the [LIVD LOINC Fragment CodeSystem](StructureDefinition-codesystem-loinc-frag-uv-livd.html) profile.
 
@@ -82,6 +83,7 @@ For each of the LOINC codes being considered, a minimum set from the code system
 * **_System_**
 * **_Scale_**
 * **_Method_**
+-->
 
 <h3> Sample Data </h3>
 As part of defining the whitepaper, IICC also developed a spreadsheets that contains the relevant data and a potential representation of that data that can be found [here](https://ivdconnectivity.org/livd/).
