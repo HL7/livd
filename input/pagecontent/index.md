@@ -24,9 +24,14 @@ By voluntarily adopting the format described here as an industry convention, IVD
 
 Ideally it is envisioned that the LOINC codes selected by manufacturers would be reviewed by a common party (e.g. Regenstrief) for correctness and consistency across vendors, and also that the industry would establish conventions for the storage and access of the IVD vendor LOINC publications. The effort required for these objectives will also be reduced by having this standard publication format and associated content.
 
-### Out of Scope
+### Scope
 
-The implementation guide has an **initial** scope, supporting the scope of the IICC LIVD 2.0 specification and Excel format described <a href="https://ivdconnectivity.org/livd/">here</a>, that does not address:
+#### In Scope
+The **initial** scope of this implemnentation guide R1 is to support the IICC LIVD 2.0 specification and Excel format described <a href="https://ivdconnectivity.org/livd/">here</a>.
+
+#### Out of Scope
+
+The following topics are out of scope of this initial, first version R1:
 
 * The mapping of IVD Test Orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD Test Orders and IVD Test Results are related, information required for IVD Test Order mapping should be provided by a separate mapping table.
 * The mapping of result values to LOINC answer codes and/or SNOMED.
