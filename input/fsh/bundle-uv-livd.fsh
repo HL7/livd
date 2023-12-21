@@ -36,14 +36,14 @@ Description: "LIVD constraints on the Bundle resource"
 * link ^mustSupport = false
 * link.relation ^mustSupport = false
 * link.url ^mustSupport = false
-* entry 6..* MS
-* entry ^comment = "The bundle must contain at least 6 entries such that there is at exactly one LIVDCatalogProfile instance, at least one LIVDCatalogEntryProfile instance, at least one LIVDDeviceDefinitionProfile instance, at least one LIVDConceptMapProfile instance, and at least one LIVDCodeSystemProfile instance."
+* entry 5..* MS
+* entry ^comment = "The bundle must contain at least 5 entries such that there is exactly one LIVDCatalog instance, at least one LIVDObservationDefinition instance, at least one LIVDDeviceDefinition instance, at least one LIVDTestCodeConceptMap instance, and at least one LIVDValueSet instance."
 * entry.link 0..0
 * entry.link ^mustSupport = false
 * entry.fullUrl 0..1 MS
 * entry.resource 1..1 MS
 * entry.resource ^definition = "The Resources for the entry."
-* entry.resource ^comment = "(LIVDCatalogProfile | LIVDCatalogEntryProfile | LIVDDeviceDefinitionProfile | LIVDConceptMapProfile | LIVDTestCodeSystemProfile | LIVDLOINCCodeSystemProfile )."
+* entry.resource ^comment = "(LIVDCatalog | LIVDObservationDefinition | LIVDDeviceDefinition | LIVDTestCodeConceptMap | LIVDValueSet )."
 * entry.search 0..0
 * entry.search ^mustSupport = false
 * entry.search.mode ^mustSupport = false
