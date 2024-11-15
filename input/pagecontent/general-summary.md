@@ -13,7 +13,7 @@ The device manufacturer can aid in the process by providing a list of suggested 
 
 The following diagram may help further clarify that:
 
-![LIVD FHIR Mapping](LIVD_FHIR_Mapping.jpg)
+![LIVD FHIR Mapping](LIVD_FHIR_Mapping - Version 2.jpg)
 
 <ul>
     <li> The LIS maintains a map between the IVD Test's vendor analyte code and their LIS Test Result code.</li>
