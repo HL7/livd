@@ -15,7 +15,7 @@ The implementation guide supports the following mappings:
          </ul>
      <li> One <b><i>LOINC</i></b> to zero or many vendor <b><i>IVD Test Codes</i></b></li>
          <ul>
-             <li> Having a LOINC code mapped to by multiple IVD Test Codes for a given device is less likely, but having the same LOINC code referenced by difference IVD Tst Results for different Vendor Equipment, certainly by different vendors, is very common.</li>
+             <li> Having a LOINC code mapped to by multiple IVD Test Codes for a given device is less likely, but having the same LOINC code referenced by difference IVD Test Results for different Vendor Equipment, certainly by different vendors, is very common.</li>
                   <ul>
                      <li> For example, an IVD instrument may distinguish stat tests from routine tests by the IVD Test's vendor analyte code. In this case, the LOINC [13969-1] Creatine kinase.MB [Mass/volume] in Serum or Plasma is associated with two IVD Tests, depending if the test is routine or stat (prioritized).</li>
                      <li> Or, consider a susceptibility test that has different IVD Test IDs based on the original specimen source. In this case, the LOINC [6932-8] Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC), which is named for testing on the isolate, could be associated with multiple IVD Test Results for one IVD Instrument depending on the clinical context. For example, the break points are different for suspected meningitis versus blood infections and to date LOINC has only distinguished test codes by suspected source of infection for some antibiotic susceptibility codes.</li>
