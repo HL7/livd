@@ -60,6 +60,10 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <th><b>Comments</b></th>
 </tr>
 <tr>
+  <td></td>
+  <td>Bundle.type</td>
+  <td>This is set to "collection" as LIVD is modeled in FHIR to serve as a payload while it is not needed to be in the form of a document either, thus a well structured collection.</td>
+<tr>
     <td><b><i>Publication</i></b></td>
 </tr>
 <tr>
@@ -69,50 +73,40 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
     <td>Publication Version ID</td>
     <td>Composition.identifier.system
-    <br>Composition.identifier.value</td>
+    <br>Composition.identifier.value
+    <br>Composition.assigner.display</td>
 </tr>
 <tr>
     <td>Catalog LOINC Code</td>
     <td>Composition.type.coding.code
-      <br>Composition.type.coding.version</td>
+      <br>Composition.type.coding.display
+      <br>Composition.type.coding.version
+      <br>Composition.type.coding.system</td>
     <td>This represents only the code and version of LOINC from which the LOINC code for the LIVD Catalog has been obtained.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
 </tr>
 <tr>
   <td> LOINC Mapping Version</td>
-  <td> CodeSystem.version</td>
-  <td>This represents the version of LOINC used in the mapping for the code mapped in the Concept.  If there are multiple version of LOINC codes represented in the LIVD Catalog then there would be multiple CodeSystem instances, one for each version.</td>
+  <td> ValueSet.expansion.contains.system.version</td>
+  <td>This represents the version of LOINC used in the mapping for the code mapped in the ConceptMap.</td>
 </tr>
 <tr>
     <td>LOINC Copyright</td>
-    <td>CodeSystem.copyright</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.publisher</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.status</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.title</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.name</td>
+    <td>Composition.section.title
+      <br>Composition.section.code
+      <br>Composition.section.entry.reference</td>
+    <td>The relevant copyright text is in .section.entry.reference where the .section.title is "Copyrights" and the section.code is "copy-right".</td>
 </tr>
 <tr>
     <td>Localization</td>
-    <td>Composition.language</td>
+    <td>extension-Composition.language</td>
 </tr>
 <tr>
     <td>Region</td>
-    <td>Composition.ext-region</td>
+    <td>extension-Composition.region</td>
 </tr>
 <tr>
-    <td> </td>
-    <td>Composition.type</td>
+    <td></td>
+    <td>Composition.extension-version</td>
 </tr>
 <tr>
     <td> </td>
@@ -128,10 +122,19 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
+    <td>extension-Composition.note</td>
+</tr>
+<tr>
+    <td> </td>
     <td>Composition.section</td>
+    <td>This enables organization like information together, particularly the equipment, tests, and mappings.
 </tr>
 <tr>
     <td><b><i>Equipment</i></b></td>
+</tr>
+<tr>
+   <td></td>
+   <td>DeviceDefinition.identifier</td>
 </tr>
 <tr>
     <td>Manufacturer</td>
@@ -143,7 +146,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>UID</td>
-    <td>DeviceDefinition.uidDeviceIdentifier.deviceIdentifier</td>
+    <td>DeviceDefinition.udiDeviceIdentifier.deviceIdentifier</td>
 </tr>
 <tr>
     <td>UID Type</td>
@@ -155,10 +158,20 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
-    <td>DeviceDefintiion.capability.ext-observationDefinition</td>
+    <td>DeviceDefinition.capability.type
+      <br>extension-DeviceDefinition.capability.observationDefinition</td>
+    <td>This enables a linkage to the ObservationDefinition that represents the test that the device can perform.</td>
 </tr>
 <tr>
-    <td><b><i>IVD Test Results</i>,</b></td>
+  <td></td>
+  <td>extension-DeviceDefinition.classification</td>
+</tr>
+<tr>
+  <td></td>
+  <td>extension-DeviceDefinition.hasPart</td>
+</tr>
+<tr>
+    <td><b><i>IVD Tests</i>,</b></td>
 </tr>
 <tr>
     <td>Vendor Analyte Code
@@ -175,31 +188,13 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Reference ID</td>
-    <td>ObservationDefinition.ext-vendorReferenceIdentifier</td>
+    <td>ObservationDefinition.identifier.type
+    <br>ObservationDefinition.identifiervalue</td>
 </tr>
 <tr>
     <td> </td>
-    <td>ObservationDefinition.code.version</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.permittedDataType</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.method</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.quantitativeDetails</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.validCodedValueSet</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>ObservationDefinition.ext-device</td>
+    <td>extension-ObservationDefinition.device</td>
+    <td>This enables a link to the device(s) that can perform this test</td>
 </tr>
 <tr>
     <td><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
@@ -209,8 +204,12 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
   <td>ConceptMap.group.element.target.version</td>
 </tr>
 <tr>
+  <td></td>
+  <td>ConceptMap.identifier</td>
+</tr>
+<tr>
     <td>Vendor Specimen Description</td>
-    <td>ConceptMap.group.element.target.dependsOn.property (specimen)
+    <td>ConceptMap.group.element.target.dependsOn.property
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
@@ -220,23 +219,18 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <br>Ordinal
     <br>Nominal
     </td>
-    <td>ConceptMap.group.element.target.dependsOn.property (result)
+    <td>ConceptMap.group.element.target.dependsOn.property
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
 <tr>
     <td>Vendor Device Description</dt>
-    <td>ConceptMap.group.element.target.dependsOn.property (device)
+    <td>ConceptMap.group.element.target.dependsOn.property
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
 <tr>
     <td>Vendor Comment</td>
-    <td>ConceptMap.group.element.target.dependsOn.property (other)</td>
-    <td>ConceptMap.group.element.target.dependsOn.value</td>
-</tr>
-<tr>
-    <td> </td>
     <td>ConceptMap.group.element.target.comment</td>
 </tr>
 <tr>
@@ -249,11 +243,23 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td> </td>
-    <td>ConceptMap.group.element.code</td>
+    <td>ConceptMap.target</td>
+    <td>This represents the target value set where the suggested LOINC codes are further defined.</td>
+</tr>
+<tr>
+  <td></td>
+  <td>ConceptMap.group.target
+  <br>ConceptMap.group.targetVerion</td>
+  <td>This represents the LOINC code system and the version that was used for the mapping to the LOINC codes referenced.</td>
 </tr>
 <tr>
     <td> </td>
-    <td>ConceptMap.group.element.display</td>
+    <td>ConceptMap.group.element.code</td>
+    <td>This represents the test code used by the manufacturer for which a mapping to a LOINC is provided.</td>
+</tr>
+<tr>
+    <td> </td>
+    <td>ConceptMap.group.element.target.display</td>
 </tr>
 <tr>
  <td><b><i>Test Result Values</i></b></td>
@@ -274,55 +280,43 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td><b><i>LOINC Code System</i></b></td>
 </tr>
 <tr>
+ <td><b><i>Test Code Value Set</i></b></td>
+</tr>
+<tr>
+    <td></td>
+    <td>ValueSet.version</td>
+</tr>
+<tr>
+    <td></td>
+    <td>ValueSet.status</td>
+</tr>
+<tr>
     <td>LOINC Code</td>
-    <td>CodeSystem.concept.code</td>
+    <td>ValueSet.expansion.contains.code</td>
 </tr>
 <tr>
     <td>LOINC Long Name</td>
-    <td>CodeSystem.concept.display</td>
+    <td>ValueSet.expansion.contains.display</td>
 </tr>
 <tr>
-    <td>Component</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
+    <td></td>
+    <td>ValueSet.expansion.contains.system</td>
+</tr>
+<tr>
+    <td>Component, Property, time Aspect, System, Scale Type, Method Type</td>
+    <td>extension-ValueSet.expansion.conctains.property.code
+    <br>extension-ValueSet.expansion.conctains.property.valueCoding.code
     </td>
-</tr>
-<tr>
-    <td>Property</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>Time</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>System</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>Scale</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td>Method</td>
-    <td>CodeSystem.concept.property.code
-    <br>CodeSystem.concept.property.valueCoding.code
-    </td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.property</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>CodeSystem.content</td>
 </tr>
 </table>
+
+
+
+
+
+
+
+
+
+
+
