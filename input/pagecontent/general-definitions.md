@@ -42,7 +42,7 @@ Additionally, various details on the Observation Definition that can aid in the 
 
 <h3> IVD Test - LOINC Mapping </h3>
 
-The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are captured in the [LIVD Test Code Concept Map](StructureDefinition-conceptmap-testcode-uv-livd.html) profile.  For each IVD Test' Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
+The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are captured in the [LIVD Test Concept Map](StructureDefinition-conceptmap-testcode-uv-livd.html) profile.  For each IVD Test' Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
 
 <ul>
      <li> <b><i>Vendor Specimen Description</i></b> is human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.” The field is used to document the vendor description of the specimen used for the IVD test.</li>
