@@ -13,7 +13,7 @@ The device manufacturer can aid in the process by providing a list of suggested 
 
 The following diagram may help further clarify that:
 
-![LIVD Publication Structure](LIVD_FHIR_Mapping.jpg)
+![LIVD Publication Structure](LIVD_FHIR_Mapping - Version 1.jpg)
 
 Note: The IVD Result Value to LOINC answer codes and SNOMED codes to support LIS Result Values to the codes are of of scope for this version, therefore greyed-out.
 <ul>
