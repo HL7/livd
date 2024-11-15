@@ -13,7 +13,7 @@ This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standar
 
 The concepts described above are mapped to a number of FHIR resources that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
 
-![LIVD Profile Structure](LIVD_Profile_Structure.jpg)
+![LIVD Profile Structure](LIVD_Profile_Structure - Version 2.jpg)
 
 * LIVD Bundle - Packages all relevant resources of the LIVD Catalog.
 * LIVD Catalog Profile - This provides the information about the LIVD Publication.  The profile is based on the Catalog profile based on the Composition resource.   Note that, while the LIVD Catalog Profile does some organization of the resources, there is no need for representing the format of the data.  The formatting and presentation is left to the client consuming these resources.
