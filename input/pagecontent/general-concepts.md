@@ -1,6 +1,6 @@
 The basic structure that the LIVD Publication must support is based on the **_[Digital Format for Publication of LOINC to Vendor IVD Test Results](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf)_** as published by [IICC](https://ivdconnectivity.org/) - IVD Industry Connectivity Consortium. It can be represented as follows:
 
-![LIVD Publication Structure](Publication_Structure.jpg)
+![LIVD Publication Structure](Publication_Structure - Version 2.jpg)
 
 The implementation guide supports the following mappings:
 
