@@ -94,7 +94,7 @@ Consequently, most appropriate mapping would be:
    </ul>
 </ul>
 
-<h3> Example #3 - Result Value Code </h3>
+<h3> Example #3 - Coded Result Values </h3>
 
 A manufacturer defined the following codes for an Immunoassay molecular antigen test:
 <ul>
