@@ -20,7 +20,7 @@ Both vendor-defined IVD tests performed by a vendor IVD instrument and vendor-de
 
 The content uses FHIR resource profiles that can be expressed in either JSON or XML, where JSON is the minimum required format to conform to this guide.  That can then in turn be expressed for a user in a table format, such as Microsoft Excel, that further simplifies its use within a laboratory setting, or consumed into the device configurator's workbench that is part of an Laboratory Information System (LIS) or other middleware connecting devices to LIS.
 
-By voluntarily adopting the format described here as an industry convention, IVD vendors will understand what data and in what format they should provide when publishing suggested LOINC codes for their IVD Tests. By doing so, this work will significantly reduce the variability of the content and format of the multiple publications received by laboratory environments, further reducing the time and effort required by laboratories to review and integrate this information into their laboratory software systems. The format includes additional vendor information, such as a description of the result, used to easily discriminate between multiple LOINC codes for the same IVD Test. 
+By voluntarily adopting the format described here as an industry convention, IVD vendors will understand what data and in what format they should provide when publishing suggested LOINC codes for their IVD tests. By doing so, this work will significantly reduce the variability of the content and format of the multiple publications received by laboratory environments, further reducing the time and effort required by laboratories to review and integrate this information into their laboratory software systems. The format includes additional vendor information, such as a description of the result, used to easily discriminate between multiple LOINC codes for the same IVD test. 
 
 Ideally it is envisioned that the LOINC codes selected by manufacturers would be reviewed by a common party (e.g. Regenstrief) for correctness and consistency across vendors, and also that the industry would establish conventions for the storage and access of the IVD vendor LOINC publications. The effort required for these objectives will also be reduced by having this standard publication format and associated content.
 
@@ -33,7 +33,7 @@ The **initial** scope of this implemnentation guide R1 is to support the IICC LI
 
 The following topics are out of scope of this initial, first version R1:
 
-* The mapping of IVD Test Orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD Test Orders and IVD Test Results are related, information required for IVD Test Order mapping should be provided by a separate mapping table.
+* The mapping of IVD test orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD test orders and IVD test results are related, information required for IVD test order mapping should be provided by a separate mapping table.
 * The mapping of result values to LOINC answer codes and/or SNOMED.
 * Any long-term or common storage locations hosting the published LOINC codes.
 * Regulatory impacts of vendors providing LOINC codes for their IVD tests.
