@@ -54,6 +54,7 @@ The LIVD Bundle Profile will enable packaging of the resources.
 
 The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.
 <table>
+<table>
 <tr>
     <th><b>LIVD Attribute</b></th>
     <th><b>FHIR</b></th>
@@ -67,41 +68,41 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td><b><i>Publication</i></b></td>
 </tr>
 <tr>
-    <td>Publisher</td>
+    <td>Publisher - the entity publishing the mapping information</td>
     <td>Composition.author.display</td>
 </tr>
 <tr>
-    <td>Publication Version ID</td>
+    <td>Publication Version ID - human-readable information provided by the vendor that can be used to differentiate LIVD Publication versions</td>
     <td>Composition.identifier.system
     <br>Composition.identifier.value
     <br>Composition.assigner.display</td>
 </tr>
 <tr>
-    <td>Catalog LOINC Code</td>
+    <td></td>
     <td>Composition.type.coding.code
       <br>Composition.type.coding.display
       <br>Composition.type.coding.version
       <br>Composition.type.coding.system</td>
-    <td>This represents only the code and version of LOINC from which the LOINC code for the LIVD Catalog has been obtained.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
+    <td>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
 </tr>
 <tr>
-  <td> LOINC Mapping Version</td>
+  <td> LOINC Version ID - the version of LOINC that was used for the mapping</td>
   <td> ValueSet.expansion.contains.system.version</td>
-  <td>This represents the version of LOINC used in the mapping for the code mapped in the ConceptMap.</td>
+  <td>Since a LIVD Catalog can include LOINC codes from different versions</td>
 </tr>
 <tr>
-    <td>LOINC Copyright</td>
+    <td>LOINC Copyright - holds the required attribution statement</td>
     <td>Composition.section.title
       <br>Composition.section.code
       <br>Composition.section.entry.reference</td>
     <td>The relevant copyright text is in .section.entry.reference where the .section.title is "Copyrights" and the section.code is "copy-right".</td>
 </tr>
 <tr>
-    <td>Localization</td>
+    <td>Localization - the language used for this LIVD Publication</td>
     <td>extension-Composition.language</td>
 </tr>
 <tr>
-    <td>Region</td>
+    <td>Region - an optional vendor description for which geographic or administrative region this localization is valid.</td>
     <td>extension-Composition.region</td>
 </tr>
 <tr>
@@ -137,19 +138,19 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
    <td>DeviceDefinition.identifier</td>
 </tr>
 <tr>
-    <td>Manufacturer</td>
+    <td>Manufacturer - the name of the manufacturer of the device.</td>
     <td>DeviceDefinition.manufacturerString</td>
 </tr>
 <tr>
-    <td>Model</td>
+    <td>Model - the model of the device as provided by the manufacturer</td>
     <td>DeviceDefinition.modelNumber</td>
 </tr>
 <tr>
-    <td>UID</td>
+    <td>UID - the unique device identifier, that may be the one used in the Unique Device Identifier (UDI) constructs</td>
     <td>DeviceDefinition.udiDeviceIdentifier.deviceIdentifier</td>
 </tr>
 <tr>
-    <td>UID Type</td>
+    <td>UID Type - capable of supporting the unique device identification system to identify medical devices through their distribution and use.</td>
     <td>DeviceDefinition.udiDeviceIdentifier.issuer</td>
 </tr>
 <tr>
@@ -174,20 +175,17 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td><b><i>IVD Test Performed</i>,</b></td>
 </tr>
 <tr>
-    <td>Vendor Analyte Code
-    <br>Vendor Transmission Code
-    <br>Vendor Analyte Identifier
-    </td>
+    <td>Vendor Analyte Code - Vendor Transmission Code for automated tests or Vendor Analyte Identifier for manual tests.</td>
     <td>ObservationDefinition.code.system
     <br>ObservationDefinition.code.code
     </td>
 </tr>
 <tr>
-    <td>Vendor Analyte Name</td>
+    <td>Vendor Analyte Name - human-readable text the vendor used to identify the analyte</td>
     <td>ObservationDefinition.code.display</td>
 </tr>
 <tr>
-    <td>Vendor Reference ID</td>
+    <td>Vendor Reference ID - an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.</td>
     <td>ObservationDefinition.identifier.type
     <br>ObservationDefinition.identifiervalue</td>
 </tr>
@@ -208,13 +206,13 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
   <td>ConceptMap.identifier</td>
 </tr>
 <tr>
-    <td>Vendor Specimen Description</td>
+    <td>Vendor Specimen Description - human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.”</td>
     <td>ConceptMap.group.element.target.dependsOn.property
     <br>ConceptMap.group.element.target.dependsOn.value
     </td>
 </tr>
 <tr>
-    <td>Vendor Result Description
+    <td>Vendor Result Description - human-readable text that provides information about the result that is produce
     <br>Binary
     <br>Ordinal
     <br>Nominal
@@ -230,7 +228,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     </td>
 </tr>
 <tr>
-    <td>Vendor Comment</td>
+    <td>Vendor Comment - human-readable text clarification, such as “This is a STAT (prioritized) version of the test”.</td>
     <td>ConceptMap.group.element.target.comment</td>
 </tr>
 <tr>
