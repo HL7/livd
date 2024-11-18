@@ -1,4 +1,4 @@
-The LIVD Implementation Guide is the result of a combined IICC and HL7 project team to express the content into FHIR profiles. The following individuals supported creating this guide:
+bThe LIVD Implementation Guide is the result of a combined IICC and HL7 project team to express the content into FHIR profiles. The following individuals supported creating this guide:
 
 * Hans Buitendijk - Oracle Health
 * Rob Hausam - Hausam Consulting
@@ -12,7 +12,7 @@ The LIVD Implementation Guide is the result of a combined IICC and HL7 project t
 * Pam Banning - 3M
 * David Burgess - LabCorp
 * Ron van Duyne - CDC
-* Michael Waters - FDA
+* In Memoriam: Michael Waters - FDA
 
 The  Food and Drug Administration (FDA ) supports the development and use of the LIVD Implementation Guide.
 
