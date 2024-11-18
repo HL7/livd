@@ -35,7 +35,8 @@ The following topics are out of scope of this initial, first version R1:
 
 * The mapping of IVD Test Orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD Test Orders and IVD Test Results are related, information required for IVD Test Order mapping should be provided by a separate mapping table.
 * The mapping of result values to LOINC answer codes and/or SNOMED.
-* Any long-term or common storage locations vendors may agree upon to host the published LOINC codes or regulatory impacts of vendors providing LOINC codes for their IVD tests.
+* Any long-term or common storage locations hosting the published LOINC codes.
+* Regulatory impacts of vendors providing LOINC codes for their IVD tests.
 * The definition of the specific protocols or technologies that could be used to transmit the industry-defined digital content between IVD and LIS or other systems.
 * Transmitting LOINC codes directly from IVD instruments, leaving that content to be represented by vendor-defined codes due to issues in achieving one-to-one appropriate LOINC codes, as discussed in the Data Definition section.
 * Which LOINC codes vendors should choose for their tests, or what content is needed to make this decision. It only addresses the format used to publish these associations, for use by laboratory personnel or laboratory applications.
