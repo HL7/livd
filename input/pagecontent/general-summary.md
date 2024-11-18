@@ -1,7 +1,7 @@
 When communicating results from a device to the Laboratory Information System (LIS), the following concepts must be mapped: 
 <ul>
-    <li> The IVD Test (In-Vitro Diagnostic Test) representing the analyte to the LIS Test; and</li>
-    <li> The IVD Coded Result Value to the LIS Test's Coded Result Value when non-quantitative and codified</li>
+    <li> The IVD Test (In-Vitro Diagnostic Test) representing the analyte to the LIS Test Result; and</li>
+    <li> The IVD Coded Result Value to the LIS Test Result's Coded Result Value when non-quantitative and codified</li>
 </ul>
 Neither the IVD Test, the LIS Test Result, nor the respective IVD Coded Result Values are likely based on industry standard vocabulary.  The manufacturer assigns analyte information such as vendor analyte code (transmission code or identifier), a name, and reference identifier, plus associated IVD Coded Result Value codes, while the Laboratory creates LIS Test Results and its LIS Result Values for the tests they provide.  Through LIS configuration tools, the IVD Test's Vendor Analyte Code is associated with one or more LIS Test Result Codes based on context, e.g., IVD Test used with one vs. another specimen would yield a different LIS Test Results.  This process has been in place for decades and has been optimized to support the Laboratory's specific reporting requirements (including conformance to Clinical Laboratory Improvement Amendments (CLIA) for the US).
 
@@ -22,7 +22,7 @@ The following diagram may help further clarify that:
             <li> Each of the LIS Test Results must have a LOINC code associated with it so the results report includes the appropriate LOINC code as well for downstream use.</li>
             <li> Laboratory staff today rely on LOINC definitions (using RELMA or the web based tool), their local mappings, and their expertise/knowledge about the device, test, and parameters, to associate a specific LOINC code to the LIS Test Result Code. </li>
         </ul>
-    <li> The LIS also maintains a map between the Vendor Analyte Code's Result Value Codes and the LIS Test Result Code's Result Value Code.</li>
+    <li> The LIS also maintains a map between the Vendor Analyte Coded Result Value and the LIS Test Result's Coded Result Values.</li>
         <ul>
             <li> One IVD Coded Result Value yields one LOINC code or SNOMED code.</li>  
             <li> While it may have a map to both, local reporting requirements would yield an LIS to only use the LOINC or only then SNOMED codes.</li>
