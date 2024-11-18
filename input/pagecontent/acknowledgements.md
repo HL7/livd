@@ -12,7 +12,7 @@ The LIVD Implementation Guide is the result of a combined IICC and HL7 project t
 * Pam Banning - 3M
 * David Burgess - LabCorp
 * Ron van Duyne - CDC
-* Michael Waters - FDA
+* In Memoriam: Michael Waters - FDA
 
 The Food and Drug Administration (FDA ) supports the development and use of the LIVD Implementation Guide.
 
