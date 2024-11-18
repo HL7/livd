@@ -23,9 +23,9 @@ The equipment elements are expressed through the [LIVD Device Definition](Struct
 
 Note that types and cardinality are aligned with values reported in the Integrating the Healthcare Enterpires (IHE) [Laboratory Analytical Workflow (LAW) Profile](https://www.ihe.net/resources/technical_frameworks/#PaLM) OBX-18 Equipment Instance Identifier.
 
-<h3> IVD Tests </h3>
+<h3> IVD Test Performed </h3>
 
-The IVD Test attributes are aligned with obvservation definition attributes and expressed using the [LIVD Observation Definition](StructureDefinition-observationdefinition-uv-livd.html) profile.
+The IVD Test Performed attributes are aligned with obvservation definition attributes and expressed using the [LIVD Observation Definition](StructureDefinition-observationdefinition-uv-livd.html) profile.
 
 <ul>
      <li> <b><i>Vendor Analyte Code</i></b> is one of two possible values:
@@ -38,14 +38,14 @@ The IVD Test attributes are aligned with obvservation definition attributes and 
      <li> <b><i>Vendor Reference ID</i></b> is an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.</li>
 </ul>
 
-Additionally, various details on the Observation Definition that can aid in the mapping from the IVD Test's Vendor Analyte Code to a LOINC are included as optional attributes, even though not referenced in the original [IICC white paper](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf).
+Additionally, various details on the Observation Definition that can aid in the mapping from the IVD Test Performed's Vendor Analyte Code to a LOINC are included as optional attributes, even though not referenced in the original [IICC white paper](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf).
 
-<h3> IVD Test - LOINC Mapping </h3>
+<h3> IVD Test Performed - LOINC Mapping </h3>
 
-The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are captured in the [LIVD Test Concept Map](StructureDefinition-conceptmap-testcode-uv-livd.html) profile.  For each IVD Test' Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
+The potential mappings of the IVD Test Performed's Vendor Analyte Code to LOINC code are captured in the [LIVD Test Concept Map](StructureDefinition-conceptmap-testcode-uv-livd.html) profile.  For each IVD Test Performed's Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
 
 <ul>
-     <li> <b><i>Vendor Specimen Description</i></b> is human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.” The field is used to document the vendor description of the specimen used for the IVD test.</li>
+     <li> <b><i>Vendor Specimen Description</i></b> is human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.” The field is used to document the vendor description of the specimen used for the IVD Test Performed.</li>
      <li> <b><i>Vendor Result Description</i></b> is human-readable text that provides information about the result that is produced.
          <ul>
              <li> For non-numeric results, this field should describe the result by including one of the following:
@@ -60,8 +60,8 @@ The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are c
                      <li> For numeric results, this field should describe the result by including a representative unit of measure, preferably represented as a UCUM unit.</li>
                      <li> If one unit of measure is reported, then include it in this field.</li>
                      <li> If multiple units can be reported that can be converted to one another by a multiplicative scale factor independent of the analyte (such as mg/L and ug/dL), select one of the units as a representative unit.</li>
-                     <li> If multiple units can be reported that cannot be converted by an analyte-independent scale factor (such as mol/L and as mg/L), then define a mapping for each unit. These different types of numeric results require their own LOINC codes – one for the test reported as molar concentration and one for the test reported as mass concentration. Similarly, the results of a urine analyte (e.g. Sodium) reported as either mmol/L (spot urine) versus mmol/(24.h) (24 hour urine) have different LOINC properties and map to two different LOINC codes. The same is true for viral loads which can be reported in units of copies/mL, Log (copies/mL), IU/mL and Log (IU)/mL; and none of which can be converted by a simple scale factor. These result types have different properties and thus different LOINC codes. In such cases, define a mapping for all units that are appropriate for this IVD test.</li>
-                      <li> In some cases, the same IVD Test may be reported as a <b>Binary</b> result, or a spot numeric result of the mass concentration, etc. In such instances, the same <b><i>LIVD Test</i></b> will map to multiple LOINCs. The Vendor Result Description should be used to assist the laboratory in manually selecting the appropriate LOINC for their laboratory.</li>
+                     <li> If multiple units can be reported that cannot be converted by an analyte-independent scale factor (such as mol/L and as mg/L), then define a mapping for each unit. These different types of numeric results require their own LOINC codes – one for the test reported as molar concentration and one for the test reported as mass concentration. Similarly, the results of a urine analyte (e.g. Sodium) reported as either mmol/L (spot urine) versus mmol/(24.h) (24 hour urine) have different LOINC properties and map to two different LOINC codes. The same is true for viral loads which can be reported in units of copies/mL, Log (copies/mL), IU/mL and Log (IU)/mL; and none of which can be converted by a simple scale factor. These result types have different properties and thus different LOINC codes. In such cases, define a mapping for all units that are appropriate for this IVD Test Performed.</li>
+                      <li> In some cases, the same IVD Test Performed may be reported as a <b>Binary</b> result, or a spot numeric result of the mass concentration, etc. In such instances, the same <b><i>LIVD Test Performed</i></b> will map to multiple LOINCs. The Vendor Result Description should be used to assist the laboratory in manually selecting the appropriate LOINC for their laboratory.</li>
                  </ul>
              </li>
          </ul>
@@ -69,7 +69,7 @@ The potential mappings of the IVD Test's Vendor Analyte Code to LOINC code are c
      <li> <b><i>Vendor Comment</i></b> is human-readable text clarification, such as “This is a STAT (prioritized) version of the test”. </li>
 </ul>
 
-Note that **_Vendor Specimen Description_**, **_Vendor Result Description_**, and **_Vendor Comment_** are included to assist a laboratory in selecting the appropriate LOINC code(s) for the vendor IVD tests used by the laboratory. This information is not intended to be parsed by an IVD Software System that automates the mapping of vendor IVD transmission codes to LOINC codes. The inclusion of this information should reduce errors in the manual selection of LOINC codes by a laboratory.
+Note that **_Vendor Specimen Description_**, **_Vendor Result Description_**, and **_Vendor Comment_** are included to assist a laboratory in selecting the appropriate LOINC code(s) for the vendor IVD Test Performed used by the laboratory. This information is not intended to be parsed by an IVD Software System that automates the mapping of vendor IVD transmission codes to LOINC codes. The inclusion of this information should reduce errors in the manual selection of LOINC codes by a laboratory.
 
 <!--
 <h3> LOINC Code System </h3>
