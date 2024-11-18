@@ -38,8 +38,8 @@ The concepts described above are mapped to a number of FHIR resources that have 
 * LIVD Coded Result Value Value Set Super-Set Profile - This profile is used to eas the mapping definitions by aggregating the all LIVD Coded Result Values to be mapped.
    * (J) Each LIVD Coded Result Value in the LIVD Coded Result Value Value Set Super Set must exist in the LIVD Coded Result Value Code System
 * LIVD Coded Result Value Concept Map Profile - This profile contains the mappings from the IVD Test Coded Result Values to the respective SNOMED and/or LOINC codes
-   * The ConceptMap.source reflects the IVD Test Coded Result Value and must exist int eh LIVD Coded Result Value Value Set Super Set (K) in the context of the LIVD Coded Result Value Value Set Subset (L) for the LIVD Device Observation Definition at hand.
-   * The ConceptMap.target reflects the SNOMED and/or LOINC codes that the IVD Test's code maps to.  Although an IVD Test Coded Result Value can have both a SNOMED and a LOINC code representation, it can only have one of each.
+   * The ConceptMap.source reflects the IVD Coded Result Value and must exist in the LIVD Coded Result Value Value Set Super Set (K) in the context of the LIVD Coded Result Value Value Set Subset (L) for the LIVD Device Observation Definition at hand.
+   * The ConceptMap.target reflects the SNOMED and/or LOINC Answer codes that the IVD Test's code maps to.  Although an IVD Coded Result Value can have both a SNOMED and a LOINC Answer code representation, it can only be mapped to one or the other based on for the actual coded result value for the test performed.
 * LIVD LOINC Answer Value Set Profile - This profile supports the applicable LOINC codes from the LOINC Code System that is relevant to the mapping process.
    * (M) Each LOINC code in the LIVD Coded Result Value Concept Map must exist in the LIVD LOINC Answer Value Set or the LIVD SNOMED Value Set.
    * (N) Each LIVD LOINC Answer code must exist in the LIVD LOINC Code System.
