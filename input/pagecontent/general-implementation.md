@@ -35,7 +35,7 @@ When the receiver is an electronic system, LIS or otherwise, it will determine h
          </ul>
        <li> LOINC Code(s)  </li>
           <ul>
-            <li> For each of the suggested LOINC codes for the IVD Test Performed, one should dispay the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.  </li>
+            <li> For each of the suggested LOINC codes for the IVD Test Performed, one should display the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.  </li>
           </ul>
       </ul>  
 <li> Answer Values  </li>
