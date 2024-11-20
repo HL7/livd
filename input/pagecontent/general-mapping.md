@@ -146,11 +146,11 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>DeviceDefinition.modelNumber</td>
 </tr>
 <tr>
-    <td>UID - the unique device identifier, that may be the one used in the Unique Device Identifier (UDI) constructs</td>
+    <td>Testkit UID - the unique device identifier, that may be the one used in the Unique Device Identifier (UDI) constructs</td>
     <td>DeviceDefinition.udiDeviceIdentifier.deviceIdentifier</td>
 </tr>
 <tr>
-    <td>UID Type - capable of supporting the unique device identification system to identify medical devices through their distribution and use.</td>
+    <td>Testkit UID Type - capable of supporting the unique device identification system to identify medical devices through their distribution and use.</td>
     <td>DeviceDefinition.udiDeviceIdentifier.issuer</td>
 </tr>
 <tr>
@@ -176,13 +176,13 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Analyte Code - Vendor Transmission Code for automated tests or Vendor Analyte Identifier for manual tests.</td>
-    <td>ObservationDefinition.code.system
-    <br>ObservationDefinition.code.code
+    <td>ObservationDefinition.coding.code.system
+    <br>ObservationDefinition.coding.code.code
     </td>
 </tr>
 <tr>
     <td>Vendor Analyte Name - human-readable text the vendor used to identify the analyte</td>
-    <td>ObservationDefinition.code.display</td>
+    <td>ObservationDefinition.coding.code.display</td>
 </tr>
 <tr>
     <td>Vendor Reference ID - an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.</td>
@@ -207,8 +207,8 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Specimen Description - human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.”</td>
-    <td>ConceptMap.group.element.target.dependsOn.property
-    <br>ConceptMap.group.element.target.dependsOn.value
+    <td>ConceptMap.group.element.target.dependsOn:specimen.property
+    <br>ConceptMap.group.element.target.dependsOn:specimen.value
     </td>
 </tr>
 <tr>
@@ -217,19 +217,21 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <br>Ordinal
     <br>Nominal
     </td>
-    <td>ConceptMap.group.element.target.dependsOn.property
-    <br>ConceptMap.group.element.target.dependsOn.value
+    <td>ConceptMap.group.element.target.dependsOn:result.property
+    <br>ConceptMap.group.element.target.dependsOn:result.value
     </td>
 </tr>
 <tr>
-    <td>Vendor Device Description</dt>
-    <td>ConceptMap.group.element.target.dependsOn.property
-    <br>ConceptMap.group.element.target.dependsOn.value
+    <td>Vendor Device Description</td>
+    <td>ConceptMap.group.element.target.dependsOn:device.property
+    <br>ConceptMap.group.element.target.dependsOn:device.value
     </td>
 </tr>
 <tr>
     <td>Vendor Comment - human-readable text clarification, such as “This is a STAT (prioritized) version of the test”.</td>
-    <td>ConceptMap.group.element.target.comment</td>
+    <td>TestCodeConceptMap.group.element.target.dependsOn:other.property
+    <br>TestCodeConceptMap.group.element.target.dependsOn:other.value
+    </td>
 </tr>
 <tr>
     <td> </td>
@@ -302,8 +304,8 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Component, Property, time Aspect, System, Scale Type, Method Type</td>
-    <td>extension-ValueSet.expansion.conctains.property.code
-    <br>extension-ValueSet.expansion.conctains.property.valueCoding.code
+    <td>extension-ValueSet.expansion.conctains.extR5-property.code ("COMPONENT", "PROPERTY", "TIME ASPCT", "SYSTEM", "SCALE TYPE", "METHOD")
+    <br>extension-ValueSet.expansion.conctains.extR5-property.valueCoding.code
     </td>
 </tr>
 </table>
