@@ -53,7 +53,7 @@ Consequently, most appropriate mapping:
 </ul>
 
 <h3> Example#2 - Total Protein (CSF/Urine)</h3>
-This IVD "test kit" is usually named Total Protein (CSF/Urine) and utilized for the analysis of CSF, Random/Spot Urine, or Timed urine (24 hr, 2 hr, etc) specimens.  It is often used to perform body fluid Total Proteins.  However, a different IVD "test kit" is typically used for serum/plasma Total Protein levels, which is out of scope for this example. Note that the LIVD file would NOT contain the local Ask at ORder entry questions (local codes 444 and 555), nor the calculated value for local code 777. CSF=Cerebrospinal Fluid.
+This IVD "test kit" is usually named Total Protein (CSF/Urine) and utilized for the analysis of CSF, Random/Spot Urine, or Timed urine (24 hr, 2 hr, etc) specimens.  It is often used to perform body fluid Total Proteins.  However, a different IVD "test kit" is typically used for serum/plasma Total Protein levels, which is out of scope for this example. Note that the LIVD file would NOT contain the local Ask at Order entry questions (local codes 444 and 555), nor the calculated value for local code 777. CSF=Cerebrospinal Fluid.
 Vendor Analyte Code = 1099 (Total Protein CSF/Ur) is mapped in the LIS to:
 <ul>
    <li> LIS Test Info =  Result Code 111 - Result Name <b>Protein, CSF</b>  Units <b>mg/dL</b> </li>
