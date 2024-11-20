@@ -34,7 +34,7 @@ When displaying the information to those configuring the mappings between IVD Te
          </ul>
        <li> LOINC Code(s)  </li>
           <ul>
-            <li> For each of the suggested LOINC codes for the IVD Test Performed, one should dispay the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.  </li>
+            <li> For each of the suggested LOINC codes for the IVD Test Performed, one should display the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.  </li>
           </ul>
       </ul>  
 </ul>
