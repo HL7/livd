@@ -26,7 +26,7 @@ Note: The IVD Coded Result Value to LOINC Answer codes and SNOMED codes to suppo
     <li> Adding the LIVD suggested mappings, where available, enhances the Laboratory staff's ability to arrive more quickly and correctly at the right LOINC and SNOMED codes.</li>
 </ul>
 
-When the laboratory professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Performed.  Note that, as these are device vendor's suggestions, the expectation is that the suggested mappings are displayed and assist the laboratory staff to narrow the likely options that fit the laboratory's intended use based.  Therefore, the mappings are not suitable for automated configuration. The following example clarifies the information a laboratory professional would use during their configuration.
+When the laboratory professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Performed.  Note that, as these are device vendor's suggestions, the expectation is that the suggested mappings are displayed and assist the laboratory staff to narrow the likely options that fit the laboratory's intended use.  Therefore, the mappings are not suitable for automated configuration. The following example clarifies the information a laboratory professional would use during their configuration.
 
 <h3> Example#1 – Glucose</h3>
 Vendor Analyte Code = 1067 (Gluc) is mapped in the LIS to:
