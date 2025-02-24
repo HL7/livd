@@ -14,7 +14,6 @@ Description: "LIVD value set profile."
 * ^jurisdiction[0].coding[0].code = #001
 * . ^short = "LIVDValueSet"
 * url 1..1 MS
-* identifier 0..0
 * version 1..1 MS
 * name 1..1 MS
 * status 1..1 MS

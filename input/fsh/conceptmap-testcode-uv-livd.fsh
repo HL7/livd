@@ -16,8 +16,6 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * . ^mapping[0].identity = "rim"
 * . ^mapping[0].map = "N/A"
 * url 0..1 MS
-* identifier 0..0
-* identifier ^mustSupport = false
 * name 1..1 MS
 * status 1..1 MS
 * status ^comment = "Only \"Active\" must be supported as it reflects the time of publication.  Others are not valid for that."
@@ -33,7 +31,7 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * purpose ^mustSupport = false
 * copyright 0..0
 * copyright ^mustSupport = false
-* source[x] 1..1 MS
+* source[x] MS
 * source[x] ^comment = "This points to the set of ObservationDefinition resource instances for the device for which the IVD Test Codes are mapped to the suggested LOINC codes."
 * target[x] 1..1 MS
 * target[x] ^comment = "This points to the LIVD value set that contains the target LOINC codes and their properties, used to map the  IVD Test Codes."
