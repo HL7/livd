@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/Bundle
 Id: bundle-uv-livd
 Title: "LIVDBundle"
 Description: "LIVD constraints on the Bundle resource"
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2018-08-14"

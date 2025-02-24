@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/DeviceDefinition
 Id: devicedefinition-uv-livd
 Title: "LIVDDeviceDefinition"
 Description: "Profile on the DeviceDefinition resource for representing the devices included in the LIVD catalog for which mappings are defined."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International / Orders and Observations"

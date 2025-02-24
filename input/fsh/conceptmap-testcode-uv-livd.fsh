@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/ConceptMap
 Id: conceptmap-testcode-uv-livd
 Title: "LIVDTestCodeConceptMap"
 Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to standard LOINC codes."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International / Orders and Observations"

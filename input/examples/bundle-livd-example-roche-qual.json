@@ -554,7 +554,7 @@
         "resourceType": "ValueSet",
         "id": "loinc-livd-roche-qual",
         "url": "http://example.org/roche/livd/ValueSet/loinc-livd-roche-qual",
-        "version": "0.1.0",
+        "version": "1.0.0",
         "name": "RocheQualLivdLoincVS",
         "title": "Roche LOINC value set for LIVD (Qualitative)",
         "status": "active",

@@ -543,7 +543,7 @@
         "resourceType": "ValueSet",
         "id": "loinc-livd-roche-quant",
         "url": "http://example.org/roche/livd/ValueSet/loinc-livd-roche-quant",
-        "version": "0.1.0",
+        "version": "1.0.0",
         "name": "RocheQuantLivdLoincVS",
         "title": "Roche LOINC value set for LIVD (Quantitative)",
         "status": "active",

@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "livd-device-type",
   "url": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-device-type",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "name": "LivdDeviceTypeCS",
   "title": "IVD device types for LIVD device definitions",
   "status": "active",

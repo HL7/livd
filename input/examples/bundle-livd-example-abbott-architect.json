@@ -807,10 +807,10 @@
         "id": "loinc-livd-abbott",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd-abbott</p><p><b>url</b>: https://http://example.org/abbott/livd/livd/ValueSet/loinc-livd-abbott</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: AbbottLivdLoincVS</p><p><b>title</b>: Abbott LOINC value set for LIVD</p><p><b>status</b>: active</p><p><b>date</b>: Sep 25, 2018</p><p><b>description</b>: Includes the subset of LOINC codes that are relevant for this ConceptMap.</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td>-</td><td><b>System</b></td></tr><tr><td>*</td><td><a href=\"http://loinc.org\">http://loinc.org</a></td></tr></table></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd-abbott</p><p><b>url</b>: https://http://example.org/abbott/livd/livd/ValueSet/loinc-livd-abbott</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: AbbottLivdLoincVS</p><p><b>title</b>: Abbott LOINC value set for LIVD</p><p><b>status</b>: active</p><p><b>date</b>: Sep 25, 2018</p><p><b>description</b>: Includes the subset of LOINC codes that are relevant for this ConceptMap.</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td>-</td><td><b>System</b></td></tr><tr><td>*</td><td><a href=\"http://loinc.org\">http://loinc.org</a></td></tr></table></blockquote></div>"
         },
         "url": "https://http://example.org/abbott/livd/livd/ValueSet/loinc-livd-abbott",
-        "version": "0.1.0",
+        "version": "1.0.0",
         "name": "AbbottLivdLoincVS",
         "title": "Abbott LOINC value set for LIVD",
         "status": "active",
