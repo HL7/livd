@@ -4,7 +4,7 @@ Id: valueset-uv-livd
 Title: "LIVDValueSet"
 Description: "LIVD value set profile."
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2020-12-15"
 * ^publisher = "HL7 International / Orders and Observations"

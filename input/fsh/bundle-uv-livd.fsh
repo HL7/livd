@@ -4,7 +4,7 @@ Id: bundle-uv-livd
 Title: "LIVDBundle"
 Description: "LIVD constraints on the Bundle resource"
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International / Orders and Observations"
