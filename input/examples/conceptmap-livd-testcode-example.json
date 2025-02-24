@@ -23,7 +23,6 @@
             ]
         }
     ],
-    "sourceUri": "ObservationDefinition",
     "targetCanonical": "http://example.org/ivd-mfg/loinc-livd",
     "group": [
         {

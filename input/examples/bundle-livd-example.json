@@ -211,7 +211,6 @@
                 "status": "active",
                 "experimental": false,
                 "description": "Livd Concept Map",
-                "sourceUri": "ObservationDefinition",
                 "targetCanonical": "http://example.org/ivd-mfg/loinc-livd",
                 "group": [
                     {
@@ -273,7 +272,7 @@
                 "version": "0.1.0",
                 "name": "LivdLoincVS",
                 "title": "LOINC value set for LIVD",
-                "status": "draft",
+                "status": "active",
                 "experimental": false,
                 "date": "2018-09-25",
                 "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",

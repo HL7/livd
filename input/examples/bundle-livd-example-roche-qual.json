@@ -450,7 +450,6 @@
         "status": "active",
         "experimental": false,
         "description": "Roche Livd Concept Map",
-        "sourceUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd",
         "targetCanonical": "http://example.org/roche/livd/ValueSet/loinc-livd-roche-qual",
         "group": [
           {
@@ -558,7 +557,7 @@
         "version": "0.1.0",
         "name": "RocheQualLivdLoincVS",
         "title": "Roche LOINC value set for LIVD (Qualitative)",
-        "status": "draft",
+        "status": "active",
         "experimental": false,
         "date": "2018-09-25",
         "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
