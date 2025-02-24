@@ -4,8 +4,8 @@
   "url": "http://hl7.org/fhir/uv/livd/ValueSet/livd-section-type",
   "version": "1.0.0",
   "name": "LivdSectionTypeVS",
-  "title": "Types of sections for the LIVD catalog",
-  "status": "draft",
+  "title": "Types of sections for the LIVD catalog VS",
+  "status": "active",
   "experimental": false,
   "publisher": "HL7 International / Orders and Observations",
   "contact": [

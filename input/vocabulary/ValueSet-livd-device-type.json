@@ -4,8 +4,8 @@
   "url": "http://hl7.org/fhir/uv/livd/ValueSet/livd-device-type",
   "version": "1.0.0",
   "name": "LivdDeviceTypeVS",
-  "title": "IVD device types for LIVD device definitions",
-  "status": "draft",
+  "title": "IVD device types for LIVD device definitions VS",
+  "status": "active",
   "experimental": false,
   "publisher": "HL7 International / Orders and Observations",
   "contact": [

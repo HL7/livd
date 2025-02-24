@@ -10,7 +10,7 @@
     "version": "1.0.0",
     "name": "LivdTestCodeMappingsVS",
     "title": "Test code mappings value set for LIVD",
-    "status": "draft",
+    "status": "active",
     "experimental": false,
     "date": "2018-09-25",
     "description": "Includes the subset of LOINC codes for mappings from manufacturer IVD test codes that are relevant for this ConceptMap.",
