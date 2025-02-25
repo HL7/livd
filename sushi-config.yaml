@@ -5,7 +5,7 @@ name: LoincIvdTestCodeMapping
 status: active
 version: 1.0.0
 copyrightYear: 2020+
-releaseLabel: STU 1
+releaseLabel: STU 1 pre-publication
 title: LOINC – IVD Test Code (LIVD) Mapping
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  
