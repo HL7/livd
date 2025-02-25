@@ -2,5 +2,13 @@
 # The group source "codes" are ObservationDefinition resource ids (UUIDs), so there is no source code 'system' url to include
 %No Source Code System, so the source codes cannot be checked
 
-# These extensions do not appear in the ConceptMap instances and cannot be fixed in the IG
-EXTENSION_EXTM_CONTEXT_WRONG_XVER
+# These are references to example local code systems as would be expected to be used by testing equipment vendors, and are not explicitly represented as CodeSystem resources in the IG
+%A definition for CodeSystem 'http://example.org/abbott/livd/ARCHITECT' could not be found, so the code cannot be validated
+%A definition for CodeSystem 'http://example.org/roche/livd/cobas8000' could not be found, so the code cannot be validated
+
+# The elementdefinition-maxValueSet extension is used in the Bundle.language element in the base Bundle resource and it appears only in the snapshot, not in the profile differential.
+INFORMATION: StructureDefinition/bundle-uv-livd: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+
+# The code systems for LIVD device and section type are specific to the LIVD IG and are not anticipated to be moved to THO.
+INFORMATION: CodeSystem/livd-device-type: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+INFORMATION: CodeSystem/livd-section-type: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
