@@ -34,15 +34,18 @@
   "concept": [
     {
       "code": "instrument-test-combination",
-      "display": "Instrument Test Combination (ITC)"
+      "display": "Instrument Test Combination (ITC)",
+      "definition": "The Instrument Test Combination (ITC) IVD device type used in the LIVD catalog."
     },
     {
       "code": "instrument-platform",
-      "display": "Instrument Platform"
+      "display": "Instrument Platform",
+      "definition": "The Instrument Platform IVD device type used in the LIVD catalog."
     },
     {
       "code": "test-kit",
-      "display": "Test Kit"
+      "display": "Test Kit",
+      "definition": "The Test Kit IVD device type used in the LIVD catalog."
     }
   ]
 }

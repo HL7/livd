@@ -34,23 +34,28 @@
   "concept": [
     {
       "code": "devices",
-      "display": "Device Definitions"
+      "display": "Device Definitions",
+      "definition": "Identifies the Device Definitions section of the LIVD catalog."
     },
     {
       "code": "concept-map",
-      "display": "Concept Map"
+      "display": "Concept Map",
+      "definition": "Identifies the Concept Map section of the LIVD catalog."
     },
     {
       "code": "loinc-codes",
-      "display": "LOINC Codes"
+      "display": "LOINC Codes",
+      "definition": "Identifies the LOINC Codes section of the LIVD catalog."
     },
     {
       "code": "ivd-test-codes",
-      "display": "IVD Test Codes"
+      "display": "IVD Test Codes",
+      "definition": "Identifies the IVD Test Codes section of the LIVD catalog."
     },
     {
       "code": "observation-definitions",
-      "display": "Observation Definitions"
+      "display": "Observation Definitions",
+      "definition": "Identifies the Observation Definitions section of the LIVD catalog."
     }
   ]
 }
