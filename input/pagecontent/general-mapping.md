@@ -86,6 +86,19 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
 </tr>
 <tr>
+  <td>Document Identifier the publisher’s identifier for the document</td>
+  <td>Composition.identifier</td>
+</tr>
+<tr>
+    <td>Publication date - the date of publication </td>
+    <td>Composition.date</td>
+</tr>
+<tr>
+  <td> Publisher Statement - a publisher statement about the document</td>
+  <td>extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.note"
+  <br> extension.valueAnnotation</td>
+</tr>
+<tr>
   <td> LOINC Version ID - the version of LOINC that was used for the mapping</td>
   <td> ValueSet.expansion.contains.system.version</td>
   <td>Since a LIVD Catalog can include LOINC codes from different versions</td>
@@ -112,10 +125,6 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
     <td> </td>
     <td>Composition.status</td>
-</tr>
-<tr>
-    <td> </td>
-    <td>Composition.date</td>
 </tr>
 <tr>
     <td> </td>
