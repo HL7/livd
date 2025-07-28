@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/Composition
 Id: catalog-uv-livd
 Title: "LIVDCatalog"
 Description: "Profile on the Composition resource to specify and organize the sections and references to the necessary resource content to express the LIVD catalog."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International / Orders and Observations"

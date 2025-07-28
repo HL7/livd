@@ -1,6 +1,6 @@
 <blockquote class="stu-note">
 <p>
-This specification represents the updates from the first ballot (September 2019) and subsequent addition enabling documentation of Result Value mapping guidance.  It furthermore reflects updates in the "LIVD - Digital Format for Publication of LOINC to Vendor IVD Test Results" specification that is undergoing further updates to reflect Result Value mapping as well.  A draft is available  <a href="https://github.com/HL7/livd/blob/master/input/images/IICC%20LIVD%20Digital%20Format%20v2%20-%20Final%20Draft%20v0.1%20-%2020201113.docx">here</a>.  This is the second STU ballot with the intent to publish LIVD STU R1 version upon completing ballot reconciliaton.
+This specification is the LIVD 1.0.0 release, which represents the updates since the second (December 2020) and third (January 2024) ballots.  It temporarily removes updates that were made in the 0.3.0 (December 2020) version which were intended to support the addition of Result Value mapping guidance.  These updates for supporting Result Value mapping are expected to be brought back and further developed in a subsequent version. The intent is to publish LIVD STU R1 version upon completing the reconciliation for this current January 2024 ballot.
 </p>
 <p>
 Feedback is welcome and may be submitted through the <a href="http://hl7.org/fhir-issues">FHIR Jira tracker</a>
@@ -22,12 +22,17 @@ By voluntarily adopting the format described here as an industry convention, IVD
 
 Ideally it is envisioned that the LOINC codes selected by manufacturers would be reviewed by a common party (e.g. Regenstrief) for correctness and consistency across vendors, and also that the industry would establish conventions for the storage and access of the IVD vendor LOINC publications. The effort required for these objectives will also be reduced by having this standard publication format and associated content.
 
-### Out of Scope
+### Scope
 
-The implementation guide has an **initial** scope that does not address:
+#### In Scope
+The **initial** scope of this implemnentation guide R1 is to support the IICC LIVD 2.0 specification and Excel format described <a href="https://ivdconnectivity.org/livd/">here</a>.
 
-* The mapping of IVD test orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD test orders and IVD test Results are related, information required for IVD test order mapping should be provided by a separate mapping table.
-* The mapping of result values to LOINC and/or SNOMED.
+#### Out of Scope
+
+The following topics are out of scope of this initial, first version R1:
+
+* The mapping of IVD test orders, which requires additional data and alignment on a standardized coding system for orders.  Although IVD test orders and IVD test results are related, information required for IVD test order mapping should be provided by a separate mapping table.
+* The mapping of result values to LOINC answer codes and/or SNOMED.
 * Any long-term or common storage locations hosting the published LOINC codes.
 * Regulatory impacts of vendors providing LOINC codes for their IVD tests.
 * The definition of the specific protocols or technologies that could be used to transmit the industry-defined digital content between IVD and LIS or other systems.

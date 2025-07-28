@@ -3,6 +3,225 @@ fhirVersion: 4.0.1
 id: hl7.fhir.uv.livd
 name: LoincIvdTestCodeMapping
 status: active
-version: 1.0.0-ballot
+version: 1.0.0
 copyrightYear: 2020+
-releaseLabel: ballot
+releaseLabel: STU 1
+title: LOINC – IVD Test Code (LIVD) Mapping
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  
+    valueCode: oo  
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 2
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+publisher:
+  name: HL7 International / Orders and Observations
+contact:
+  - name: HL7 Orders and Observations Workgroup
+    telecom:
+      - system: url
+        value: http://www.hl7.org/Special/committees/orders
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
+description: Recommended LOINC mappings for IVD Devices
+license: CC0-1.0
+parameters:
+  show-inherited-invariants: false
+  apply-contact: false
+  apply-context: true
+  apply-copyright: true
+  apply-jurisdiction: true
+  apply-license: true
+  apply-publisher: false
+  apply-version: true
+  find-other-resources: true
+  jira-code: us-livd
+  auto-oid-root: 2.16.840.1.113883.4.642.40.51
+menu:
+  Table of Contents: toc.html
+  Introduction: index.html
+  General Principles and Design:
+    LOINC Mapping Summary: general-summary.html
+    LIVD Concepts: general-concepts.html
+    LIVD Data Definitions: general-definitions.html
+    LIVD Data Mapping to FHIR: general-mapping.html
+    Implementation Considerations: general-implementation.html
+    IP Acknowledgements & IG Analysis: analysis.html
+  Artifacts: artifacts.html
+  Glossary: glossary.html
+  Acknowledgements: acknowledgements.html
+  Downloads: downloads.html
+  Core FHIR Spec: http://hl7.org/fhir/R4/index.html
+groups:
+  profiles:
+    name: Profiles
+    description: Profiles to be supported by IVD Device manufacturers and Labs conforming to this implementation guide.
+  extensions:
+    name: Extensions
+    description: Extensions defined as part of this implementation guide.
+  terminology:
+    name: Terminology
+    description: Value Sets and/or code systems defined as part of this implementation guide.  
+      The "LOINC Code System fragment for LIVD" CodeSystem resource contains a subset of LOINC codes.
+      The actual set of LOINC codes that will be used in a LIVD bundle instance would be based on the specific 
+      devices and LOINC mappings that are included.  This content is duplicated for LIVD to provide the source of
+      all of the needed content fully contained within the LIVD bundle.
+  examples:
+    name: Example(s)
+    description: Example(s) showing the use of the LIVD profiles.  DRAFT content not to be used for actual LOINC mappings.
+resources:
+  StructureDefinition/valueset-uv-livd:
+    name: LIVD ValueSet
+    description: ValueSet profile for the LIVD project.
+    exampleBoolean: false
+    groupingId: profiles
+  StructureDefinition/bundle-uv-livd:
+    name: LIVD Bundle
+    description: Bundle profile for the LIVD project.
+    exampleBoolean: false
+    groupingId: profiles
+  StructureDefinition/catalog-uv-livd:
+    name: LIVD Catalog
+    description: Catalog profile for the LIVD project.
+    exampleBoolean: false
+    groupingId: profiles
+  StructureDefinition/observationdefinition-uv-livd:
+    name: LIVD ObservationDefinition
+    description: ObservationDefinition profile for the LIVD project.
+    exampleBoolean: false
+    groupingId: profiles
+  StructureDefinition/devicedefinition-uv-livd:
+    name: LIVD DeviceDefinition
+    description: DeviceDefinition profile for the LIVD project.
+    exampleBoolean: false
+    groupingId: profiles
+  StructureDefinition/conceptmap-testcode-uv-livd:
+    name: LIVD Test Code ConceptMap
+    description: ConceptMap Test Code profile for the LIVD project.
+    exampleBoolean: false
+    groupingId: profiles
+  StructureDefinition/ext-analyte:
+    name: LIVD Test Analyte
+    description: Test Analyte extension for the LIVD project
+    exampleBoolean: false
+    groupingId: extensions
+  StructureDefinition/ext-device:
+    name: LIVD Device
+    description: Device extension for the LIVD project
+    exampleBoolean: false
+    groupingId: extensions
+  StructureDefinition/ext-vendorReferenceIdentifier:
+    name: LIVD Vendor Reference Identifier
+    description: Vendor Reference Identifier extension for the LIVD project
+    exampleBoolean: false
+    groupingId: extensions
+  StructureDefinition/ext-region:
+    name: LIVD Region
+    description: Region extension for the LIVD project
+    exampleBoolean: false
+    groupingId: extensions
+  ValueSet/testcode-mappings-livd:
+    name: LIVD Test Code Mappings value set
+    description: Includes the subset of LOINC codes for mappings from manufacturer IVD test codes that are relevant for this ConceptMap.
+    exampleCanonical: http://hl7.org/fhir/uv/livd/StructureDefinition/valueset-uv-livd
+    groupingId: terminology
+  CodeSystem/livd-section-type:
+    name: LIVD section type code system
+    description: Includes the allowed section types for the LIVD catalog.
+    exampleBoolean: false
+    groupingId: terminology
+  ValueSet/livd-section-type:
+    name: LIVD section type value set
+    description: Includes the allowed section types for the LIVD catalog.
+    exampleBoolean: false
+    groupingId: terminology
+  ValueSet/livd-bundle-type:
+    name: LIVD bundle type value set
+    description: Allowed types of bundles for the LIVD catalog
+    exampleBoolean: false
+    groupingId: terminology
+  CodeSystem/livd-device-type:
+    name: LIVD device type code system
+    description: IVD device types for LIVD device definitions (extensible).
+    exampleBoolean: false
+    groupingId: terminology
+  ValueSet/livd-device-type:
+    name: LIVD device type value set
+    description: IVD device types for LIVD device definitions (extensible).
+    exampleBoolean: false
+    groupingId: terminology
+  Bundle/livd-example:
+    name: LIVD example bundle
+    description: Example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.
+      This content is not to be used for actual LOINC mappings.
+    exampleCanonical: http://hl7.org/fhir/uv/livd/StructureDefinition/catalog-uv-livd
+    groupingId: examples
+  Bundle/livd-example-abbott-architect:
+    name: Abbott ARCHITECT LIVD example bundle
+    description: Abbott ARCHITECT example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Abbott manufacturer mappings.
+        This content is not to be used for actual LOINC mappings.
+    exampleBoolean: true
+    groupingId: examples
+  Bundle/livd-example-roche-qual:
+    name: Roche qualitative LIVD example bundle
+    description: Roche qualitative example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Roche manufacturer mappings.
+      This content is not to be used for actual LOINC mappings.
+    exampleBoolean: true
+    groupingId: examples
+  Bundle/livd-example-roche-quant:
+    name: Roche quantitative LIVD example bundle
+    description: Roche quantitative example LIVD publication bundle.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual Roche manufacturer mappings.
+      This content is not to be used for actual LOINC mappings.
+    exampleBoolean: true
+    groupingId: examples
+  ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7:
+    name: LIVD example Test Code ConceptMap
+    description: Example LIVD Test Code ConceptMap.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.
+      This content is not to be used for actual LOINC mappings.
+    exampleCanonical: http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-testcode-uv-livd
+    groupingId: examples
+  DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165:
+    name: LIVD example DeviceDefinition
+    description: Example LIVD DeviceDefinition.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.
+      This content is not to be used for actual LOINC mappings.
+    exampleCanonical: http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd
+    groupingId: examples
+  ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2:
+    name: LIVD example ObservationDefinition
+    description: Example LIVD ObservationDefinition.  DRAFT - Unofficial Content For FHIR LIVD Examples Only; content does not represent actual manufacturer mappings.
+      This content is not to be used for actual LOINC mappings.
+    exampleCanonical: http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd
+    groupingId: examples
+pages:
+  index.html:
+    title: LIVD Introduction
+    generation: markdown
+  general-summary.html:
+    title: LOINC Mapping Summary
+    generation: markdown
+  general-concepts.html:
+    title: LIVD Concepts
+    generation: markdown
+  general-definitions.html:
+    title: LIVD Data Definitions
+    generation: markdown
+  general-mapping.html:
+    title: LIVD Data Mapping to FHIR
+    generation: markdown
+  general-implementation.html:
+    title: Implementation Considerations
+    generation: markdown
+  analysis.html:
+    title: IP Acknowledgements & IG Analysis
+    generation: markdown
+  artifacts.html:
+    title: Artifact List
+    generation: html
+  glossary.html:
+    title: Glossary
+    generation: markdown
+  acknowledgements.html:
+    title: Acknowledgements
+    generation: markdown
+  downloads.html:
+    title: Downloads
+    generation: markdown

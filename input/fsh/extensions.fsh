@@ -2,7 +2,7 @@ Extension: LIVDDevice
 Id: ext-device
 Title: "LIVD Device"
 Description: "Add a reference from the ObservationDefinition to the Device."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^publisher = "HL7 International / Orders and Observations"
 * ^contact[0].telecom[0].system = #url
 * ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"
@@ -18,7 +18,7 @@ Extension: LIVDTestAnalyte
 Id: ext-analyte
 Title: "LIVD Test Analyte"
 Description: "Add a reference from DeviceDefinition.capability to one or more ObservationDefinition resources representing test analytes that may be measured."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^publisher = "HL7 International / Orders and Observations"
 * ^contact[0].telecom[0].system = #url
 * ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"
@@ -34,7 +34,7 @@ Extension: LIVDVendorReferenceIdentifier
 Id: ext-vendorReferenceIdentifier
 Title: "LIVD Vendor Reference Identifier"
 Description: "Add a vendor reference identifier to ObservationDefinition."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^publisher = "HL7 International / Orders and Observations"
 * ^contact[0].telecom[0].system = #url
 * ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"
@@ -53,7 +53,7 @@ Extension: LIVDRegion
 Id: ext-region
 Title: "LIVD Region"
 Description: "Provides the region(s), such as country, state, continent, set of countries or states, where the LIVD Mapping Publication applies."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^publisher = "HL7 International / Orders and Observations"
 * ^contact[0].telecom[0].system = #url
 * ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"

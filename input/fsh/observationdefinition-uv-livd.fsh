@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/ObservationDefinition
 Id: observationdefinition-uv-livd
 Title: "LIVDObservationDefinition"
 Description: "Profile on the ObservationDefinition resource for representing the analytes that can be measured by the included devices for which the test codes and applicable result values are mapped."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International / Orders and Observations"

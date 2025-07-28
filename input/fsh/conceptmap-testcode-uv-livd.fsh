@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/ConceptMap
 Id: conceptmap-testcode-uv-livd
 Title: "LIVDTestCodeConceptMap"
 Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to standard LOINC codes."
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2018-08-14"
 * ^publisher = "HL7 International / Orders and Observations"
@@ -16,24 +16,14 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * . ^mapping[0].identity = "rim"
 * . ^mapping[0].map = "N/A"
 * url 0..1 MS
-* identifier 0..0
-* identifier ^mustSupport = false
-* version 0..0
-* version ^mustSupport = false
 * name 1..1 MS
-* title 0..0
-* title ^mustSupport = false
 * status 1..1 MS
 * status ^comment = "Only \"Active\" must be supported as it reflects the time of publication.  Others are not valid for that."
-* experimental 0..0
-* experimental ^mustSupport = false
 * date ^mustSupport = false
 * publisher 0..0
 * publisher ^mustSupport = false
 * contact 0..0
 * contact ^mustSupport = false
-* description 0..0
-* description ^mustSupport = false
 * useContext 0..0
 * useContext ^mustSupport = false
 * jurisdiction ^mustSupport = false
@@ -41,7 +31,7 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * purpose ^mustSupport = false
 * copyright 0..0
 * copyright ^mustSupport = false
-* source[x] 1..1 MS
+* source[x] MS
 * source[x] ^comment = "This points to the set of ObservationDefinition resource instances for the device for which the IVD Test Codes are mapped to the suggested LOINC codes."
 * target[x] 1..1 MS
 * target[x] ^comment = "This points to the LIVD value set that contains the target LOINC codes and their properties, used to map the  IVD Test Codes."
@@ -65,6 +55,12 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * group.element.target 0..* MS
 * group.element.target ^short = "Identifies the LOINC code being mapped to"
 * group.element.target ^definition = "A reference to the LOINC code being mapped to, including mapping criteria."
+* group.element.target ^constraint[0].key = "livd-1"
+* group.element.target ^constraint[0].severity = #error
+* group.element.target ^constraint[0].human = "If the dependsOn is valued, either the code or display must be present"
+* group.element.target ^constraint[0].expression = "(dependsOn.exists() and (code.exists() or display.exists())) or dependsOn.empty()"
+* group.element.target ^constraint[0].xpath = "(exists(f:dependsOn) and (exists(f:code) or exists(f:display))) or !exists(f:dependsOn)"
+* group.element.target ^constraint[0].source = "http://hl7.org/fhir/uv/livd/StructureDefinition/conceptmap-testcode-uv-livd"
 * group.element.target.code 1..1 MS
 * group.element.target.code ^short = "Code that identifies the LOINC Code"
 * group.element.target.code ^definition = "Identity (code or path) the LOINC Code that the map refers to."
@@ -81,11 +77,6 @@ Description: "ConceptMap profile for mappoings of manufacturer IVD test codes to
 * group.element.target.dependsOn ^slicing.rules = #open
 * group.element.target.dependsOn ^comment = "Either .code or .display must be valued.\nThere must be both a specimen and result related description."
 * group.element.target.dependsOn ^condition[0] = "livd-1"
-* group.element.target.dependsOn ^constraint[0].key = "livd-1"
-* group.element.target.dependsOn ^constraint[0].severity = #error
-* group.element.target.dependsOn ^constraint[0].human = "If the dependsOn is valued, either the code or display must be present"
-* group.element.target.dependsOn ^constraint[0].expression = "(group.element.target.dependsOn.exists() and (group.element.target.code.exists() or group.element.target.display.exists())) or group.element.target.dependsOn.empty()"
-* group.element.target.dependsOn ^constraint[0].xpath = "(exists(f:group.element.target.dependsOn) and (exists(f:group.element.target.code) or exists(f:group.element.target.display))) or !exists(f:group.element.target.dependsOn)"
 * group.element.target.dependsOn contains specimen 0..1 MS
 * group.element.target.dependsOn[specimen] ^short = "The property for specimen"
 * group.element.target.dependsOn[specimen].property 1..1 MS

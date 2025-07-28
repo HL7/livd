@@ -3,8 +3,8 @@ Parent: http://hl7.org/fhir/StructureDefinition/ValueSet
 Id: valueset-uv-livd
 Title: "LIVDValueSet"
 Description: "LIVD value set profile."
-* ^version = "1.0.0-ballot"
-* ^status = #draft
+* ^version = "1.0.0"
+* ^status = #active
 * ^experimental = false
 * ^date = "2020-12-15"
 * ^publisher = "HL7 International / Orders and Observations"
@@ -14,17 +14,14 @@ Description: "LIVD value set profile."
 * ^jurisdiction[0].coding[0].code = #001
 * . ^short = "LIVDValueSet"
 * url 1..1 MS
-* identifier 0..0
 * version 1..1 MS
 * name 1..1 MS
 * status 1..1 MS
-* experimental 0..0
 * publisher 0..0
 * contact 0..0
 * useContext 0..0
 * immutable 0..0
 * purpose 0..0
-* copyright 0..0
 * compose 1..1 MS
 * compose.lockedDate 0..0
 * compose.inactive 0..0

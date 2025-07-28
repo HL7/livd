@@ -13,40 +13,20 @@ This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standar
 
 The concepts described above are mapped to a number of FHIR resources that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
 
-![LIVD Profile Structure](LIVD_Profile_Structure - Version 2.jpg)
+![LIVD Profile Structure](LIVD_Profile_Structure - Version 1.jpg)
 
 * LIVD Bundle - Packages all relevant resources of the LIVD Catalog.
-* LIVD Catalog Profile - This provides the information about the LIVD Publication.  The profile is based on the Catalog profile based on the Composition resource.   Note that, while the LIVD Catalog Profile does some organization of the resources, there is no need for representing the format of the data.  The formatting and presentation is left to the client consuming these resources.
+* LIVD Catalog Profile - This provides the information about the LIVD Publication.  The profile is based on the Catalog profile that is based on the Composition resource.   Note that, while the LIVD Catalog Profile does some organization of the resources, there is no need for representing the format of the data.  The formatting and presentation is left to the client consuming these resources.
 * LIVD Device Definition Profile - This profile reflects the equipment (device) that is represented in the publication.  
    * (A) Each LIVD publication must include at least one device, and can cover many.
-* LIVD Device Observation Definition - This profile reflects the IVD Test Performeds that each device can produce.
-  * (B) Each LIVD Device Definition has the capability to perform at least one observation, i.e., IVD Test Performed.
-* LIVD Test Concept Map Profile - This profile supports the data necessary to document the actual mapping between the IVD Test Performed for a device and the LOINC codes to consider.
-   * (C) A LIVD Test Concept Map must be associated with at least one LIVD Device Definition.  It may represent multiple LIVD Device Definitions where, e.g., different models performing the same tests could share the same map.
-   * The ConceptMap.source reflects the IVD Test Performed's code and must exist (D) as a LIVD Device Observation Definition.
-   * The ConceptMap.target reflects the LOINC code that the IVD Test Performed's code maps to, as well as context information to aid in the mapping such as result, specimen or other considerations.
-      * An IVD Test Performed may not have a mapping (e.g., no LOINC code available yet), one, or more.
-* LIVD LOINC Value Set Profile - This profile supports the applicable LOINC codes from the LOINC Code System that is relevant to the mapping process.
-      * (E) Each LOINC code in the LIVD Test Concept Map must exist in the LIVD LOINC Value Set.
-* LIVD LOINC Code System Profile - This profile supports the relevant LOINC Code System data to assist in the mapping process.  This enables the mapping process to be off-line as needed.
-   * (F) Each LOINC Code in the LIVD LOINC Value Set must exist in the LIVD LOINC Code System
-* LIVD Coded Result Value Set Sub-Set Profile - This profile supports the non-quantitative, coded values that an IVD Test can yield as the observation value.
-   * (G) Each LIVD Device Observation Definition can only reference one Result Value Value Set Sub Set.
-   * (H) Each LIVD Coded Result Value Value Set Sub Set may further reference another LIVD Coded Result Value Value Set Sub Set to ease configuration and re-use.
-* LIVD Coded Result Value Code System Profile - This profile contains the full set of result values used across devices sharing the same result value definitions.
-   * (I) Each LIVD Coded Result Value in the LIVD Coded Result Value Value Set Sub Set must exist in the LIVD Coded Result Value Code System
-* LIVD Coded Result Value Value Set Super-Set Profile - This profile is used to eas the mapping definitions by aggregating the all LIVD Coded Result Values to be mapped.
-   * (J) Each LIVD Coded Result Value in the LIVD Coded Result Value Value Set Super Set must exist in the LIVD Coded Result Value Code System
-* LIVD Coded Result Value Concept Map Profile - This profile contains the mappings from the IVD Test Coded Result Values to the respective SNOMED and/or LOINC codes
-   * The ConceptMap.source reflects the IVD Coded Result Value and must exist in the LIVD Coded Result Value Value Set Super Set (K) in the context of the LIVD Coded Result Value Value Set Subset (L) for the LIVD Device Observation Definition at hand.
-   * The ConceptMap.target reflects the SNOMED and/or LOINC Answer codes that the IVD Test's code maps to.  Although an IVD Coded Result Value can have both a SNOMED and a LOINC Answer code representation, it can only be mapped to one or the other based on for the actual coded result value for the test performed.
-* LIVD LOINC Answer Value Set Profile - This profile supports the applicable LOINC codes from the LOINC Code System that is relevant to the mapping process.
-   * (M) Each LOINC code in the LIVD Coded Result Value Concept Map must exist in the LIVD LOINC Answer Value Set or the LIVD SNOMED Value Set.
-   * (N) Each LIVD LOINC Answer code must exist in the LIVD LOINC Code System.
-* LIVD SNOMED Code System Profile - This profile supports the relevant SNOMED Code System data to assist in the mapping process.  This enables the mapping process to be off-line as needed.
-   * (O) Each LIVD SNOMED code must exist in the LIVD SNOMED Code Sysetm.
-
- 
+* LIVD Device Observation Definition - This profile reflects the IVD Test Performed that each device can produce.
+   * (B) Each LIVD Device Definition has the capability to perform at least one observation, i.e., IVD Test Performed.
+* LIVD Test Concept Map Profile - This profile supports the data necessary to document the actual mapping between the IVD Test for a device and the LOINC codes to consider.
+   * (C) A LIVD Test Code Concept Map must be associated with at least one LIVD Device Definition.  It may represent multiple LIVD Device Definitions where, e.g., different models performing the same tests could share the same map.
+   * The ConceptMap.source reflects the IVD Test Performed and must exist (D) as a LIVD Device Observation Definition.
+   * The ConceptMap.target and ConceptMap.group reflects the LOINC code or codes that the IVD Test Performed's code maps to, including context information to aid in the mapping such as result, specimen or other considerations.
+   * The ConceptMap.traget references through (E) the value set where the LOINC codes used in the LIVD catalog are further defined.
+   * An IVD Test Performed may not have a mapping (e.g., no LOINC code available yet), one, or more.
 
 The LIVD Bundle Profile will enable packaging of the resources.
 
@@ -84,19 +64,6 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
       <br>Composition.type.coding.version
       <br>Composition.type.coding.system</td>
     <td>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
-</tr>
-<tr>
-  <td>Document Identifier the publisher’s identifier for the document</td>
-  <td>Composition.identifier</td>
-</tr>
-<tr>
-    <td>Publication date - the date of publication </td>
-    <td>Composition.date</td>
-</tr>
-<tr>
-  <td> Publisher Statement - a publisher statement about the document</td>
-  <td>extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.note"
-  <br> extension.valueAnnotation</td>
 </tr>
 <tr>
   <td> LOINC Version ID - the version of LOINC that was used for the mapping</td>
@@ -216,7 +183,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Specimen Description - human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.”</td>
-    <td>ConceptMap.group.element.target.dependsOn:specimen.property
+    <td>ConceptMap.group.element.target.dependsOn:other.property
     <br>ConceptMap.group.element.target.dependsOn:specimen.value
     </td>
 </tr>
@@ -231,15 +198,15 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     </td>
 </tr>
 <tr>
-    <td>Vendor Device Description</td>
+    <td>Vendor Device Description</dt>
     <td>ConceptMap.group.element.target.dependsOn:device.property
     <br>ConceptMap.group.element.target.dependsOn:device.value
     </td>
 </tr>
 <tr>
     <td>Vendor Comment - human-readable text clarification, such as “This is a STAT (prioritized) version of the test”.</td>
-    <td>TestCodeConceptMap.group.element.target.dependsOn:other.property
-    <br>TestCodeConceptMap.group.element.target.dependsOn:other.value
+    <td>ConceptMap.group.element.target.dependsOn:other.property
+    <br>ConceptMap.group.element.target.dependsOn:other.value
     </td>
 </tr>
 <tr>
@@ -271,22 +238,15 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>ConceptMap.group.element.target.display</td>
 </tr>
 <tr>
- <td><b><i>Test Result Values</i></b></td>
- </tr>
-<tr>
- <td>Vendor Test Result Value Code</td>	
- <td>to be provided</td>
+ <td><b><i>Test Code Value Set</i></b></td>
 </tr>
 <tr>
- <td>Vendor Test Result Value Code Name</td>
- <td>to be provided</td>
+    <td></td>
+    <td>ValueSet.version</td>
 </tr>
 <tr>
- <td>Vendor Test Result Value Coding System</td>	
- <td>to be provided</td>
-</tr>
-<tr>
-    <td><b><i>LOINC Code System</i></b></td>
+    <td></td>
+    <td>ValueSet.status</td>
 </tr>
 <tr>
  <td><b><i>Test Code Value Set</i></b></td>

@@ -1,8 +1,7 @@
 <h3> Workflow Considerations </h3>
 The main goal of this IG is the definition of the proper data exchange format. The following provides a general process context from the initial creation of the LIVD Catalog and its use by the laboratory.
 
-The device manufacturer creates the LIVD mappings based on their intended use of IVD Test Performed and Coded Result Values relative to the appropriate LOINC and/or SNOMED codes.  The manufacturer is expected to make the LIVD Catalog available in accordance with this LIVD IG defined format.
-The FHIR-based LIVD Catalog mwy actually be generated from a spreadsheet based mapping based on the LOINC transmission document for IVDs (LIVD) standard, which is a standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC).  They may use their own spreadsheet formats as well.
+The device manufacturer creates the LIVD mappings based on their intended use of IVD Test Performed and Coded Result Values relative to the appropriate LOINC and/or SNOMED codes. The manufacturer is expected to make the LIVD Catalog available in accordance with this LIVD IG defined format. The FHIR-based LIVD Catalog mwy actually be generated from a spreadsheet based mapping based on the LOINC transmission document for IVDs (LIVD) standard, which is a standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC). They may use their own spreadsheet formats as well.
 
 The manufacturer may provide the LIVD Catalog using any of the following methods and may include a spreadsheet format as well for human readability when not used in its electronic form by the receiver:
 
@@ -19,17 +18,17 @@ A laboratory may receive the LIVD Catalog in varying forms, directly from the ma
 * the LIS queries for the LIVD catalog entries for the device being configured and either displays the mappings, or may suggest a mapping based on other information available in the LIS for the device and intended tests at hand
 
 <h3> Display Considerations </h3>
-When the receiver is an electronic system, LIS or otherwise, it will determine how best to display the content to the user to aid in their configuration of LIS test codes and the use of LOINC and/or SNOMED. When displaying the information one must consider the relevant data to assist in the mapping.  We provide the following guidance for consideration:
+When displaying the information to those configuring the mappings between IVD Test Performed and the appropriate LOINC codes, one must consider the relevant data to assist in the mapping.  We provide the following guidance for consideration:
 
 <ul>
    <li> General </li>
      <ul>
-       <li> Whenever external code systems are being displayed (e.g. LOINC and SNOMED CT) care should be taken to follow the rules in the respective license agreement.  For LOINC see <a href="https://loinc.org/license/">this guidance</a>.  For SNOMED see <a href="https://www.snomed.org/snomed-ct/get-snomed">this guidance</a>. One may want to link to the proper web page, or make otherwise easily accessible.</li>
+       <li> Whenever external code systems are being displayed (e.g. LOINC and SNOMED CT) care should be taken to follow the rules in the respective license agreement.  For LOINC see <a href="https://loinc.org/license/">this guidance</a>. 
        <li> Whenever the information is made available in multiple languages, one may make alternate languages available from the default language for the laboratory.</li>
      </ul>
    <li> Test Codes </li>
      <ul>
-       <li> IVD Test Performed  </li>
+       <li> IVD Test Performed </li>
           <ul>
             <li> IVD Test Performed, particularly when presented from a multi-vendor catalog, should clearly be associated and recognized as belonging to a specific device model (including equipment UID and type), and the device vendor.</li>
          </ul>
@@ -38,15 +37,4 @@ When the receiver is an electronic system, LIS or otherwise, it will determine h
             <li> For each of the suggested LOINC codes for the IVD Test Performed, one should display the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.  </li>
           </ul>
       </ul>  
-<li> Answer Values  </li>
-     <ul>
-        <li> Vendor Values  </li>
-           <ul>
-            <li> Vendor Values should clearly be recognized as belonging to a specific IVD Test Performed for a particular device model (including equipment UID and type), and the device vendor.</li>
-           </ul>  
-        <li> SNOMED Codes and/or LOINC Codes  </li>
-           <ul>
-              <li> While typically only SNOMED code or LOINC codes are presented based on local vocabulary choices, if both are made available not all vendor values may have a corresponding SNOMED and/or LOINC code.  On should therefore consider clearly distinguish either mapping by using columns or separate lists.</li> 
-           </ul>
-     </ul>  
 </ul>

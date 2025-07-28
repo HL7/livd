@@ -2,12 +2,22 @@
   "resourceType": "CodeSystem",
   "id": "livd-section-type",
   "url": "http://hl7.org/fhir/uv/livd/CodeSystem/livd-section-type",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "name": "LivdSectionTypeCS",
   "title": "Types of sections for the LIVD catalog",
   "status": "active",
   "experimental": false,
-  "publisher": "HL7 International - Orders and Observations Work Group",
+  "publisher": "HL7 International / Orders and Observations",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
   "description": "Types of sections for the LIVD catalog",
   "jurisdiction": [
     {
@@ -19,27 +29,33 @@
       ]
     }
   ],
+  "caseSensitive": false,
   "content": "complete",
   "concept": [
     {
       "code": "devices",
-      "display": "Device Definitions"
+      "display": "Device Definitions",
+      "definition": "Identifies the Device Definitions section of the LIVD catalog."
     },
     {
       "code": "concept-map",
-      "display": "Concept Map"
+      "display": "Concept Map",
+      "definition": "Identifies the Concept Map section of the LIVD catalog."
     },
     {
       "code": "loinc-codes",
-      "display": "LOINC Codes"
+      "display": "LOINC Codes",
+      "definition": "Identifies the LOINC Codes section of the LIVD catalog."
     },
     {
       "code": "ivd-test-codes",
-      "display": "IVD Test Codes"
+      "display": "IVD Test Codes",
+      "definition": "Identifies the IVD Test Codes section of the LIVD catalog."
     },
     {
       "code": "observation-definitions",
-      "display": "Observation Definitions"
+      "display": "Observation Definitions",
+      "definition": "Identifies the Observation Definitions section of the LIVD catalog."
     }
   ]
 }

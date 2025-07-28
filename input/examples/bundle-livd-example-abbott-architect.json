@@ -7,7 +7,7 @@
     ]
   },
   "identifier": {
-    "system": "https://www.corelaboratory.abbott",
+    "system": "https://http://example.org/abbott/livd",
     "value": "a809e430-5d17-4248-b595-d575fea6eb10"
   },
   "type": "transaction",
@@ -28,7 +28,7 @@
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 40baf389-d34c-4402-8589-59cd48095584</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: ARCHITECT CC v0.9.0</p><p><b>status</b>: final</p><p><b>type</b>: LIVD mapping data set <span style=\"background: LightGoldenRodYellow\">(Details : {http://loinc.org code '90370-8' = '90370-8', given as 'LIVD mapping data set'})</span></p><p><b>date</b>: Sep 12, 2018</p><p><b>author</b>: Abbott</p><p><b>title</b>: Abbott LIVD HL7 Connectathon</p></div>"
         },
         "identifier": {
-          "system": "https://www.corelaboratory.abbott",
+          "system": "https://http://example.org/abbott/livd",
           "value": "ARCHITECT CC v0.9.0",
           "assigner": {
             "display": "Abbott Diagnostics"
@@ -339,7 +339,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org/abbott/livd/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
         },
         "extension": [
           {
@@ -370,7 +370,7 @@
         "code": {
           "coding": [
             {
-              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "system": "http://example.org/abbott/livd/ARCHITECT",
               "code": "1069",
               "display": "GluC"
             }
@@ -394,7 +394,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org/abbott/livd/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
         },
         "extension": [
           {
@@ -425,7 +425,7 @@
         "code": {
           "coding": [
             {
-              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "system": "http://example.org/abbott/livd/ARCHITECT",
               "code": "1095",
               "display": "GluCU"
             }
@@ -449,7 +449,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org/abbott/livd/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
         },
         "extension": [
           {
@@ -480,7 +480,7 @@
         "code": {
           "coding": [
             {
-              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "system": "http://example.org/abbott/livd/ARCHITECT",
               "code": "2843",
               "display": "Opi3Q"
             }
@@ -504,7 +504,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.corelaboratory.abbott/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 46088aef-7bea-4832-9296-66051eb7d12e</p><p><b>meta</b>: </p><p><b>code</b>: GluC <span style=\"background: LightGoldenRodYellow\">(Details : {http://example.org/abbott/livd/ARCHITECT code '1069' = '1069', given as 'GluC'})</span></p></div>"
         },
         "extension": [
           {
@@ -535,7 +535,7 @@
         "code": {
           "coding": [
             {
-              "system": "http://www.corelaboratory.abbott/ARCHITECT",
+              "system": "http://example.org/abbott/livd/ARCHITECT",
               "code": "2844",
               "display": "Opi2Q"
             }
@@ -559,15 +559,19 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>meta</b>: </p><p><b>url</b>: ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>status</b>: active</p><p><b>source</b>: ObservationDefinition</p><p><b>target</b>: https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott</p><blockquote><p><b>group</b></p><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 14749-6</p><p><b>display</b>: Glucose [Moles/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mmol/L</p></blockquote></blockquote></blockquote><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 2345-7</p><p><b>display</b>: Glucose [Mass/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mg/dL</p></blockquote></blockquote></blockquote></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>meta</b>: </p><p><b>url</b>: ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7</p><p><b>status</b>: active</p><p><b>source</b>: ObservationDefinition</p><p><b>target</b>: https://http://example.org/abbott/livd/livd/ValueSet/loinc-livd-abbott</p><blockquote><p><b>group</b></p><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 14749-6</p><p><b>display</b>: Glucose [Moles/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mmol/L</p></blockquote></blockquote></blockquote><blockquote><p><b>element</b></p><p><b>code</b>: b87458ca-b29a-4244-b347-39111caf9ef2</p><p><b>display</b>: GluC</p><blockquote><p><b>target</b></p><p><b>code</b>: 2345-7</p><p><b>display</b>: Glucose [Mass/volume] in Serum or Plasma</p><p><b>equivalence</b>: equivalent</p><blockquote><p><b>dependsOn</b></p><p><b>property</b>: specimen</p><p><b>value</b>: Serum/Plasma</p></blockquote><blockquote><p><b>dependsOn</b></p><p><b>property</b>: result</p><p><b>value</b>: mg/dL</p></blockquote></blockquote></blockquote></blockquote></div>"
         },
-        "url": "https://www.corelaboratory.abbott/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+        "url": "https://http://example.org/abbott/livd/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+        "version": "1.0.0",
         "name": "AbbottArchitectLivdConceptMap",
+        "title": "Abbott Architect Livd Concept Map",
         "status": "active",
-        "sourceUri": "http://hl7.org/fhir/uv/livd/StructureDefinition/observationdefinition-uv-livd",
-        "targetCanonical": "https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott",
+        "experimental": false,
+        "description": "Abbott Architect Livd Concept Map",
+        "targetCanonical": "https://http://example.org/abbott/livd/livd/ValueSet/loinc-livd-abbott",
         "group": [
           {
+            "target": "http://loinc.org",
             "element": [
               {
                 "code": "b87458ca-b29a-4244-b347-39111caf9ef2",
@@ -803,13 +807,14 @@
         "id": "loinc-livd-abbott",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd-abbott</p><p><b>url</b>: https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: AbbottLivdLoincVS</p><p><b>title</b>: Abbott LOINC value set for LIVD</p><p><b>status</b>: draft</p><p><b>date</b>: Sep 25, 2018</p><p><b>description</b>: Includes the subset of LOINC codes that are relevant for this ConceptMap.</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td>-</td><td><b>System</b></td></tr><tr><td>*</td><td><a href=\"http://loinc.org\">http://loinc.org</a></td></tr></table></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: loinc-livd-abbott</p><p><b>url</b>: https://http://example.org/abbott/livd/livd/ValueSet/loinc-livd-abbott</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: AbbottLivdLoincVS</p><p><b>title</b>: Abbott LOINC value set for LIVD</p><p><b>status</b>: active</p><p><b>date</b>: Sep 25, 2018</p><p><b>description</b>: Includes the subset of LOINC codes that are relevant for this ConceptMap.</p><blockquote><p><b>compose</b></p><h3>Includes</h3><table class=\"grid\"><tr><td>-</td><td><b>System</b></td></tr><tr><td>*</td><td><a href=\"http://loinc.org\">http://loinc.org</a></td></tr></table></blockquote></div>"
         },
-        "url": "https://www.corelaboratory.abbott/livd/ValueSet/loinc-livd-abbott",
-        "version": "0.1.0",
+        "url": "https://http://example.org/abbott/livd/livd/ValueSet/loinc-livd-abbott",
+        "version": "1.0.0",
         "name": "AbbottLivdLoincVS",
         "title": "Abbott LOINC value set for LIVD",
-        "status": "draft",
+        "status": "active",
+        "experimental": false,
         "date": "2018-09-25",
         "description": "Includes the subset of LOINC codes that are relevant for this ConceptMap.",
         "compose": {
@@ -870,679 +875,6 @@
       "request": {
         "method": "POST",
         "url": "ValueSet/loinc-livd-abbott"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:b1d0643e-5c5b-4d73-b598-62265aa5d19b",
-      "resource": {
-        "resourceType": "CodeSystem",
-        "id": "loinc-fragment-livd-abbott",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/livd/StructureDefinition/codesystem-loinc-frag-uv-livd"
-          ]
-        },
-        "url": "http://loinc.org",
-        "identifier": [
-          {
-            "system": "urn:ietf:rfc:3986",
-            "value": "urn:oid:2.16.840.1.113883.6.1"
-          }
-        ],
-        "version": "2.65",
-        "name": "LOINC",
-        "title": "LOINC Code System",
-        "status": "active",
-        "publisher": "Regenstrief Institute, Inc.",
-        "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
-        "caseSensitive": false,
-        "content": "fragment",
-        "property": [
-          {
-            "code": "COMPONENT",
-            "uri": "http://loinc.org/property/COMPONENT",
-            "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
-            "type": "Coding"
-          },
-          {
-            "code": "PROPERTY",
-            "uri": "http://loinc.org/property/PROPERTY",
-            "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
-            "type": "Coding"
-          },
-          {
-            "code": "TIME_ASPCT",
-            "uri": "http://loinc.org/property/TIME_ASPCT",
-            "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
-            "type": "Coding"
-          },
-          {
-            "code": "SYSTEM",
-            "uri": "http://loinc.org/property/SYSTEM",
-            "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
-            "type": "Coding"
-          },
-          {
-            "code": "SCALE_TYP",
-            "uri": "http://loinc.org/property/SCALE_TYP",
-            "description": "Fifth major axis-scale of measurement: Type of Scale",
-            "type": "Coding"
-          },
-          {
-            "code": "METHOD_TYP",
-            "uri": "http://loinc.org/property/METHOD_TYP",
-            "description": "Sixth major axis-method of measurement: Type of Method",
-            "type": "Coding"
-          }
-        ],
-        "concept": [
-          {
-            "code": "90370-8",
-            "display": "LIVD mapping data set",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP269198-0",
-                  "display": "Vendor test code to LOINC mapping data set"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6813-2",
-                  "display": "Find"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP76022-0",
-                  "display": "{Device}"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP32888-7",
-                  "display": "Doc"
-                }
-              }
-            ]
-          },
-          {
-            "code": "14749-6",
-            "display": "Glucose [Moles/volume] in Serum or Plasma",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6860-3",
-                  "display": "SCnc"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7576-4",
-                  "display": "Ser/Plas"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "2345-7",
-            "display": "Glucose [Mass/volume] in Serum or Plasma",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6827-2",
-                  "display": "MCnc"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7576-4",
-                  "display": "Ser/Plas"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "14744-7",
-            "display": "Glucose [Moles/volume] in Cerbral spinal fluid",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6860-3",
-                  "display": "SCnc"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7156-5",
-                  "display": "CSF"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "2342-4",
-            "display": "Glucose [Mass/volume] in Cerebral spinal fluid",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6827-2",
-                  "display": "MCnc"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7156-5",
-                  "display": "CSF"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "15076-3",
-            "display": "Glucose [Moles/volume] in Urine",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6860-3",
-                  "display": "SCnc"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7681-2",
-                  "display": "Urine"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "2350-7",
-            "display": "Glucose [Mass/volume] in Urine",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6827-2",
-                  "display": "MCnc"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7681-2",
-                  "display": "Urine"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "15077-1",
-            "display": "Glucose [Moles/time] in 24 hour Urine",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6867-8",
-                  "display": "SRat"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6924-7",
-                  "display": "24H"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7681-2",
-                  "display": "Urine"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "2351-5",
-            "display": "Glucose [Mass/time] in 24 hour Urine",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14635-4",
-                  "display": "Glucose"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6833-0",
-                  "display": "MRat"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6924-7",
-                  "display": "24H"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7681-2",
-                  "display": "Urine"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7753-9",
-                  "display": "Qn"
-                }
-              }
-            ]
-          },
-          {
-            "code": "70151-6",
-            "display": "Opiates [Presence] in Urine by Screen method >300 ng/mL",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14565-3",
-                  "display": "Opiates"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP217195-9",
-                  "display": "PrThr"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7681-2",
-                  "display": "Urine"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7751-3",
-                  "display": "Ord"
-                }
-              },
-              {
-                "code": "METHOD_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP36647-3",
-                  "display": "Screen>300 ng/mL"
-                }
-              }
-            ]
-          },
-          {
-            "code": "21431-2",
-            "display": "Opiates [Presence] in Urine by Screen method >2000 ng/mL",
-            "property": [
-              {
-                "code": "COMPONENT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP14565-3",
-                  "display": "Opiates"
-                }
-              },
-              {
-                "code": "PROPERTY",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP217195-9",
-                  "display": "PrThr"
-                }
-              },
-              {
-                "code": "TIME_ASPCT",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6960-1",
-                  "display": "Pt"
-                }
-              },
-              {
-                "code": "SYSTEM",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7681-2",
-                  "display": "Urine"
-                }
-              },
-              {
-                "code": "SCALE_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP7751-3",
-                  "display": "Ord"
-                }
-              },
-              {
-                "code": "METHOD_TYP",
-                "valueCoding": {
-                  "system": "http://loinc.org",
-                  "code": "LP6504-7",
-                  "display": "Screen>2000 ng/mL"
-                }
-              }
-            ]
-          },
-          {
-            "code": "LP269198-0",
-            "display": "Vendor test code to LOINC mapping data set"
-          },
-          {
-            "code": "LP6813-2",
-            "display": "Find"
-          },
-          {
-            "code": "LP6960-1",
-            "display": "Pt"
-          },
-          {
-            "code": "LP76022-0",
-            "display": "{Device}"
-          },
-          {
-            "code": "LP32888-7",
-            "display": "Doc"
-          },
-          {
-            "code": "LP14635-4",
-            "display": "Glucose"
-          },
-          {
-            "code": "LP6860-3",
-            "display": "SCnc"
-          },
-          {
-            "code": "LP7576-4",
-            "display": "Ser/Plas"
-          },
-          {
-            "code": "LP7753-9",
-            "display": "Qn"
-          },
-          {
-            "code": "LP6827-2",
-            "display": "MCnc"
-          },
-          {
-            "code": "LP7156-5",
-            "display": "CSF"
-          },
-          {
-            "code": "LP7681-2",
-            "display": "Urine"
-          },
-          {
-            "code": "LP6867-8",
-            "display": "SRat"
-          },
-          {
-            "code": "LP6924-7",
-            "display": "24H"
-          },
-          {
-            "code": "LP6833-0",
-            "display": "MRat"
-          },
-          {
-            "code": "LP14565-3",
-            "display": "Opiates"
-          },
-          {
-            "code": "LP217195-9",
-            "display": "PrThr"
-          },
-          {
-            "code": "LP7751-3",
-            "display": "Ord"
-          },
-          {
-            "code": "LP36647-3",
-            "display": "Screen>300 ng/mL"
-          },
-          {
-            "code": "LP6504-7",
-            "display": "Screen>2000 ng/mL"
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "CodeSystem/loinc-fragment-livd-abbott"
       }
     }
   ]

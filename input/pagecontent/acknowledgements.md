@@ -4,7 +4,7 @@ The LIVD Implementation Guide is the result of a combined IICC and HL7 project t
 * Rob Hausam - Hausam Consulting
 * Ed Heierman - Abbott
 * Ralf Herzog - Roche
-* Riki Merrick - Association of Public Health Laboratories
+* Riki Merrick - Vernetzt, LLC / Association of Public Health Laboratories
 * JD Nolen - Children's Mercy Hospital
 * Andrea Pitkus
 * Dan Rutz - Epic
@@ -35,7 +35,7 @@ The development of the LIVD Specification and Implementation Guide was an intern
 * LIS vendors
     * Epic
     * LabCorp
-    * Oracle Health Corporation
+    * Oracle Health
     * Orchard Software
 * IVD instrument manufacturers
     * Abbott Laboratories

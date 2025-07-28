@@ -7,8 +7,12 @@
         ]
     },
     "url": "http://hl7.org/fhir/uv/livd/ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7",
+    "version": "1.0.0",
     "name": "LivdTestCodeConceptMap",
+    "title": "Livd Test Code Concept Map",
     "status": "active",
+    "experimental": false,
+    "description": "Livd Test Code Concept Map",
     "jurisdiction": [
         {
             "coding": [
@@ -19,10 +23,10 @@
             ]
         }
     ],
-    "sourceUri": "ObservationDefinition",
-    "targetCanonical": "http://hl7.org/fhir/uv/livd/ValueSet/loinc-livd",
+    "targetCanonical": "http://example.org/ivd-mfg/loinc-livd",
     "group": [
         {
+            "target": "http://loinc.org",
             "element": [
                 {
                     "code": "b87458ca-b29a-4244-b347-39111caf9ef2",

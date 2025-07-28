@@ -7,10 +7,11 @@
         ]
     },
     "url": "http://hl7.org/fhir/uv/livd/ValueSet/testcode-mappings-livd",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "LivdTestCodeMappingsVS",
     "title": "Test code mappings value set for LIVD",
-    "status": "draft",
+    "status": "active",
+    "experimental": false,
     "date": "2018-09-25",
     "description": "Includes the subset of LOINC codes for mappings from manufacturer IVD test codes that are relevant for this ConceptMap.",
     "jurisdiction": [
@@ -23,6 +24,7 @@
             ]
         }
     ],    
+    "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
     "compose": {
         "include": [
             {
