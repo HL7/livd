@@ -1,7 +1,7 @@
 <h3> Workflow Considerations </h3>
 The main goal of this IG is the definition of the proper data exchange format. The following provides a general process context from the initial creation of the LIVD Catalog and its use by the laboratory.
 
-The device manufacturer creates the LIVD mappings based on their intended use of IVD Test Performed and Coded Result Values relative to the appropriate LOINC and/or SNOMED codes. The manufacturer is expected to make the LIVD Catalog available in accordance with this LIVD IG defined format. The FHIR-based LIVD Catalog mwy actually be generated from a spreadsheet based mapping based on the LOINC transmission document for IVDs (LIVD) standard, which is a standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC). They may use their own spreadsheet formats as well.
+The device manufacturer creates the LIVD mappings based on their intended use of IVD test codes relative to the appropriate LOINC codes. The manufacturer may already create a spreadsheet based mapping based on the LOINC transmission document for IVDs (LIVD) standard, which is a standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC). This will help visualize the mapping described in the next sections to aid in the creation of the FHIR based LIVD maps. One may opt to generate it directly from the available spreadsheet, or any other source that is used internally by the manufacturer to document these mappings. If not yet documented, and there are no immediate plans to use the FHIR based format for internal documentation as well, it is recommended to use the IICC spreadsheet format as it is likely also one of the formats in which the Lab technician may be presented with the LIVD mappings.
 
 The manufacturer may provide the LIVD Catalog using any of the following methods and may include a spreadsheet format as well for human readability when not used in its electronic form by the receiver:
 
@@ -28,3 +28,4 @@ When displaying the information to those configuring the mappings between IVD Te
     * IVD Test Performed, particularly when presented from a multi-vendor catalog, should clearly be associated and recognized as belonging to a specific device model (including equipment UID and type), and the device vendor.</li>
   * LOINC Code(s)
     * For each of the suggested LOINC codes for the IVD Test Performed, one should display the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.
+
