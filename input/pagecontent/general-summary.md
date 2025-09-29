@@ -7,7 +7,7 @@ Neither the IVD Test Performed, the LIS Test Result, nor the respective IVD Code
 
 To enable analytics and clinical decision support, harmonization to a common vocabulary is critical.  For laboratory test results, Logical Observation Identifiers Names and Codes (LOINC<sup>(R)</sup>) is the coding system of choice, while for non-quantitative, encoded result values, SNOMED and LOINC are both in use to enable a consistent expression.  This introduces the question on how to map the LIS Test Result code to LOINC, as well as corresponding Coded Result Value code to either LOINC or SNOMED, and do so consistently across all laboratories to enable analytics and clinical decision support reliably.
 
-For various reasons, including but not limited to an LIS communicating the ordered tests to the device using LOINC, the device cannot provide the appropriate LOINC code with the IVD Test Performed results.  The LIS must provide the mapping as they associate the IVD Test Performed with the LIS Test Result.  To date, this mapping process has relied on a combination of the LOINC registry, RELMA, and the individual's knowledge of LOINC plus the LIS' test compendium.
+For various reasons, including but not limited to an LIS communicating the ordered tests to the device using LOINC, the device cannot provide the appropriate LOINC code with the test result. The LIS must provide the mapping as they associate the IVD Test and its IVD Result Value with the LIS Test Result and its LIS Result value respectively. To date this mapping process has relied on a combination of the LOINC registry, RELMA, and the individual's knowledge of LOINC plus the LIS' test compendium and further information on the Vendor Analyte Code's Result Value Codes to arrive at the appropriate LOINC or SNOMED codes for the actual value where applicable.
 
 The device manufacturer can aid in the process by providing a list of suggested LOINC codes for each of their IVD Test Performed, including context of the result, specimen, and other considerations that would influence the choice.  Such guidance would help reduce the scope of potential LOINC codes to consider, thus improving efficiency and quality of the mapping process, particularly across laboratories, i.e., arriving at the same LOINC code for the same test.
 
@@ -89,3 +89,4 @@ Consequently, most appropriate mapping would be:
        <li> LOINC Code = 2889-4 Protein [Mass/time] in 24 hour Urine - calculated from values in 333, 444 and 555 </li>
    </ul>
 </ul>
+
