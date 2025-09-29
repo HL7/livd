@@ -20,21 +20,11 @@ A laboratory may receive the LIVD Catalog in varying forms, directly from the ma
 <h3> Display Considerations </h3>
 When displaying the information to those configuring the mappings between IVD Test Performed and the appropriate LOINC codes, one must consider the relevant data to assist in the mapping.  We provide the following guidance for consideration:
 
-<ul>
-   <li> General </li>
-     <ul>
-       <li> Whenever external code systems are being displayed (e.g. LOINC and SNOMED CT) care should be taken to follow the rules in the respective license agreement.  For LOINC see <a href="https://loinc.org/license/">this guidance</a>. 
-       <li> Whenever the information is made available in multiple languages, one may make alternate languages available from the default language for the laboratory.</li>
-     </ul>
-   <li> Test Codes </li>
-     <ul>
-       <li> IVD Test Performed </li>
-          <ul>
-            <li> IVD Test Performed, particularly when presented from a multi-vendor catalog, should clearly be associated and recognized as belonging to a specific device model (including equipment UID and type), and the device vendor.</li>
-         </ul>
-       <li> LOINC Code(s)  </li>
-          <ul>
-            <li> For each of the suggested LOINC codes for the IVD Test Performed, one should display the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.  </li>
-          </ul>
-      </ul>  
-</ul>
+* General
+  * Whenever external code systems are being displayed (e.g. LOINC and SNOMED CT) care should be taken to follow the rules in the respective license agreement.  For LOINC see <a href="https://loinc.org/license/">this guidance</a>. 
+  * Whenever the information is made available in multiple languages, one may make alternate languages available from the default language for the laboratory.
+* Test Codes
+  * IVD Test Performed
+    * IVD Test Performed, particularly when presented from a multi-vendor catalog, should clearly be associated and recognized as belonging to a specific device model (including equipment UID and type), and the device vendor.</li>
+  * LOINC Code(s)
+    * For each of the suggested LOINC codes for the IVD Test Performed, one should display the LOINC long name and the vendor descriptions of results, specimen, and other comments together, while the applicable LOINC part information should be directly displayed or easily accessible as well.
