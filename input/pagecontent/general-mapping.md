@@ -183,7 +183,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Vendor Specimen Description - human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.”</td>
-    <td>ConceptMap.group.element.target.dependsOn:other.property
+    <td>ConceptMap.group.element.target.dependsOn:specimen.property
     <br>ConceptMap.group.element.target.dependsOn:specimen.value
     </td>
 </tr>
@@ -278,6 +278,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     </td>
 </tr>
 </table>
+
 
 
 
