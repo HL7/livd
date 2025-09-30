@@ -26,6 +26,8 @@ Note: The IVD Coded Result Value to LOINC Answer codes and SNOMED codes to suppo
     <li> Adding the LIVD suggested mappings, where available, enhances the Laboratory staff's ability to arrive more quickly and correctly at the right LOINC and SNOMED codes.</li>
 </ul>
 
+The LIVD content can be shared between a manufacturer and Laboratory user to configure their compendium/catalog of tests in different ways, e.g., on-line for download, packaged with the equipment, inclusion in an amalgamated catalog by a third party, or otherwise.  
+
 When the laboratory professional builds the test results that their LIS will manage and interact with the devices, they can use the device vendor's suggestions to more accurately, consistently, and efficiently map the results in their LIS to a LOINC code in context of the device's IVD Test Performed.  Note that, as these are device vendor's suggestions, the expectation is that the suggested mappings are displayed and assist the laboratory staff to narrow the likely options that fit the laboratory's intended use.  Therefore, the mappings are not suitable for automated configuration. The following example clarifies the information a laboratory professional would use during their configuration.
 
 <h3> Example#1 – Glucose</h3>
@@ -89,5 +91,6 @@ Consequently, most appropriate mapping would be:
        <li> LOINC Code = 2889-4 Protein [Mass/time] in 24 hour Urine - calculated from values in 333, 444 and 555 </li>
    </ul>
 </ul>
+
 
 
