@@ -50,7 +50,13 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td>Publisher - the entity publishing the mapping information</td>
-    <td>Composition.author.display</td>
+    <td>Composition.author(Organization.name)</td>
+</tr>
+<tr>
+    <td>Publisher URL - URL to the publisher website</td>
+    <td>Composition.author(Organization)
+      <br>Organization.telecom.value
+      <br>Organization.telecom.system="url"</td>
 </tr>
 <tr>
     <td>Publication Version ID - human-readable information provided by the vendor that can be used to differentiate LIVD Publication versions</td>
@@ -279,6 +285,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     </td>
 </tr>
 </table>
+
 
 
 
