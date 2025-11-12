@@ -32,7 +32,7 @@ The LIVD Bundle Profile will enable packaging of the resources.
 
 <h3> Detailed Mapping </h3>
 
-The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.
+The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.  In those cases the LIVD Attribute cell is empty and only the FHIR cell is valued.
 
 <table>
 <tr>
@@ -285,6 +285,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     </td>
 </tr>
 </table>
+
 
 
 
