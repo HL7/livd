@@ -621,7 +621,7 @@
                 "target": [
                   {
                     "code": "14744-7",
-                    "display": "Glucose [Moles/volume] in Cerbral spinal fluid",
+                    "display": "Glucose [Moles/volume] in Cerebral spinal fluid",
                     "equivalence": "equivalent",
                     "dependsOn": [
                       {
@@ -837,7 +837,7 @@
                 },
                 {
                   "code": "14744-7",
-                  "display": "Glucose [Moles/volume] in Cerbral spinal fluid"
+                  "display": "Glucose [Moles/volume] in Cerebral spinal fluid"
                 },
                 {
                   "code": "2342-4",
