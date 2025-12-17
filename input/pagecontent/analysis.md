@@ -2,16 +2,16 @@
 
 #### Intellectual Property
 
-{% include ip-statements.xhtml %}
+{% lang-fragment ip-statements.xhtml %}
 
 #### Cross Version Analysis
 
-{% include cross-version-analysis.xhtml %}
+{% lang-fragment cross-version-analysis.xhtml %}
 
 #### Dependencies
 
-{% include dependency-table.xhtml %}
+{% lang-fragment dependency-table.xhtml %}
 
 #### Globals
 
-{% include globals-table.xhtml %}
+{% lang-fragment globals-table.xhtml %}
