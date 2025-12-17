@@ -50,7 +50,7 @@
                     "coding": [
                         {
                             "system": "http://loinc.org",
-                            "version": "2.65",
+                            "version": "2.77",
                             "code": "90370-8",
                             "display": "LIVD mapping data set"
                         }
@@ -280,7 +280,7 @@
                     "include": [
                         {
                             "system": "http://loinc.org",
-                            "version": "2.65",
+                            "version": "2.77",
                             "concept": [
                                 {
                                     "code": "90370-8",
