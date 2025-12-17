@@ -1,12 +1,35 @@
-### Links
+### Full IG
 
-This implementation guide is web-based and is intended to be browsed online.  However, for the convenience of implementers, both this implementation guide, various sub-packages of it and some of the source specifications are available for download.
+Download the entire implementation guide [here](../full-ig.zip).
 
-* This [full IG](full-ig.zip)
-* The [R4](definitions.json.zip) resource definitions from this IG
-* The FHIR [R4]({{site.data.fhir.path}}fhir-spec.zip) specification
-* The FHIR [R4]({{site.data.fhir.path}}definitions.json.zip) definitions (value sets, profiles, etc.)
-* A [validator](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) that can be used to check FHIR resource instance validity 
-* The [R4](https://hl7.org/fhir/R4/hl7.fhir.r4.core.tgz) NPM package that can be used with that validator
+### NPM Package and Definitions
 
-<!-- Todo: SMART App, reference implementations --> 
+The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc. defined as part of this Implementation Guide:
+
+- [NPM Package](../package.tgz)
+
+In addition there are format specific definition files:
+
+- [XML](../definitions.xml.zip)
+- [JSON](../definitions.json.zip)
+- [TTL](../definitions.ttl.zip)
+
+These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview on [validating FHIR profiles and resources]({{ site.data.fhir.path }}validation.html).
+
+There are also specific packages for the R4 and R4B FHIR specifications:
+
+#### R4-specific NPM Package and Definitions
+
+- [R4 NPM Package](../package.r4.tgz)
+
+#### R4B-specific NPM Package and Definitions
+
+- [R4B NPM Package](../package.r4b.tgz)
+
+### Examples
+
+All of the examples that are used in this Implementation Guide are available for download:
+
+- [XML](../examples.xml.zip)
+- [JSON](../examples.json.zip)
+- [TTL](../examples.ttl.zip)
