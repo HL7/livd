@@ -47,25 +47,30 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td><b><i>Publication</i></b></td>
+    <td> </td>
+    <td> </td>
 </tr>
 <tr>
     <td>Publisher - the entity publishing the mapping information</td>
     <td>Composition.author(Organization.name)</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Publisher URL - URL to the publisher website</td>
     <td>Composition.author(Organization)
       <br>Organization.telecom.value
       <br>Organization.telecom.system="url"</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Publication Version ID - human-readable information provided by the vendor that can be used to differentiate LIVD Publication versions</td>
     <td>Composition.identifier.system
     <br>Composition.identifier.value
     <br>Composition.assigner.display</td>
+    <td> </td>
 </tr>
 <tr>
-    <td></td>
+    <td> </td>
     <td>Composition.type.coding.code
       <br>Composition.type.coding.display
       <br>Composition.type.coding.version
@@ -87,26 +92,32 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
     <td>Localization - the language used for this LIVD Publication</td>
     <td>extension-Composition.language</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Region - an optional vendor description for which geographic or administrative region this localization is valid.</td>
     <td>extension-Composition.region</td>
+    <td> </td>
 </tr>
 <tr>
     <td></td>
     <td>Composition.extension-version</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
     <td>Composition.status</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
     <td>Composition.title</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
     <td>extension-Composition.note</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
@@ -115,30 +126,38 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td><b><i>Equipment</i></b></td>
+    <td> </td>
+    <td> </td>
 </tr>
 <tr>
    <td></td>
    <td>DeviceDefinition.identifier</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Manufacturer - the name of the manufacturer of the device.</td>
     <td>DeviceDefinition.manufacturerString</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Model - the model of the device as provided by the manufacturer</td>
     <td>DeviceDefinition.modelNumber</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Testkit UID - the unique device identifier, that may be the one used in the Unique Device Identifier (UDI) constructs</td>
     <td>DeviceDefinition.udiDeviceIdentifier.deviceIdentifier</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Testkit UID Type - capable of supporting the unique device identification system to identify medical devices through their distribution and use.</td>
     <td>DeviceDefinition.udiDeviceIdentifier.issuer</td>
+    <td> </td>
 </tr>
 <tr>
     <td></td>
     <td>DeviceDefinition.udiDeviceIdentifier.jurisdiction</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
@@ -149,28 +168,34 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
   <td></td>
   <td>extension-DeviceDefinition.classification</td>
+    <td> </td>
 </tr>
 <tr>
   <td></td>
   <td>extension-DeviceDefinition.hasPart</td>
+    <td> </td>
 </tr>
 <tr>
     <td><b><i>IVD Test Performed</i>,</b></td>
+    <td> </td>
 </tr>
 <tr>
     <td>Vendor Analyte Code - Vendor Transmission Code for automated tests or Vendor Analyte Identifier for manual tests.</td>
     <td>ObservationDefinition.coding.code.system
     <br>ObservationDefinition.coding.code.code
     </td>
+    <td> </td>
 </tr>
 <tr>
     <td>Vendor Analyte Name - human-readable text the vendor used to identify the analyte</td>
     <td>ObservationDefinition.coding.code.display</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Vendor Reference ID - an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.</td>
     <td>ObservationDefinition.identifier.type
     <br>ObservationDefinition.identifiervalue</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
@@ -179,20 +204,25 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr>
     <td><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
+    <td> </td>
+    <td> </td>
 </tr>
 <tr>
   <td> LOINC Mapping Version</td>
   <td>ConceptMap.group.element.target.version</td>
+   <td> </td>
 </tr>
 <tr>
   <td></td>
   <td>ConceptMap.identifier</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Vendor Specimen Description - human-readable text that provides information about the specimen used for the test, such as “Serum or Plasma.”</td>
     <td>ConceptMap.group.element.target.dependsOn:specimen.property
     <br>ConceptMap.group.element.target.dependsOn:specimen.value
     </td>
+    <td> </td>
 </tr>
 <tr>
     <td>Vendor Result Description - human-readable text that provides information about the result that is produce
@@ -203,26 +233,31 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td>ConceptMap.group.element.target.dependsOn:result.property
     <br>ConceptMap.group.element.target.dependsOn:result.value
     </td>
+    <td> </td>
 </tr>
 <tr>
     <td>Vendor Device Description</dt>
     <td>ConceptMap.group.element.target.dependsOn:device.property
     <br>ConceptMap.group.element.target.dependsOn:device.value
     </td>
+    <td> </td>
 </tr>
 <tr>
     <td>Vendor Comment - human-readable text clarification, such as “This is a STAT (prioritized) version of the test”.</td>
     <td>ConceptMap.group.element.target.dependsOn:other.property
     <br>ConceptMap.group.element.target.dependsOn:other.value
     </td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
     <td>ConceptMap.status</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
     <td>ConceptMap.source</td>
+    <td> </td>
 </tr>
 <tr>
     <td> </td>
@@ -243,60 +278,58 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr>
     <td> </td>
     <td>ConceptMap.group.element.target.display</td>
+    <td> </td>
 </tr>
 <tr>
  <td><b><i>Test Code Value Set</i></b></td>
+    <td> </td>
+    <td> </td>
 </tr>
 <tr>
     <td></td>
     <td>ValueSet.version</td>
+    <td> </td>
 </tr>
 <tr>
     <td></td>
     <td>ValueSet.status</td>
+    <td> </td>
 </tr>
 <tr>
  <td><b><i>Test Code Value Set</i></b></td>
+    <td> </td>
+    <td> </td>
 </tr>
 <tr>
     <td></td>
     <td>ValueSet.version</td>
+    <td> </td>
 </tr>
 <tr>
     <td></td>
     <td>ValueSet.status</td>
+    <td> </td>
 </tr>
 <tr>
     <td>LOINC Code</td>
     <td>ValueSet.expansion.contains.code</td>
+    <td> </td>
 </tr>
 <tr>
     <td>LOINC Long Name</td>
     <td>ValueSet.expansion.contains.display</td>
+    <td> </td>
 </tr>
 <tr>
     <td></td>
     <td>ValueSet.expansion.contains.system</td>
+    <td> </td>
 </tr>
 <tr>
     <td>Component, Property, time Aspect, System, Scale Type, Method Type</td>
     <td>extension-ValueSet.expansion.conctains.extR5-property.code ("COMPONENT", "PROPERTY", "TIME ASPCT", "SYSTEM", "SCALE TYPE", "METHOD")
     <br>extension-ValueSet.expansion.conctains.extR5-property.valueCoding.code
     </td>
+    <td> </td>
 </tr>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
