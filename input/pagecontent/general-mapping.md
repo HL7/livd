@@ -35,31 +35,25 @@ The LIVD Bundle Profile will enable packaging of the resources.
 The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.  In those cases the LIVD Attribute cell is empty and only the FHIR cell is valued.
 
 <table>
-th {
-border: 1px solid #000
-}
-table td {
-border: 1px solid #000
-} 
 <tr>
-  <td colspan="3">
-  <b><i>Publication</i></b>
+  <td colspan="3" style='border: 1px solid #000'>
+    <b><i>Publication</i></b>
   </td>
 </tr> 
 <tr>
-    <th><b>LIVD Attribute</b></th>
-    <th><b>FHIR</b></th>
-    <th><b>Comments</b></th>
+    <th style='border: 1px solid #000'><b>LIVD Attribute</b></th>
+    <th style='border: 1px solid #000'><b>FHIR</b></th>
+    <th style='border: 1px solid #000'><b>Comments</b></th>
 </tr>
 <tr>
-  <td></td>
-  <td>Bundle.type</td>
-  <td>This is set to "collection" as LIVD is modeled in FHIR to serve as a payload while it is not needed to be in the form of a document either, thus a well structured collection.</td>
+  <td style='border: 1px solid #000'></td>
+  <td style='border: 1px solid #000'>Bundle.type</td>
+  <td style='border: 1px solid #000'>This is set to "collection" as LIVD is modeled in FHIR to serve as a payload while it is not needed to be in the form of a document either, thus a well structured collection.</td>
 </tr>
 <tr>
-    <td><b><i>Publication</i></b></td>
-    <td> </td>
-    <td> </td>
+    <td style='border: 1px solid #000'><b><i>Publication</i></b></td>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'> </td>
 </tr>
 <tr>
     <td>Publisher - the entity publishing the mapping information</td>
@@ -344,4 +338,5 @@ border: 1px solid #000
     <td> </td>
 </tr>
 </table>
+
 
