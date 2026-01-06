@@ -2,7 +2,7 @@ The following provides the specific definitions for each of the data elements re
 
 We encourage the use of GUIDs (Globally Unique IDentifier) for identifiers to enable consumers and aggregators of LIVD Catalogs to easily merge and identify duplicates.
 
-<h3> LIVD Publication </h3>
+### LIVD Publication
 This information that describes the overall LIVD publication is expressed through the [LIVD Catalog](StructureDefinition-catalog-uv-livd.html) profile, including:
 
 * **_Publisher_** is the entity publishing the mapping information.
@@ -23,7 +23,7 @@ The equipment elements are expressed through the [LIVD Device Definition](Struct
 
 Note that types and cardinality are aligned with values reported in the Integrating the Healthcare Enterpires (IHE) [Laboratory Analytical Workflow (LAW) Profile](https://www.ihe.net/resources/technical_frameworks/#PaLM) OBX-18 Equipment Instance Identifier.
 
-<h3> IVD Test Performed </h3>
+### IVD Test Performed
 
 The IVD Test Performed attributes are aligned with obvservation definition attributes and expressed using the [LIVD Observation Definition](StructureDefinition-observationdefinition-uv-livd.html) profile.
 
@@ -40,7 +40,7 @@ The IVD Test Performed attributes are aligned with obvservation definition attri
 
 Additionally, various details on the Observation Definition that can aid in the mapping from the IVD Test Performed's Vendor Analyte Code to a LOINC are included as optional attributes, even though not referenced in the original [IICC white paper](http://ivdconnectivity.org/wp-content/uploads/delightful-downloads/2017/06/IICC_LIVD_Digital_Format_2017_06_01_R2.pdf).
 
-<h3> IVD Test Performed - LOINC Mapping </h3>
+### IVD Test Performed - LOINC Mapping
 
 The potential mappings of the IVD Test Performed's Vendor Analyte Code to LOINC code are captured in the [LIVD Test Concept Map](StructureDefinition-conceptmap-testcode-uv-livd.html) profile.  For each IVD Test Performed's Vendor Analyte Code and a suggested LOINC code, the following attributes are captured.
 
@@ -85,5 +85,5 @@ For each of the LOINC codes being considered, a minimum set from the code system
 * **_Method_**
 -->
 
-<h3> Sample Data </h3>
+### Sample Data
 As part of defining the whitepaper, IICC also developed a spreadsheets that contains the relevant data and a potential representation of that data that can be found [here](https://ivdconnectivity.org/livd/).

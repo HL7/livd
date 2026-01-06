@@ -1,4 +1,4 @@
-<h3> Workflow Considerations </h3>
+### Workflow Considerations
 The main goal of this IG is the definition of the proper data exchange format. The following provides a general process context from the initial creation of the LIVD Catalog and its use by the laboratory.
 
 The device manufacturer creates the LIVD mappings based on their intended use of IVD Test Performed and Coded Result Values relative to the appropriate LOINC and/or SNOMED codes. The manufacturer is expected to make the LIVD Catalog available in accordance with this LIVD IG defined format. The FHIR-based LIVD Catalog mwy actually be generated from a spreadsheet based mapping based on the LOINC transmission document for IVDs (LIVD) standard, which is a standard explicitly developed for this purpose by the IVD Industry Connectivity Consortium (IICC). They may use their own spreadsheet formats as well.
@@ -17,7 +17,7 @@ A laboratory may receive the LIVD Catalog in varying forms, directly from the ma
 * laboratory staff uses the LIVD catalog included in the device's package insert that came with the device
 * the LIS queries for the LIVD catalog entries for the device being configured and either displays the mappings, or may suggest a mapping based on other information available in the LIS for the device and intended tests at hand
 
-<h3> Display Considerations </h3>
+### Display Considerations
 When displaying the information to those configuring the mappings between IVD Test Performed and the appropriate LOINC codes, one must consider the relevant data to assist in the mapping.  We provide the following guidance for consideration:
 
 * General
