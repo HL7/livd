@@ -66,16 +66,14 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td style='border: 1px solid #000'>Publication Version ID - human-readable information provided by the vendor that can be used to differentiate LIVD Publication versions</td>
     <td style='border: 1px solid #000'>Composition.identifier.system
     <br>Composition.identifier.value
-    <br>Composition.assigner.display</td>
-    <td style='border: 1px solid #000'> </td>
-</tr>
-<tr>
-    <td style='border: 1px solid #000'> </td>
-    <td style='border: 1px solid #000'>Composition.type.coding.code
-      <br>Composition.type.coding.display
-      <br>Composition.type.coding.version
-      <br>Composition.type.coding.system</td>
-    <td style='border: 1px solid #000'>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
+    <br>Composition.identifier.assigner.display
+    <br>
+    <br>Composition.type.coding.code
+    <br>Composition.type.coding.display
+    <br>Composition.type.coding.version
+    <br>Composition.type.coding.system</td>
+    <td style='border: 1px solid #000'>
+    <br><br><br><br>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
 </tr>
 <tr style ='background-color: #f3f3f3'>
   <td style='border: 1px solid #000'> LOINC Version ID - the version of LOINC that was used for the mapping</td>
@@ -311,6 +309,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td style='border: 1px solid #000'> </td>
 </tr>
 </table>
+
 
 
 
