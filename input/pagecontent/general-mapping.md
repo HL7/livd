@@ -9,7 +9,7 @@ This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standar
 * [How to read resource & profile definitions]({{site.data.fhir.path}}formats.html)
 * [Base resource]({{site.data.fhir.path}}resource.html)
 
-<h3> Overview </h3>
+### Overview
 
 The concepts described above are mapped to a number of FHIR resources that have been profiled to support the scope of the LIVD Publication.  The diagram below shows the HL7 FHIR resources/profiles and their relationship:
 
@@ -30,7 +30,7 @@ The concepts described above are mapped to a number of FHIR resources that have 
 
 The LIVD Bundle Profile will enable packaging of the resources.
 
-<h3> Detailed Mapping </h3>
+### Detailed Mapping
 
 The following table provides the mapping of LIVD data of interest to FHIR resource attributes.  Note that the use of FHIR introduces additional attributes that either are needed as required elements in FHIR or provide additional capabilities.  In those cases the LIVD Attribute cell is empty and only the FHIR cell is valued.
 
