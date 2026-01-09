@@ -68,6 +68,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <br>Composition.identifier.value
     <br>Composition.identifier.assigner.display
     </td>
+    <td style='border: 1px solid #000'></td>
 </tr>
 <tr style='background-color: #f3f3f3'>
     <td style='border: 1px solid #000'>Composition.type.coding.code
