@@ -67,41 +67,62 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td style='border: 1px solid #000'>Composition.identifier.system
     <br>Composition.identifier.value
     <br>Composition.identifier.assigner.display
-    <br>
-    <br>Composition.type.coding.code
+    </td>
+</tr>
+<tr style='background-color: #f3f3f3'>
+    <td style='border: 1px solid #000'>Composition.type.coding.code
     <br>Composition.type.coding.display
     <br>Composition.type.coding.version
     <br>Composition.type.coding.system</td>
     <td style='border: 1px solid #000'>
-    <br><br><br><br>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
+    <td style='border: 1px solid #000'>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
 </tr>
-<tr style ='background-color: #f3f3f3'>
+<tr style ='background-color: #ffffff'>
   <td style='border: 1px solid #000'> LOINC Version ID - the version of LOINC that was used for the mapping</td>
   <td style='border: 1px solid #000'> ValueSet.expansion.contains.system.version</td>
   <td style='border: 1px solid #000'>Since a LIVD Catalog can include LOINC codes from different versions</td>
 </tr>
-<tr style='background-color: #ffffff'>
+<tr style='background-color: #f3f3f3'>
     <td style='border: 1px solid #000'>LOINC Copyright - holds the required attribution statement</td>
     <td style='border: 1px solid #000'>Composition.section.title
       <br>Composition.section.code
       <br>Composition.section.entry.reference</td>
     <td style='border: 1px solid #000'>The relevant copyright text is in .section.entry.reference where the .section.title is "Copyrights" and the section.code is "copy-right".</td>
 </tr>
-<tr style ='background-color: #f3f3f3'>
+<tr style ='background-color: #ffffff'>
     <td style='border: 1px solid #000'>Localization - the language used for this LIVD Publication</td>
     <td style='border: 1px solid #000'>Composition.extension-language</td>
     <td style='border: 1px solid #000'> </td>
 </tr>
-<tr style='background-color: #ffffff'>
+<tr style='background-color: #f3f3f3'>
     <td style='border: 1px solid #000'>Region - an optional vendor description for which geographic or administrative region this localization is valid.</td>
-    <td style='border: 1px solid #000'>Composition.extension-region
-    <br><br>Composition.extension-version
-    <br><br>Composition.status
-    <br><br>Composition.title
-    <br><br>Composition.extension-note
-    <br><br>Composition.section</td>
-    <td style='border: 1px solid #000'>
-    <br><br><br><br><br><br><br><br><br><br>This enables organization like information together, particularly the equipment, tests, and mappings.</td>
+    <td style='border: 1px solid #000'>Composition.extension-region</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #ffffff'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>Composition.extension-version</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #f3f3f3'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>Composition.status</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #ffffff'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>Composition.title</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #f3f3f3'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>Composition.extension-note</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #ffffff'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>Composition.section</td>
+    <td style='border: 1px solid #000'>This enables organization like information together, particularly the equipment, tests, and mappings.</td>
 </tr>
 <tr style ='background-color: #f3f3f3'>
     <td  colspan="3" style='border: 1px solid #000'><b><i>Equipment</i></b></td>
@@ -129,13 +150,28 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr style='background-color: #ffffff'>
     <td style='border: 1px solid #000'>Testkit UID Type - capable of supporting the unique device identification system to identify medical devices through their distribution and use.</td>
     <td style='border: 1px solid #000'>DeviceDefinition.udiDeviceIdentifier.issuer
-    <br><br>DeviceDefinition.udiDeviceIdentifier.jurisdiction
-    <br><br>DeviceDefinition.capability.type
-    <br>DeviceDefinition.capability.extension-observationDefinition
-    <br><br>DeviceDefinition.extension-classification
-    <br><br>DeviceDefinition.extension-hasPart</td>
-    <td style='border: 1px solid #000'>
-    <br><br><br><br>This enables a linkage to the ObservationDefinition that represents the test that the device can perform.</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #f3f3f3'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>DeviceDefinition.udiDeviceIdentifier.jurisdiction</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #ffffff'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>DeviceDefinition.capability.type
+    <br>DeviceDefinition.capability.extension-observationDefinition</td>
+    <td style='border: 1px solid #000'>This enables a linkage to the ObservationDefinition that represents the test that the device can perform.</td>
+</tr>
+<tr style='background-color: #f3f3f3'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>DeviceDefinition.extension-classification</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #ffffff'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>DeviceDefinition.extension-hasPart</td>
+    <td style='border: 1px solid #000'> </td>
 </tr>
 <tr style ='background-color: #f3f3f3'>
     <td colspan="3" style='border: 1px solid #000'><b><i>IVD Test Performed</i>,</b></td>
@@ -155,10 +191,13 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr style='background-color: #ffffff'>
     <td style='border: 1px solid #000'>Vendor Reference ID - an additional vendor identifier, such as an identifier that can be used to locate the associated assay insert published by the vendor.</td>
     <td style='border: 1px solid #000'>ObservationDefinition.identifier.type
-    <br>ObservationDefinition.identifiervalue
-    <br><br>ObservationDefinition.extension-device</td>
-    <td style='border: 1px solid #000'>
-    <br><br><br>This enables a link to the device(s) that can perform this test</td>
+    <br>ObservationDefinition.identifiervalue</td>
+    <td style='border: 1px solid #000'> </td>
+</tr>
+<tr style='background-color: #f3f3f3'>
+    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'>ObservationDefinition.extension-device</td>
+    <td style='border: 1px solid #000'>This enables a link to the device(s) that can perform this test</td>
 </tr>
 <tr style ='background-color: #f3f3f3'>
     <td colspan="3" style='border: 1px solid #000'><b><i>IVD Analyte Code - LOINC Mapping</i></b></td>
@@ -192,7 +231,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td style='border: 1px solid #000'> </td>
 </tr>
 <tr style ='background-color: #ffffff'>
-    <td style='border: 1px solid #000'>Vendor Device Description</dt>
+    <td style='border: 1px solid #000'>Vendor Device Description</td>
     <td style='border: 1px solid #000'>ConceptMap.group.element.target.dependsOn:device.property
     <br>ConceptMap.group.element.target.dependsOn:device.value
     </td>
@@ -207,10 +246,12 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr style ='background-color: #ffffff'>
     <td style='border: 1px solid #000'> </td>
     <td style='border: 1px solid #000'>ConceptMap.status</td>
+    <td style='border: 1px solid #000'> </td>
 </tr>
 <tr style ='background-color: #f3f3f3'>
     <td style='border: 1px solid #000'> </td>
     <td style='border: 1px solid #000'>ConceptMap.source</td>
+    <td style='border: 1px solid #000'> </td>
 </tr>
 <tr style ='background-color: #ffffff'>
     <td style='border: 1px solid #000'> </td>
