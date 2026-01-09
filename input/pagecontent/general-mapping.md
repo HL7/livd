@@ -68,9 +68,10 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <br>Composition.identifier.value
     <br>Composition.identifier.assigner.display
     </td>
+    <td style='border: 1px solid #000'></td>
 </tr>
 <tr style='background-color: #f3f3f3'>
-    <td style='border: 1px solid #000'> </td>
+    <td style='border: 1px solid #000'></td>
     <td style='border: 1px solid #000'>Composition.type.coding.code
     <br>Composition.type.coding.display
     <br>Composition.type.coding.version
@@ -149,7 +150,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr style='background-color: #ffffff'>
     <td style='border: 1px solid #000'>Testkit UID Type - capable of supporting the unique device identification system to identify medical devices through their distribution and use.</td>
-    <td style='border: 1px solid #000'>DeviceDefinition.udiDeviceIdentifier.issuer
+    <td style='border: 1px solid #000'>DeviceDefinition.udiDeviceIdentifier.issuer</td>
     <td style='border: 1px solid #000'> </td>
 </tr>
 <tr style='background-color: #f3f3f3'>
@@ -262,7 +263,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td style='border: 1px solid #000'> </td>
     <td style='border: 1px solid #000'>ConceptMap.group.target
     <br>ConceptMap.group.targetVersion</td>
-    <td>This represents the LOINC code system and the version that was used for the mapping to the LOINC codes referenced.</td>
+    <td style='border: 1px solid #000'>This represents the LOINC code system and the version that was used for the mapping to the LOINC codes referenced.</td>
 </tr>  
 <tr style ='background-color: #ffffff'>
     <td style='border: 1px solid #000'> </td>
@@ -310,4 +311,3 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td style='border: 1px solid #000'> </td>
 </tr>
 </table>
-
