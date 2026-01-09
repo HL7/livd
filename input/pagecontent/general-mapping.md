@@ -70,11 +70,11 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     </td>
 </tr>
 <tr style='background-color: #f3f3f3'>
+    <td style='border: 1px solid #000'> </td>
     <td style='border: 1px solid #000'>Composition.type.coding.code
     <br>Composition.type.coding.display
     <br>Composition.type.coding.version
     <br>Composition.type.coding.system</td>
-    <td style='border: 1px solid #000'>
     <td style='border: 1px solid #000'>This represents only the LOINC Code representing this publication is a LIVD Catalog.  It does not reflect the version of the LOINC code used in the detailed mapping.</td>
 </tr>
 <tr style ='background-color: #ffffff'>
@@ -144,7 +144,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 </tr>
 <tr style ='background-color: #f3f3f3'>
     <td style='border: 1px solid #000'>Testkit UID - the unique device identifier, that may be the one used in the Unique Device Identifier (UDI) constructs</td>
-    <td style='border: 1px solid #000'>DeviceDefinition.udiDeviceIdentifier.deviceIdentifier</td>td>
+    <td style='border: 1px solid #000'>DeviceDefinition.udiDeviceIdentifier.deviceIdentifier</td>
     <td style='border: 1px solid #000'> </td>
 </tr>
 <tr style='background-color: #ffffff'>
@@ -310,3 +310,4 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
     <td style='border: 1px solid #000'> </td>
 </tr>
 </table>
+
