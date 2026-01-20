@@ -90,6 +90,7 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * languageCode 0..0
 * languageCode ^mustSupport = false
 * capability 1..* MS
+* capability ^definition = "A reference to one or more ObservationDefinition resources representing test analytes that may be measured."
 * capability.extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte named DeviceDefinitionExtensionAnalyte 1..* MS
 * capability.type 1..1 MS
 * capability.type ^comment = "removed \"DeviceCapabilityType (ObservationDefinition)\" from Value column."
