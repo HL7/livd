@@ -104,8 +104,8 @@ resources:
     description: Test Analyte extension for the LIVD project
     exampleBoolean: false
     groupingId: extensions
-  StructureDefinition/ext-device:
-    name: LIVD Device
+  StructureDefinition/ext-livd-devicedefinition:
+    name: LIVD Device Definition
     description: Device extension for the LIVD project
     exampleBoolean: false
     groupingId: extensions

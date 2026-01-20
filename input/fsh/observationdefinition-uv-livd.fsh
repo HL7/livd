@@ -22,7 +22,7 @@ Description: "Profile on the ObservationDefinition resource for representing the
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[0].path = "url"
 * extension ^slicing.rules = #open
-* extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device named ObservationDefinitionDevice 1..* MS
+* extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition named ObservationDefinitionDevice 1..* MS
 * extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier named ObservationDefinitionVendorReferenceIdentifier 0..1 MS
 * extension[ObservationDefinitionVendorReferenceIdentifier] ^comment = "Provides an alternate reference identifier by which the IVD Test is known.  Only the identifier.value is required."
 * category 0..0

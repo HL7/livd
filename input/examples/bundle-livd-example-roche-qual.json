@@ -273,13 +273,13 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
             }
@@ -316,13 +316,13 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
             }
@@ -359,13 +359,13 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
             }
@@ -402,13 +402,13 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/a9660225-e924-49bb-8456-6068167f1d50"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/cf22def7-0ba8-46c7-8595-ba148fc27343"
             }

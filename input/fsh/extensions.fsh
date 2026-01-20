@@ -1,6 +1,6 @@
 Extension: LIVDDevice
-Id: ext-device
-Title: "LIVD Device"
+Id: ext-livd-devicedefinition
+Title: "LIVD DeviceDefinition"
 Description: "Add a reference from the ObservationDefinition to the Device."
 * ^version = "1.0.0"
 * ^publisher = "HL7 International / Orders and Observations"
@@ -10,7 +10,7 @@ Description: "Add a reference from the ObservationDefinition to the Device."
 * ^jurisdiction[0].coding[0].code = #001
 * ^context[0].type = #element
 * ^context[0].expression = "ObservationDefinition"
-* url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device" (exactly)
+* url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition" (exactly)
 * valueReference 1..1
 * valueReference only Reference(http://hl7.org/fhir/uv/livd/StructureDefinition/devicedefinition-uv-livd)
 
