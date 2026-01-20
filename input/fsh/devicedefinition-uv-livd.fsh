@@ -74,7 +74,7 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * modelNumber ^mapping[0].map = "OBX-18.1 (pre-V2.7) or PRT-10.1 (V2.7 onward)"
 * modelNumber ^mapping[1].identity = "rim"
 * modelNumber ^mapping[1].map = ".playedRole[typeCode=MANU].code"
-* type 0..1 MS
+* type 0..1
 * type from http://hl7.org/fhir/uv/livd/ValueSet/livd-device-type (extensible)
 * type ^binding.description = "IVD device types for LIVD device definitions (extensible)."
 * specialization 0..0
