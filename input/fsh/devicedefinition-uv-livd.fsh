@@ -27,7 +27,7 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * . ^mustSupport = false
 * . ^mapping[0].identity = "rim"
 * . ^mapping[0].map = "Device"
-* identifier 0..0
+* identifier 0..*
 * identifier ^mustSupport = false
 * udiDeviceIdentifier 0..1 MS
 * udiDeviceIdentifier ^comment = "In this profile only a type of device can be represented where the UDI only identifies the type of the device."
