@@ -27,7 +27,9 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * . ^mustSupport = false
 * . ^mapping[0].identity = "rim"
 * . ^mapping[0].map = "Device"
-* identifier 0..0
+
+* id 1..1
+* identifier 0..*
 * identifier ^mustSupport = false
 * udiDeviceIdentifier 0..1 MS
 * udiDeviceIdentifier ^comment = "In this profile only a type of device can be represented where the UDI only identifies the type of the device."
@@ -72,7 +74,7 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * modelNumber ^mapping[0].map = "OBX-18.1 (pre-V2.7) or PRT-10.1 (V2.7 onward)"
 * modelNumber ^mapping[1].identity = "rim"
 * modelNumber ^mapping[1].map = ".playedRole[typeCode=MANU].code"
-* type 0..1 MS
+* type 0..1
 * type from http://hl7.org/fhir/uv/livd/ValueSet/livd-device-type (extensible)
 * type ^binding.description = "IVD device types for LIVD device definitions (extensible)."
 * specialization 0..0
@@ -89,10 +91,15 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * physicalCharacteristics ^mustSupport = false
 * languageCode 0..0
 * languageCode ^mustSupport = false
-* capability 1..* MS
+* capability 0..* MS
+* capability ^definition = "A reference to one or more ObservationDefinition resources representing test analytes that may be measured."
 * capability.extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte named DeviceDefinitionExtensionAnalyte 1..* MS
 * capability.type 1..1 MS
 * capability.type ^comment = "removed \"DeviceCapabilityType (ObservationDefinition)\" from Value column."
+* capability.type.coding = http://hl7.org/fhir/resource-types#ObservationDefinition
+* capability.type.coding.system = "http://hl7.org/fhir/resource-types" (exactly)
+* capability.type.coding.code = #ObservationDefinition (exactly)
+
 * capability.description 0..0
 * capability.description ^mustSupport = false
 * property 0..0
@@ -112,3 +119,12 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * note ^mustSupport = false
 * quantity 0..0
 * quantity ^mustSupport = false
+
+//Extensions
+/*
+* extension ..* MS
+* extension ^slicing.discriminator[0].type = #value
+* extension ^slicing.discriminator[0].path = "url"
+* extension ^slicing.rules = #open
+* extension contains http://hl7.org/fhir/5.0/StructureDefinition/ext-region named CatalogRegion 0..* MS
+*/

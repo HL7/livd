@@ -343,19 +343,19 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
             }
@@ -398,19 +398,19 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
             }
@@ -453,19 +453,19 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
             }
@@ -508,19 +508,19 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/6c4d6831-9392-45aa-816f-fb7e61cee5d4"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/767661e1-9f1f-4dc7-b52b-d9e751cb799c"
             }

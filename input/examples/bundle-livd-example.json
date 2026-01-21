@@ -180,7 +180,7 @@
                 },
                 "extension": [
                     {
-                        "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+                        "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
                         "valueReference": {
                             "reference": "DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165"
                         }

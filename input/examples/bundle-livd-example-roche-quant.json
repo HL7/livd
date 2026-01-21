@@ -243,13 +243,13 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/93e79b4c-8156-4023-84fa-abfcde8df311"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/54cb685d-ae5d-4914-9eca-706a67957d1e"
             }
@@ -286,13 +286,13 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/93e79b4c-8156-4023-84fa-abfcde8df311"
             }
           },
           {
-            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-device",
+            "url": "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition",
             "valueReference": {
               "reference": "DeviceDefinition/54cb685d-ae5d-4914-9eca-706a67957d1e"
             }
