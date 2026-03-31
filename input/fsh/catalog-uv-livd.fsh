@@ -18,6 +18,10 @@ Description: "Profile on the Composition resource to specify and organize the se
 * extension ^slicing.discriminator[0].path = "url"
 * extension ^slicing.rules = #open
 * extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-region named CatalogRegion 0..* MS
+* extension contains http://hl7.org/fhir/StructureDefinition/note named CatalogNote 0..* MS
+* extension[CatalogNote].value[x] only Annotation
+* extension[CatalogNote].value[x] 1..1 MS
+* extension[CatalogNote].value[x] ^short = "Note annotation for the catalog"
 * language 1..1 MS
 * language only code
 * language ^short = "Publication Language"
