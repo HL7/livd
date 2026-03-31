@@ -23,8 +23,6 @@ Description: "Profile on the ObservationDefinition resource for representing the
 * extension ^slicing.discriminator[0].path = "url"
 * extension ^slicing.rules = #open
 * extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-livd-devicedefinition named ObservationDefinitionDevice 1..* MS
-* extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-vendorReferenceIdentifier named ObservationDefinitionVendorReferenceIdentifier 0..1 MS
-* extension[ObservationDefinitionVendorReferenceIdentifier] ^comment = "Provides an alternate reference identifier by which the IVD Test is known.  Only the identifier.value is required."
 * category 0..0
 * category only CodeableConcept
 * category ^definition = "A code that classifies the general type of observation."
@@ -48,8 +46,15 @@ Description: "Profile on the ObservationDefinition resource for representing the
 * code ^mapping[0].map = "OM1-2"
 * code ^mapping[1].identity = "rim"
 * code ^mapping[1].map = "code"
-* identifier 0..1 MS
 * id 1..1
+* identifier 0..* MS
+* identifier ^slicing.discriminator[0].type = #value
+* identifier ^slicing.discriminator[0].path = "type.coding.code"
+* identifier ^slicing.rules = #open
+* identifier contains VendorReferenceID 0..1 MS
+* identifier[VendorReferenceID].type 1..1
+* identifier[VendorReferenceID].type.coding.code = #LIVDVendorReferenceID
+* identifier[VendorReferenceID].value 1..1
 * permittedDataType 0..1 MS
 * permittedDataType only code
 * permittedDataType ^definition = "data type allowed for the result of the observation."
