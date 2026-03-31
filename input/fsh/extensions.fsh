@@ -64,3 +64,35 @@ Description: "Provides the region(s), such as country, state, continent, set of 
 * url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-region" (exactly)
 * valueCodeableConcept 1..1
 * valueCodeableConcept only CodeableConcept
+
+Extension: LIVDVersion
+Id: ext-version
+Title: "LIVD Version"
+Description: "Provides the version of the LIVD Mapping Publication."
+* ^version = "1.0.0"
+* ^publisher = "HL7 International / Orders and Observations"
+* ^contact[0].telecom[0].system = #url
+* ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"
+* ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
+* ^jurisdiction[0].coding[0].code = #001
+* ^context[0].type = #element
+* ^context[0].expression = "Composition"
+* url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-version" (exactly)
+* valueCodeableConcept 1..1
+* valueCodeableConcept only CodeableConcept
+
+Extension: LIVDLanguage
+Id: ext-language
+Title: "LIVD Language"
+Description: "Provides the language of the LIVD Mapping Publication."
+* ^version = "1.0.0"
+* ^publisher = "HL7 International / Orders and Observations"
+* ^contact[0].telecom[0].system = #url
+* ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/orders"
+* ^jurisdiction[0].coding[0].system = "http://unstats.un.org/unsd/methods/m49/m49.htm"
+* ^jurisdiction[0].coding[0].code = #001
+* ^context[0].type = #element
+* ^context[0].expression = "Composition"
+* url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-language" (exactly)
+* valueCodeableConcept 1..1
+* valueCodeableConcept only CodeableConcept
