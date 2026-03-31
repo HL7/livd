@@ -36,6 +36,10 @@ Description: "Profile on the ObservationDefinition resource for representing the
 * category ^mapping[0].map = ".outboundRelationship[typeCode=\"COMP].target[classCode=\"LIST\", moodCode=\"DEF\"].code"
 * code 1..1 MS
 * code only CodeableConcept
+* code.coding 1..*
+* code.coding.system 1..1
+* code.coding.code 1..1
+* code.coding.display 1..1
 * code ^definition = "Describes what will be observed. Sometimes this is called the observation \"name\"."
 * code ^comment = "Contains both the IVD Test Code and Name of the analyte."
 * code ^requirements = "Knowing what kind of observation is being made is essential to understanding the observation."
@@ -44,7 +48,8 @@ Description: "Profile on the ObservationDefinition resource for representing the
 * code ^mapping[0].map = "OM1-2"
 * code ^mapping[1].identity = "rim"
 * code ^mapping[1].map = "code"
-* identifier 0..* MS
+* identifier 0..1 MS
+* id 1..1
 * permittedDataType 0..1 MS
 * permittedDataType only code
 * permittedDataType ^definition = "data type allowed for the result of the observation."
