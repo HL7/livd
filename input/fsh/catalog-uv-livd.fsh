@@ -90,17 +90,17 @@ Description: "Profile on the Composition resource to specify and organize the se
 * type.coding only Coding
 * type.coding ^definition = "Provides the LOINC Code for the LIVD Mapping Publication."
 * type.coding.system 1..1 MS
-* type.coding.system only uri
+* type.coding.system = "http://loinc.org"
 * type.coding.system ^short = "LOINC Coding System"
 * type.coding.version 1..1 MS
 * type.coding.version only string
 * type.coding.version ^short = "LOINC Code Version"
 * type.coding.code 1..1 MS
-* type.coding.code only code
+* type.coding.code = #90370-8
 * type.coding.code ^short = "LIVD Mapping Publication LOINC Code"
 * type.coding.code ^definition = "LOINC Code representing the LIVD Mapping Publication."
 * type.coding.display 1..1 MS
-* type.coding.display only string
+* type.coding.display = "LIVD mapping data set"
 * type.coding.userSelected 0..0
 * type.coding.userSelected only boolean
 * type.coding.userSelected ^mustSupport = false
