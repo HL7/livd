@@ -96,3 +96,19 @@ Description: "Provides the language of the LIVD Mapping Publication."
 * url = "http://hl7.org/fhir/uv/livd/StructureDefinition/ext-language" (exactly)
 * valueCodeableConcept 1..1
 * valueCodeableConcept only CodeableConcept
+
+
+Extension: DeviceDefinitionHasPart
+Id: ext-deviceDefinition-hasPart
+Title: "DeviceDefinition hasPart"
+Description: "A device that is part of the current one."
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[0].valueCode = #oo
+* ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[1].valueCode = #draft
+* ^extension[2].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[2].valueInteger = 0
+* ^context[0].type = #element
+* ^context[0].expression = "DeviceDefinition"
+* value[x] only Reference(http://hl7.org/fhir/StructureDefinition/DeviceDefinition)
+* value[x] 1..1 MS
