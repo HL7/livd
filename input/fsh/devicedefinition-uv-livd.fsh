@@ -36,6 +36,7 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * extension ^slicing.discriminator[0].path = "url"
 * extension ^slicing.rules = #open
 * extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-deviceDefinition-hasPart named DeviceDefinitionHasPart 0..* MS
+* extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-deviceDefinition-classification-type named DeviceDefinitionClassificationType 0..* MS
 * udiDeviceIdentifier 0..1 MS
 * udiDeviceIdentifier ^comment = "In this profile only a type of device can be represented where the UDI only identifies the type of the device."
 * udiDeviceIdentifier ^mapping[0].identity = "rim"

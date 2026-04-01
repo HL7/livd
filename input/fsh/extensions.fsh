@@ -112,3 +112,21 @@ Description: "A device that is part of the current one."
 * ^context[0].expression = "DeviceDefinition"
 * value[x] only Reference(http://hl7.org/fhir/StructureDefinition/DeviceDefinition)
 * value[x] 1..1 MS
+
+Extension: DeviceDefinitionClassificationType
+Id: ext-deviceDefinition-classification-type
+Title: "DeviceDefinition Classification Type"
+Description: "A classification or risk class of the device model."
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[0].valueCode = #oo
+* ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[1].valueCode = #draft
+* ^extension[2].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[2].valueInteger = 1
+* ^extension[3].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"
+* ^extension[3].valueCode = #can-bind
+* ^context[0].type = #element
+* ^context[0].expression = "DeviceDefinition"
+* value[x] only CodeableConcept
+* value[x] 1..1 MS
+* value[x] from http://hl7.org/fhir/ValueSet/device-type (extensible)
