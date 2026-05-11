@@ -97,7 +97,6 @@ Description: "Provides the language of the LIVD Mapping Publication."
 * valueCodeableConcept 1..1
 * valueCodeableConcept only CodeableConcept
 
-
 Extension: DeviceDefinitionHasPart
 Id: ext-deviceDefinition-hasPart
 Title: "DeviceDefinition hasPart"
@@ -130,3 +129,18 @@ Description: "A classification or risk class of the device model."
 * value[x] only CodeableConcept
 * value[x] 1..1 MS
 * value[x] from http://hl7.org/fhir/ValueSet/device-type (extensible)
+
+Extension: DeviceDefinitionSupportedAnalytics
+Id: ext-supported-analytics
+Title: "Supported Analytics"
+Description: "Identifies ObservationDefinition references supported by the DeviceDefinition capability."
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[0].valueCode = #oo
+* ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[1].valueCode = #draft
+* ^extension[2].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[2].valueInteger = 0
+* ^context[0].type = #element
+* ^context[0].expression = "DeviceDefinition"
+* value[x] only uri
+* valueUri 1..1
