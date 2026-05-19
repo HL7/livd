@@ -161,7 +161,7 @@ The following table provides the mapping of LIVD data of interest to FHIR resour
 <tr style='background-color: #ffffff'>
     <td style='border: 1px solid #000'> </td>
     <td style='border: 1px solid #000'>DeviceDefinition.capability.type
-    <br>DeviceDefinition.capability.extension-observationDefinition</td>
+    <br>DeviceDefinition.capability.extension-supportedAnalytics</td>
     <td style='border: 1px solid #000'>This enables a linkage to the ObservationDefinition that represents the test that the device can perform.</td>
 </tr>
 <tr style='background-color: #f3f3f3'>

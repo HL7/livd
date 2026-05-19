@@ -100,12 +100,12 @@ Description: "Profile on the DeviceDefinition resource for representing the devi
 * capability 0..* MS
 * capability ^definition = "A reference to one or more ObservationDefinition resources representing test analytes that may be measured."
 * capability.extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-analyte named DeviceDefinitionExtensionAnalyte 1..* MS
+* capability.extension contains http://hl7.org/fhir/uv/livd/StructureDefinition/ext-supported-analytics named ext-supported-analytics 1..1 MS
 * capability.type 1..1 MS
 * capability.type ^comment = "removed \"DeviceCapabilityType (ObservationDefinition)\" from Value column."
 * capability.type.coding = http://hl7.org/fhir/resource-types#ObservationDefinition
 * capability.type.coding.system = "http://hl7.org/fhir/resource-types" (exactly)
 * capability.type.coding.code = #ObservationDefinition (exactly)
-
 * capability.description 0..0
 * capability.description ^mustSupport = false
 * property 0..0
