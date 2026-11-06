@@ -34,7 +34,6 @@ parameters:
   apply-publisher: false
   apply-version: true
   find-other-resources: true
-  jira-code: us-livd
   auto-oid-root: 2.16.840.1.113883.4.642.40.51
 menu:
   Table of Contents: toc.html
